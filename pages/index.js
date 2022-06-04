@@ -1,11 +1,13 @@
 import { useState } from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
 import { FaRegSquare, FaRegWindowRestore } from 'react-icons/fa';
 
-import styles from '../styles/home.module.css';
 import { cn } from '../utils/helpers';
-import { ROUTES } from '../utils/constants';
+import styles from '../styles/Home.module.css';
+import Title from '../components/Title';
+import InputField from '../components/InputField';
+import WelcomeMessage from '../components/WelcomeMessage';
+
+import { TITLES } from '../utils/constants';
 
 export default function Home() {
     const [resize, setResize] = useState(true);
@@ -14,39 +16,17 @@ export default function Home() {
 
     return (
         <div className={`${styles.container} ${cn(resize, 'p-8', 'p-0')}`}>
-            <Head>
-                <title>Terminal - Arul Valan Anto</title>
-            </Head>
+            <Title name={TITLES.terminal} />
             <div className={`${styles.terminal} ${cn(resize, 'rounded-md')}`}>
                 <div className={styles.terminal__options}>
                     <span onClick={handleChangeResize}>
                         {cn(resize, <FaRegSquare />, <FaRegWindowRestore />)}
                     </span>
                 </div>
-                <header className="p-4">
-                    <p className="text-gray-500">
-                        <span className="text-dark-orange">visitor</span>@
-                        <span className="text-secondary">arulvalananto</span>
-                        <span>:$ ~</span>
-                    </p>
-                    <p className="font-texture">Welcome to my portfolio</p>
-                    <p>
-                        Type <span className={styles.command}>help</span> to see
-                        the available commands
-                    </p>
-                    <p>
-                        Type <span className={styles.command}>summary</span> to
-                        display the summary
-                    </p>
-                    <p>
-                        Type <span className={styles.command}>start</span>
-                        <span> or click </span>
-                        <Link href={ROUTES.DASHBOARD}>
-                            <span className={styles.link}>here</span>
-                        </Link>
-                        <span> to enter into the site</span>
-                    </p>
-                </header>
+                <main className="p-4">
+                    <InputField />
+                    <WelcomeMessage />
+                </main>
             </div>
         </div>
     );
