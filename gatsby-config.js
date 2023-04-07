@@ -3,8 +3,9 @@
  */
 module.exports = {
     siteMetadata: {
-        title: `My Gatsby Site`,
-        siteUrl: `https://www.yourdomain.tld`,
+        title: `Arul Valan Anto - Portfolio`,
+        siteUrl: `https://arulvalananto.gatsbyjs.io/`,
+        description: `This portfolio showcases a collection of my best work in Software Development`,
     },
     plugins: [
         'gatsby-plugin-image',
