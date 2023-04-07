@@ -1,58 +1,41 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'gatsby';
 
 import './index.css';
-import { navlinks } from '../static/data';
+import Layout from '../components/layout';
 
 const IndexPage = () => {
     return (
-        <main className="home">
-            <nav className="home__navbar">
-                <div className="home__logo-container">
-                    <StaticImage
-                        src="../images/logo.svg"
-                        alt="arulvalanto portfolio"
-                        className="home__logo"
-                    />
-                </div>
-                <ul className="home__navitem">
-                    {navlinks.map(({ title, url, icon }, index, links) => (
-                        <li className="home__navlink">
-                            <div className="home__navlink-container">
-                                <FontAwesomeIcon
-                                    icon={icon}
-                                    fontSize={18}
-                                    size="large"
-                                />
-                                <a
-                                    href={url}
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="home_navlink-item"
-                                >
-                                    {title}
-                                </a>
-                            </div>
-                            {links.length - 1 !== index && <span>/</span>}
-                        </li>
-                    ))}
-                </ul>
-            </nav>
+        <Layout id="home">
             <section id="home" className="home__main-section">
-                <div className="home__info-container">
-                    <h5 className="home__info-role">Full Stack Developer</h5>
-                    <h1 className="home__info-name">Arul Valan Anto S</h1>
-                    <p className="home__info-roleDescription">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Laudantium sint, nobis dolorem quas ratione ex,
-                        quibusdam voluptatum deserunt perferendis, illo ut
-                        voluptates sequi? Molestias itaque, ex ratione
-                        dignissimos autem maiores.
-                    </p>
+                <div className="home__main-container">
+                    <div className="home__info-container">
+                        <h5 className="home__info-role">
+                            Full Stack Developer
+                        </h5>
+                        <h1 className="home__info-name">Arul Valan Anto S</h1>
+                        <p className="home__info-roleDescription">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Laudantium sint, nobis dolorem quas ratione
+                            ex, quibusdam voluptatum deserunt perferendis, illo
+                            ut voluptates sequi? Molestias itaque, ex ratione
+                            dignissimos autem maiores.
+                        </p>
+                    </div>
+                    <div className="home__buttonContainer">
+                        <Link to="/projects" className="home__projects-button">
+                            Let's Explore
+                            <span
+                                role="img"
+                                aria-label="start explore my projects"
+                            >
+                                🚀
+                            </span>
+                        </Link>
+                    </div>
                 </div>
             </section>
-        </main>
+        </Layout>
     );
 };
 

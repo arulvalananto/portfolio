@@ -1,26 +1,29 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 
-const pageStyles = {
-    color: '#232129',
-    padding: '96px',
-    fontFamily: '-apple-system, Roboto, sans-serif, serif',
-};
-const headingStyles = {
-    marginTop: 0,
-    marginBottom: 64,
-    maxWidth: 320,
-};
+import './404.css';
+import Layout from '../components/layout';
 
-const NotFoundPage = () => {
+const NotFound = () => {
     return (
-        <main style={pageStyles}>
-            <h1 style={headingStyles}>Page not found</h1>
-            <Link to="/">Go home</Link>.
-        </main>
+        <Layout>
+            <div className="notfound">
+                <h2 className="notfound__message">Page Not Found</h2>
+                <p className="notfound__description">
+                    This page doesn't exist or was removed. We suggest you to
+                    back to home
+                </p>
+                <Link to="/" className="nofound__redirectButton">
+                    <span role="img" aria-label="back to home">
+                        👈
+                    </span>
+                    Back to Home
+                </Link>
+            </div>
+        </Layout>
     );
 };
 
-export default NotFoundPage;
+export default NotFound;
 
 export const Head = () => <title>Not found</title>;

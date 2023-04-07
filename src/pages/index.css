@@ -83,29 +83,116 @@ body {
     justify-content: center;
 }
 
+.home__main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
 .home__info-container {
-    width: 350px;
-    text-align: center;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .home__info-role {
     text-transform: uppercase;
+    font-weight: 400;
+    color: gray;
 }
 
 .home__info-name {
-    font-size: 1.5rem;
+    font-size: 3.5rem;
+    background: linear-gradient(97.13deg, #e9e9e9 0%, #515151 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .home__info-roleDescription {
+    color: #9a9a9a;
+    word-wrap: break-word;
+    line-break: anywhere;
 }
 
-/* Mobile large */
-@media (max-width: 425px) {
+.home__buttonContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home__projects-button {
+    font-size: 16px;
+    color: #9a9a9a;
+    background-color: #1a1a1a;
+    border: 1px solid #242424;
+    padding: 24px 48px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.home__projects-button:hover {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .home__info-container {
+        width: 350px;
+    }
+
+    .home__info-name {
+        font-size: 2.5rem;
+    }
+
+    .home__info-roleDescription {
+        color: #9a9a9a;
+        word-wrap: break-word;
+        line-break: anywhere;
+    }
+
     .home__logo-container {
         display: none;
     }
     .home__navbar {
         justify-content: center;
         margin: 0px 10%;
+    }
+}
+
+/* Mobile large */
+@media (max-width: 425px) {
+    .home__info-role {
+        font-size: 0.6rem;
+    }
+
+    .home__info-container {
+        width: 270px;
+    }
+
+    .home__info-name {
+        font-size: 1.25rem;
+    }
+
+    .home__info-roleDescription {
+        font-size: 0.8rem;
+    }
+}
+
+/* Mobile Small */
+@media (max-width: 320px) {
+    .home_navlink-item,
+    .home__info-roleDescription {
+        font-size: 0.7rem;
+    }
+
+    .home__info-container {
+        width: 250px;
     }
 }
