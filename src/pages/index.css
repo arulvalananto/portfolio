@@ -56,13 +56,14 @@ body {
     color: #656363;
 }
 
-.home__navlink {
+.home__navlink,
+.home__navlink-container {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
 
-.home__navlink:hover {
+.home__navlink-container:hover {
     color: #ffffff;
     transform: scale(1.03);
 }
@@ -88,9 +89,11 @@ body {
 }
 
 .home__info-role {
+    text-transform: uppercase;
 }
 
 .home__info-name {
+    font-size: 1.5rem;
 }
 
 .home__info-roleDescription {

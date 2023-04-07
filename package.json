@@ -1,38 +1,42 @@
 {
-  "name": "portfolio",
-  "version": "1.1.0",
-  "private": true,
-  "description": "portfolio",
-  "author": "Arul Valan Anto S",
-  "main": "gatsby-config.js",
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "ISC",
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "6.4.0",
-    "@fortawesome/free-brands-svg-icons": "6.4.0",
-    "@fortawesome/react-fontawesome": "0.2.0",
-    "gatsby": "5.8.1",
-    "gatsby-plugin-image": "3.8.0",
-    "gatsby-plugin-manifest": "5.8.0",
-    "gatsby-plugin-sharp": "5.8.1",
-    "gatsby-source-filesystem": "5.8.0",
-    "gatsby-transformer-sharp": "5.8.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "4.8.0"
-  },
-  "devDependencies": {},
-  "engines": {
-    "node": ">=18.15.0",
-    "npm": ">=9.5.0"
-  }
+    "name": "portfolio",
+    "version": "1.1.0",
+    "private": true,
+    "description": "portfolio",
+    "author": "Arul Valan Anto S",
+    "main": "gatsby-config.js",
+    "keywords": [
+        "gatsby",
+        "portfolio",
+        "fullstack",
+        "developer",
+        "programmer"
+    ],
+    "license": "ISC",
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-svg-core": "6.4.0",
+        "@fortawesome/free-brands-svg-icons": "6.4.0",
+        "@fortawesome/react-fontawesome": "0.2.0",
+        "gatsby": "5.8.1",
+        "gatsby-plugin-image": "3.8.0",
+        "gatsby-plugin-manifest": "5.8.0",
+        "gatsby-plugin-sharp": "5.8.1",
+        "gatsby-source-filesystem": "5.8.0",
+        "gatsby-transformer-sharp": "5.8.0",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "react-icons": "4.8.0"
+    },
+    "devDependencies": {},
+    "engines": {
+        "node": ">=18.15.0",
+        "npm": ">=9.5.0"
+    }
 }

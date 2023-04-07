@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -18,8 +18,8 @@ const IndexPage = () => {
                 </div>
                 <ul className="home__navitem">
                     {navlinks.map(({ title, url, icon }, index, links) => (
-                        <Fragment key={index}>
-                            <li className="home__navlink">
+                        <li className="home__navlink">
+                            <div className="home__navlink-container">
                                 <FontAwesomeIcon
                                     icon={icon}
                                     fontSize={18}
@@ -33,9 +33,9 @@ const IndexPage = () => {
                                 >
                                     {title}
                                 </a>
-                            </li>
+                            </div>
                             {links.length - 1 !== index && <span>/</span>}
-                        </Fragment>
+                        </li>
                     ))}
                 </ul>
             </nav>
