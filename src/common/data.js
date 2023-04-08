@@ -6,6 +6,11 @@ import {
 
 export const navlinks = [
     {
+        title: `Resume`,
+        download: 'Arul Valan Anto S - Resume',
+        url: './resume.pdf',
+    },
+    {
         title: 'Github',
         url: 'https://github.com/arulvalananto',
         icon: faGithub,
@@ -19,6 +24,10 @@ export const navlinks = [
         title: 'Medium',
         url: 'https://medium.com/@arulvalananto',
         icon: faMedium,
+    },
+    {
+        title: `Let's talk`,
+        url: 'mailto:arulvalananto@gmail.com',
     },
 ];
 

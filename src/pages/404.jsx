@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { Link } from 'gatsby';
 
 import './404.css';
 import Layout from '../components/layout';
+import BackButton from '../components/backButton';
 
 const NotFound = () => {
     return (
@@ -13,12 +13,7 @@ const NotFound = () => {
                     This page doesn't exist or was removed. We suggest you to
                     back to home
                 </p>
-                <Link to="/" className="nofound__redirectBtn">
-                    <span role="img" aria-label="back to home">
-                        👈
-                    </span>
-                    Back to Home
-                </Link>
+                <BackButton title="Back to Home" />
             </div>
         </Layout>
     );
