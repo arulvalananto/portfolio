@@ -1,0 +1,91 @@
+@import url('./index.css');
+
+.projects {
+    grid-column: 1 / 21;
+    grid-row: 3 / 21;
+    padding: 4rem 2rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.backBtn__override {
+    width: 130px;
+    padding: 1rem !important;
+}
+
+.projects__title {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+}
+
+.projects__list {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-auto-rows: 400px;
+    gap: 2rem;
+}
+
+.projects__project {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
+}
+
+@media (max-width: 854px) {
+    .projects {
+        padding: 2rem 1rem;
+    }
+    .projects__list {
+        grid-template-columns: repeat(1, 350px);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .projects {
+        padding: 2rem 1rem;
+    }
+    .projects__list {
+        grid-template-columns: repeat(1, 300px);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 325px) {
+    .projects {
+        padding: 2rem 1rem;
+    }
+    .projects__list {
+        grid-template-columns: repeat(1, 270px);
+        justify-content: center;
+    }
+}
+
+@media (min-width: 854px) {
+    .projects__list {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media (min-width: 1245px) {
+    .projects__list {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (min-width: 1440px) {
+    .projects__list {
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
+@media (min-width: 2560px) {
+    .projects__list {
+        grid-template-columns: repeat(6, auto);
+    }
+}

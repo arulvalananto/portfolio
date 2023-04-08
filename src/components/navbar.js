@@ -16,22 +16,37 @@ const Navbar = () => {
                 />
             </Link>
             <ul className="navitem">
-                {navlinks.map(({ title, url, icon }, index, links) => (
-                    <li className="navlink" key={index}>
-                        <div className="navlink__wrap">
-                            <FontAwesomeIcon icon={icon} fontSize={18} />
-                            <a
-                                href={url}
-                                target="_blank"
-                                rel="noreferrer"
-                                className="navitem"
-                            >
-                                {title}
-                            </a>
-                        </div>
-                        {links.length - 1 !== index && <span>/</span>}
-                    </li>
-                ))}
+                {navlinks.map(
+                    ({ title, url, icon, download }, index, links) => (
+                        <li className="navlink" key={index}>
+                            <div className="navlink__wrap">
+                                {download ? (
+                                    <a
+                                        href={url}
+                                        download={download}
+                                        className="navitem"
+                                    >
+                                        {title}
+                                    </a>
+                                ) : (
+                                    <a
+                                        href={url}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        className="navitem"
+                                    >
+                                        <FontAwesomeIcon
+                                            icon={icon}
+                                            fontSize={18}
+                                        />
+                                        {title}
+                                    </a>
+                                )}
+                            </div>
+                            {links.length - 1 !== index && <span>/</span>}
+                        </li>
+                    )
+                )}
             </ul>
         </nav>
     );

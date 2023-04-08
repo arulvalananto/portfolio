@@ -20,6 +20,26 @@
 
     --border-primary: #242424;
     --border-secondary: #6563635e;
+
+    --scroll: #e9e9e950;
+    --scroll-hover: #e9e9e9;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--gray);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scroll);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-hover);
 }
 
 body {
@@ -59,13 +79,6 @@ body {
     object-fit: cover;
 }
 
-.navitem {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    color: var(--text-primary);
-}
-
 .navlink,
 .navlink__wrap {
     display: flex;
@@ -76,13 +89,17 @@ body {
 
 .navlink__wrap:hover {
     color: var(--white);
-    transform: scale(1.03);
+    transform: scale(1.04);
 }
 
 .navitem {
+    font-size: 14px;
+    list-style: none;
     text-decoration: none;
     color: inherit;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .home__container {
@@ -135,7 +152,8 @@ body {
     gap: 1rem;
 }
 
-.home__startBtn {
+.home__startBtn,
+.backBtn {
     font-size: 16px;
     color: var(--text-secondary);
     background-color: var(--bg-tertiary);
@@ -146,7 +164,8 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
-.home__startBtn:hover {
+.home__startBtn:hover,
+.backBtn:hover {
     transform: scale(0.9);
     transition-duration: 0.3s;
     transition-property: transform;
@@ -193,6 +212,11 @@ body {
 
     .home__desc {
         font-size: 0.8rem;
+    }
+
+    .home__startBtn {
+        font-size: 12px;
+        padding: 12px 48px;
     }
 }
 
