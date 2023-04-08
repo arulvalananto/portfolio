@@ -21,3 +21,9 @@ export const navlinks = [
         icon: faMedium,
     },
 ];
+
+export const personalInfo = {
+    title: 'Full Stack Developer',
+    name: 'Arul Valan Anto S',
+    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sint, nobis dolorem quas ratione ex, quibusdam voluptatum deserunt perferendis, illo ut voluptates sequi? Molestias itaque, ex ratione dignissimos autem maiores.`,
+};

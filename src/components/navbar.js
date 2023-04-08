@@ -7,24 +7,24 @@ import { navlinks } from '../common/data';
 
 const Navbar = () => {
     return (
-        <nav className="home__navbar">
-            <Link to="/" className="home__logo-container">
+        <nav className="navbar">
+            <Link to="/" className="navbar__logoWrap">
                 <StaticImage
                     src={'../images/logo.svg'}
                     alt="arulvalanto portfolio"
-                    className="home__logo"
+                    className="logo"
                 />
             </Link>
-            <ul className="home__navitem">
+            <ul className="navitem">
                 {navlinks.map(({ title, url, icon }, index, links) => (
-                    <li className="home__navlink" key={index}>
-                        <div className="home__navlink-container">
+                    <li className="navlink" key={index}>
+                        <div className="navlink__wrap">
                             <FontAwesomeIcon icon={icon} fontSize={18} />
                             <a
                                 href={url}
                                 target="_blank"
                                 rel="noreferrer"
-                                className="home_navlink-item"
+                                className="navitem"
                             >
                                 {title}
                             </a>

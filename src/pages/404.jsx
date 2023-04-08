@@ -13,7 +13,7 @@ const NotFound = () => {
                     This page doesn't exist or was removed. We suggest you to
                     back to home
                 </p>
-                <Link to="/" className="nofound__redirectButton">
+                <Link to="/" className="nofound__redirectBtn">
                     <span role="img" aria-label="back to home">
                         👈
                     </span>
