@@ -4,7 +4,7 @@ import Navbar from './navbar';
 
 const Layout = ({ children }) => {
     return (
-        <main className="home">
+        <main className="layout">
             <Navbar />
             {children}
         </main>

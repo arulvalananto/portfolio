@@ -22,7 +22,7 @@
     line-break: anywhere;
 }
 
-.nofound__redirectButton {
+.nofound__redirectBtn {
     font-size: 16px;
     color: #9a9a9a;
     background-color: #1a1a1a;
@@ -34,7 +34,7 @@
     gap: 0.5rem;
 }
 
-.nofound__redirectButton:hover {
+.nofound__redirectBtn:hover {
     transform: scale(0.9);
     transition-duration: 0.3s;
     transition-property: transform;

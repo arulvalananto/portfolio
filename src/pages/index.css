@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -9,24 +7,36 @@
     user-select: none;
 }
 
-body {
-    /* background: #010101; */
-    background: #171717;
-    color: #ffffff;
+:root {
+    --white: #ffffff;
+    --gray: gray;
+
+    --bg-primary: #171717;
+    --bg-secondary: linear-gradient(97.13deg, #e9e9e9 0%, #515151 100%);
+    --bg-tertiary: #1a1a1a;
+
+    --text-primary: #656363;
+    --text-secondary: #9a9a9a;
+
+    --border-primary: #242424;
+    --border-secondary: #6563635e;
 }
 
-.home {
+body {
+    background: var(--bg-primary);
+    color: var(--white);
+}
+
+.layout {
     height: 100vh;
-    background: url('../images/background.svg');
+    background: url('../images/background.svg') no-repeat center center;
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(20, 5%);
     grid-template-rows: repeat(20, 5%);
 }
 
-.home__navbar {
+.navbar {
     grid-column: 1 / 21;
     grid-row: 1 / 3;
     display: flex;
@@ -34,47 +44,48 @@ body {
     align-items: center;
     justify-content: space-between;
     margin: 0px 10% 0px calc(10% - 24px);
-    border-bottom: 1px solid #6563635e;
+    border-bottom: 1px solid var(--border-secondary);
 }
 
-.home__logo-container {
+.navbar__logoWrap {
     width: 155px;
     height: 100%;
     display: block;
 }
 
-.home__logo {
+.logo {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.home__navitem {
+.navitem {
     list-style: none;
     display: flex;
     gap: 1rem;
-    color: #656363;
+    color: var(--text-primary);
 }
 
-.home__navlink,
-.home__navlink-container {
+.navlink,
+.navlink__wrap {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    color: var(--text-primary);
 }
 
-.home__navlink-container:hover {
-    color: #ffffff;
+.navlink__wrap:hover {
+    color: var(--white);
     transform: scale(1.03);
 }
 
-.home_navlink-item {
+.navitem {
     text-decoration: none;
     color: inherit;
     font-size: 14px;
 }
 
-.home__main-section {
+.home__container {
     grid-column: 1 / 21;
     grid-row: 3 / 21;
     display: flex;
@@ -83,14 +94,14 @@ body {
     justify-content: center;
 }
 
-.home__main-container {
+.home__main {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
 }
 
-.home__info-container {
+.home__info {
     width: 500px;
     display: flex;
     flex-direction: column;
@@ -98,44 +109,44 @@ body {
     gap: 0.5rem;
 }
 
-.home__info-role {
+.home__role {
     text-transform: uppercase;
     font-weight: 400;
-    color: gray;
+    color: var(--gray);
 }
 
-.home__info-name {
+.home__username {
     font-size: 3.5rem;
-    background: linear-gradient(97.13deg, #e9e9e9 0%, #515151 100%);
+    background: var(--bg-secondary);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.home__info-roleDescription {
-    color: #9a9a9a;
+.home__desc {
+    color: var(--text-secondary);
     word-wrap: break-word;
     line-break: anywhere;
 }
 
-.home__buttonContainer {
+.home__btnGroup {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-.home__projects-button {
+.home__startBtn {
     font-size: 16px;
-    color: #9a9a9a;
-    background-color: #1a1a1a;
-    border: 1px solid #242424;
+    color: var(--text-secondary);
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
     padding: 24px 48px;
     text-decoration: none;
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.home__projects-button:hover {
+.home__startBtn:hover {
     transform: scale(0.9);
     transition-duration: 0.3s;
     transition-property: transform;
@@ -143,24 +154,24 @@ body {
 
 /* Tablet */
 @media (max-width: 768px) {
-    .home__info-container {
+    .home__info {
         width: 350px;
     }
 
-    .home__info-name {
+    .home__username {
         font-size: 2.5rem;
     }
 
-    .home__info-roleDescription {
-        color: #9a9a9a;
+    .home__desc {
+        color: var(--text-secondary);
         word-wrap: break-word;
         line-break: anywhere;
     }
 
-    .home__logo-container {
+    .navbar__logoWrap {
         display: none;
     }
-    .home__navbar {
+    .navbar {
         justify-content: center;
         margin: 0px 10%;
     }
@@ -168,31 +179,31 @@ body {
 
 /* Mobile large */
 @media (max-width: 425px) {
-    .home__info-role {
+    .home__role {
         font-size: 0.6rem;
     }
 
-    .home__info-container {
+    .home__info {
         width: 270px;
     }
 
-    .home__info-name {
+    .home__username {
         font-size: 1.25rem;
     }
 
-    .home__info-roleDescription {
+    .home__desc {
         font-size: 0.8rem;
     }
 }
 
 /* Mobile Small */
 @media (max-width: 320px) {
-    .home_navlink-item,
-    .home__info-roleDescription {
+    .navitem,
+    .home__desc {
         font-size: 0.7rem;
     }
 
-    .home__info-container {
+    .home__info {
         width: 250px;
     }
 }
