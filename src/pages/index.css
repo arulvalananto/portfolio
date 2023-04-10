@@ -142,8 +142,10 @@ body {
 
 .home__desc {
     color: var(--text-secondary);
-    word-wrap: break-word;
     line-break: anywhere;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-word;
 }
 
 .home__btnGroup {
@@ -217,6 +219,19 @@ body {
     .home__startBtn {
         font-size: 12px;
         padding: 12px 48px;
+    }
+    .navitem {
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navlink:last-child {
+        order: 2;
+    }
+
+    .navlink:first-child {
+        order: 1;
     }
 }
 
