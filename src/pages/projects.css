@@ -58,6 +58,7 @@
     border: 1px solid var(--border-primary);
     border-radius: 10px;
     transform: translate(0.8rem, -50%);
+    overflow: hidden;
 }
 .project__info {
     display: flex;
@@ -107,13 +108,12 @@
 
 .project__stackContainer {
     display: flex;
-    align-items: flex-end;
-    gap: 1rem;
+    flex-direction: column;
     margin-top: 0.5rem;
 }
 
 .project__stack {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     text-transform: uppercase;
     color: var(--gray);

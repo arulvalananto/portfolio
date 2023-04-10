@@ -9,8 +9,8 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <Link to="/" className="navbar__logoWrap">
-                <StaticImage
-                    src={'../images/logo.svg'}
+                <img
+                    src="https://d2sgkcesfdic4y.cloudfront.net/logo"
                     alt="arulvalanto portfolio"
                     className="logo"
                 />
