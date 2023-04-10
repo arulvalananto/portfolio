@@ -218,6 +218,19 @@ body {
         font-size: 12px;
         padding: 12px 48px;
     }
+    .navitem {
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .navlink:last-child {
+        order: 2;
+    }
+
+    .navlink:first-child {
+        order: 1;
+    }
 }
 
 /* Mobile Small */

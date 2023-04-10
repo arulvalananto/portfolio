@@ -36,3 +36,71 @@ export const personalInfo = {
     name: 'Arul Valan Anto S',
     description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium sint, nobis dolorem quas ratione ex, quibusdam voluptatum deserunt perferendis, illo ut voluptates sequi? Molestias itaque, ex ratione dignissimos autem maiores.`,
 };
+
+export const projects = [
+    {
+        name: 'AirDeck',
+        logo: '',
+        websiteURL: 'dumywebsite',
+        stack: ['React', 'Node'],
+        previewImages: [''],
+        timeline: {
+            starts: 'Jan 2023',
+            ends: 'Now',
+        },
+        description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+    },
+    {
+        name: 'AirDeck',
+        logo: '',
+        websiteURL: 'dumywebsite',
+        stack: ['React', 'Node'],
+        previewImages: [''],
+        timeline: {
+            starts: 'Jan 2023',
+            ends: 'Now',
+        },
+        description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+    },
+    {
+        name: 'AirDeck',
+        logo: '',
+        websiteURL: 'dumywebsite',
+        stack: ['React', 'Node'],
+        previewImages: [''],
+        timeline: {
+            starts: 'Jan 2023',
+            ends: 'Now',
+        },
+        description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+    },
+    {
+        name: 'AirDeck',
+        logo: '',
+        websiteURL: 'dumywebsite',
+        stack: ['React', 'Node'],
+        previewImages: [''],
+        timeline: {
+            starts: 'Jan 2023',
+            ends: 'Now',
+        },
+        description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+    },
+    {
+        name: 'AirDeck',
+        logo: '',
+        websiteURL: 'dumywebsite',
+        stack: ['React', 'Node'],
+        previewImages: [''],
+        timeline: {
+            starts: 'Jan 2023',
+            ends: 'Now',
+        },
+        description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+    },
+];
