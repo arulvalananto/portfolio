@@ -3,6 +3,7 @@ import {
     faGithub,
     faMedium,
 } from '@fortawesome/free-brands-svg-icons';
+import tech from './tech.json';
 
 export const navlinks = [
     {
@@ -58,7 +59,15 @@ export const projects = [
             websiteURL: 'https://app.airdeck.co/',
         },
         extras: {
-            stack: ['React', 'Node'],
+            stack: [
+                tech.Angular,
+                tech.NodeJS,
+                tech.MySQL,
+                tech.Express,
+                tech.Redis,
+                tech.Auth0,
+                tech.TypeScript,
+            ],
             timeline: {
                 startsAt: 'May 2022',
                 endsAt: 'Now',
@@ -79,7 +88,17 @@ export const projects = [
                 'http://ec2-18-191-77-185.us-east-2.compute.amazonaws.com/sign-in',
         },
         extras: {
-            stack: ['React', 'Node'],
+            stack: [
+                tech.React,
+                tech.Django,
+                tech.PostgreSQL,
+                tech.Stripe,
+                tech.Redux,
+                tech.Mapbox,
+                tech.TurfJS,
+                tech.SASS,
+                tech.Jest,
+            ],
             timeline: {
                 startsAt: 'Feb 2022',
                 endsAt: 'May 2022',
@@ -99,7 +118,15 @@ export const projects = [
             websiteURL: 'https://annals.web.app',
         },
         extras: {
-            stack: ['React', 'Node'],
+            stack: [
+                tech.React,
+                tech.NodeJS,
+                tech.Mongoose,
+                tech.Firebase,
+                tech.TailwindCSS,
+                tech.Formik,
+                tech.MaterialUI,
+            ],
             timeline: {
                 startsAt: 'Nov 2021',
                 endsAt: 'Jan 2022',
@@ -119,7 +146,15 @@ export const projects = [
             websiteURL: '',
         },
         extras: {
-            stack: ['React', 'Node'],
+            stack: [
+                tech.React,
+                tech.NodeJS,
+                tech.FastAPI,
+                tech.Mongoose,
+                tech.ChromeExtension,
+                tech.Auth0,
+                tech.JavaScript,
+            ],
             timeline: {
                 startsAt: 'Jan 2023',
                 endsAt: 'Now',
@@ -139,7 +174,13 @@ export const projects = [
             websiteURL: '',
         },
         extras: {
-            stack: ['React', 'Node'],
+            stack: [
+                tech.React,
+                tech.Redux,
+                tech.NodeJS,
+                tech.Firebase,
+                tech.Stripe,
+            ],
             timeline: {
                 startsAt: 'May 2021',
                 endsAt: 'Jun 2021',
@@ -160,7 +201,7 @@ export const projects = [
             npmURL: 'https://www.npmjs.com/package/boilers',
         },
         extras: {
-            stack: ['React', 'Node'],
+            stack: [tech.NodeJS, tech.NPM],
             timeline: {
                 startsAt: 'May 2021',
                 endsAt: 'Jun 2021',
@@ -180,7 +221,14 @@ export const projects = [
             websiteURL: '',
         },
         extras: {
-            stack: ['React', 'Node'],
+            stack: [
+                tech.ReactNative,
+                tech.NodeJS,
+                tech.Mongoose,
+                tech.Formik,
+                tech.Redux,
+                tech.Express,
+            ],
             timeline: {
                 startsAt: 'May 2021',
                 endsAt: 'Jun 2021',

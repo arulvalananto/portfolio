@@ -57,7 +57,7 @@ const Projects = () => {
                                         hashtags={extras?.hashtags}
                                     />
                                     <ProjectStack stack={extras.stack} />
-                                    <ShowMore />
+                                    {/* <ShowMore /> */}
                                 </div>
                             </div>
                         )

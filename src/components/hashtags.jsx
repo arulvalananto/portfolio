@@ -6,7 +6,7 @@ const Hashtags = ({ hashtags }) => {
     return (
         <div className="project__hashtags">
             {hashtags?.map((hashtag) => (
-                <Hashtag hashtag={hashtag} />
+                <Hashtag hashtag={hashtag} key={hashtag} />
             ))}
         </div>
     );
