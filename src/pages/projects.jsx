@@ -1,11 +1,17 @@
 import * as React from 'react';
 
 import './projects.css';
-import Layout from '../components/layout';
-import BackButton from '../components/backButton';
-import { StaticImage } from 'gatsby-plugin-image';
 import { projects } from '../common/data';
-import { Link } from 'gatsby';
+import Layout from '../components/layout';
+import ShowMore from '../components/showMore';
+import BackButton from '../components/backButton';
+import ProjectLogo from '../components/projectLogo';
+import ProjectBrief from '../components/projectBrief';
+import ProjectStack from '../components/projectStack';
+import ProjectNPMURL from '../components/projectNPMURL';
+import ProjectWebsiteURL from '../components/websiteURL';
+import ProjectTimeline from '../components/projectTimeline';
+import PreviewProjectImages from '../components/previewImages';
 
 const Projects = () => {
     return (
@@ -15,85 +21,46 @@ const Projects = () => {
                 <h1 className="projects__title">Projects</h1>
                 <div className="projects__list">
                     {projects.map(
-                        (
-                            {
-                                name,
-                                logo,
-                                websiteURL,
-                                stack,
-                                previewImages,
-                                timeline,
-                                description,
-                            },
-                            index
-                        ) => {
-                            console.log(name, logo);
-                            return (
-                                <div className="projects__project" key={index}>
-                                    <div className="project__imgWrapper">
-                                        <StaticImage
-                                            src={previewImages[0]}
-                                            alt="dummy"
-                                            class="project__img"
+                        ({ name, assets, description, links, extras }) => (
+                            <div className="projects__project" key={name}>
+                                <PreviewProjectImages
+                                    previewImages={assets?.previewImages}
+                                    imageAlt={`${name} preview`}
+                                />
+                                <ProjectLogo
+                                    logo={assets?.logo}
+                                    alt={`${name}'s logo`}
+                                />
+                                <div className="project__info">
+                                    <div className="project__webLinkContainer">
+                                        {links?.websiteURL && (
+                                            <ProjectWebsiteURL
+                                                websiteURL={links?.websiteURL}
+                                                tooltipId={name}
+                                                content="website url"
+                                            />
+                                        )}
+                                        {links?.npmURL && (
+                                            <ProjectNPMURL
+                                                npmURL={links?.npmURL}
+                                                tooltipId={name}
+                                                content="NPM details"
+                                            />
+                                        )}
+                                        <ProjectTimeline
+                                            timeline={extras.timeline}
                                         />
                                     </div>
-                                    <div className="project__logoWrapper">
-                                        <img
-                                            src={logo}
-                                            alt={`${name}'s logo`}
-                                            className="project__logo"
-                                            formats={['auto', 'webp', 'avif']}
-                                        />
-                                    </div>
-                                    <div className="project__info">
-                                        <div className="project__webLinkContainer">
-                                            <a
-                                                href={websiteURL}
-                                                className="project__webLink"
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                            >
-                                                Website
-                                            </a>
-                                            <p>
-                                                {timeline?.starts} -{' '}
-                                                {timeline?.ends}
-                                            </p>
-                                        </div>
-                                        <h4 className="project__title">
-                                            {name}
-                                        </h4>
-                                        <p className="project__description">
-                                            {description}
-                                        </p>
-                                        <div className="project__stackContainer">
-                                            <h6 className="project__stack">
-                                                Stack
-                                            </h6>
-                                            <div className="project__stackList">
-                                                {stack.map((tech, index) => (
-                                                    <p key={tech}>
-                                                        {tech}
-                                                        {stack?.length - 1 !==
-                                                            index && (
-                                                            <span>,</span>
-                                                        )}
-                                                    </p>
-                                                ))}
-                                            </div>
-                                        </div>
-                                        <div className="project__btnDetailsWrapper">
-                                            <Link
-                                                to="/"
-                                                className="project__btnDetails"
-                                            >
-                                                Show More
-                                            </Link>
-                                        </div>
-                                    </div>
+                                    <ProjectBrief
+                                        name={name}
+                                        description={description}
+                                        hashtags={extras?.hashtags}
+                                    />
+                                    <ProjectStack stack={extras.stack} />
+                                    <ShowMore />
                                 </div>
-                            );
-                        }
+                            </div>
+                        )
                     )}
                 </div>
             </section>

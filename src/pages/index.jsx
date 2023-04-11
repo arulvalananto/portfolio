@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 
 import './index.css';
 import Layout from '../components/layout';
+import 'react-tooltip/dist/react-tooltip.css';
 import { personalInfo } from '../common/data';
 
 const IndexPage = () => {
