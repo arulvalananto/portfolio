@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { StaticImage } from 'gatsby-plugin-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { navlinks } from '../common/data';
@@ -35,10 +34,12 @@ const Navbar = () => {
                                         rel="noreferrer"
                                         className="navitem"
                                     >
-                                        <FontAwesomeIcon
-                                            icon={icon}
-                                            fontSize={18}
-                                        />
+                                        {icon && (
+                                            <FontAwesomeIcon
+                                                icon={icon}
+                                                fontSize={18}
+                                            />
+                                        )}
                                         {title}
                                     </a>
                                 )}
