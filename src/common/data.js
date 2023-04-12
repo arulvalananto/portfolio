@@ -39,10 +39,10 @@ export const personalInfo = {
 };
 
 export const hashtagColors = {
-    webapp: '#E32F6E',
+    webapp: '#17AE85',
     mobileapp: '#F4D54E',
     npmpackage: '#821DFE',
-    scraper: '#17AE85',
+    scraper: '#F288AD',
     chromeextension: '#F85B53',
     outlookaddin: '#3384C5',
 };
@@ -165,6 +165,7 @@ export const projects = [
                 endsAt: 'Now',
             },
             hashtags: ['webapp', 'chromeextension', 'scraper'],
+            isStillProgressive: true,
         },
     },
     {
@@ -216,27 +217,27 @@ export const projects = [
             hashtags: ['npmpackage'],
         },
     },
-    {
-        name: 'AirDeck Outlook Add-in',
-        description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
-        assets: {
-            prefix: '/airdeck+outlook+addin',
-            logo: '/airdeck+outlook+add-in',
-            previewImages: 5,
-        },
-        links: {
-            websiteURL: '',
-        },
-        extras: {
-            stack: [tech.React, tech.Redux, tech.TypeScript, tech.Outlook],
-            timeline: {
-                startsAt: 'Mar 2023',
-                endsAt: 'Apr 2023',
-            },
-            hashtags: ['outlookaddin'],
-        },
-    },
+    // {
+    //     name: 'AirDeck Outlook Add-in',
+    //     description:
+    //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+    //     assets: {
+    //         prefix: '/airdeck+outlook+addin',
+    //         logo: '/airdeck+outlook+add-in',
+    //         previewImages: 5,
+    //     },
+    //     links: {
+    //         websiteURL: '',
+    //     },
+    //     extras: {
+    //         stack: [tech.React, tech.Redux, tech.TypeScript, tech.Outlook],
+    //         timeline: {
+    //             startsAt: 'Mar 2023',
+    //             endsAt: 'Apr 2023',
+    //         },
+    //         hashtags: ['outlookaddin'],
+    //     },
+    // },
     // {
     //     name: 'Done With it',
     //     description:

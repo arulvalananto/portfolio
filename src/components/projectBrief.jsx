@@ -5,7 +5,7 @@ import Hashtags from './hashtags';
 const ProjectBrief = ({ name, description, hashtags }) => {
     return (
         <>
-            <h4 className="project__title">{name}</h4>
+            <h1 className="project__title">{name}</h1>
             <Hashtags hashtags={hashtags} />
             <p className="project__description">{description}</p>
         </>

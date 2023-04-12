@@ -1,15 +1,15 @@
-import React, { memo } from 'react';
 import { Tooltip } from 'react-tooltip';
+import React, { Fragment, memo } from 'react';
 
 import { formatToURLString } from '../common/helper';
 
 const ProjectStack = ({ stack }) => {
     return (
         <div className="project__stackContainer">
-            <h6 className="project__stack">Stack</h6>
+            <h2 className="project__stack">Stack</h2>
             <div className="project__stackList">
                 {stack.map((tech) => (
-                    <div key={tech}>
+                    <Fragment key={tech}>
                         <img
                             src={`https://d2sgkcesfdic4y.cloudfront.net/tech/${formatToURLString(
                                 tech
@@ -20,7 +20,7 @@ const ProjectStack = ({ stack }) => {
                             data-tooltip-content={tech}
                         />
                         <Tooltip id={tech} place="bottom" />
-                    </div>
+                    </Fragment>
                 ))}
             </div>
         </div>

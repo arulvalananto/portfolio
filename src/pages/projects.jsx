@@ -3,11 +3,11 @@ import * as React from 'react';
 import './projects.css';
 import { projects } from '../common/data';
 import Layout from '../components/layout';
-import ShowMore from '../components/showMore';
 import BackButton from '../components/backButton';
 import ProjectLogo from '../components/projectLogo';
 import ProjectBrief from '../components/projectBrief';
 import ProjectStack from '../components/projectStack';
+import StillProgress from '../components/stillProgress';
 import ProjectNPMURL from '../components/projectNPMURL';
 import ProjectWebsiteURL from '../components/websiteURL';
 import ProjectTimeline from '../components/projectTimeline';
@@ -39,7 +39,7 @@ const Projects = () => {
                                             <ProjectWebsiteURL
                                                 websiteURL={links?.websiteURL}
                                                 tooltipId={name}
-                                                content="website url"
+                                                content="website"
                                             />
                                         )}
                                         {links?.npmURL && (
@@ -48,6 +48,9 @@ const Projects = () => {
                                                 tooltipId={name}
                                                 content="NPM details"
                                             />
+                                        )}
+                                        {extras?.isStillProgressive && (
+                                            <StillProgress name={name} />
                                         )}
                                         <ProjectTimeline
                                             timeline={extras.timeline}
