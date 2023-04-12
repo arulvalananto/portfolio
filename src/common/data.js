@@ -201,7 +201,7 @@ export const projects = [
         assets: {
             prefix: '/boilers',
             logo: '/boilers',
-            previewImages: 7,
+            previewImages: 6,
         },
         links: {
             websiteURL: '',
