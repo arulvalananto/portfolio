@@ -24,10 +24,12 @@ const Projects = () => {
                         ({ name, assets, description, links, extras }) => (
                             <div className="projects__project" key={name}>
                                 <PreviewProjectImages
+                                    prefix={assets?.prefix}
                                     previewImages={assets?.previewImages}
                                     imageAlt={`${name} preview`}
                                 />
                                 <ProjectLogo
+                                    prefix={assets?.prefix}
                                     logo={assets?.logo}
                                     alt={`${name}'s logo`}
                                 />

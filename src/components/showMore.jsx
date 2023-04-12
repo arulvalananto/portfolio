@@ -1,14 +1,14 @@
-import React from 'react';
 import { Link } from 'gatsby';
+import React, { memo } from 'react';
 
 const ShowMore = () => {
     return (
         <div className="project__btnDetailsWrapper">
             <Link to="/" className="project__btnDetails">
-                Show More
+                Learn More
             </Link>
         </div>
     );
 };
 
-export default ShowMore;
+export default memo(ShowMore);

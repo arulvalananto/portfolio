@@ -10,6 +10,7 @@
 :root {
     --white: #ffffff;
     --gray: gray;
+    --black: black;
 
     --bg-primary: #171717;
     --bg-secondary: linear-gradient(97.13deg, #e9e9e9 0%, #515151 100%);
@@ -146,6 +147,8 @@ body {
     white-space: pre-wrap;
     word-wrap: break-word;
     word-break: break-word;
+    width: 567px;
+    line-height: 1.6;
 }
 
 .home__btnGroup {
@@ -187,6 +190,7 @@ body {
         color: var(--text-secondary);
         word-wrap: break-word;
         line-break: anywhere;
+        width: 412px;
     }
 
     .navbar__logoWrap {
@@ -195,6 +199,13 @@ body {
     .navbar {
         justify-content: center;
         margin: 0px 10%;
+    }
+}
+
+@media (max-width: 450px) {
+    .home__desc {
+        font-size: 0.8rem;
+        width: 331px;
     }
 }
 
@@ -234,10 +245,15 @@ body {
     }
 }
 
+@media (max-width: 335px) {
+    .home__desc {
+        width: 266px;
+    }
+}
+
 /* Mobile Small */
 @media (max-width: 320px) {
-    .navitem,
-    .home__desc {
+    .navitem {
         font-size: 0.7rem;
     }
 

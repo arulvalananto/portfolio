@@ -35,7 +35,7 @@ export const navlinks = [
 export const personalInfo = {
     title: 'Full Stack Developer',
     name: 'Arul Valan Anto S',
-    description: `Hey! I am a Software Engineer based in India with three years of experience. I help businesses reach their goals by creating compelling and optimized software solutions. And I design and build robust software products and always strive for excellence.`,
+    description: `Hey! I am a Software Engineer based in India with three years of experience. I design and build robust software products and always strive for excellence.`,
 };
 
 export const hashtagColors = {
@@ -44,6 +44,7 @@ export const hashtagColors = {
     npmpackage: '#821DFE',
     scraper: '#17AE85',
     chromeextension: '#F85B53',
+    outlookaddin: '#3384C5',
 };
 
 export const projects = [
@@ -52,8 +53,9 @@ export const projects = [
         description:
             'AirDeck is the leader in document communication. Easily add audio or video to any document and transform it into an experience.',
         assets: {
-            logo: 'https://d2sgkcesfdic4y.cloudfront.net/airdeck/airdeck',
-            previewImages: [''],
+            prefix: '/airdeck',
+            logo: '/Airdeck',
+            previewImages: 7,
         },
         links: {
             websiteURL: 'https://app.airdeck.co/',
@@ -80,8 +82,9 @@ export const projects = [
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
         assets: {
-            logo: 'https://d2sgkcesfdic4y.cloudfront.net/landgenius/landgenius',
-            previewImages: [''],
+            prefix: '/landgenius',
+            logo: '/landgenius',
+            previewImages: 17,
         },
         links: {
             websiteURL:
@@ -111,8 +114,9 @@ export const projects = [
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
         assets: {
-            logo: 'https://d2sgkcesfdic4y.cloudfront.net/Annals/annals',
-            previewImages: [''],
+            prefix: '/Annals',
+            logo: '/annals',
+            previewImages: 2,
         },
         links: {
             websiteURL: 'https://annals.web.app',
@@ -139,8 +143,9 @@ export const projects = [
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
         assets: {
-            logo: 'https://d2sgkcesfdic4y.cloudfront.net/futureReads/futureReads',
-            previewImages: [''],
+            prefix: '/futureReads',
+            logo: '/futureReads',
+            previewImages: 3,
         },
         links: {
             websiteURL: '',
@@ -156,7 +161,7 @@ export const projects = [
                 tech.JavaScript,
             ],
             timeline: {
-                startsAt: 'Jan 2023',
+                startsAt: 'Mar 2023',
                 endsAt: 'Now',
             },
             hashtags: ['webapp', 'chromeextension', 'scraper'],
@@ -167,8 +172,9 @@ export const projects = [
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
         assets: {
-            logo: 'https://d2sgkcesfdic4y.cloudfront.net/dressed-to-kill/dressed+to+kill',
-            previewImages: [''],
+            prefix: '/dressed-to-kill',
+            logo: '/dressed+to+kill',
+            previewImages: 11,
         },
         links: {
             websiteURL: '',
@@ -193,8 +199,9 @@ export const projects = [
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
         assets: {
-            logo: 'https://d2sgkcesfdic4y.cloudfront.net/boilers/boilers',
-            previewImages: [''],
+            prefix: '/boilers',
+            logo: '/boilers',
+            previewImages: 7,
         },
         links: {
             websiteURL: '',
@@ -210,30 +217,52 @@ export const projects = [
         },
     },
     {
-        name: 'Done With it',
+        name: 'AirDeck Outlook Add-in',
         description:
             'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
         assets: {
-            logo: 'https://d2sgkcesfdic4y.cloudfront.net/done+with+it/done-with-it',
-            previewImages: [''],
+            prefix: '/airdeck+outlook+addin',
+            logo: '/airdeck+outlook+add-in',
+            previewImages: 5,
         },
         links: {
             websiteURL: '',
         },
         extras: {
-            stack: [
-                tech.ReactNative,
-                tech.NodeJS,
-                tech.Mongoose,
-                tech.Formik,
-                tech.Redux,
-                tech.Express,
-            ],
+            stack: [tech.React, tech.Redux, tech.TypeScript, tech.Outlook],
             timeline: {
-                startsAt: 'May 2021',
-                endsAt: 'Jun 2021',
+                startsAt: 'Mar 2023',
+                endsAt: 'Apr 2023',
             },
-            hashtags: ['mobileapp'],
+            hashtags: ['outlookaddin'],
         },
     },
+    // {
+    //     name: 'Done With it',
+    //     description:
+    //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+    //     assets: {
+    //         prefix: '/done+with+it',
+    //         logo: '/done-with-it',
+    //         previewImages: 0,
+    //     },
+    //     links: {
+    //         websiteURL: '',
+    //     },
+    //     extras: {
+    //         stack: [
+    //             tech.ReactNative,
+    //             tech.NodeJS,
+    //             tech.Mongoose,
+    //             tech.Formik,
+    //             tech.Redux,
+    //             tech.Express,
+    //         ],
+    //         timeline: {
+    //             startsAt: 'May 2021',
+    //             endsAt: 'Jun 2021',
+    //         },
+    //         hashtags: ['mobileapp'],
+    //     },
+    // },
 ];

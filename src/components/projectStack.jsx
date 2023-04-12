@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Tooltip } from 'react-tooltip';
 
 import { formatToURLString } from '../common/helper';
@@ -9,7 +9,7 @@ const ProjectStack = ({ stack }) => {
             <h6 className="project__stack">Stack</h6>
             <div className="project__stackList">
                 {stack.map((tech) => (
-                    <p key={tech}>
+                    <div key={tech}>
                         <img
                             src={`https://d2sgkcesfdic4y.cloudfront.net/tech/${formatToURLString(
                                 tech
@@ -20,11 +20,11 @@ const ProjectStack = ({ stack }) => {
                             data-tooltip-content={tech}
                         />
                         <Tooltip id={tech} place="bottom" />
-                    </p>
+                    </div>
                 ))}
             </div>
         </div>
     );
 };
 
-export default ProjectStack;
+export default memo(ProjectStack);

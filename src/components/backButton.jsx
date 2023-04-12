@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { Link } from 'gatsby';
 
 const BackButton = ({ title, to = '/', className = '' }) => {
@@ -12,4 +12,4 @@ const BackButton = ({ title, to = '/', className = '' }) => {
     );
 };
 
-export default BackButton;
+export default memo(BackButton);

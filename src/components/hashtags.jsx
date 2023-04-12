@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import Hashtag from './hashtag';
 
@@ -12,4 +12,4 @@ const Hashtags = ({ hashtags }) => {
     );
 };
 
-export default Hashtags;
+export default memo(Hashtags);
