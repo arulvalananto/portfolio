@@ -5,6 +5,7 @@ import './index.css';
 import Layout from '../components/layout';
 import 'react-tooltip/dist/react-tooltip.css';
 import { personalInfo } from '../common/data';
+import Technologies from '../components/technologies';
 
 const IndexPage = () => {
     return (
@@ -28,6 +29,7 @@ const IndexPage = () => {
                         </Link>
                     </div>
                 </div>
+                <Technologies />
             </section>
         </Layout>
     );
