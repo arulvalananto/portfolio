@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { memo } from 'react';
+
 import Hashtags from './hashtags';
 
 const ProjectBrief = ({ name, description, hashtags }) => {
@@ -11,4 +12,4 @@ const ProjectBrief = ({ name, description, hashtags }) => {
     );
 };
 
-export default ProjectBrief;
+export default memo(ProjectBrief);

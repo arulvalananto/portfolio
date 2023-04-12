@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import { hashtagColors } from '../common/data';
 
@@ -14,4 +14,4 @@ const Hashtag = ({ hashtag }) => {
     );
 };
 
-export default Hashtag;
+export default memo(Hashtag);

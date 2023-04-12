@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { Tooltip } from 'react-tooltip';
+import React, { memo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEarthAmerica } from '@fortawesome/free-solid-svg-icons';
 
@@ -35,4 +35,4 @@ const ProjectWebsiteURL = ({ websiteURL, tooltipId, content }) => {
     );
 };
 
-export default ProjectWebsiteURL;
+export default memo(ProjectWebsiteURL);

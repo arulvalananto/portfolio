@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 const ProjectTimeline = ({ timeline: { startsAt, endsAt } }) => {
     return (
@@ -8,4 +8,4 @@ const ProjectTimeline = ({ timeline: { startsAt, endsAt } }) => {
     );
 };
 
-export default ProjectTimeline;
+export default memo(ProjectTimeline);

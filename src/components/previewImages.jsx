@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const PreviewProjectImages = ({ previewImages, imageAlt }) => {
+import constants from '../common/constants';
+
+const PreviewProjectImages = ({ previewImages, imageAlt, prefix }) => {
     return (
         <div className="project__imgWrapper">
-            <img
-                src={previewImages?.[0]}
-                alt={imageAlt}
-                className="project__img"
-            />
+            {previewImages ? (
+                <img
+                    src={`${constants.AWS_CLOUNDFRONT_URL}${prefix}/Screenshot+(1)`}
+                    alt={imageAlt}
+                    className="project__img"
+                />
+            ) : null}
         </div>
     );
 };
 
-export default PreviewProjectImages;
+export default memo(PreviewProjectImages);

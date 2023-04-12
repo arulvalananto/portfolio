@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import Navbar from './navbar';
 
@@ -11,4 +11,4 @@ const Layout = ({ children }) => {
     );
 };
 
-export default Layout;
+export default memo(Layout);

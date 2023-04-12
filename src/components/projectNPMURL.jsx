@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
 import { Tooltip } from 'react-tooltip';
+import React, { memo, useState } from 'react';
 import { faNpm } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -36,4 +36,4 @@ const ProjectNPMURL = ({ npmURL, tooltipId, content }) => {
     );
 };
 
-export default ProjectNPMURL;
+export default memo(ProjectNPMURL);

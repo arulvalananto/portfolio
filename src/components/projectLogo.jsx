@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { memo } from 'react';
 
-const ProjectLogo = ({ logo, alt }) => {
+import constants from '../common/constants';
+
+const ProjectLogo = ({ logo, alt, prefix }) => {
     return (
         <div className="project__logoWrapper">
-            <img src={logo} alt={alt} className="project__logo" />
+            <img
+                src={`${constants.AWS_CLOUNDFRONT_URL}${prefix}${logo}`}
+                alt={alt}
+                className="project__logo"
+            />
         </div>
     );
 };
 
-export default ProjectLogo;
+export default memo(ProjectLogo);
