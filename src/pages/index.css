@@ -43,9 +43,38 @@
     background: var(--scroll-hover);
 }
 
+html,
 body {
     background: var(--bg-primary);
     color: var(--white);
+    overflow: hidden;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    65% {
+        transform: translate(0, 15px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+.tech {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer;
 }
 
 .layout {
@@ -104,6 +133,7 @@ body {
 }
 
 .home__container {
+    position: relative;
     grid-column: 1 / 21;
     grid-row: 3 / 21;
     display: flex;
@@ -178,6 +208,9 @@ body {
 
 /* Tablet */
 @media (max-width: 768px) {
+    .tech {
+        display: none;
+    }
     .home__info {
         width: 350px;
     }
