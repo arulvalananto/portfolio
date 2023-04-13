@@ -55,7 +55,10 @@ export const projects = [
         assets: {
             prefix: '/airdeck',
             logo: '/Airdeck',
-            previewImages: 7,
+            previewImages: {
+                count: 7,
+                imageNumber: 2,
+            },
         },
         links: {
             websiteURL: 'https://app.airdeck.co/',
@@ -85,7 +88,10 @@ export const projects = [
         assets: {
             prefix: '/landgenius',
             logo: '/landgenius',
-            previewImages: 17,
+            previewImages: {
+                count: 17,
+                imageNumber: 3,
+            },
         },
         links: {
             websiteURL:
@@ -118,7 +124,10 @@ export const projects = [
         assets: {
             prefix: '/Annals',
             logo: '/annals',
-            previewImages: 2,
+            previewImages: {
+                count: 2,
+                imageNumber: 1,
+            },
         },
         links: {
             websiteURL: 'https://annals.web.app',
@@ -148,7 +157,10 @@ export const projects = [
         assets: {
             prefix: '/futureReads',
             logo: '/futureReads',
-            previewImages: 3,
+            previewImages: {
+                count: 3,
+                imageNumber: 2,
+            },
         },
         links: {
             websiteURL: '',
@@ -178,7 +190,10 @@ export const projects = [
         assets: {
             prefix: '/dressed-to-kill',
             logo: '/dressed+to+kill',
-            previewImages: 11,
+            previewImages: {
+                count: 11,
+                imageNumber: 1,
+            },
         },
         links: {
             websiteURL: '',
@@ -206,7 +221,10 @@ export const projects = [
         assets: {
             prefix: '/boilers',
             logo: '/boilers',
-            previewImages: 6,
+            previewImages: {
+                count: 5,
+                imageNumber: 5,
+            },
         },
         links: {
             websiteURL: '',
@@ -229,7 +247,10 @@ export const projects = [
         assets: {
             prefix: '/airdeck+outlook+addin',
             logo: '/airdeck+outlook+add-in',
-            previewImages: 5,
+            previewImages: {
+                count: 9,
+                imageNumber: 9,
+            },
         },
         links: {
             websiteURL: '',
@@ -251,7 +272,10 @@ export const projects = [
     //     assets: {
     //         prefix: '/done+with+it',
     //         logo: '/done-with-it',
-    //         previewImages: 0,
+    //         previewImages: {
+    //            count: 0,
+    //            imageNumber: 0,
+    //         },
     //     },
     //     links: {
     //         websiteURL: '',
@@ -272,4 +296,44 @@ export const projects = [
     //         hashtags: ['mobileapp'],
     //     },
     // },
+];
+
+export const techPlacements = [
+    { name: tech.React, position: { top: '140px', left: '555px' } },
+    {
+        name: tech.Stripe,
+        position: { top: '50px', left: '1000px' },
+    },
+    {
+        name: tech.Git,
+        position: { top: '0px', left: '1650px' },
+    },
+    {
+        name: tech.Webpack,
+        position: { top: '850px', left: '1800px' },
+    },
+    {
+        name: tech.Mongoose,
+        position: { top: '575px', left: '1225px' },
+    },
+    {
+        name: tech.Angular,
+        position: { top: '250px', left: '1900px' },
+    },
+    {
+        name: tech.PlayWright,
+        position: { top: '400px', left: '1500px' },
+    },
+    {
+        name: tech.Firebase,
+        position: { top: '790px', left: '350px' },
+    },
+    {
+        name: tech.NodeJS,
+        position: { top: '550px', left: '50px' },
+    },
+    {
+        name: tech.Redis,
+        position: { top: '10px', left: '50px' },
+    },
 ];
