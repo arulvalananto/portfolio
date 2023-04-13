@@ -7,13 +7,20 @@ const PreviewProjectImages = ({
     imageAlt,
     prefix,
 }) => {
+    const [isImageLoaded, setIsImageLoaded] = useState(false);
     const [isVisbleGif, setIsVisibleGif] = useState(false);
 
     const handleVisibleGif = () => setIsVisibleGif(true);
     const handleHiddenGif = () => setIsVisibleGif(false);
 
     return (
-        <div className="project__imgWrapper">
+        <div
+            className="project__imgWrapper"
+            style={{
+                height: isImageLoaded ? '' : '250px',
+                borderBottom: isImageLoaded ? '' : '1px solid #6563635e',
+            }}
+        >
             {count ? (
                 <>
                     {isVisbleGif ? (
@@ -21,9 +28,8 @@ const PreviewProjectImages = ({
                             src={`${constants.AWS_CLOUNDFRONT_URL}${prefix}${prefix}.gif`}
                             alt={imageAlt}
                             className="project__img"
-                            onFocus={handleVisibleGif}
-                            onBlur={handleHiddenGif}
-                            onLoad={(e) => console.log(e, prefix)}
+                            onMouseOver={handleVisibleGif}
+                            onMouseOut={handleHiddenGif}
                             loading="lazy"
                         />
                     ) : (
@@ -31,10 +37,9 @@ const PreviewProjectImages = ({
                             src={`${constants.AWS_CLOUNDFRONT_URL}${prefix}/Screenshot+(${imageNumber}).webp`}
                             alt={imageAlt}
                             className="project__gif"
-                            // onMouseOver={handleVisibleGif}
-                            // onMouseOut={handleHiddenGif}
-                            onLoad={(e) => console.log(e, prefix)}
-                            loading="lazy"
+                            onMouseOver={handleVisibleGif}
+                            onMouseOut={handleHiddenGif}
+                            onLoad={(e) => setIsImageLoaded(true)}
                         />
                     )}
                 </>

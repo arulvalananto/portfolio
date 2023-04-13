@@ -14,7 +14,7 @@ const ProjectStack = ({ stack }) => {
                             src={`https://d2sgkcesfdic4y.cloudfront.net/tech/${formatToURLString(
                                 tech
                             )}`}
-                            alt="tech"
+                            alt={tech}
                             className="project__tech"
                             data-tooltip-id={tech}
                             data-tooltip-content={tech}

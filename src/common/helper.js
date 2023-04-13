@@ -1,1 +1,1 @@
-export const formatToURLString = (string) => string.replace(' ', '+');
+export const formatToURLString = (string) => string.replaceAll(' ', '+');
