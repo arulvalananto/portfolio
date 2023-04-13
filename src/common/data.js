@@ -171,7 +171,6 @@ export const projects = [
                 tech.NodeJS,
                 tech.FastAPI,
                 tech.Mongoose,
-                tech.ChromeExtension,
                 tech.Auth0,
                 tech.JavaScript,
             ],
