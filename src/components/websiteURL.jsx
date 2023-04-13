@@ -15,23 +15,26 @@ const ProjectWebsiteURL = ({ websiteURL, tooltipId, content }) => {
     };
 
     return (
-        <a
-            href={websiteURL}
-            className="project__webLink"
-            target="_blank"
-            rel="noopener noreferrer"
-            onMouseOver={handleStopRotation}
-            onMouseOut={handleStartRotation}
-            data-tooltip-id={tooltipId}
-            data-tooltip-content={content}
-        >
-            <FontAwesomeIcon
-                icon={faEarthAmerica}
-                size="lg"
-                spinPulse={isStopRotation}
-            />
+        <>
+            <a
+                href={websiteURL}
+                className="project__webLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseOver={handleStopRotation}
+                onMouseOut={handleStartRotation}
+                data-tooltip-id={tooltipId}
+                data-tooltip-content={content}
+                aria-label={content}
+            >
+                <FontAwesomeIcon
+                    icon={faEarthAmerica}
+                    size="lg"
+                    spinPulse={isStopRotation}
+                />
+            </a>
             <Tooltip id={tooltipId} place="bottom" />
-        </a>
+        </>
     );
 };
 

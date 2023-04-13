@@ -15,24 +15,27 @@ const ProjectNPMURL = ({ npmURL, tooltipId, content }) => {
     };
 
     return (
-        <a
-            href={npmURL}
-            className="project__webLink"
-            target="_blank"
-            rel="noopener noreferrer"
-            onMouseOver={handleStopBeating}
-            onMouseOut={handleStartBeating}
-            data-tooltip-id={tooltipId}
-            data-tooltip-content={content}
-        >
-            <FontAwesomeIcon
-                icon={faNpm}
-                size="2xl"
-                color="#CB0000"
-                beat={isStopBeating}
-            />
+        <>
+            <a
+                href={npmURL}
+                className="project__webLink"
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseOver={handleStopBeating}
+                onMouseOut={handleStartBeating}
+                data-tooltip-id={tooltipId}
+                data-tooltip-content={content}
+                aria-label={content}
+            >
+                <FontAwesomeIcon
+                    icon={faNpm}
+                    size="2xl"
+                    color="#CB0000"
+                    beat={isStopBeating}
+                />
+            </a>
             <Tooltip id={tooltipId} place="bottom" />
-        </a>
+        </>
     );
 };
 

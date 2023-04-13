@@ -4,7 +4,7 @@ import { Tooltip } from 'react-tooltip';
 const Tech = ({ tech, number, position }) => {
     const speed = Math.random() * 8;
     const animationSpeed = speed > 1 ? speed : speed + 1;
-    console.log(position);
+
     return (
         <>
             <img
@@ -14,7 +14,7 @@ const Tech = ({ tech, number, position }) => {
                 style={{
                     top: position.top,
                     left: position.left,
-                    'animation-duration': animationSpeed + 's',
+                    animationDuration: animationSpeed + 's',
                 }}
                 data-tooltip-id={tech}
                 data-tooltip-content={tech}

@@ -39,10 +39,10 @@ export const personalInfo = {
 };
 
 export const hashtagColors = {
-    webapp: '#E32F6E',
+    webapp: '#17AE85',
     mobileapp: '#F4D54E',
     npmpackage: '#821DFE',
-    scraper: '#17AE85',
+    scraper: '#F288AD',
     chromeextension: '#F85B53',
     outlookaddin: '#3384C5',
 };
@@ -75,6 +75,7 @@ export const projects = [
                 endsAt: 'Now',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -107,6 +108,7 @@ export const projects = [
                 endsAt: 'May 2022',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -136,6 +138,7 @@ export const projects = [
                 endsAt: 'Jan 2022',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -165,6 +168,7 @@ export const projects = [
                 endsAt: 'Now',
             },
             hashtags: ['webapp', 'chromeextension', 'scraper'],
+            isStillProgressive: true,
         },
     },
     {
@@ -192,6 +196,7 @@ export const projects = [
                 endsAt: 'Jun 2021',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -214,6 +219,7 @@ export const projects = [
                 endsAt: 'Jun 2021',
             },
             hashtags: ['npmpackage'],
+            isStillProgressive: false,
         },
     },
     {
@@ -235,6 +241,7 @@ export const projects = [
                 endsAt: 'Apr 2023',
             },
             hashtags: ['outlookaddin'],
+            isStillProgressive: false,
         },
     },
     // {
