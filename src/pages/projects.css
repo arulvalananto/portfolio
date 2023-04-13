@@ -50,10 +50,12 @@
     border-top-right-radius: 4px;
 }
 
-.project__img {
+.project__img,
+.project__gif {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    cursor: pointer;
 }
 
 .project__img--desktop {
@@ -230,6 +232,12 @@
 }
 
 @media (min-width: 1440px) {
+    .projects__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1900px) {
     .projects__list {
         grid-template-columns: repeat(4, 1fr);
     }

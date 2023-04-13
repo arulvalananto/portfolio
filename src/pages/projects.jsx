@@ -25,7 +25,7 @@ const Projects = () => {
                             <div className="projects__project" key={name}>
                                 <PreviewProjectImages
                                     prefix={assets?.prefix}
-                                    previewImages={assets?.previewImages}
+                                    previewImagesCount={assets?.previewImages}
                                     imageAlt={`${name} preview`}
                                 />
                                 <ProjectLogo

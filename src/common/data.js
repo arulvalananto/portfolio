@@ -75,6 +75,7 @@ export const projects = [
                 endsAt: 'Now',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -107,6 +108,7 @@ export const projects = [
                 endsAt: 'May 2022',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -136,6 +138,7 @@ export const projects = [
                 endsAt: 'Jan 2022',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -193,6 +196,7 @@ export const projects = [
                 endsAt: 'Jun 2021',
             },
             hashtags: ['webapp'],
+            isStillProgressive: false,
         },
     },
     {
@@ -215,29 +219,31 @@ export const projects = [
                 endsAt: 'Jun 2021',
             },
             hashtags: ['npmpackage'],
+            isStillProgressive: false,
         },
     },
-    // {
-    //     name: 'AirDeck Outlook Add-in',
-    //     description:
-    //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
-    //     assets: {
-    //         prefix: '/airdeck+outlook+addin',
-    //         logo: '/airdeck+outlook+add-in',
-    //         previewImages: 5,
-    //     },
-    //     links: {
-    //         websiteURL: '',
-    //     },
-    //     extras: {
-    //         stack: [tech.React, tech.Redux, tech.TypeScript, tech.Outlook],
-    //         timeline: {
-    //             startsAt: 'Mar 2023',
-    //             endsAt: 'Apr 2023',
-    //         },
-    //         hashtags: ['outlookaddin'],
-    //     },
-    // },
+    {
+        name: 'AirDeck Outlook Add-in',
+        description:
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+        assets: {
+            prefix: '/airdeck+outlook+addin',
+            logo: '/airdeck+outlook+add-in',
+            previewImages: 5,
+        },
+        links: {
+            websiteURL: '',
+        },
+        extras: {
+            stack: [tech.React, tech.Redux, tech.TypeScript, tech.Outlook],
+            timeline: {
+                startsAt: 'Mar 2023',
+                endsAt: 'Apr 2023',
+            },
+            hashtags: ['outlookaddin'],
+            isStillProgressive: false,
+        },
+    },
     // {
     //     name: 'Done With it',
     //     description:
