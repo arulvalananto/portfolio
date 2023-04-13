@@ -2,6 +2,7 @@ import React from 'react';
 import { Tooltip } from 'react-tooltip';
 
 const Tech = ({ tech, position }) => {
+    console.log(tech);
     const speed = Math.random() * 8;
     const animationSpeed = speed > 1 ? speed : speed + 1;
 
