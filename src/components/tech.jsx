@@ -15,7 +15,7 @@ const Tech = ({ tech, position }) => {
                 alt={tech}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label={`What is ${tech}`}  
+                aria-label={`What is ${tech}`}
             >
                 <img
                     src={`${
@@ -30,6 +30,7 @@ const Tech = ({ tech, position }) => {
                     }}
                     data-tooltip-id={tech}
                     data-tooltip-content={tech}
+                    loading="lazy"
                 />
                 <Tooltip id={tech} place="bottom" />
             </a>
