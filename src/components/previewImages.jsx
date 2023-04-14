@@ -10,8 +10,16 @@ const PreviewProjectImages = ({
     const [isImageLoaded, setIsImageLoaded] = useState(false);
     const [isVisbleGif, setIsVisibleGif] = useState(false);
 
-    const handleVisibleGif = () => setIsVisibleGif(true);
-    const handleHiddenGif = () => setIsVisibleGif(false);
+    const handleVisibleGif = () => {
+        if (window.innerWidth > 1024) {
+            setIsVisibleGif(true);
+        }
+    };
+    const handleHiddenGif = () => {
+        if (window.innerWidth > 1024) {
+            setIsVisibleGif(false);
+        }
+    };
 
     return (
         <div

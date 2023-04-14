@@ -125,6 +125,7 @@
 }
 
 .project__description {
+    height: 80px;
     font-size: 13px;
     margin-top: 0.5rem;
     color: var(--text-secondary);
@@ -186,6 +187,9 @@
     .projects__list {
         grid-template-columns: repeat(1, 600px);
         justify-content: center;
+    }
+    .project__description {
+        height: auto;
     }
 }
 

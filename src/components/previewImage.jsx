@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PreviewImage = ({ previewImages }) => {
+const PreviewImage = () => {
     return <div>PreviewImage</div>;
 };
 
