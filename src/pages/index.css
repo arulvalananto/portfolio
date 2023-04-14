@@ -5,6 +5,8 @@
     font-family: 'Schibsted Grotesk', sans-serif;
     -webkit-user-select: none;
     user-select: none;
+    border: none;
+    outline: none;
 }
 
 :root {

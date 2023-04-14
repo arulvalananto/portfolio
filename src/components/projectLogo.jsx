@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 
 import constants from '../common/constants';
 
-const ProjectLogo = ({ logo, alt, prefix }) => {
+const ProjectLogo = ({ logo, prefix, alt }) => {
     return (
         <div className="project__logoWrapper">
             <img

@@ -51,7 +51,7 @@ export const projects = [
     {
         name: 'AirDeck',
         description:
-            'AirDeck is the leader in document communication. Easily add audio or video to any document and transform it into an experience.',
+            'AirDeck is a platform that lets you add voice or video to your presentations, track engagement with unique links, record and upload videos, embed existing videos, and view comprehensive analytics, all in one place.',
         assets: {
             prefix: '/airdeck',
             logo: '/Airdeck',
@@ -84,7 +84,7 @@ export const projects = [
     {
         name: 'LandGenius',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+            'A remote sensing application provides quick and comprehensive details about land cover types, wetlands, streams, ponds, flood zones, and endangered species in your project area, which benefits real estate agents, land buyers, developers, and city planners.',
         assets: {
             prefix: '/landgenius',
             logo: '/landgenius',
@@ -106,7 +106,6 @@ export const projects = [
                 tech.Redux,
                 tech.Mapbox,
                 tech.TurfJS,
-                tech.SASS,
                 tech.Jest,
             ],
             timeline: {
@@ -120,7 +119,7 @@ export const projects = [
     {
         name: 'Annals',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+            'Comprehensive solution for all your digital storage needs. With Annals, you can store and organize your journals, to-do lists, ideas, and passwords in one convenient location.',
         assets: {
             prefix: '/Annals',
             logo: '/annals',
@@ -153,7 +152,7 @@ export const projects = [
     {
         name: 'FutureReads',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+            'A Chrome browser extension that allows you to save articles to read later and sends you pop-up notifications as reminders when you come across related content while browsing the internet.',
         assets: {
             prefix: '/futureReads',
             logo: '/futureReads',
@@ -171,8 +170,10 @@ export const projects = [
                 tech.NodeJS,
                 tech.FastAPI,
                 tech.Mongoose,
+                tech.ChromeExtension,
                 tech.Auth0,
                 tech.JavaScript,
+                tech.SASS,
             ],
             timeline: {
                 startsAt: 'Mar 2023',
@@ -185,7 +186,7 @@ export const projects = [
     {
         name: 'Dressed to kill',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+            'A fashion and lifestyle e-commerce online shop caters to young people and fashion enthusiasts looking for the latest trends and styles.',
         assets: {
             prefix: '/dressed-to-kill',
             logo: '/dressed+to+kill',
@@ -216,13 +217,13 @@ export const projects = [
     {
         name: 'Boilers',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+            'A scaffold generator that can assist you in creating a basic structure for your upcoming React and Node application. It can automatically generate the files and folders required to start a project and includes boilerplate code you can build upon.',
         assets: {
             prefix: '/boilers',
             logo: '/boilers',
             previewImages: {
-                count: 5,
-                imageNumber: 5,
+                count: 6,
+                imageNumber: 6,
             },
         },
         links: {
@@ -242,7 +243,7 @@ export const projects = [
     {
         name: 'AirDeck Outlook Add-in',
         description:
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
+            'A plugin can simplify your AirDeck deck-sharing experience with just a few clicks. It also allows you to share your decks with anyone via Outlook.',
         assets: {
             prefix: '/airdeck+outlook+addin',
             logo: '/airdeck+outlook+add-in',
@@ -255,7 +256,13 @@ export const projects = [
             websiteURL: '',
         },
         extras: {
-            stack: [tech.React, tech.Redux, tech.TypeScript, tech.Outlook],
+            stack: [
+                tech.React,
+                tech.Redux,
+                tech.TypeScript,
+                tech.Outlook,
+                tech.CSS3,
+            ],
             timeline: {
                 startsAt: 'Mar 2023',
                 endsAt: 'Apr 2023',

@@ -3,13 +3,14 @@ import React, { memo } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { navlinks } from '../common/data';
+import constants from '../common/constants';
 
 const Navbar = () => {
     return (
         <nav className="navbar">
             <Link to="/" className="navbar__logoWrap">
                 <img
-                    src="https://d2sgkcesfdic4y.cloudfront.net/logo"
+                    src={`${constants.AWS_CLOUNDFRONT_URL}/logo`}
                     alt="arulvalanto portfolio"
                     className="logo"
                 />
