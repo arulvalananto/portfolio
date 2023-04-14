@@ -153,6 +153,7 @@
 }
 
 .project__tech {
+    width: 32px;
     height: 32px;
     object-fit: cover;
     cursor: pointer;
@@ -209,6 +210,7 @@
         justify-content: center;
     }
     .project__tech {
+        width: 25px;
         height: 25px;
     }
 }

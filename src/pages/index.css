@@ -180,8 +180,9 @@ body {
     white-space: pre-wrap;
     word-wrap: break-word;
     word-break: break-word;
-    width: 567px;
+    width: 546px;
     line-height: 1.6;
+    font-size: 16px;
 }
 
 .home__btnGroup {
@@ -226,7 +227,7 @@ body {
         color: var(--text-secondary);
         word-wrap: break-word;
         line-break: anywhere;
-        width: 412px;
+        width: 400px;
     }
 
     .navbar__logoWrap {
@@ -241,7 +242,7 @@ body {
 @media (max-width: 450px) {
     .home__desc {
         font-size: 0.8rem;
-        width: 331px;
+        width: 320px;
     }
 }
 
@@ -283,7 +284,7 @@ body {
 
 @media (max-width: 335px) {
     .home__desc {
-        width: 266px;
+        width: 258px;
     }
 }
 

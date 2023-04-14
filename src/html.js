@@ -19,7 +19,10 @@ export default function HTML(props) {
                     name="keywords"
                     content="fullstackdeveloper, programmer, portfolio, arulvalananto"
                 />
-                {props.headComponents}
+                <link
+                    rel="preconnect"
+                    href="https://d2sgkcesfdic4y.cloudfront.net"
+                />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link
                     rel="preconnect"
@@ -27,10 +30,19 @@ export default function HTML(props) {
                     crossOrigin="true"
                 />
                 <link
+                    rel="preload"
                     href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&display=swap"
-                    rel="stylesheet"
-                    data-noprefix
-                ></link>
+                    as="style"
+                    onload="this.onload=null;this.rel='stylesheet'"
+                />
+                <noscript>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+                        rel="stylesheet"
+                        type="text/css"
+                    />
+                </noscript>
+                {props.headComponents}
             </head>
             <body {...props.bodyAttributes}>
                 {props.preBodyComponents}

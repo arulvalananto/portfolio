@@ -15,6 +15,7 @@ const Tech = ({ tech, position }) => {
                 alt={tech}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`What is ${tech}`}  
             >
                 <img
                     src={`${
