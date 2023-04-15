@@ -21,7 +21,7 @@ const ProjectStack = ({ stack }) => {
                             <img
                                 src={`${
                                     constants.AWS_CLOUNDFRONT_URL
-                                }/tech/${formatToURLString(tech)}`}
+                                }/technology/${formatToURLString(tech)}`}
                                 alt={tech}
                                 className="project__tech"
                                 data-tooltip-id={tech}
