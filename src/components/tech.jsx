@@ -20,7 +20,7 @@ const Tech = ({ tech, position }) => {
                 <img
                     src={`${
                         constants.AWS_CLOUNDFRONT_URL
-                    }/tech/${formatToURLString(tech)}`}
+                    }/technology/${formatToURLString(tech)}`}
                     alt={tech}
                     className="floating tech"
                     style={{
