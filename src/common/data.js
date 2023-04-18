@@ -9,7 +9,7 @@ export const navlinks = [
     {
         title: `Resume`,
         download: 'Arul Valan Anto S - Resume',
-        url: './resume.pdf',
+        url: 'https://arulvalananto-portfolio.s3.ap-south-1.amazonaws.com/documents/resume',
     },
     {
         title: 'Github',

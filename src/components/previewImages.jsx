@@ -1,4 +1,4 @@
-import React, { memo, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 
 import constants from '../common/constants';
 
@@ -20,6 +20,12 @@ const PreviewProjectImages = ({
             setIsVisibleGif(false);
         }
     };
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsImageLoaded(true);
+        }, 500);
+    }, []);
 
     return (
         <div
