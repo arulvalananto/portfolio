@@ -25,6 +25,8 @@ const Navbar = () => {
                                         href={url}
                                         download={download}
                                         className="navitem"
+                                        target="_blank"
+                                        rel="noreferrer noopener"
                                     >
                                         {title}
                                     </a>
@@ -32,7 +34,7 @@ const Navbar = () => {
                                     <a
                                         href={url}
                                         target="_blank"
-                                        rel="noreferrer"
+                                        rel="noreferrer noopener"
                                         className="navitem"
                                     >
                                         {icon && (
