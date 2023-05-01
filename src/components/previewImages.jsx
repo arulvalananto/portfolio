@@ -54,6 +54,7 @@ const PreviewProjectImages = ({
                             onMouseOver={handleVisibleGif}
                             onMouseOut={handleHiddenGif}
                             onLoad={(e) => setIsImageLoaded(true)}
+                            onLoadCapture={(e) => setIsImageLoaded(true)}
                         />
                     )}
                 </>

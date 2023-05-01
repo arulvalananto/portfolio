@@ -33,7 +33,7 @@ export default function HTML(props) {
                     rel="preload"
                     href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,500;0,700;1,400&display=swap"
                     as="style"
-                    onload="this.onload=null;this.rel='stylesheet'"
+                    onLoad="this.onload=null;this.rel='stylesheet'"
                 />
                 <noscript>
                     <link
