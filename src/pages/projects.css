@@ -184,9 +184,10 @@
 @media (max-width: 854px) {
     .projects {
         padding: 2rem 1rem;
+        margin-bottom: 2rem;
     }
     .projects__list {
-        grid-template-columns: repeat(1, 600px);
+        grid-template-columns: repeat(1, 95%);
         justify-content: center;
     }
     .project__description {
@@ -194,34 +195,10 @@
     }
 }
 
-@media (max-width: 620px) {
-    .projects__list {
-        grid-template-columns: repeat(1, 400px);
-        justify-content: center;
-    }
-}
-
 @media (max-width: 425px) {
-    .projects {
-        padding: 2rem 1rem;
-    }
-    .projects__list {
-        grid-template-columns: repeat(1, 300px);
-        justify-content: center;
-    }
     .project__tech {
         width: 25px;
         height: 25px;
-    }
-}
-
-@media (max-width: 325px) {
-    .projects {
-        padding: 2rem 1rem;
-    }
-    .projects__list {
-        grid-template-columns: repeat(1, 270px);
-        justify-content: center;
     }
 }
 
