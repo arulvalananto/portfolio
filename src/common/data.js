@@ -124,8 +124,8 @@ export const projects = [
             prefix: '/Annals',
             logo: '/annals',
             previewImages: {
-                count: 2,
-                imageNumber: 1,
+                count: 11,
+                imageNumber: 4,
             },
         },
         links: {
