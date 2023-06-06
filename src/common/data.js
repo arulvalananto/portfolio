@@ -47,7 +47,7 @@ export const hashtagColors = {
     outlookaddin: '#3384C5',
 };
 
-export const projects = [
+export const webapps = [
     {
         name: 'AirDeck',
         description:
@@ -149,6 +149,9 @@ export const projects = [
             isStillProgressive: false,
         },
     },
+];
+
+export const extensions = [
     {
         name: 'FutureReads',
         description:
@@ -184,63 +187,6 @@ export const projects = [
         },
     },
     {
-        name: 'Dressed to kill',
-        description:
-            'A fashion and lifestyle e-commerce online shop caters to young people and fashion enthusiasts looking for the latest trends and styles.',
-        assets: {
-            prefix: '/dressed-to-kill',
-            logo: '/dressed+to+kill',
-            previewImages: {
-                count: 11,
-                imageNumber: 1,
-            },
-        },
-        links: {
-            websiteURL: '',
-        },
-        extras: {
-            stack: [
-                tech.React,
-                tech.Redux,
-                tech.NodeJS,
-                tech.Firebase,
-                tech.Stripe,
-            ],
-            timeline: {
-                startsAt: 'May 2021',
-                endsAt: 'Jun 2021',
-            },
-            hashtags: ['webapp'],
-            isStillProgressive: false,
-        },
-    },
-    {
-        name: 'Boilers',
-        description:
-            'A scaffold generator that can assist you in creating a basic structure for your upcoming React and Node application. It can automatically generate the files and folders required to start a project and includes boilerplate code you can build upon.',
-        assets: {
-            prefix: '/boilers',
-            logo: '/boilers',
-            previewImages: {
-                count: 6,
-                imageNumber: 6,
-            },
-        },
-        links: {
-            websiteURL: '',
-            npmURL: 'https://www.npmjs.com/package/boilers',
-        },
-        extras: {
-            stack: [tech.NodeJS, tech.NPM],
-            timeline: {
-                startsAt: 'May 2021',
-                endsAt: 'Jun 2021',
-            },
-            hashtags: ['npmpackage'],
-            isStillProgressive: false,
-        },
-    },
-    {
         name: 'AirDeck Outlook Add-in',
         description:
             'A plugin can simplify your AirDeck deck-sharing experience with just a few clicks. It also allows you to share your decks with anyone via Outlook.',
@@ -271,37 +217,41 @@ export const projects = [
             isStillProgressive: false,
         },
     },
-    // {
-    //     name: 'Done With it',
-    //     description:
-    //         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laudantium, qui voluptatem nemo quo',
-    //     assets: {
-    //         prefix: '/done+with+it',
-    //         logo: '/done-with-it',
-    //         previewImages: {
-    //            count: 0,
-    //            imageNumber: 0,
-    //         },
-    //     },
-    //     links: {
-    //         websiteURL: '',
-    //     },
-    //     extras: {
-    //         stack: [
-    //             tech.ReactNative,
-    //             tech.NodeJS,
-    //             tech.Mongoose,
-    //             tech.Formik,
-    //             tech.Redux,
-    //             tech.Express,
-    //         ],
-    //         timeline: {
-    //             startsAt: 'May 2021',
-    //             endsAt: 'Jun 2021',
-    //         },
-    //         hashtags: ['mobileapp'],
-    //     },
-    // },
+];
+
+export const packages = [
+    {
+        name: 'Boilers',
+        description:
+            'A scaffold generator that can assist you in creating a basic structure for your upcoming React and Node application. It can automatically generate the files and folders required to start a project and includes boilerplate code you can build upon.',
+        assets: {
+            prefix: '/boilers',
+            logo: '/boilers',
+            previewImages: {
+                count: 6,
+                imageNumber: 6,
+            },
+        },
+        links: {
+            websiteURL: '',
+            npmURL: 'https://www.npmjs.com/package/boilers',
+        },
+        extras: {
+            stack: [tech.NodeJS, tech.NPM],
+            timeline: {
+                startsAt: 'May 2021',
+                endsAt: 'Jun 2021',
+            },
+            hashtags: ['npmpackage'],
+            isStillProgressive: false,
+        },
+    },
+];
+
+export const projects = [
+    { title: 'Web applications', apps: webapps },
+    { title: 'Plugins/Extensions', apps: extensions },
+    { title: 'Packages', apps: packages },
 ];
 
 export const techPlacements = [
