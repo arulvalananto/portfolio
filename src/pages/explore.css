@@ -16,9 +16,32 @@
     padding: 1rem !important;
 }
 
+.explore__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.explore__item {
+    background: transparent;
+    color: var(--light-gray);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+    transition: border 10ms ease-in;
+}
+
+.explore__item--active {
+    border-bottom: 1px solid gray;
+}
+
 .projects__title {
     font-size: 1.5rem;
     color: var(--text-primary);
+    margin-bottom: 1rem;
 }
 
 .projects__list {
@@ -179,6 +202,21 @@
     transform: scale(0.9);
     transition-duration: 0.3s;
     transition-property: transform;
+}
+
+.webapps,
+.extensions,
+.packages {
+    margin-bottom: 2rem;
+}
+
+.certificates {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 @media (max-width: 854px) {

@@ -18,7 +18,7 @@ const IndexPage = () => {
                         <p className="home__desc">{personalInfo.description}</p>
                     </div>
                     <div className="home__btnGroup">
-                        <Link to="/projects" className="home__startBtn">
+                        <Link to="/explore" className="home__startBtn">
                             Let's Explore
                             <span
                                 role="img"
