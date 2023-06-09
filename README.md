@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://arulvalananto.gatsbyjs.io/">
-    <img alt="Gatsby" src="https://d2sgkcesfdic4y.cloudfront.net/logo" width="120"/>
+    <img alt="Gatsby" src="https://d2sgkcesfdic4y.cloudfront.net/projects/logo" width="120"/>
   </a>
 </p>
 <h1 align="center">
