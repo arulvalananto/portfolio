@@ -49,6 +49,41 @@ export const hashtagColors = {
 
 export const webapps = [
     {
+        name: 'FrameWise',
+        description:
+            'FrameWise is your gateway to a world of limitless possibilities, where videos become a wellspring of insights and inspiration. Seamlessly upload your videos and embark on a transformative journey that unlocks the hidden potential within each frame.',
+        assets: {
+            prefix: '/framewise',
+            logo: '/framewise',
+            previewImages: {
+                count: 14,
+                imageNumber: 1,
+            },
+        },
+        links: {
+            websiteURL: 'https://framewiise.web.app/',
+        },
+        extras: {
+            stack: [
+                tech.React,
+                tech.Redux,
+                tech.TypeScript,
+                tech.Jest,
+                tech.Auth0,
+                tech.Firebase,
+                tech.OpenAI,
+                tech.AzureVideoIndexerAI,
+                tech.Storybook,
+            ],
+            timeline: {
+                startsAt: 'Jun 2023',
+                endsAt: 'Now',
+            },
+            hashtags: ['webapp'],
+            isStillProgressive: false,
+        },
+    },
+    {
         name: 'AirDeck',
         description:
             'AirDeck is a platform that lets you add voice or video to your presentations, track engagement with unique links, record and upload videos, embed existing videos, and view comprehensive analytics, all in one place.',
