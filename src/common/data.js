@@ -49,6 +49,39 @@ export const hashtagColors = {
 
 export const webapps = [
     {
+        name: 'Highlight',
+        description:
+            '🎉 Highlight is the revolutionary web application that empowers developers, bloggers, and designers to create visually stunning, attention-grabbing code snippets like never before! 💻✨',
+        assets: {
+            prefix: '/highlight',
+            logo: '/highlight',
+            previewImages: {
+                count: 8,
+                imageNumber: 1,
+            },
+        },
+        links: {
+            websiteURL: 'https://highlightt.web.app/',
+        },
+        extras: {
+            stack: [
+                tech.React,
+                tech.Redux,
+                tech.TypeScript,
+                tech.Firebase,
+                tech.Vite,
+                tech.TailwindCSS,
+                tech.CSSModules,
+            ],
+            timeline: {
+                startsAt: 'Jun 2023',
+                endsAt: 'Jun 2023',
+            },
+            hashtags: ['webapp'],
+            isStillProgressive: false,
+        },
+    },
+    {
         name: 'FrameWise',
         description:
             'FrameWise is your gateway to a world of limitless possibilities, where videos become a wellspring of insights and inspiration. Seamlessly upload your videos and embark on a transformative journey that unlocks the hidden potential within each frame.',
