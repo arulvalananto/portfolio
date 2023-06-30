@@ -7,6 +7,7 @@
     "Bootstrap": "Bootstrap",
     "ChromeExtension": "Chrome Extension",
     "CSS3": "CSS",
+    "CSSModules": "CSSModules",
     "Django": "Django",
     "ESLint": "ESLint",
     "Express": "Express",
@@ -39,6 +40,7 @@
     "TailwindCSS": "TailwindCSS",
     "TurfJS": "TurfJS",
     "TypeScript": "TypeScript",
+    "Vite": "Vite",
     "Webpack": "Webpack",
     "Outlook": "Outlook"
 }
