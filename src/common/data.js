@@ -6,11 +6,11 @@ import {
 import tech from './tech.json';
 
 export const navlinks = [
-    {
-        title: `Resume`,
-        download: 'Arul Valan Anto S - Resume',
-        url: 'https://arulvalananto-portfolio.s3.ap-south-1.amazonaws.com/documents/resume',
-    },
+    // {
+    //     title: `Resume`,
+    //     download: 'Arul Valan Anto S - Resume',
+    //     url: 'https://arulvalananto-portfolio.s3.ap-south-1.amazonaws.com/documents/resume',
+    // },
     {
         title: 'Github',
         url: 'https://github.com/arulvalananto',
