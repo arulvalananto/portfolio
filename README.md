@@ -27,3 +27,7 @@ Node version - 18.15.0
 3. **Open the code and start customizing!**
 
     Your site is now running at <http://localhost:8000>!
+
+4. **Deploy the site**
+
+   Merge and pull requests will automatically deploy the website to the gatsby
