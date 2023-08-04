@@ -13,7 +13,7 @@ import PreviewProjectImages from './previewImages';
 const Extensions = () => {
     return (
         <div className="extensions">
-            <h1 className="projects__title">Extensions / Plugins</h1>
+            <h1 className="projects__title">Plugins / Packages</h1>
             <div className="projects__list">
                 {extensions.map(
                     ({ name, assets, description, links, extras }) => (

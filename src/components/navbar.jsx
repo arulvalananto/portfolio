@@ -40,7 +40,7 @@ const Navbar = () => {
                                         {icon && (
                                             <FontAwesomeIcon
                                                 icon={icon}
-                                                fontSize={18}
+                                                // fontSize={18}
                                             />
                                         )}
                                         {title}

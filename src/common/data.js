@@ -49,6 +49,40 @@ export const hashtagColors = {
 
 export const webapps = [
     {
+        name: 'FutureReads',
+        description:
+            'A Chrome browser extension that allows you to save articles to read later and sends you pop-up notifications as reminders when you come across related content while browsing the internet.',
+        assets: {
+            prefix: '/futureReads',
+            logo: '/futureReads',
+            previewImages: {
+                count: 5,
+                imageNumber: 4,
+            },
+        },
+        links: {
+            websiteURL: 'https://futurereads.web.app/',
+        },
+        extras: {
+            stack: [
+                tech.React,
+                tech.NodeJS,
+                tech.FastAPI,
+                tech.Mongoose,
+                tech.ChromeExtension,
+                tech.Auth0,
+                tech.JavaScript,
+                tech.SASS,
+            ],
+            timeline: {
+                startsAt: 'Mar 2023',
+                endsAt: 'Aug 2023',
+            },
+            hashtags: ['webapp', 'chromeextension', 'scraper'],
+            isStillProgressive: false,
+        },
+    },
+    {
         name: 'Highlight',
         description:
             '🎉 Highlight is the revolutionary web application that empowers developers, bloggers, and designers to create visually stunning, attention-grabbing code snippets like never before! 💻✨',
@@ -221,40 +255,6 @@ export const webapps = [
 
 export const extensions = [
     {
-        name: 'FutureReads',
-        description:
-            'A Chrome browser extension that allows you to save articles to read later and sends you pop-up notifications as reminders when you come across related content while browsing the internet.',
-        assets: {
-            prefix: '/futureReads',
-            logo: '/futureReads',
-            previewImages: {
-                count: 3,
-                imageNumber: 2,
-            },
-        },
-        links: {
-            websiteURL: '',
-        },
-        extras: {
-            stack: [
-                tech.React,
-                tech.NodeJS,
-                tech.FastAPI,
-                tech.Mongoose,
-                tech.ChromeExtension,
-                tech.Auth0,
-                tech.JavaScript,
-                tech.SASS,
-            ],
-            timeline: {
-                startsAt: 'Mar 2023',
-                endsAt: 'Now',
-            },
-            hashtags: ['webapp', 'chromeextension', 'scraper'],
-            isStillProgressive: true,
-        },
-    },
-    {
         name: 'AirDeck Outlook Add-in',
         description:
             'A plugin can simplify your AirDeck deck-sharing experience with just a few clicks. It also allows you to share your decks with anyone via Outlook.',
@@ -285,9 +285,6 @@ export const extensions = [
             isStillProgressive: false,
         },
     },
-];
-
-export const packages = [
     {
         name: 'Boilers',
         description:
@@ -318,8 +315,8 @@ export const packages = [
 
 export const projects = [
     { title: 'Web applications', apps: webapps },
-    { title: 'Plugins/Extensions', apps: extensions },
-    { title: 'Packages', apps: packages },
+    { title: 'Plugins/Packages', apps: extensions },
+    // { title: 'Packages', apps: packages },
 ];
 
 export const techPlacements = [
