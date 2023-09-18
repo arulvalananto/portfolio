@@ -7,8 +7,6 @@
   Arul Valan Anto - Portfolio
 </h1>
 
-## 🚀 Quick start
-
 Node version - 18.15.0
 
 1. **Install package dependencies**
