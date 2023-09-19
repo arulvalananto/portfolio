@@ -1,8 +1,6 @@
-import { Tooltip } from 'react-tooltip';
-import React, { Fragment, memo } from 'react';
+import React, { memo } from 'react';
 
-import constants from '../common/constants';
-import { formatToURLString } from '../common/helper';
+import TechStack from './TechStack';
 
 const ProjectStack = ({ stack }) => {
     return (
@@ -10,26 +8,7 @@ const ProjectStack = ({ stack }) => {
             <h2 className="project__stack">Stack</h2>
             <div className="project__stackList">
                 {stack.map((tech) => (
-                    <Fragment key={tech}>
-                        <a
-                            href={`${constants.GOOGLE_SEARCH_URL}${tech}`}
-                            alt={tech}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label={`What is ${tech}`}
-                        >
-                            <img
-                                src={`${
-                                    constants.AWS_CLOUNDFRONT_URL
-                                }/technology/${formatToURLString(tech)}`}
-                                alt={tech}
-                                className="project__tech"
-                                data-tooltip-id={tech}
-                                data-tooltip-content={tech}
-                            />
-                            <Tooltip id={tech} place="bottom" />
-                        </a>
-                    </Fragment>
+                    <TechStack tech={tech} />
                 ))}
             </div>
         </div>

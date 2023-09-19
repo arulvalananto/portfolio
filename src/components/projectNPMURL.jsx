@@ -1,17 +1,17 @@
 import { Tooltip } from 'react-tooltip';
-import React, { memo, useState } from 'react';
+import React, { memo, useRef } from 'react';
 import { faNpm } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const ProjectNPMURL = ({ npmURL, tooltipId, content }) => {
-    const [isStopBeating, setIsStopBeating] = useState(true);
+    const isStopBeating = useRef(true);
 
     const handleStopBeating = () => {
-        setIsStopBeating(false);
+        isStopBeating.current = false;
     };
 
     const handleStartBeating = () => {
-        setIsStopBeating(true);
+        isStopBeating.current = true;
     };
 
     return (
@@ -21,8 +21,8 @@ const ProjectNPMURL = ({ npmURL, tooltipId, content }) => {
                 className="project__webLink"
                 target="_blank"
                 rel="noopener noreferrer"
-                onMouseOver={handleStopBeating}
-                onMouseOut={handleStartBeating}
+                onMouseEnter={handleStopBeating}
+                onMouseLeave={handleStartBeating}
                 data-tooltip-id={tooltipId}
                 data-tooltip-content={content}
                 aria-label={content}
