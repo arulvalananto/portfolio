@@ -42,6 +42,10 @@ export default function HTML(props) {
                         type="text/css"
                     />
                 </noscript>
+                <script
+                    src="https://kit.fontawesome.com/df44807aa5.js"
+                    crossOrigin="anonymous"
+                ></script>
                 {props.headComponents}
             </head>
             <body {...props.bodyAttributes}>

@@ -2,11 +2,7 @@ import React, { memo, useEffect, useState } from 'react';
 
 import constants from '../common/constants';
 
-const PreviewProjectImages = ({
-    previewImages: { count, imageNumber },
-    imageAlt,
-    prefix,
-}) => {
+const PreviewProjectImages = ({ previewImages, imageAlt, prefix }) => {
     const [isImageLoaded, setIsImageLoaded] = useState(false);
     const [isVisbleGif, setIsVisibleGif] = useState(false);
 
@@ -35,7 +31,7 @@ const PreviewProjectImages = ({
                 borderBottom: isImageLoaded ? '' : '1px solid #6563635e',
             }}
         >
-            {count ? (
+            {previewImages?.count ? (
                 <>
                     {isVisbleGif ? (
                         <img
@@ -48,7 +44,7 @@ const PreviewProjectImages = ({
                         />
                     ) : (
                         <img
-                            src={`${constants.AWS_CLOUNDFRONT_URL}${prefix}/Screenshot+(${imageNumber}).webp`}
+                            src={`${constants.AWS_CLOUNDFRONT_URL}${prefix}/Screenshot+(${previewImages?.imageNumber}).webp`}
                             alt={imageAlt}
                             className="project__gif"
                             onMouseOver={handleVisibleGif}

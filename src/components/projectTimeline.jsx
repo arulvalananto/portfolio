@@ -1,9 +1,9 @@
 import React, { memo } from 'react';
 
-const ProjectTimeline = ({ timeline: { startsAt, endsAt } }) => {
+const ProjectTimeline = ({ timeline }) => {
     return (
         <p>
-            <span>{startsAt}</span> - <span>{endsAt}</span>
+            <span>{timeline?.startsAt}</span> - <span>{timeline?.endsAt}</span>
         </p>
     );
 };

@@ -1,30 +1,20 @@
-import {
-    faLinkedin,
-    faGithub,
-    faMedium,
-} from '@fortawesome/free-brands-svg-icons';
 import tech from './tech.json';
 
 export const navlinks = [
-    // {
-    //     title: `Resume`,
-    //     download: 'Arul Valan Anto S - Resume',
-    //     url: 'https://arulvalananto-portfolio.s3.ap-south-1.amazonaws.com/documents/resume',
-    // },
     {
         title: 'Github',
         url: 'https://github.com/arulvalananto',
-        icon: faGithub,
+        icon: 'fa-brands fa-github',
     },
     {
         title: 'LinkedIn',
         url: 'https://www.linkedin.com/in/arulvalanantos/',
-        icon: faLinkedin,
+        icon: 'fa-brands fa-linkedin',
     },
     {
         title: 'Medium',
         url: 'https://medium.com/@arulvalananto',
-        icon: faMedium,
+        icon: 'fa-brands fa-medium',
     },
     {
         title: `Let's talk`,

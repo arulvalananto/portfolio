@@ -1,3 +1,4 @@
+/* Reset styles and define some global styles */
 * {
     padding: 0;
     margin: 0;
@@ -9,6 +10,7 @@
     outline: none;
 }
 
+/* Define global CSS variables for colors and backgrounds */
 :root {
     --white: #ffffff;
     --gray: gray;
@@ -29,23 +31,28 @@
     --scroll-hover: #e9e9e9;
 }
 
+/* Style the scrollbar */
 ::-webkit-scrollbar {
     width: 10px;
 }
 
+/* Track for scrollbar */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px var(--gray);
 }
 
+/* Thumb for scrollbar */
 ::-webkit-scrollbar-thumb {
     background: var(--scroll);
     border-radius: 10px;
 }
 
+/* Thumb hover effect for scrollbar */
 ::-webkit-scrollbar-thumb:hover {
     background: var(--scroll-hover);
 }
 
+/* Global styles for the HTML and body elements */
 html,
 body {
     background: var(--bg-primary);
@@ -53,25 +60,23 @@ body {
     overflow: hidden;
 }
 
+/* Create a floating animation for certain elements */
 .floating {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation: floating 3s infinite ease-in-out;
 }
 
+/* Keyframes for the floating animation */
 @keyframes floating {
-    from {
+    from,
+    to {
         transform: translate(0, 0px);
     }
     65% {
         transform: translate(0, 15px);
     }
-    to {
-        transform: translate(0, -0px);
-    }
 }
 
+/* Styles for tech elements */
 .tech {
     position: absolute;
     width: 40px;
@@ -80,18 +85,19 @@ body {
     cursor: pointer;
 }
 
+/* Styles for the overall layout */
 .layout {
     height: 100vh;
     background: url('../images/background.svg') no-repeat center center;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(20, 5%);
-    grid-template-rows: repeat(20, 5%);
+    grid-template: repeat(20, 5%) / repeat(20, 5%);
 }
 
+/* Styles for the navigation bar */
 .navbar {
-    grid-column: 1 / 21;
-    grid-row: 1 / 3;
+    grid-column: 1 / span 20;
+    grid-row: 1 / span 2;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -100,18 +106,21 @@ body {
     border-bottom: 1px solid var(--border-secondary);
 }
 
+/* Styles for the logo wrapper in the navigation bar */
 .navbar__logoWrap {
     width: 155px;
     height: 100%;
     display: block;
 }
 
+/* Styles for the logo image */
 .logo {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Styles for navigation links */
 .navlink,
 .navlink__wrap {
     display: flex;
@@ -120,11 +129,13 @@ body {
     color: var(--text-primary);
 }
 
+/* Hover effect for navigation links */
 .navlink__wrap:hover {
     color: var(--white);
     transform: scale(1.04);
 }
 
+/* Styles for navigation items (list items) */
 .navitem {
     font-size: 14px;
     list-style: none;
@@ -135,6 +146,7 @@ body {
     gap: 0.8rem;
 }
 
+/* Styles for the home container */
 .home__container {
     position: relative;
     grid-column: 1 / 21;
@@ -145,6 +157,7 @@ body {
     justify-content: center;
 }
 
+/* Styles for the main content within the home container */
 .home__main {
     display: flex;
     flex-direction: column;
@@ -152,6 +165,7 @@ body {
     gap: 2rem;
 }
 
+/* Styles for the home information section */
 .home__info {
     width: 500px;
     display: flex;
@@ -160,12 +174,14 @@ body {
     gap: 0.5rem;
 }
 
+/* Styles for the home role text */
 .home__role {
     text-transform: uppercase;
     font-weight: 400;
     color: var(--gray);
 }
 
+/* Styles for the home username */
 .home__username {
     font-size: 3.5rem;
     background: var(--bg-secondary);
@@ -174,6 +190,7 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+/* Styles for the home description */
 .home__desc {
     color: var(--text-secondary);
     line-break: anywhere;
@@ -185,12 +202,14 @@ body {
     font-size: 16px;
 }
 
+/* Styles for the home button group */
 .home__btnGroup {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
+/* Styles for start button and back button */
 .home__startBtn,
 .backBtn {
     font-size: 16px;
@@ -203,12 +222,16 @@ body {
     align-items: center;
     gap: 0.5rem;
 }
+
+/* Hover effect for start button and back button */
 .home__startBtn:hover,
 .backBtn:hover {
     transform: scale(0.9);
     transition-duration: 0.3s;
     transition-property: transform;
 }
+
+/* Media Queries */
 
 /* Tablet */
 @media (max-width: 768px) {
