@@ -2,6 +2,7 @@ import { Tooltip } from 'react-tooltip';
 import React, { Fragment, memo } from 'react';
 
 import constants from '../common/constants';
+import { buildImageUrl } from '../common/helper';
 
 const TechStack = ({ tech }) => {
     return (

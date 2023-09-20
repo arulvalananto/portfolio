@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import ProjectLogo from './projectLogo';
 import ProjectBrief from './projectBrief';
@@ -10,48 +10,50 @@ import ProjectTimeline from './projectTimeline';
 import PreviewProjectImages from './previewImages';
 
 const Extension = ({
-    name,
-    assets: { prefix, previewImages, logo },
-    description,
-    links: { websiteURL, npmURL },
-    extras: { isStillProgressive, timeline, hashtags, stack },
+    extension: { name, assets, description, links, extras },
 }) => {
     return (
         <div className="projects__project" key={name}>
             <PreviewProjectImages
-                prefix={prefix}
-                previewImages={previewImages}
+                prefix={assets?.prefix}
+                previewImages={assets?.previewImages}
                 imageAlt={`${name} preview`}
             />
-            <ProjectLogo prefix={prefix} logo={logo} alt={`${name}'s logo`} />
+            <ProjectLogo
+                prefix={assets?.prefix}
+                logo={assets?.logo}
+                alt={`${name}'s logo`}
+            />
             <div className="project__info">
                 <div className="project__webLinkContainer">
-                    {websiteURL && (
+                    {links?.websiteURL && (
                         <ProjectWebsiteURL
-                            websiteURL={websiteURL}
+                            websiteURL={links?.websiteURL}
                             tooltipId={name}
                             content="website"
                         />
                     )}
-                    {npmURL && (
+                    {links?.npmURL && (
                         <ProjectNPMURL
-                            npmURL={npmURL}
+                            npmURL={links?.npmURL}
                             tooltipId={name}
                             content="NPM details"
                         />
                     )}
-                    {isStillProgressive && <StillProgress name={name} />}
-                    <ProjectTimeline timeline={timeline} />
+                    {extras?.isStillProgressive && (
+                        <StillProgress name={name} />
+                    )}
+                    <ProjectTimeline timeline={extras?.timeline} />
                 </div>
                 <ProjectBrief
                     name={name}
                     description={description}
-                    hashtags={hashtags}
+                    hashtags={extras?.hashtags}
                 />
-                <ProjectStack stack={stack} />
+                <ProjectStack stack={extras?.stack} />
             </div>
         </div>
     );
 };
 
-export default Extension;
+export default memo(Extension);

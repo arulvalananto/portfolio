@@ -37,12 +37,7 @@ const Navbar = () => {
                                         rel="noreferrer noopener"
                                         className="navitem"
                                     >
-                                        {icon && (
-                                            <FontAwesomeIcon
-                                                icon={icon}
-                                                // fontSize={18}
-                                            />
-                                        )}
+                                        {icon && <i class={icon}></i>}
                                         {title}
                                     </a>
                                 )}

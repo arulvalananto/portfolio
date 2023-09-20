@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Extension from './Extension';
 import { extensions } from '../common/data';
 
 const Extensions = () => {
@@ -7,7 +8,7 @@ const Extensions = () => {
         <div className="extensions">
             <h1 className="projects__title">Plugins / Packages</h1>
             <div className="projects__list">
-                {extensions.map((extension) => (
+                {extensions?.map((extension) => (
                     <Extension extension={extension} />
                 ))}
             </div>
