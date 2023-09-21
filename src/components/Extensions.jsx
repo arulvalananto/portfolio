@@ -9,7 +9,7 @@ const Extensions = () => {
             <h1 className="projects__title">Plugins / Packages</h1>
             <div className="projects__list">
                 {extensions?.map((extension) => (
-                    <Extension extension={extension} />
+                    <Extension key={extension.name} extension={extension} />
                 ))}
             </div>
         </div>

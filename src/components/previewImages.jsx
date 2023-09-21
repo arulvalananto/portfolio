@@ -1,36 +1,27 @@
-import React, { memo, useEffect, useState } from 'react';
+import React, { memo, useState } from 'react';
 
 import constants from '../common/constants';
+import PlaceholderImage from '../images/placeholder.png';
 
 const PreviewProjectImages = ({ previewImages, imageAlt, prefix }) => {
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
     const [isVisbleGif, setIsVisibleGif] = useState(false);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    const actualSrc = `${constants.AWS_CLOUNDFRONT_URL}${prefix}/Screenshot+(${previewImages?.imageNumber}).webp`;
+
+    const handleLoad = () => {
+        setIsLoaded(true);
+    };
 
     const handleVisibleGif = () => {
-        if (window.innerWidth > 1024) {
-            setIsVisibleGif(true);
-        }
+        if (window.innerWidth > 1024) setIsVisibleGif(true);
     };
     const handleHiddenGif = () => {
-        if (window.innerWidth > 1024) {
-            setIsVisibleGif(false);
-        }
+        if (window.innerWidth > 1024) setIsVisibleGif(false);
     };
 
-    useEffect(() => {
-        setTimeout(() => {
-            setIsImageLoaded(true);
-        }, 500);
-    }, []);
-
     return (
-        <div
-            className="project__imgWrapper"
-            style={{
-                height: isImageLoaded ? '' : '250px',
-                borderBottom: isImageLoaded ? '' : '1px solid #6563635e',
-            }}
-        >
+        <div className="project__imgWrapper">
             {previewImages?.count ? (
                 <>
                     {isVisbleGif ? (
@@ -44,13 +35,13 @@ const PreviewProjectImages = ({ previewImages, imageAlt, prefix }) => {
                         />
                     ) : (
                         <img
-                            src={`${constants.AWS_CLOUNDFRONT_URL}${prefix}/Screenshot+(${previewImages?.imageNumber}).webp`}
+                            src={isLoaded ? actualSrc : PlaceholderImage}
                             alt={imageAlt}
                             className="project__gif"
                             onMouseOver={handleVisibleGif}
                             onMouseOut={handleHiddenGif}
-                            onLoad={(e) => setIsImageLoaded(true)}
-                            onLoadCapture={(e) => setIsImageLoaded(true)}
+                            loading="lazy"
+                            onLoad={handleLoad}
                         />
                     )}
                 </>

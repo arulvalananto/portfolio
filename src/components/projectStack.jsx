@@ -8,7 +8,7 @@ const ProjectStack = ({ stack }) => {
             <h2 className="project__stack">Stack</h2>
             <div className="project__stackList">
                 {stack?.map((tech) => (
-                    <TechStack tech={tech} />
+                    <TechStack key={tech} tech={tech} />
                 ))}
             </div>
         </div>
