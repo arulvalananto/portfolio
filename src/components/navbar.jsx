@@ -37,7 +37,7 @@ const Navbar = () => {
                                         rel="noreferrer noopener"
                                         className="navitem"
                                     >
-                                        {icon && <i class={icon}></i>}
+                                        {icon && <i className={icon}></i>}
                                         {title}
                                     </a>
                                 )}
