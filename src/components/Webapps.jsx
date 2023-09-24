@@ -18,6 +18,7 @@ const Webapps = () => {
                 {webapps.map(({ name, assets, description, links, extras }) => (
                     <div className="projects__project" key={name}>
                         <PreviewProjectImages
+                            url={links?.websiteURL}
                             prefix={assets?.prefix}
                             previewImages={assets?.previewImages}
                             imageAlt={`${name} preview`}

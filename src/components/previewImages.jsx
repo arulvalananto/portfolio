@@ -2,8 +2,10 @@ import React, { memo, useState } from 'react';
 
 import constants from '../common/constants';
 import PlaceholderImage from '../images/placeholder.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
-const PreviewProjectImages = ({ previewImages, imageAlt, prefix }) => {
+const PreviewProjectImages = ({ previewImages, imageAlt, prefix, url }) => {
     const [isVisbleGif, setIsVisibleGif] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
 
@@ -37,7 +39,7 @@ const PreviewProjectImages = ({ previewImages, imageAlt, prefix }) => {
                         <img
                             src={isLoaded ? actualSrc : PlaceholderImage}
                             alt={imageAlt}
-                            className="project__gif"
+                            className="project__img"
                             onMouseOver={handleVisibleGif}
                             onMouseOut={handleHiddenGif}
                             loading="lazy"
@@ -46,6 +48,16 @@ const PreviewProjectImages = ({ previewImages, imageAlt, prefix }) => {
                     )}
                 </>
             ) : null}
+            <div className="project__website">
+                <a
+                    href={url}
+                    className="project__webLink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <FontAwesomeIcon icon={faUpRightFromSquare} color="white" />
+                </a>
+            </div>
         </div>
     );
 };
