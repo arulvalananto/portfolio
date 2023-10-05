@@ -7,7 +7,7 @@
   Arul Valan Anto - Portfolio
 </h1>
 
-Node version - 18.15.0
+Node version -- 18.15.0
 
 1. **Install package dependencies**
 
