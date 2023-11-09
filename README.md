@@ -28,4 +28,4 @@ Node version - 18.15.0
 
 4. **Deploy the site**
 
-   Merge and pull requests will automatically deploy the website to the gatsby
+   Merge and pull requests will automatically deploy the website to the gatsbyjs cloud
