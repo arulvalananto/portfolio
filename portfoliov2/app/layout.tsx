@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
+import { dmSans } from "./lib/fonts";
 
 export const metadata: Metadata = {
   title: "Portfolio - Arul Valan Anto",
@@ -13,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={dmSans.className}>
       <body>{children}</body>
     </html>
   );
