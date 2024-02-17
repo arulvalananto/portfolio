@@ -1,10 +1,37 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { VscPerson } from "react-icons/vsc";
 import { CiMenuFries } from "react-icons/ci";
+import { TiDocumentText } from "react-icons/ti";
+import { GoProjectSymlink } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
 
+import CustomDrawer from "../drawer";
+
 const Navbar = () => {
+  const router = useRouter();
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const onMailTo = () => {
+    window.location.href = "mailto:arulvalananto@gmail.com";
+  };
+
+  const onDownloadResume = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "/Arul_Valan_Anto_Resume.pdf";
+    downloadLink.download = "Arul_Valan_Anto_Resume.pdf";
+    downloadLink.click();
+  };
+
+  const onNavigateTo = (path: string) => {
+    router.push(path);
+    setIsOpen(false);
+  };
+
   return (
     <div className="w-full h-full xl:w-[1345px] xl:max-w-[1345px] px-5 py-2 xl:px-0 m-auto flex items-center justify-between">
       <div className="w-10 h-10">
@@ -51,12 +78,61 @@ const Navbar = () => {
           type="button"
           aria-label="portfolio nav menu"
           title="portfolio nav menu"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <CiMenuFries
             color="black"
             className="font-medium text-black text-xl"
           />
         </button>
+        <CustomDrawer isOpen={isOpen} onClose={() => setIsOpen(false)}>
+          <div className="mt-10 flex flex-col gap-5 px-3">
+            <button
+              type="button"
+              className="group text-left flex items-center gap-3"
+              onClick={() => onNavigateTo("/about-me")}
+            >
+              <VscPerson
+                size={24}
+                className="transition duration-300 group-hover:rotate-12"
+              />
+              <span className="font-medium text-black text-base">About me</span>
+            </button>
+            <button
+              type="button"
+              className="group text-left flex items-center gap-3"
+              onClick={() => onNavigateTo("/projects")}
+            >
+              <GoProjectSymlink
+                size={24}
+                className="transition duration-300 group-hover:rotate-12"
+              />
+              <span className="font-medium text-black text-base">Projects</span>
+            </button>
+            <button
+              type="button"
+              className="group text-left flex items-center gap-3"
+              onClick={onDownloadResume}
+            >
+              <TiDocumentText
+                size={24}
+                className="transition duration-300 group-hover:rotate-12"
+              />
+
+              <span className="text-black text-base font-medium">Resume</span>
+            </button>
+            <button
+              type="button"
+              onClick={onMailTo}
+              className="group flex items-center gap-3"
+            >
+              <span className="font-medium text-black text-base">
+                Let&apos;s Talk
+              </span>
+              <FaArrowRightLong className="transition duration-300 group-hover:translate-x-2" />
+            </button>
+          </div>
+        </CustomDrawer>
       </div>
     </div>
   );
