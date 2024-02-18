@@ -34,7 +34,11 @@ const Navbar = () => {
 
   return (
     <div className="w-full h-full xl:w-[1345px] xl:max-w-[1345px] px-5 py-2 xl:px-0 m-auto flex items-center justify-between">
-      <div className="w-10 h-10">
+      <Link
+        href="/"
+        className="w-10 h-10"
+        title="Arul Valan Anto's portfolio logo"
+      >
         <Image
           src="/logo.svg"
           alt="Portfolio Logo"
@@ -42,19 +46,25 @@ const Navbar = () => {
           height={39}
           className="object-cover"
         />
-      </div>
+      </Link>
       <div className="hidden min-[500px]:flex items-center gap-10 md:gap-[140px] xl:gap-[280px]">
         <div className="flex items-center gap-10 md:gap-16">
-          <Link href="/about-me" className="font-medium text-black text-base">
+          <Link
+            href="/about-me"
+            className="font-medium text-black text-base font-DMSans"
+          >
             About me
           </Link>
-          <Link href="/projects" className="font-medium text-black text-base">
+          <Link
+            href="/projects"
+            className="font-medium text-black text-base font-DMSans"
+          >
             Projects
           </Link>
           <a
             download
             href="/Arul_Valan_Anto_Resume.pdf"
-            className="font-medium text-black text-base"
+            className="font-medium text-black text-base font-DMSans"
           >
             Resume
           </a>
@@ -66,7 +76,7 @@ const Navbar = () => {
             rel="noreferrer"
             className="flex items-center gap-2"
           >
-            <span className="font-medium text-black text-base">
+            <span className="font-medium text-black text-base font-DMSans">
               Let&apos;s Talk
             </span>
             <FaArrowRightLong />
@@ -96,7 +106,9 @@ const Navbar = () => {
                 size={24}
                 className="transition duration-300 group-hover:rotate-12"
               />
-              <span className="font-medium text-black text-base">About me</span>
+              <span className="font-medium text-black text-base font-DMSans">
+                About me
+              </span>
             </button>
             <button
               type="button"
@@ -107,7 +119,9 @@ const Navbar = () => {
                 size={24}
                 className="transition duration-300 group-hover:rotate-12"
               />
-              <span className="font-medium text-black text-base">Projects</span>
+              <span className="font-medium text-black text-base font-DMSans">
+                Projects
+              </span>
             </button>
             <button
               type="button"
@@ -119,14 +133,16 @@ const Navbar = () => {
                 className="transition duration-300 group-hover:rotate-12"
               />
 
-              <span className="text-black text-base font-medium">Resume</span>
+              <span className="text-black text-base font-medium font-DMSans">
+                Resume
+              </span>
             </button>
             <button
               type="button"
               onClick={onMailTo}
               className="group flex items-center gap-3"
             >
-              <span className="font-medium text-black text-base">
+              <span className="font-medium text-black text-base font-DMSans">
                 Let&apos;s Talk
               </span>
               <FaArrowRightLong className="transition duration-300 group-hover:translate-x-2" />

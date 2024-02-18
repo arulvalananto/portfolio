@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 
+import Navbar from "../ui/navbar";
+
 export const metadata: Metadata = {
   title: "Projects - Arul Valan Anto",
   description: "Projects of Arul Valan Anto, a software engineer.",
@@ -7,7 +9,7 @@ export const metadata: Metadata = {
 
 const ProjectsPage = () => (
   <main>
-    <h1 className="text-blue-500">Projects Page</h1>
+    <Navbar />
   </main>
 );
 

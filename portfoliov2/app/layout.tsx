@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
-import { dmSans } from "./lib/fonts";
+import { dmSans, quickSand } from "./lib/fonts";
 
 export const metadata: Metadata = {
   title: "Portfolio - Arul Valan Anto",
@@ -15,7 +15,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={dmSans.className}>
+    <html lang="en" className={`${dmSans.variable} ${quickSand.variable}`}>
       <head>
         <meta name="theme-color" content="#ffffff" />
         <meta name="robots" content="index, follow" />
@@ -41,12 +41,18 @@ export default function RootLayout({
         <meta property="og:locale" content="en_US" />
 
         <meta property="twitter:title" content="Portfolio - Arul Valan Anto" />
-        <meta property="twitter:description" content="Portfolio of Arul Valan Anto" />
+        <meta
+          property="twitter:description"
+          content="Portfolio of Arul Valan Anto"
+        />
         <meta
           property="twitter:image"
           content="https://arulvalananto.vercel.app"
         />
-        <meta property="twitter:image:alt" content="Portfolio of Arul Valan Anto" />
+        <meta
+          property="twitter:image:alt"
+          content="Portfolio of Arul Valan Anto"
+        />
         <meta property="twitter:site" content="@arulvalananto_" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:creator" content="@arulvalananto_" />
