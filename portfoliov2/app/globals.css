@@ -11,3 +11,16 @@ body {
   color: var(--black);
   background: var(--white);
 }
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 5s ease-in-out;
+  animation: fadeIn 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}

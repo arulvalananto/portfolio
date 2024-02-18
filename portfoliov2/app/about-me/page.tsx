@@ -19,10 +19,10 @@ const AboutPage = () => (
       <div className="w-[165px] h-[50px]">
         <Image
           src="/about_hello.svg"
-          width={165}
-          height={50}
+          width={0}
+          height={0}
           alt="Welcome to About Page!"
-          className="object-contain w-full h-full"
+          className="w-full h-full object-contain "
         />
       </div>
     </div>
@@ -66,13 +66,14 @@ const AboutPage = () => (
         </div>
       </div>
       <div className="w-[290px] max-w-[290px] flex flex-col justify-between">
-        <div className="border-2 border-black rounded-md h-[316px]">
+        <div className="border-2 border-black rounded-md w-full h-[316px] flex items-end justify-end bg-[#4B24B5]">
           <Image
             src="/about_profile.png"
             alt="Arul Valan Anto's profile pic"
-            width={290}
+            width={0}
             height={0}
-            className="h-full object-cover"
+            layout="responsive"
+            objectFit="cover"
           />
         </div>
         <div className="bg-portfolio-yellowGreen w-full h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2">
@@ -135,10 +136,10 @@ const AboutPage = () => (
           </p>
           <Image
             src="/about_random_player.gif"
-            alt=""
+            alt="Hire me GIF"
             width={290}
             height={161}
-            className="absolute -bottom-10 right-0 object-contain scale-50"
+            className="absolute -bottom-10 right-0 object-contain scale-50 fade-in"
           />
         </div>
       </div>
