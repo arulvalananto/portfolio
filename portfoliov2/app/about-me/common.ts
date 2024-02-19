@@ -276,7 +276,7 @@ export const skills: Skill = {
       yearofexperience: "1 year",
     },
     {
-      src: "/about_skill_mySQL.svg",
+      src: "/about_skill_mysql.svg",
       alt: "MySQL",
       className:
         "bg-gradient-to-t from-[#265074] from-50% via-transparent to-50% to-transparent to-100%",

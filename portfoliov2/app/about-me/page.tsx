@@ -22,9 +22,11 @@ export const metadata: Metadata = {
 };
 
 const AboutPage = () => (
-  <main className={`${poppins.variable} ${dancingScript.variable} pb-5`}>
+  <main
+    className={`${poppins.variable} ${dancingScript.variable} pb-5 space-y-10`}
+  >
     <Navbar />
-    <div className="w-[1270px] max-w-[1270px] m-auto my-10">
+    <div className="w-full max-w-full xl:w-[1270px] xl:max-w-[1270px] m-auto">
       <div className="w-[165px] h-[50px]">
         <Image
           src="/about_hello.svg"
@@ -35,21 +37,21 @@ const AboutPage = () => (
         />
       </div>
     </div>
-    <div className="w-[1270px] max-w-[1270px] h-[737px] m-auto flex gap-4">
-      <div className="flex-1 flex flex-col gap-5">
+    <div className="w-full max-w-full h-full xl:w-[1270px] xl:max-w-[1270px] xl:h-[737px] m-auto flex flex-col xl:flex-row gap-4 p-4 xl:p-0">
+      <div className="flex-1 flex flex-col gap-5 order-2 xl:order-1">
         <section
           id="about"
-          className="w-full h-[220px] bg-portfolio-about-section text-white rounded-md px-4 py-2 space-y-3"
+          className="w-full h-full xl:h-[220px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1"
         >
           <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
             About
           </h3>
           <p>{bio}</p>
         </section>
-        <div className="w-full h-[170px] flex items-center gap-5">
+        <div className="w-full h-full xl:h-[170px] flex flex-col xl:flex-row items-center gap-5 order-3 xl:order-2">
           <section
             id="education"
-            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md px-4 py-2 space-y-1"
+            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-1 order-2 xl:order-1"
           >
             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
               Education
@@ -72,7 +74,7 @@ const AboutPage = () => (
           </section>
           <section
             id="experience"
-            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md px-4 py-2 space-y-1"
+            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-1 order-1 xl:order-2"
           >
             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
               Experience
@@ -94,16 +96,15 @@ const AboutPage = () => (
             </ul>
           </section>
         </div>
-        <div className="w-full h-full flex-1 flex items-center gap-5">
+        <div className="w-full h-full flex-1 flex flex-col xl:flex-row items-center gap-5 order-2 xl:order-3">
           <section
             id="skills"
-            className="flex-1 max-w-[472px] h-full bg-portfolio-about-section text-white rounded-md px-4 py-2"
+            className="flex-1 w-full xl:max-w-[472px] h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2"
           >
             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
               Skills
             </h3>
             <div className="space-y-3">
-              {/*<div className="space-y-3">*/}
               {["primary", "secondary"].map((skillType) => (
                 <div className="space-y-3" key={skillType}>
                   <h6 className="text-sm font-light font-quicksand">
@@ -142,10 +143,10 @@ const AboutPage = () => (
               ))}
             </div>
           </section>
-          <div className="flex-1 h-full text-white rounded-md flex flex-col gap-5">
+          <div className="flex-1 w-full h-full text-white rounded-md flex flex-col gap-5">
             <section
               id="certificates"
-              className="w-full h-[92px] bg-portfolio-about-section text-white rounded-md px-4 py-2 space-y-2"
+              className="w-full h-full xl:h-[92px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-2 order-2 xl:order-1"
             >
               <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
                 Certificates
@@ -172,7 +173,7 @@ const AboutPage = () => (
             </section>
             <section
               id="projects"
-              className="flex-1 w-full bg-portfolio-about-section text-white rounded-md px-4 py-2 space-y-3"
+              className="flex-1 w-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1 xl:order-2"
             >
               <div className="flex items-center justify-between">
                 <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
@@ -185,12 +186,12 @@ const AboutPage = () => (
                   See All
                 </Link>
               </div>
-              <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4 xl:gap-0 xl:justify-between">
                 {projects.map((project, index) => (
                   <a
                     key={index}
                     href={project.href}
-                    className="w-[125px] h-[125px] bg-violet-500 border-2 border-black relative group"
+                    className="w-[75px] h-[75px] md:w-[125px] md:h-[125px] bg-violet-500 border-2 border-black relative group"
                     title={project.title}
                     target="_blank"
                     rel="noopener norefferer nofollow"
@@ -201,6 +202,15 @@ const AboutPage = () => (
                       width={125}
                       height={125}
                       unoptimized
+                      className="hidden md:block"
+                    />
+                    <Image
+                      src={project.src}
+                      alt={project.alt}
+                      width={75}
+                      height={75}
+                      unoptimized
+                      className="block md:hidden"
                     />
                     <div className="hidden group-hover:flex items-center justify-center bg-black opacity-50 absolute top-0 left-0 w-full h-full">
                       <p className="font-quicksand text-base font-medium">
@@ -214,40 +224,41 @@ const AboutPage = () => (
           </div>
         </div>
       </div>
-      <div className="w-[290px] max-w-[290px] flex flex-col justify-between">
-        <div className="border-2 border-black rounded-md w-full h-[316px] flex items-end justify-end bg-[#4B24B5]">
+      <div className="w-full xl:w-[290px] xl:max-w-[290px] flex flex-col items-center gap-5 xl:gap-0  xl:justify-between order-1 xl:order-2">
+        <div className="border-2 border-black rounded-md xl:w-full h-[316px] flex items-end justify-end bg-[#4B24B5]">
           <Image
             src="/about_profile.webp"
             alt="Arul Valan Anto's profile pic"
-            width={0}
-            height={0}
-            layout="responsive"
+            width={290}
+            height={316}
           />
         </div>
-        <div className="bg-portfolio-yellowGreen w-full h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2">
-          {socialLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              title={link.title}
-              className={`w-10 h-10 rounded-full ${link.className} border-2 border-black flex items-center justify-center`}
-              target="_blank"
-              rel="noopener norefferer nofollow"
-            >
-              <link.Icon size={20} color="white" />
-            </a>
-          ))}
+        <div className="w-full flex flex-col sm:justify-center sm:flex-row xl:flex-col gap-5">
+          <div className="bg-portfolio-yellowGreen w-full max-w-full sm:w-[300px] sm:max-w-[300px] xl:w-[290px] xl:max-w-[290px] h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2">
+            {socialLinks.map((link, index) => (
+              <a
+                key={index}
+                href={link.href}
+                title={link.title}
+                className={`w-10 h-10 rounded-full ${link.className} border-2 border-black flex items-center justify-center`}
+                target="_blank"
+                rel="noopener norefferer nofollow"
+              >
+                <link.Icon size={20} color="white" />
+              </a>
+            ))}
+          </div>
+          <button
+            type="button"
+            className="bg-black w-full max-w-full sm:w-[300px] sm:max-w-[300px] px-3 xl:px-0 xl:w-full xl:max-w-full h-[68px] rounded-md flex items-center justify-center gap-3"
+          >
+            <FcAdvertising size={32} />
+            <span className="text-white text-base font-medium font-poppins">
+              Reach me at here
+            </span>
+          </button>
         </div>
-        <button
-          type="button"
-          className="bg-black w-full h-[68px] rounded-md flex items-center justify-center gap-3"
-        >
-          <FcAdvertising size={32} />
-          <span className="text-white text-base font-medium font-poppins">
-            Reach me at here
-          </span>
-        </button>
-        <div className="w-full h-[212px] bg-portfolio-blue text-white relative border-2 border-black rounded-md p-2 pt-4 group">
+        <div className="w-full h-[212px] bg-portfolio-blue text-white relative border-2 border-black rounded-md p-2 pt-4 group hidden xl:block">
           <Image
             src="/about_curly_arrow.svg"
             alt="Hire me arrow"
