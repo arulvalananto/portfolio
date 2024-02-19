@@ -5,6 +5,7 @@ import { FcAdvertising } from "react-icons/fc";
 
 import Navbar from "../ui/navbar";
 import { dancingScript, poppins } from "../lib/fonts";
+import { AnimatedTooltip } from "../ui/animated-tooltip";
 import {
   bio,
   certificates,
@@ -102,46 +103,43 @@ const AboutPage = () => (
               Skills
             </h3>
             <div className="space-y-3">
-              <div className="space-y-3">
-                <h6 className="text-sm font-light font-quicksand">Primary:</h6>
-                <div className="flex flex-row flex-wrap gap-4">
-                  {skills.primary.map((skill, index) => (
-                    <div
-                      className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8`}
-                      key={index}
-                    >
-                      <Image
+              {/*<div className="space-y-3">*/}
+              {["primary", "secondary"].map((skillType) => (
+                <div className="space-y-3" key={skillType}>
+                  <h6 className="text-sm font-light font-quicksand">
+                    {skillType[0].toUpperCase() + skillType.slice(1)}:
+                  </h6>
+                  <div className="flex flex-row flex-wrap gap-4">
+                    {skills[skillType]?.map((skill, index) => (
+                      <AnimatedTooltip
                         key={index}
-                        src={skill.src}
-                        alt={skill.alt}
-                        width="24"
-                        height="24"
-                        className={`${skill.imageClassName ?? ""}`}
-                      />
-                    </div>
-                  ))}
+                        tooltipInfo={{
+                          name: skill.alt,
+                          id: index,
+                          yearofexperience: skill.yearofexperience,
+                        }}
+                      >
+                        <a
+                          href={`https://www.google.com/search?q=${skill.alt.toLowerCase()}`}
+                          title={skill.alt}
+                          className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8`}
+                          target="_blank"
+                          rel="noopener norefferer nofollow"
+                        >
+                          <Image
+                            key={index}
+                            src={skill.src}
+                            alt={skill.alt}
+                            width="24"
+                            height="24"
+                            className={`${skill.imageClassName ?? ""}`}
+                          />
+                        </a>
+                      </AnimatedTooltip>
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <div>
-                <h6>Secondary:</h6>
-                <div className="flex flex-row flex-wrap gap-4">
-                  {skills.secondary?.map((skill, index) => (
-                    <div
-                      className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8`}
-                      key={index}
-                    >
-                      <Image
-                        key={index}
-                        src={skill.src}
-                        alt={skill.alt}
-                        width="24"
-                        height="24"
-                        className={`${skill.imageClassName ?? ""}`}
-                      />
-                    </div>
-                  ))}
-                </div>
-              </div>
+              ))}
             </div>
           </section>
           <div className="flex-1 h-full text-white rounded-md flex flex-col gap-5">
