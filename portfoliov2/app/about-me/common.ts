@@ -54,6 +54,8 @@ export const certificates = [
     alt: "AWS Certified Cloud Practitioner - Arul Valan Anto",
     width: 40,
     height: 40,
+    mobileWidth: 80,
+    mobileHeight: 80,
   },
   {
     href: "https://zsecurity.org/certification/validation/?cert_number=k7l7HJMa",
@@ -62,6 +64,8 @@ export const certificates = [
     alt: "Dark Web Certificate - Arul Valan Anto",
     width: 40,
     height: 36,
+    mobileWidth: 80,
+    mobileHeight: 76,
   },
 ];
 
@@ -119,53 +123,56 @@ export const skills: Skill = {
       src: "/about_skill_react.svg",
       alt: "React",
       className: "bg-[#66DBFB]",
+      imageClassName: "scale-100 md:scale-125 xl:scale-100",
       yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_node.svg",
       alt: "NodeJS",
       className: "bg-[#6AA05B]",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "3.5 years",
     },
     {
       src: "/about_skill_mongoDB.svg",
       alt: "Mongo DB",
       className: "bg-[#47301E] border-[#84C16A]",
-      imageClassName: "scale-90",
+      imageClassName: "scale-90 md:scale-110 xl:scale-90",
       yearofexperience: "3.5 years",
     },
     {
       src: "/about_skill_typescript.svg",
       alt: "TypeScript",
       className: "bg-[#007BCD]",
+      imageClassName: "scale-100 md:scale-125 xl:scale-100",
       yearofexperience: "3 years",
     },
     {
       src: "/about_skill_javascript.svg",
       alt: "JavaScript",
       className: "bg-[#F7E018]",
+      imageClassName: "scale-100 md:scale-125 xl:scale-100",
       yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_expressJS.svg",
       alt: "Express JS",
       className: "bg-[#EEEEEE]",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "3.5 years",
     },
     {
       src: "/about_skill_webpack.svg",
       alt: "Webpack",
       className: "bg-[#2B3A42]",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "2 years",
     },
     {
       src: "/about_skill_tailwindcss.svg",
       alt: "Tailwind CSS",
       className: "bg-[#0B1120]",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "3 years",
     },
     {
@@ -178,7 +185,7 @@ export const skills: Skill = {
       src: "/about_skill_redux.svg",
       alt: "Redux",
       className: "bg-[#272822]",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "4 years",
     },
     {
@@ -197,21 +204,21 @@ export const skills: Skill = {
       src: "/about_skill_css.svg",
       alt: "CSS",
       className: "bg-[#254BDD]",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_git.svg",
       alt: "GIT",
       className: "bg-[#FFFFFF]",
-      imageClassName: "scale-90",
+      imageClassName: "scale-90 md:scale-100 xl:scale-90",
       yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_jest.svg",
       alt: "Jest",
       className: "bg-[#910E1B]",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "2.5 years",
     },
     {
@@ -227,7 +234,7 @@ export const skills: Skill = {
       alt: "Python",
       className:
         "bg-gradient-to-t from-[#265074] from-80% via-transparent to-80% to-transparent to-100%",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "2 years",
     },
     {
@@ -242,7 +249,7 @@ export const skills: Skill = {
       alt: "Redis",
       className:
         "bg-gradient-to-t from-[#161F31] from-70% via-transparent to-70% to-transparent to-100%",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "2 years",
     },
     {
@@ -257,7 +264,7 @@ export const skills: Skill = {
       alt: "Stripe",
       className:
         "bg-gradient-to-t from-[#675DFF] from-60% via-transparent to-60% to-transparent to-100%",
-      imageClassName: "scale-75",
+      imageClassName: "scale-75 md:scale-100 xl:scale-75",
       yearofexperience: "1 year",
     },
     {
@@ -272,7 +279,7 @@ export const skills: Skill = {
       alt: "Fast API",
       className:
         "bg-gradient-to-t from-[#009485] from-55% via-transparent to-55% to-transparent to-100%",
-      imageClassName: "scale-90",
+      imageClassName: "scale-90 md:scale-100 xl:scale-90",
       yearofexperience: "1 year",
     },
     {
@@ -287,7 +294,7 @@ export const skills: Skill = {
       alt: "Django",
       className:
         "bg-gradient-to-t from-[#082E23] from-50% via-transparent to-50% to-transparent to-100%",
-      imageClassName: "scale-50",
+      imageClassName: "scale-50 md:scale-100 xl:scale-50",
       yearofexperience: "1 year",
     },
     {
@@ -295,7 +302,7 @@ export const skills: Skill = {
       alt: "PostgreSQL",
       className:
         "bg-gradient-to-t from-white from-40% via-transparent to-40% to-transparent to-100%",
-      imageClassName: "scale-90",
+      imageClassName: "scale-90 md:scale-100 xl:scale-90",
       yearofexperience: "6 months",
     },
     {
@@ -303,7 +310,7 @@ export const skills: Skill = {
       alt: "Figma",
       className:
         "bg-gradient-to-t from-[#74C0FC] from-10% via-green-500 via-30% via-yellow-500 via-55% via-red-500 via-80% to-transparent to-80%",
-      imageClassName: "scale-50",
+      imageClassName: "scale-50 md:scale-75 xl:scale-50",
       yearofexperience: "2+ years",
     },
   ],
