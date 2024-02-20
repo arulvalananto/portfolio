@@ -17,8 +17,7 @@ import {
 } from "./common";
 
 export const metadata: Metadata = {
-  title: "About me - Arul Valan Anto",
-  description: "About Arul Valan Anto, a software engineer.",
+  title: "Arul Valan Anto :: Profile",
 };
 
 const AboutPage = () => (
@@ -41,7 +40,7 @@ const AboutPage = () => (
       <div className="flex-1 flex flex-col gap-5 order-2 xl:order-1">
         <section
           id="about"
-          className="w-full h-full xl:h-[220px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1 select-none"
+          className="w-full h-full xl:h-[220px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1 select-none transition duration-300"
         >
           <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
             About
@@ -51,7 +50,7 @@ const AboutPage = () => (
         <div className="w-full h-full xl:h-[170px] flex flex-col xl:flex-row items-center gap-5 order-3 xl:order-2 select-none">
           <section
             id="education"
-            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-1 order-2 xl:order-1"
+            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-1 order-2 xl:order-1 transition duration-300"
           >
             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
               Education
@@ -74,7 +73,7 @@ const AboutPage = () => (
           </section>
           <section
             id="experience"
-            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-1 order-1 xl:order-2"
+            className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-1 order-1 xl:order-2 transition duration-300"
           >
             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
               Experience
@@ -99,7 +98,7 @@ const AboutPage = () => (
         <div className="w-full h-full flex-1 flex flex-col xl:flex-row items-center gap-5 order-2 xl:order-3">
           <section
             id="skills"
-            className="flex-1 w-full xl:max-w-[472px] h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 select-none"
+            className="flex-1 w-full xl:max-w-[472px] h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 select-none transition duration-300"
           >
             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
               Skills
@@ -146,7 +145,7 @@ const AboutPage = () => (
           <div className="flex-1 w-full h-full text-white rounded-md flex flex-col gap-5">
             <section
               id="certificates"
-              className="w-full h-full xl:h-[92px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-2 order-2 xl:order-1 select-none"
+              className="w-full h-full xl:h-[92px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-2 order-2 xl:order-1 select-none transition duration-300"
             >
               <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
                 Certificates
@@ -182,7 +181,7 @@ const AboutPage = () => (
             </section>
             <section
               id="projects"
-              className="flex-1 w-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1 xl:order-2 select-none"
+              className="flex-1 w-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1 xl:order-2 select-none transition duration-300"
             >
               <div className="flex items-center justify-between">
                 <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
@@ -241,8 +240,11 @@ const AboutPage = () => (
           </div>
         </div>
       </div>
-      <div className="w-full xl:w-[290px] xl:max-w-[290px] flex flex-col items-center gap-5 xl:gap-0  xl:justify-between order-1 xl:order-2">
-        <div className="border-2 border-black rounded-md xl:w-full h-[316px] flex items-end justify-end bg-[#4B24B5] select-none">
+      <section
+        id="profile"
+        className="w-full xl:w-[290px] xl:max-w-[290px] flex flex-col items-center gap-5 xl:gap-0  xl:justify-between order-1 xl:order-2"
+      >
+        <div className="border-2 border-black rounded-md xl:w-full h-[316px] flex items-end justify-end bg-[#4B24B5] select-none relative">
           <Image
             src="/about_profile.webp"
             alt="Arul Valan Anto's profile pic"
@@ -250,8 +252,8 @@ const AboutPage = () => (
             height={316}
           />
         </div>
-        <div className="w-full flex flex-col sm:justify-center sm:flex-row xl:flex-col gap-5">
-          <div className="bg-portfolio-yellowGreen w-full max-w-full sm:w-[300px] sm:max-w-[300px] xl:w-[290px] xl:max-w-[290px] h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2">
+        <div className="w-full flex flex-col sm:justify-center sm:flex-row xl:flex-col gap-5 transition duration-300">
+          <div className="bg-portfolio-yellowGreen w-full max-w-full sm:w-[300px] sm:max-w-[300px] xl:w-[290px] xl:max-w-[290px] h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2 relative">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
@@ -264,6 +266,18 @@ const AboutPage = () => (
                 <link.Icon size={20} color="white" />
               </a>
             ))}
+            <div className="absolute -top-6 -left-1 md:-left-12 xl:-left-1 flex items-center transition duration-300">
+              <p className="text-xs font-dancingScript">I&apos;m in</p>
+              <div className="animate-bounce">
+                <Image
+                  src="/about_arrow_social_profile.svg"
+                  alt="arrow for social profile"
+                  width={15}
+                  height={15}
+                  className="translate-y-4 -translate-x-5 rotate-45 md:translate-y-4 md:rotate-0 md:translate-x-0 xl:translate-y-4 xl:-translate-x-5 xl:rotate-45"
+                />
+              </div>
+            </div>
           </div>
           <button
             type="button"
@@ -271,11 +285,11 @@ const AboutPage = () => (
           >
             <FcAdvertising size={32} />
             <span className="text-white text-base font-medium font-poppins">
-              Reach me at here
+              Shoot me an email
             </span>
           </button>
         </div>
-        <div className="w-full h-[212px] bg-portfolio-blue text-white relative border-2 border-black rounded-md p-2 pt-4 group hidden xl:block select-none">
+        <div className="w-full h-[212px] bg-portfolio-blue text-white relative border-2 border-black rounded-md p-2 pt-4 group hidden xl:block select-none transition duration-300">
           <Image
             src="/about_curly_arrow.svg"
             alt="Hire me arrow"
@@ -294,7 +308,7 @@ const AboutPage = () => (
             className="absolute -bottom-10 right-0 object-contain scale-50 fade-in-5s"
           />
         </div>
-      </div>
+      </section>
     </div>
   </main>
 );

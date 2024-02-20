@@ -6,7 +6,8 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { VscPerson } from "react-icons/vsc";
 import { CiMenuFries } from "react-icons/ci";
-import { TiDocumentText } from "react-icons/ti";
+import { GrDocumentPdf } from "react-icons/gr";
+import { CgFileDocument } from "react-icons/cg";
 import { GoProjectSymlink } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
 
@@ -24,6 +25,12 @@ const Navbar = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = "/Arul_Valan_Anto_Resume.pdf";
     downloadLink.download = "Arul_Valan_Anto_Resume.pdf";
+    downloadLink.click();
+  };
+
+  const onNavigateToCV = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "https://read.cv/arulvalananto";
     downloadLink.click();
   };
 
@@ -47,7 +54,7 @@ const Navbar = () => {
           className="object-cover"
         />
       </Link>
-      <div className="hidden min-[500px]:flex items-center gap-10 md:gap-[140px] xl:gap-[280px]">
+      <div className="hidden min-[500px]:flex items-center gap-10 lg:gap-[120px] xl:gap-[280px]">
         <div className="flex items-center gap-10 md:gap-16">
           <Link
             href="/about-me"
@@ -61,6 +68,12 @@ const Navbar = () => {
           >
             Projects
           </Link>
+          <a
+            href="https://read.cv/arulvalananto"
+            className="font-medium text-black text-base font-DMSans hidden sm:block"
+          >
+            Read CV
+          </a>
           <a
             download
             href="/Arul_Valan_Anto_Resume.pdf"
@@ -126,9 +139,22 @@ const Navbar = () => {
             <button
               type="button"
               className="group text-left flex items-center gap-3"
+              onClick={() => onNavigateToCV()}
+            >
+              <CgFileDocument
+                size={24}
+                className="transition duration-300 group-hover:rotate-12"
+              />
+              <span className="font-medium text-black text-base font-DMSans">
+                View CV
+              </span>
+            </button>
+            <button
+              type="button"
+              className="group text-left flex items-center gap-3"
               onClick={onDownloadResume}
             >
-              <TiDocumentText
+              <GrDocumentPdf
                 size={24}
                 className="transition duration-300 group-hover:rotate-12"
               />

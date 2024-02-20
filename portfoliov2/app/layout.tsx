@@ -5,8 +5,7 @@ import "./globals.css";
 import { dmSans, quickSand } from "./lib/fonts";
 
 export const metadata: Metadata = {
-  title: "Portfolio - Arul Valan Anto",
-  description: "A portfolio of Arul Valan Anto, a software engineer.",
+  title: "Arul Valan Anto :: Software Engineer",
 };
 
 export default function RootLayout({
@@ -22,28 +21,43 @@ export default function RootLayout({
         <meta name="author" content="Arul Valan Anto S" />
         <meta name="publisher" content="Arul Valan Anto S" />
         <meta name="type" content="website" />
-        <meta name="description" content="Portfolio of Arul Valan Anto" />
+        <meta
+          name="description"
+          content="Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence."
+        />
         <meta
           name="keywords"
           content="Arul Valan Anto, Portfolio, Software Engineer, React Developer"
         />
 
-        <meta property="og:title" content="Portfolio - Arul Valan Anto S" />
+        <meta
+          property="og:title"
+          content="Arul Valan Anto :: Full Stack Developer"
+        />
         <meta
           property="og:description"
-          content="Portfolio of Arul Valan Anto"
+          content="Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence."
         />
         <meta property="og:url" content="https://arulvalananto.vercel.app" />
         <meta property="og:image" content="[IMAGE_URL]" />
         <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:alt" content="Portfolio of Arul Valan Anto" />
-        <meta property="og:site_name" content="Portfolio - Arul Valan Anto" />
+        <meta
+          property="og:image:alt"
+          content="Arul Valan Anto :: Full Stack Developer"
+        />
+        <meta
+          property="og:site_name"
+          content="Arul Valan Anto :: Full Stack Developer"
+        />
         <meta property="og:locale" content="en_US" />
 
-        <meta property="twitter:title" content="Portfolio - Arul Valan Anto" />
+        <meta
+          property="twitter:title"
+          content="Arul Valan Anto :: Full Stack Developer"
+        />
         <meta
           property="twitter:description"
-          content="Portfolio of Arul Valan Anto"
+          content="Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence."
         />
         <meta
           property="twitter:image"
@@ -51,7 +65,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image:alt"
-          content="Portfolio of Arul Valan Anto"
+          content="Arul Valan Anto :: Full Stack Developer"
         />
         <meta property="twitter:site" content="@arulvalananto_" />
         <meta property="twitter:card" content="summary_large_image" />
@@ -60,7 +74,7 @@ export default function RootLayout({
           property="twitter:url"
           content="https://arulvalananto.vercel.app"
         />
-        <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+        <link rel="icon" type="image/png" href="/logo.png" />
       </head>
 
       <body>
