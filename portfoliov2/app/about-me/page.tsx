@@ -122,7 +122,7 @@ const AboutPage = () => (
                         <a
                           href={`https://www.google.com/search?q=${skill.alt.toLowerCase()}`}
                           title={skill.alt}
-                          className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8`}
+                          className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-100 hover:scale-110`}
                           target="_blank"
                           rel="noopener norefferer nofollow"
                         >
@@ -158,6 +158,7 @@ const AboutPage = () => (
                     title={certificate.title}
                     target="_blank"
                     rel="noopener norefferer nofollow"
+                    className="transition duration-500 hover:scale-105"
                   >
                     <Image
                       src={certificate.src}
@@ -199,7 +200,7 @@ const AboutPage = () => (
                   <a
                     key={index}
                     href={project.href}
-                    className="w-[75px] h-[75px] md:w-[224px] md:h-[224px] xl:w-[125px] xl:h-[125px]  bg-violet-500 border-2 border-black relative group"
+                    className="w-[75px] h-[75px] md:w-[224px] md:h-[224px] xl:w-[125px] xl:h-[125px]  bg-violet-500 border-2 border-black relative group transition duration-300 hover:scale-95"
                     title={project.title}
                     target="_blank"
                     rel="noopener norefferer nofollow"
@@ -253,17 +254,21 @@ const AboutPage = () => (
           />
         </div>
         <div className="w-full flex flex-col sm:justify-center sm:flex-row xl:flex-col gap-5 transition duration-300">
-          <div className="bg-portfolio-yellowGreen w-full max-w-full sm:w-[300px] sm:max-w-[300px] xl:w-[290px] xl:max-w-[290px] h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2 relative">
+          <div className="bg-portfolio-yellowGreen w-full max-w-full sm:w-[300px] sm:max-w-[300px] xl:w-[290px] xl:max-w-[290px] h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2 relative transition duration-300">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
                 title={link.title}
-                className={`w-10 h-10 rounded-full ${link.className} border-2 border-black flex items-center justify-center`}
+                className={`w-10 h-10 rounded-full ${link.className} border-2 border-black flex items-center justify-center group transition duration-300 hover:translate-y-[1px]`}
                 target="_blank"
                 rel="noopener norefferer nofollow"
               >
-                <link.Icon size={20} color="white" />
+                <link.Icon
+                  size={20}
+                  className="group-hover:w-[21px] group-hover:h-[21px]"
+                  color="white"
+                />
               </a>
             ))}
             <div className="absolute -top-6 -left-1 md:-left-12 xl:-left-1 flex items-center transition duration-300">
@@ -281,7 +286,7 @@ const AboutPage = () => (
           </div>
           <button
             type="button"
-            className="bg-black w-full max-w-full sm:w-[300px] sm:max-w-[300px] px-3 xl:px-0 xl:w-full xl:max-w-full h-[68px] rounded-md flex items-center justify-center gap-3 select-none"
+            className="bg-black w-full max-w-full sm:w-[300px] sm:max-w-[300px] px-3 xl:px-0 xl:w-full xl:max-w-full h-[68px] rounded-md flex items-center justify-center gap-3 select-none transition duration-300 hover:-translate-y-[2px]"
           >
             <FcAdvertising size={32} />
             <span className="text-white text-base font-medium font-poppins">
