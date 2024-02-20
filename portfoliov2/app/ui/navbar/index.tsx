@@ -31,6 +31,8 @@ const Navbar = () => {
   const onNavigateToCV = () => {
     const downloadLink = document.createElement("a");
     downloadLink.href = "https://read.cv/arulvalananto";
+    downloadLink.target = "_blank";
+    downloadLink.rel = "noreferrer noopener nofollow";
     downloadLink.click();
   };
 
@@ -71,6 +73,8 @@ const Navbar = () => {
           <a
             href="https://read.cv/arulvalananto"
             className="font-medium text-black text-base font-DMSans hidden sm:block"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
           >
             Read CV
           </a>
@@ -146,7 +150,7 @@ const Navbar = () => {
                 className="transition duration-300 group-hover:rotate-12"
               />
               <span className="font-medium text-black text-base font-DMSans">
-                View CV
+                Read CV
               </span>
             </button>
             <button
@@ -160,7 +164,7 @@ const Navbar = () => {
               />
 
               <span className="text-black text-base font-medium font-DMSans">
-                Resume
+                Download Resume
               </span>
             </button>
             <button
