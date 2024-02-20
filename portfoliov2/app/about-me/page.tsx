@@ -271,7 +271,7 @@ const AboutPage = () => (
                 />
               </a>
             ))}
-            <div className="absolute -top-6 -left-1 md:-left-12 xl:-left-1 flex items-center transition duration-300">
+            <div className="absolute -top-6 -left-1 md:-left-12 xl:-left-1 flex items-center transition duration-300 select-none">
               <p className="text-xs font-dancingScript">I&apos;m in</p>
               <div className="animate-bounce">
                 <Image

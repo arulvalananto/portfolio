@@ -46,10 +46,10 @@ const Navbar = () => {
       <Link
         href="/"
         className="w-10 h-10"
-        title="Arul Valan Anto's portfolio logo"
+        title="Arul Valan Anto's Logo"
       >
         <Image
-          src="/logo.svg"
+          src="/logo.png"
           alt="Portfolio Logo"
           width={38}
           height={39}
