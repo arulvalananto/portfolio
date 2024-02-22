@@ -28,10 +28,11 @@ const ProjectsPage = () => (
               Coming Soon
             </p>
           </div>
-          <div className="col-span-5 row-span-5 bg-[#7412D7] rounded-2xl border-4 border-black p-3 space-y-3 relative overflow-hidden group">
-            <div className="absolute -bottom-[350px] animate-loadIn-iframe -right-36 transition-all duration-500 group-hover:-bottom-[320px] w-[500px] h-[500px] cursor-pointer rounded-xl">
+          <div className="col-span-5 row-span-5 bg-[#7412D7] rounded-2xl border-4 border-black p-3 space-y-3 relative overflow-hidden group cursor-pointer">
+            <div className="absolute -bottom-[350px] animate-loadIn-iframe motion-reduce:animate-none -right-36 transition-all duration-500 group-hover:-bottom-[320px] w-[500px] h-[500px] cursor-pointer rounded-xl">
               <iframe
-                src="https://highlightt.web.app/embed/zD2w4KaJrTju1iZhUqPN?p=0&bg=7412D7&f=12&ed=allow-me"
+                //src="https://highlightt.web.app/embed/zD2w4KaJrTju1iZhUqPN?p=0&bg=7412D7&f=12&ed=allow-me"
+                src=""
                 title="Hightlight: welcome_to_my_portfolio.js"
                 width="100%"
                 height="100%"
@@ -39,7 +40,7 @@ const ProjectsPage = () => (
                 className="rounded-[12px]"
               ></iframe>
             </div>
-            <div className="absolute top-1 right-4 animate-loadIn flex items-center justify-center">
+            <div className="absolute top-1 right-4 animate-loadIn motion-reduce:animate-none flex items-center justify-center">
               <Image
                 src="/projects_highlight_star2.svg"
                 alt="Highlight Project"
@@ -48,7 +49,7 @@ const ProjectsPage = () => (
                 className="animate-shaker-reverse-slow"
               />
             </div>
-            <div className="absolute bottom-[40px] animate-loadIn flex items-center justify-center">
+            <div className="absolute bottom-[40px] animate-loadIn motion-reduce:animate-none flex items-center justify-center">
               <Image
                 src="/projects_highlight_star1.svg"
                 alt="Highlight Project"
@@ -57,7 +58,7 @@ const ProjectsPage = () => (
                 className="animate-shaker"
               />
             </div>
-            <div className="absolute bottom-[15px] left-[75px] animate-loadIn-slow flex items-center justify-center">
+            <div className="absolute bottom-[15px] left-[75px] animate-loadIn-slow motion-reduce:animate-none flex items-center justify-center">
               <Image
                 src="/projects_highlight_star2.svg"
                 alt="Highlight Project"
@@ -77,7 +78,25 @@ const ProjectsPage = () => (
               <span>Snippets!</span>
             </p>
           </div>
-          <div className="col-span-4 row-span-5 bg-[#0F172A] rounded-2xl border-4 border-black p-3"></div>
+          <div className="col-span-4 row-span-5 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-[18px] overflow-hidden group cursor-pointer">
+            <Image
+              src="/projects_annals_logo.svg"
+              alt="Highlight Project"
+              width={126}
+              height={31}
+            />
+            <p className="font-quicksand text-xl text-white font-normal">
+              All-in-one personal space
+            </p>
+            <Image
+              src="/projects_annals_look.png"
+              alt="Highlight Project"
+              width={275}
+              height={150}
+              unoptimized
+              className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-[#C4FF59]"
+            />
+          </div>
         </div>
         <div className="col-span-12 row-span-8 grid grid-cols-3 auto-rows-[50px] gap-x-3">
           <div className="col-span-1 row-span-8 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3"></div>
