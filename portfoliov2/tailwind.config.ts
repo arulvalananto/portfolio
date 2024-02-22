@@ -13,11 +13,40 @@ const config: Config = {
         "radial-gradient":
           "radial-gradient(50% 50% at 50% 50%, #ffca43 48%, #ff603d 72%, #fc4dd5 88%)",
       },
+      keyframes: {
+        shaker: {
+          "0%": { transform: "rotate(-10deg)" },
+          "100%": { transform: "rotate(10deg)" },
+        },
+        "shaker-reverse": {
+          "0%": { transform: "rotate(10deg)" },
+          "100%": { transform: "rotate(-10deg)" },
+        },
+        loadIn: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(25px)",
+          },
+          "100%": {
+            opacity: "100%",
+            transform: "translateY(0)",
+          },
+        },
+      },
+      animation: {
+        shaker: "shaker .8s infinite alternate",
+        "shaker-reverse-slow": "shaker-reverse 1s infinite alternate",
+        "shaker-reverse": "shaker-reverse 1.5s infinite alternate-reverse",
+        loadIn: "loadIn .5s forwards",
+        "loadIn-slow": "loadIn .3s forwards",
+        "loadIn-iframe": "loadIn 1s forwards"
+      },
       fontFamily: {
         DMSans: ["var(--font-DMSans)"],
         poppins: ["var(--font-poppins)"],
         quicksand: ["var(--font-quicksand)"],
         dancingScript: ["var(--font-dancingscript)"],
+        leagueSpartan: ["var(--font-leagueSpartan)"],
       },
       colors: {
         "portfolio-blue": "#006FC0",

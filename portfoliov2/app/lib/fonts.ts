@@ -1,4 +1,10 @@
-import { DM_Sans, Dancing_Script, Poppins, Quicksand } from "next/font/google";
+import {
+  DM_Sans,
+  Dancing_Script,
+  League_Spartan,
+  Poppins,
+  Quicksand,
+} from "next/font/google";
 
 // If loading a variable font, you don't need to specify the font weight
 export const dmSans = DM_Sans({
@@ -26,4 +32,11 @@ export const dancingScript = Dancing_Script({
   weight: ["400"],
   display: "swap",
   variable: "--font-dancingscript",
+});
+
+export const leagueSpartan = League_Spartan({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+  variable: "--font-leagueSpartan",
 });
