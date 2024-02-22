@@ -78,7 +78,7 @@ const ProjectsPage = () => (
               <span>Snippets!</span>
             </p>
           </div>
-          <div className="col-span-4 row-span-5 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-[18px] overflow-hidden group cursor-pointer">
+          <div className="col-span-4 row-span-5 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-[18px] overflow-hidden group cursor-pointer select-none">
             <Image
               src="/projects_annals_logo.svg"
               alt="Highlight Project"
@@ -88,14 +88,16 @@ const ProjectsPage = () => (
             <p className="font-quicksand text-xl text-white font-normal">
               All-in-one personal space
             </p>
-            <Image
-              src="/projects_annals_look.png"
-              alt="Highlight Project"
-              width={275}
-              height={150}
-              unoptimized
-              className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-[#C4FF59]"
-            />
+            <div className="animate-loadIn-slow">
+              <Image
+                src="/projects_annals_look.png"
+                alt="Highlight Project"
+                width={275}
+                height={150}
+                unoptimized
+                className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-[#C4FF59]"
+              />
+            </div>
           </div>
         </div>
         <div className="col-span-12 row-span-8 grid grid-cols-3 auto-rows-[50px] gap-x-3">
@@ -106,8 +108,44 @@ const ProjectsPage = () => (
           <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-3"></div>
           <div className="col-span-1 row-span-12 w-full h-full flex flex-col items-center gap-4">
             <div className="w-full h-[200px] flex flex-row items-center gap-4">
-              <div className="bg-[#EC753A] w-[200px] h-full rounded-2xl border-4 border-black p-3"></div>
-              <div className="bg-[#FFEFD6] flex-1 w-full h-full rounded-2xl border-4 border-black p-3"></div>
+              <div className="bg-[#EC753A] w-[200px] h-full rounded-2xl border-4 border-black p-3 relative">
+                <div className="w-[100px] h-[100px] bg-[#6842EF] border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50">
+                  <Image
+                    src="/projects_attract_people.svg"
+                    alt="Attract People"
+                    width={75}
+                    height={75}
+                    className="translate-x-1 hover:scale-75 transition duration-300 ease-in-out hover:translate-y-3 hover:translate-x-4"
+                  />
+                </div>
+                <div className="w-[75px] h-[75px] bg-[#F1ADE2] border-4 border-black rounded-full absolute top-[70px] left-[90px] -translate-y-1/2 z-40">
+                  <Image
+                    src="/projects_brainstorm_ideas.svg"
+                    alt="Brainstorm Ideas"
+                    width={88}
+                    height={84}
+                    className="translate-x-[16px] -translate-y-[10px] hover:scale-150 hover:-translate-y-6 hover:rotate-12 transition duration-300 ease-in-out"
+                  />
+                </div>
+                <div className="w-[50px] h-[50px] bg-[#5BB1EC] border-4 border-black rounded-full absolute top-[100px] left-[106px] z-30 flex items-center justify-center">
+                  <Image
+                    src="/projects_rewards.svg"
+                    alt="Collect Rewards"
+                    width={28}
+                    height={32}
+                    className="translate-x-1 hover:scale-150 transition duration-300 ease-in-out hover:translate-y-5"
+                  />
+                </div>
+              </div>
+              <div className="bg-[#FFEFD6] flex-1 w-full h-full rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer">
+                <Image
+                  src="/projects_dressed_to_kill_logo.svg"
+                  alt="Dressed-to-kill project"
+                  width={243}
+                  height={71}
+                  className="group-hover:scale-110 group-hover:-translate-x-5 transition duration-300 ease-in-out"
+                />
+              </div>
             </div>
             <div className="flex-1 w-full h-full bg-[#77C686] rounded-2xl border-4 border-black p-3"></div>
           </div>

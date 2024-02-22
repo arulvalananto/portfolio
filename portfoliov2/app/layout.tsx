@@ -75,7 +75,7 @@ export default function RootLayout({
           property="twitter:url"
           content="https://arulvalananto.vercel.app"
         />
-        <link rel="icon" type="image/png" href="/logo.png" />
+        <link rel="icon" type="image/png" href="/logo_v6.svg" />
       </head>
 
       <body>
