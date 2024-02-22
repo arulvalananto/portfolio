@@ -9,11 +9,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "radial-gradient":
+          "radial-gradient(50% 50% at 50% 50%, #ffca43 48%, #ff603d 72%, #fc4dd5 88%)",
+      },
       fontFamily: {
         DMSans: ["var(--font-DMSans)"],
         poppins: ["var(--font-poppins)"],
         quicksand: ["var(--font-quicksand)"],
-        dancingScript: ["var(--font-dancingscript)"]
+        dancingScript: ["var(--font-dancingscript)"],
       },
       colors: {
         "portfolio-blue": "#006FC0",

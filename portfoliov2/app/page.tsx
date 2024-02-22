@@ -1,9 +1,3 @@
-import Navbar from "./ui/navbar";
-
-const Home = () => (
-  <main>
-    <Navbar />
-  </main>
-);
+const Home = () => <main></main>;
 
 export default Home;

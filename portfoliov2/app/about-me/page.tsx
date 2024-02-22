@@ -3,7 +3,6 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { FcAdvertising } from "react-icons/fc";
 
-import Navbar from "../ui/navbar";
 import { dancingScript, poppins } from "../lib/fonts";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
 import {
@@ -24,8 +23,7 @@ const AboutPage = () => (
   <main
     className={`${poppins.variable} ${dancingScript.variable} pb-5 space-y-10`}
   >
-    <Navbar />
-    <div className="w-full max-w-full xl:w-[1270px] xl:max-w-[1270px] m-auto select-none">
+    <div className="w-full max-w-full xl:w-[1280px] xl:max-w-[1280px] m-auto select-none">
       <div className="w-[165px] h-[50px]">
         <Image
           src="/about_hello.svg"
@@ -36,7 +34,7 @@ const AboutPage = () => (
         />
       </div>
     </div>
-    <div className="w-full max-w-full h-full xl:w-[1270px] xl:max-w-[1270px] xl:h-[737px] m-auto flex flex-col xl:flex-row gap-4 p-4 xl:p-0">
+    <div className="w-full max-w-full h-full xl:w-[1280px] xl:max-w-[1280px] xl:h-[737px] m-auto flex flex-col xl:flex-row gap-4 p-4 xl:p-0">
       <div className="flex-1 flex flex-col gap-5 order-2 xl:order-1">
         <section
           id="about"

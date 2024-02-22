@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
+import Navbar from "./ui/navbar";
 import { dmSans, quickSand } from "./lib/fonts";
 
 export const metadata: Metadata = {
@@ -78,6 +79,7 @@ export default function RootLayout({
       </head>
 
       <body>
+        <Navbar />
         {children}
         <SpeedInsights />
       </body>
