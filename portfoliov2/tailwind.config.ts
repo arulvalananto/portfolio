@@ -18,6 +18,10 @@ const config: Config = {
           "0%": { transform: "rotate(-10deg)" },
           "100%": { transform: "rotate(10deg)" },
         },
+        sizeup: {
+          "0%": { transform: "scale(0%)" },
+          "100%": { transform: "scale(100%)" },
+        },
         "shaker-reverse": {
           "0%": { transform: "rotate(10deg)" },
           "100%": { transform: "rotate(-10deg)" },
@@ -39,7 +43,11 @@ const config: Config = {
         "shaker-reverse": "shaker-reverse 1.5s infinite alternate-reverse",
         loadIn: "loadIn .5s forwards",
         "loadIn-slow": "loadIn .3s forwards",
-        "loadIn-iframe": "loadIn 1s forwards"
+        "loadIn-iframe": "loadIn 1s forwards",
+        "sizeup-veryslow": "sizeup 2s forwards",
+        "sizeup-slow": "sizeup 1s forwards",
+        "sizeup-moderate": "sizeup .5s forwards",
+        "sizeup-fast": "sizeup .3s forwards",
       },
       fontFamily: {
         DMSans: ["var(--font-DMSans)"],

@@ -12,7 +12,7 @@ const ProjectsPage = () => (
     <div className="max-w-[1280px] m-auto pt-4">
       <div className="grid grid-cols-12 auto-rows-[50px] bg-gray-50 gap-y-0.5">
         <div className="col-span-12 row-span-5 grid grid-cols-12 auto-rows-[50px] gap-x-3">
-          <div className="col-span-3 row-span-5 bg-[#2563EB] bg-[url('/projects_sprinkle_effect.png')] select-none rounded-2xl border-4 border-black p-3 flex flex-col gap-3 relative overflow-hidden group">
+          <div className="col-span-3 row-span-5 bg-[#2563EB] bg-[url('/projects_sprinkle_effect.webp')] select-none rounded-2xl border-4 border-black p-3 flex flex-col gap-3 relative overflow-hidden group">
             <div className="bg-radial-gradient absolute -bottom-36 -right-36 w-80 h-80 rounded-full filter blur-xl cursor-pointer transition-all ease-in-out delay-150 duration-1000 group-hover:-bottom-32 group-hover:-right-32 group-hover:scale-105"></div>
             <Image
               src="/projects_synthup_logo.svg"
@@ -90,11 +90,10 @@ const ProjectsPage = () => (
             </p>
             <div className="animate-loadIn-slow">
               <Image
-                src="/projects_annals_look.png"
+                src="/projects_annals_look.webp"
                 alt="Highlight Project"
                 width={275}
                 height={150}
-                unoptimized
                 className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-[#C4FF59]"
               />
             </div>
@@ -102,39 +101,69 @@ const ProjectsPage = () => (
         </div>
         <div className="col-span-12 row-span-8 grid grid-cols-3 auto-rows-[50px] gap-x-3">
           <div className="col-span-1 row-span-8 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3"></div>
-          <div className="col-span-2 row-span-8 bg-[#6C56F9] rounded-2xl border-4 border-black p-3"></div>
+          <div className="col-span-2 row-span-8 bg-[#6C56F9] bg-[url('/projects_sprinkle_effect.webp')] rounded-2xl border-4 border-black p-3 flex items-start justify-between group select-none cursor-pointer">
+            <div className="flex flex-col gap-4 mt-16">
+              <Image
+                src="/projects_airdeck_logo.webp"
+                alt="AirDeck Project"
+                width={160}
+                height={40}
+              />
+              <p className="text-2xl font-quicksand font-normal">
+                Document Narration Platform
+              </p>
+            </div>
+            <div className="w-[450px] h-96 flex items-center justify-center animate-sizeup-slow">
+              <video
+                src="/projects_airdeck_demo.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controlsList="nodownload"
+                poster="/projects_airdeck_demo_poster.webp"
+                className="rounded-md transition duration-300 ease-in-out group-hover:scale-95 group-hover:border-2 group-hover:border-white"
+              />
+            </div>
+          </div>
         </div>
         <div className="col-span-12 row-span-12 grid grid-cols-2 auto-rows-[50px] gap-x-3">
           <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-3"></div>
           <div className="col-span-1 row-span-12 w-full h-full flex flex-col items-center gap-4">
             <div className="w-full h-[200px] flex flex-row items-center gap-4">
-              <div className="bg-[#EC753A] w-[200px] h-full rounded-2xl border-4 border-black p-3 relative">
+              <div className="bg-[#EC753A] w-[200px] h-full rounded-2xl border-4 border-black p-3 relative select-none">
                 <div className="w-[100px] h-[100px] bg-[#6842EF] border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50">
-                  <Image
-                    src="/projects_attract_people.svg"
-                    alt="Attract People"
-                    width={75}
-                    height={75}
-                    className="translate-x-1 hover:scale-75 transition duration-300 ease-in-out hover:translate-y-3 hover:translate-x-4"
-                  />
+                  <div className="animate-sizeup-slow">
+                    <Image
+                      src="/projects_attract_people.svg"
+                      alt="Attract People"
+                      width={75}
+                      height={75}
+                      className="translate-x-1 hover:scale-75 transition duration-300 ease-in-out hover:translate-y-3 hover:translate-x-4"
+                    />
+                  </div>
                 </div>
                 <div className="w-[75px] h-[75px] bg-[#F1ADE2] border-4 border-black rounded-full absolute top-[70px] left-[90px] -translate-y-1/2 z-40">
-                  <Image
-                    src="/projects_brainstorm_ideas.svg"
-                    alt="Brainstorm Ideas"
-                    width={88}
-                    height={84}
-                    className="translate-x-[16px] -translate-y-[10px] hover:scale-150 hover:-translate-y-6 hover:rotate-12 transition duration-300 ease-in-out"
-                  />
+                  <div className="animate-sizeup-moderate">
+                    <Image
+                      src="/projects_brainstorm_ideas.svg"
+                      alt="Brainstorm Ideas"
+                      width={88}
+                      height={84}
+                      className="translate-x-[16px] -translate-y-[10px] hover:scale-150 hover:-translate-y-6 hover:rotate-12 transition duration-300 ease-in-out"
+                    />
+                  </div>
                 </div>
                 <div className="w-[50px] h-[50px] bg-[#5BB1EC] border-4 border-black rounded-full absolute top-[100px] left-[106px] z-30 flex items-center justify-center">
-                  <Image
-                    src="/projects_rewards.svg"
-                    alt="Collect Rewards"
-                    width={28}
-                    height={32}
-                    className="translate-x-1 hover:scale-150 transition duration-300 ease-in-out hover:translate-y-5"
-                  />
+                  <div className="animate-sizeup-fast">
+                    <Image
+                      src="/projects_rewards.svg"
+                      alt="Collect Rewards"
+                      width={28}
+                      height={32}
+                      className="translate-x-1 hover:scale-150 transition duration-300 ease-in-out hover:translate-y-5"
+                    />
+                  </div>
                 </div>
               </div>
               <div className="bg-[#FFEFD6] flex-1 w-full h-full rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer">
