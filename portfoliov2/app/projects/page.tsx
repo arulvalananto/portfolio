@@ -100,7 +100,43 @@ const ProjectsPage = () => (
           </div>
         </div>
         <div className="col-span-12 row-span-8 grid grid-cols-3 auto-rows-[50px] gap-x-3">
-          <div className="col-span-1 row-span-8 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3"></div>
+          <div className="col-span-1 row-span-8 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3 overflow-hidden relative select-none cursor-pointer group">
+            <div className="flex items-center -translate-y-3 h-[99px]">
+              <Image
+                src="/projects_thecrawlerman_logo_animation.gif"
+                alt="The crawlerman logo animation"
+                width={99}
+                height={71}
+                className="-translate-y-2 -translate-x-6"
+              />
+              <Image
+                src="/projects_thecrawlerman_logo.svg"
+                alt="The crawlerman logo text"
+                width={202}
+                height={42}
+                className="-translate-x-9"
+              />
+            </div>
+            <p className="text-lg font-quicksand font-normal text-black flex flex-col">
+              <span>pre-defined APIs</span>
+              <span>explicitly designed for</span>
+              <span className="text-white bg-black py-0 px-2 rounded-sm w-20 flex items-center justify-center mt-[2px]">
+                scraping
+              </span>
+            </p>
+            <div className="absolute bottom-10 right-3">
+              <Image
+                src="/projects_thecrawlerman_demo_animation.gif"
+                alt=""
+                width={268}
+                height={213}
+              />
+            </div>
+            <p className="absolute bottom-3 left-3 text-sm font-quicksand font-normal text-black transition-all duration-500 group-hover:text-white z-50 group-hover:bottom-[10px]">
+              working in progress
+            </p>
+            <div className="bg-black box-wave absolute bottom-0 left-0 w-full h-[72px] z-40 duration-500 transition-all translate-y-[72px] group-hover:translate-y-0"></div>
+          </div>
           <div className="col-span-2 row-span-8 bg-[#6C56F9] bg-[url('/projects_sprinkle_effect.webp')] rounded-2xl border-4 border-black p-3 flex items-start justify-between group select-none cursor-pointer">
             <div className="flex flex-col gap-4 mt-16">
               <Image
