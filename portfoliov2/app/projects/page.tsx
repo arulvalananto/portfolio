@@ -94,7 +94,7 @@ const ProjectsPage = () => (
                 alt="Highlight Project"
                 width={275}
                 height={150}
-                className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-[#C4FF59]"
+                className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-white"
               />
             </div>
           </div>
@@ -158,7 +158,7 @@ const ProjectsPage = () => (
                 playsInline
                 controlsList="nodownload"
                 poster="/projects_airdeck_demo_poster.webp"
-                className="rounded-md transition duration-300 ease-in-out group-hover:scale-95 group-hover:border-2 group-hover:border-white"
+                className="rounded-md transition duration-300 ease-in-out group-hover:scale-95"
               />
             </div>
           </div>
@@ -216,9 +216,59 @@ const ProjectsPage = () => (
           </div>
         </div>
         <div className="col-span-12 row-span-6 grid grid-cols-12 auto-rows-[50px] gap-x-3">
-          <div className="col-span-5 row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-3"></div>
-          <div className="col-span-3 row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3"></div>
-          <div className="col-span-4 row-span-6 bg-[#F0ABFC] rounded-2xl border-4 border-black p-3"></div>
+          <div className="col-span-5 row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-3">
+            <Image
+              src="/projects_scaffolder_logo.svg"
+              alt="Framewise Project"
+              width={201}
+              height={41}
+            />
+            <p className="text-black font-quicksand text-base">
+              Instant Scaffold CLI
+            </p>
+          </div>
+          <div className="col-span-3 row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3 flex flex-col justify-between overflow-hidden select-none cursor-pointer group">
+            <Image
+              src="/projects_framewise_logo.svg"
+              alt="Framewise Project"
+              width={115}
+              height={25}
+            />
+            <p className="flex flex-col text-white font-quicksand text-sm">
+              <span>Read-later app with</span>
+              <span>recommendation feature</span>
+            </p>
+            <div className="animate-sizeup-slow motion-reduce:animate-none min-h-[137px]">
+              <Image
+                src="/projects_framewise_look.png"
+                alt="Framewise Project Overview"
+                width={1600}
+                height={900}
+                className="aspect-auto scale-[1.4] translate-y-10 group-hover:scale-100 group-hover:translate-y-0 transition-all duration-300 group-hover:border-[#C4FF59] rounded-md  group-hover:border-4"
+              />
+            </div>
+          </div>
+          <div className="col-span-4 row-span-6 bg-[#F0ABFC] rounded-2xl border-4 border-black relative group select-none overflow-hidden flex flex-col gap-6 p-5 cursor-pointer">
+            <Image
+              src="/projects_futurereads_logo.svg"
+              alt="FutureReads Project"
+              width={183}
+              height={23}
+            />
+            <p className="flex flex-col text-black font-quicksand text-base">
+              <span>Discover Every Detail</span>
+              <span>Frame by Frame</span>
+            </p>
+            <div className="animate-bounce-right motion-reduce:animate-none">
+              <Image
+                src="/projects_futurereads_look.webp"
+                alt="FutureReads Project Overview"
+                width={1600}
+                height={900}
+                className="aspect-auto transition duration-300 translate-x-6 rounded-md group-hover:translate-x-10 group-hover:translate-y-10 group-hover:scale-150"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

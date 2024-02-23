@@ -14,6 +14,11 @@ const config: Config = {
           "radial-gradient(50% 50% at 50% 50%, #ffca43 48%, #ff603d 72%, #fc4dd5 88%)",
       },
       keyframes: {
+        bouncer: {
+          "0%": { transform: "translateX(80px)" },
+          "50%": { transform: "translateX(-25px)" },
+          "100%": { transform: "translateX(0px)" },
+        },
         shaker: {
           "0%": { transform: "rotate(-10deg)" },
           "100%": { transform: "rotate(10deg)" },
@@ -48,6 +53,7 @@ const config: Config = {
         "sizeup-slow": "sizeup 1s forwards",
         "sizeup-moderate": "sizeup .5s forwards",
         "sizeup-fast": "sizeup .3s forwards",
+        "bounce-right": "bouncer 1.5s ease-out",
       },
       fontFamily: {
         DMSans: ["var(--font-DMSans)"],
