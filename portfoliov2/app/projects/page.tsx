@@ -216,7 +216,7 @@ const ProjectsPage = () => (
           </div>
         </div>
         <div className="col-span-12 row-span-6 grid grid-cols-12 auto-rows-[50px] gap-x-3">
-          <div className="col-span-5 row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-3">
+          <div className="col-span-5 row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group cursor-pointer">
             <Image
               src="/projects_scaffolder_logo.svg"
               alt="Framewise Project"
@@ -226,6 +226,18 @@ const ProjectsPage = () => (
             <p className="text-black font-quicksand text-base">
               Instant Scaffold CLI
             </p>
+            <div className="w-[500px] h-96 scale-90 flex items-center justify-center animate-sizeup-slow">
+              <video
+                src="/projects_scaffolder_demo.mp4"
+                autoPlay
+                loop
+                muted
+                playsInline
+                controlsList="nodownload"
+                poster="/projects_scaffolder_demo_poster.webp"
+                className="rounded-md transition duration-300 ease-in-out group-hover:-translate-y-2"
+              />
+            </div>
           </div>
           <div className="col-span-3 row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3 flex flex-col justify-between overflow-hidden select-none cursor-pointer group">
             <Image
