@@ -32,8 +32,7 @@ const ProjectsPage = () => (
           <div className="col-span-5 row-span-5 bg-[#7412D7] rounded-2xl border-4 border-black p-3 space-y-3 relative overflow-hidden group cursor-pointer">
             <div className="absolute -bottom-[350px] animate-loadIn-iframe motion-reduce:animate-none -right-36 transition-all duration-500 group-hover:-bottom-[320px] w-[500px] h-[500px] cursor-pointer rounded-xl">
               <iframe
-                //src="https://highlightt.web.app/embed/zD2w4KaJrTju1iZhUqPN?p=0&bg=7412D7&f=12&ed=allow-me"
-                src=""
+                src="https://highlightt.web.app/embed/zD2w4KaJrTju1iZhUqPN?p=0&bg=7412D7&f=12&ed=allow-me"
                 title="Hightlight: welcome_to_my_portfolio.js"
                 width="100%"
                 height="100%"
@@ -195,7 +194,7 @@ const ProjectsPage = () => (
           </div>
           <div className="col-span-1 row-span-12 w-full h-full flex flex-col items-center gap-4">
             <div className="w-full h-[200px] max-h-[200px] flex flex-row items-center gap-4">
-              <div className="bg-[#EC753A] w-[200px] h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 relative select-none group">
+              <div className="bg-[#EC753A] w-[200px] h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 relative select-none group cursor-pointer">
                 <div className="w-[100px] h-[100px] bg-[#6842EF] border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50 group-hover:scale-105 transition duration-200">
                   <div className="animate-sizeup-slow">
                     <Image
@@ -230,14 +229,53 @@ const ProjectsPage = () => (
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFEFD6] flex-1 w-full h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer">
-                <div className="animate-sizeup-moderate">
+              <div className="bg-[#FFEFD6] flex-1 w-full h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer relative">
+                <div className="animate-sizeup-moderate z-50">
                   <Image
                     src="/projects_dressed_to_kill_logo.svg"
                     alt="Dressed-to-kill project"
                     width={243}
                     height={71}
-                    className="group-hover:scale-110 group-hover:-translate-x-5 transition duration-300 ease-in-out"
+                    className="group-hover:scale-110 group-hover:-translate-x-5 transition duration-300 ease-in-out z-20"
+                  />
+                </div>
+                <div className="absolute top-50% left-50% animate-sizeup-slow">
+                  <div className="bg-[#F2B950] w-10 h-10 rounded-full z-10 group-hover:opacity-100 group-hover:scale-[40] transition duration-500"></div>
+                </div>
+                <div className="absolute top-0 left-0 z-50 group-hover:animate-wiggle">
+                  <Image
+                    src="/projects_dressedtokill_comma.svg"
+                    alt="Dressed-to-kill project"
+                    width={60}
+                    height={60}
+                    className="-translate-y-20 group-hover:translate-y-0 transition duration-300 ease-in-out"
+                  />
+                </div>
+                <div className="absolute bottom-0 right-0 z-50 group-hover:animate-wiggle">
+                  <Image
+                    src="/projects_dressedtokill_dot.svg"
+                    alt="Dressed-to-kill project"
+                    width={60}
+                    height={60}
+                    className="scale-0 opacity-0 translate-x-10 group-hover:translate-x-0 group-hover:scale-100 group-hover:opacity-100 transition duration-300 ease-in-out"
+                  />
+                </div>
+                <div className="absolute bottom-0 left-0 z-50 group-hover:animate-wiggle">
+                  <Image
+                    src="/projects_dressedtokill_semicolon.svg"
+                    alt="Dressed-to-kill project"
+                    width={60}
+                    height={60}
+                    className="-translate-x-10 rotate-90 group-hover:rotate-0 group-hover:translate-x-0 transition duration-500 ease-in-out"
+                  />
+                </div>
+                <div className="absolute top-0 right-0 z-50 group-hover:animate-wiggle">
+                  <Image
+                    src="/projects_dressedtokill_exclamatory.svg"
+                    alt="Dressed-to-kill project"
+                    width={60}
+                    height={60}
+                    className="scale-0 opacity-0 group-hover:scale-110 group-hover:opacity-100 transition duration-300 ease-in-out"
                   />
                 </div>
               </div>

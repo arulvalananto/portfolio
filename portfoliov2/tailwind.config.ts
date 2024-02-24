@@ -42,6 +42,10 @@ const config: Config = {
             transform: "translateY(0)",
           },
         },
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
       },
       animation: {
         shaker: "shaker .8s infinite alternate",
@@ -55,6 +59,7 @@ const config: Config = {
         "sizeup-moderate": "sizeup .5s forwards",
         "sizeup-fast": "sizeup .3s forwards",
         "bounce-right": "bouncer 1.5s ease-out",
+        wiggle: "wiggle 1s ease-in-out infinite",
       },
       fontFamily: {
         DMSans: ["var(--font-DMSans)"],
