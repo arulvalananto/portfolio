@@ -159,7 +159,7 @@ const ProjectsPage = () => (
             <div className="w-[450px] h-96 flex items-center justify-center animate-sizeup-slow">
               <video
                 preload="none"
-                src="/projects_airdeck_demo_v2.mp4"
+                src="/projects_airdeck_demo.mp4"
                 autoPlay
                 loop
                 muted
@@ -279,7 +279,7 @@ const ProjectsPage = () => (
             <div className="w-[500px] h-96 scale-90 flex items-center justify-center animate-sizeup-slow">
               <video
                 preload="none"
-                src="/projects_scaffolder_demo_v2.mp4"
+                src="/projects_scaffolder_demo.mp4"
                 autoPlay
                 loop
                 muted
