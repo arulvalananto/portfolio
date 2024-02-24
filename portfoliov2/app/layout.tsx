@@ -40,8 +40,8 @@ export default function RootLayout({
           content="Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence."
         />
         <meta property="og:url" content="https://arulvalananto.vercel.app" />
-        <meta property="og:image" content="[IMAGE_URL]" />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image" content="/portfolio_cover.png" />
+        <meta property="og:image:type" content="image/png" />
         <meta
           property="og:image:alt"
           content="Arul Valan Anto :: Full Stack Developer"
@@ -62,7 +62,7 @@ export default function RootLayout({
         />
         <meta
           property="twitter:image"
-          content="https://arulvalananto.vercel.app"
+          content="/portfolio_cover.png"
         />
         <meta
           property="twitter:image:alt"
