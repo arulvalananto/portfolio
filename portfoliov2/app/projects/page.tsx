@@ -166,9 +166,9 @@ const ProjectsPage = () => (
         <div className="col-span-12 row-span-12 grid grid-cols-2 auto-rows-[50px] gap-x-3">
           <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-3"></div>
           <div className="col-span-1 row-span-12 w-full h-full flex flex-col items-center gap-4">
-            <div className="w-full h-[200px] flex flex-row items-center gap-4">
-              <div className="bg-[#EC753A] w-[200px] h-full rounded-2xl border-4 border-black p-3 relative select-none">
-                <div className="w-[100px] h-[100px] bg-[#6842EF] border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50">
+            <div className="w-full h-[200px] max-h-[200px] flex flex-row items-center gap-4">
+              <div className="bg-[#EC753A] w-[200px] h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 relative select-none group">
+                <div className="w-[100px] h-[100px] bg-[#6842EF] border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50 group-hover:scale-105 transition duration-200">
                   <div className="animate-sizeup-slow">
                     <Image
                       src="/projects_attract_people.svg"
@@ -179,7 +179,7 @@ const ProjectsPage = () => (
                     />
                   </div>
                 </div>
-                <div className="w-[75px] h-[75px] bg-[#F1ADE2] border-4 border-black rounded-full absolute top-[70px] left-[90px] -translate-y-1/2 z-40">
+                <div className="w-[75px] h-[75px] bg-[#F1ADE2] border-4 border-black rounded-full absolute top-[70px] left-[90px] -translate-y-1/2 z-40 group-hover:scale-105 transition duration-200">
                   <div className="animate-sizeup-moderate">
                     <Image
                       src="/projects_brainstorm_ideas.svg"
@@ -190,7 +190,7 @@ const ProjectsPage = () => (
                     />
                   </div>
                 </div>
-                <div className="w-[50px] h-[50px] bg-[#5BB1EC] border-4 border-black rounded-full absolute top-[100px] left-[106px] z-30 flex items-center justify-center">
+                <div className="w-[50px] h-[50px] bg-[#5BB1EC] border-4 border-black rounded-full absolute top-[100px] left-[106px] z-30 flex items-center justify-center group-hover:scale-105 transition duration-200">
                   <div className="animate-sizeup-fast">
                     <Image
                       src="/projects_rewards.svg"
@@ -202,29 +202,71 @@ const ProjectsPage = () => (
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFEFD6] flex-1 w-full h-full rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer">
+              <div className="bg-[#FFEFD6] flex-1 w-full h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer">
+                <div className="animate-sizeup-moderate">
+                  <Image
+                    src="/projects_dressed_to_kill_logo.svg"
+                    alt="Dressed-to-kill project"
+                    width={243}
+                    height={71}
+                    className="group-hover:scale-110 group-hover:-translate-x-5 transition duration-300 ease-in-out"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="flex-1 w-full h-full max-h-[400px] bg-[#77C686] rounded-2xl border-4 border-black p-3 flex items-start relative select-none overflow-hidden group cursor-pointer">
+              <div className="flex flex-col gap-5 mt-10">
                 <Image
-                  src="/projects_dressed_to_kill_logo.svg"
-                  alt="Dressed-to-kill project"
-                  width={243}
-                  height={71}
-                  className="group-hover:scale-110 group-hover:-translate-x-5 transition duration-300 ease-in-out"
+                  src="/projects_vidable_logo.svg"
+                  alt="Vidable Project"
+                  width={160}
+                  height={32}
+                  className="max-h-[32px]"
+                />
+                <p className="flex flex-col text-black font-normal text-xl font-quicksand">
+                  <span>turns video libraries into</span>
+                  <span>dynamic assets</span>
+                </p>
+              </div>
+              <div className="max-h-[400px] animate-sizeup-slow">
+                <Image
+                  src="/projects_vidable_look.svg"
+                  alt="Vidable Project Overview"
+                  width={366}
+                  height={400}
+                />
+              </div>
+              <div className="transition-all duration-500 ease-in-out absolute top-0 -right-8 -rotate-90 -translate-y-20 translate-x-20 group-hover:translate-y-0 group-hover:translate-x-0">
+                <Image
+                  src="/projects_vidable_overlay_1.svg"
+                  alt="Attract People"
+                  width={133}
+                  height={112}
+                />
+              </div>
+              <div className="transition duration-500 absolute bottom-0 -left-8 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
+                <Image
+                  src="/projects_vidable_overlay_2.svg"
+                  alt="Attract People"
+                  width={133}
+                  height={112}
                 />
               </div>
             </div>
-            <div className="flex-1 w-full h-full bg-[#77C686] rounded-2xl border-4 border-black p-3"></div>
           </div>
         </div>
         <div className="col-span-12 row-span-6 grid grid-cols-12 auto-rows-[50px] gap-x-3">
-          <div className="col-span-5 row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group cursor-pointer">
+          <div className="col-span-5 row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group cursor-pointer select-none">
             <Image
               src="/projects_scaffolder_logo.svg"
               alt="Framewise Project"
               width={201}
               height={41}
             />
-            <p className="text-black font-quicksand text-base">
-              Instant Scaffold CLI
+            <p className="text-black font-quicksand text-base transition-all duration-300 flex flex-row gap-1 group-hover:gap-2">
+              <span>Instant</span>
+              <span>Scaffold</span>
+              <span>CLI</span>
             </p>
             <div className="w-[500px] h-96 scale-90 flex items-center justify-center animate-sizeup-slow">
               <video
