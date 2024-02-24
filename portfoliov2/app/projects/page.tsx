@@ -19,6 +19,7 @@ const ProjectsPage = () => (
               alt="SynthUp Project"
               width={150}
               height={26}
+              priority
             />
             <p className="font-quicksand font-medium text-base flex flex-col items-start">
               <span>Time-Saving</span>
@@ -72,6 +73,7 @@ const ProjectsPage = () => (
               alt="Highlight Project"
               width={176}
               height={36}
+              priority
             />
             <p className="font-leagueSpartan font-normal text-xl flex flex-col items-start text-white select-none">
               <span>Better Code</span>
@@ -84,6 +86,7 @@ const ProjectsPage = () => (
               alt="Highlight Project"
               width={126}
               height={31}
+              priority
             />
             <p className="font-quicksand text-xl text-white font-normal">
               All-in-one personal space
@@ -94,6 +97,7 @@ const ProjectsPage = () => (
                 alt="Highlight Project"
                 width={275}
                 height={150}
+                priority
                 className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-white"
               />
             </div>
@@ -115,6 +119,7 @@ const ProjectsPage = () => (
                 width={202}
                 height={42}
                 className="-translate-x-9"
+                priority
               />
             </div>
             <p className="text-lg font-quicksand font-normal text-black flex flex-col">
