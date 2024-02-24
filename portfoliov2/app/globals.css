@@ -55,3 +55,51 @@ ul li::before {
   -webkit-mask: var(--mask);
   mask: var(--mask);
 }
+
+.heart {
+  position: relative;
+  width: 10px;
+  height: 9px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background: white;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.grid-paper:hover {
+  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+    linear-gradient(
+      transparent 3px,
+      #6c56f9 3px,
+      #6c56f9 78px,
+      transparent 78px
+    ),
+    linear-gradient(-90deg, black 1px, transparent 1px),
+    linear-gradient(
+      -90deg,
+      transparent 3px,
+      #6c56f9 3px,
+      #6c56f9 78px,
+      transparent 78px
+    ),
+    linear-gradient(black 1px, transparent 1px), #6c56f9;
+  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,
+    80px 80px, 80px 80px;
+}

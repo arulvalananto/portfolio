@@ -30,14 +30,14 @@ const ProjectsPage = () => (
             </p>
           </div>
           <div className="col-span-5 row-span-5 bg-[#7412D7] rounded-2xl border-4 border-black p-3 space-y-3 relative overflow-hidden group cursor-pointer">
-            <div className="absolute -bottom-[350px] animate-loadIn-iframe motion-reduce:animate-none -right-36 transition-all duration-500 group-hover:-bottom-[320px] w-[500px] h-[500px] cursor-pointer rounded-xl">
+            <div className="absolute bg-[#7412D7] -bottom-[350px] animate-loadIn-iframe motion-reduce:animate-none -right-36 transition-all duration-500 group-hover:-bottom-[320px] w-[500px] h-[500px] cursor-pointer rounded-xl">
               <iframe
                 src="https://highlightt.web.app/embed/zD2w4KaJrTju1iZhUqPN?p=0&bg=7412D7&f=12&ed=allow-me"
                 title="Hightlight: welcome_to_my_portfolio.js"
                 width="100%"
                 height="100%"
                 allow="clipboard-write"
-                className="rounded-[12px]"
+                className="rounded-[12px] bg-[#7412D7]"
               ></iframe>
             </div>
             <div className="absolute top-1 right-4 animate-loadIn motion-reduce:animate-none flex items-center justify-center">
@@ -142,7 +142,7 @@ const ProjectsPage = () => (
             </p>
             <div className="bg-black box-wave absolute bottom-0 left-0 w-full h-[72px] z-40 duration-500 transition-all translate-y-[72px] group-hover:translate-y-0"></div>
           </div>
-          <div className="col-span-2 row-span-8 bg-[#6C56F9] bg-[url('/projects_sprinkle_effect.webp')] rounded-2xl border-4 border-black p-3 flex items-start justify-between group select-none cursor-pointer">
+          <div className="col-span-2 row-span-8 bg-[#6C56F9] rounded-2xl border-4 border-black p-3 flex items-start justify-between group select-none cursor-pointer relative overflow-hidden grid-paper">
             <div className="flex flex-col gap-4 mt-16">
               <Image
                 src="/projects_airdeck_logo.webp"
@@ -155,7 +155,7 @@ const ProjectsPage = () => (
                 Document Narration Platform
               </p>
             </div>
-            <div className="w-[450px] h-96 flex items-center justify-center animate-sizeup-slow">
+            <div className="w-[450px] h-96 flex items-center justify-center animate-sizeup-slow z-50">
               <video
                 preload="none"
                 src="/projects_airdeck_demo.mp4"
@@ -168,6 +168,13 @@ const ProjectsPage = () => (
                 className="rounded-md transition duration-300 ease-in-out group-hover:scale-95"
               />
             </div>
+            <div className="transition-all duration-300 absolute -top-40 left-1/4 w-40 h-28 border-2 opacity-100 rounded-md group-hover:-top-10 group-hover:bg-white group-hover:border-black group-hover:border-4 group-hover:scale-50"></div>
+            <div className="transition-all duration-300 absolute w-10 h-40 border-2 border-white opacity-40 -rotate-45 rounded-3xl -bottom-24 -right-10"></div>
+            <div className="transition-all duration-300 absolute -bottom-48 -right-48 w-10 h-40 bg-white -rotate-45 rounded-3xl group-hover:-bottom-24 group-hover:-right-10 group-hover:border-2 group-hover:border-black"></div>
+            <div className="transition-all duration-300 absolute top-1/2 left-7 w-10 h-20 rounded-3xl rotate-45 border-2 opacity-40"></div>
+            <div className="transition-all duration-300 absolute top-1/2 left-7 w-10 h-20 rounded-3xl rotate-45 border-2 opacity-40 -translate-x-24 group-hover:opacity-100 group-hover:bg-white group-hover:border-black group-hover:translate-x-0"></div>
+            <div className="transition-all duration-300 absolute top-5 left-1/2 w-10 h-10 border-2 opacity-40 rounded-md group-hover:opacity-100 group-hover:top-96 group-hover:rotate-45 group-hover:bg-white group-hover:border-black group-hover:scale-110 group-hover:rounded-none"></div>
+            <div className="transition-all duration-300 absolute -top-10 right-0 w-16 h-16 border-2 rounded-full opacity-40 group-hover:opacity-100 group-hover:top-2 group-hover:right-3 group-hover:w-10 group-hover:h-10 group-hover:bg-white group-hover:border-black"></div>
           </div>
         </div>
         <div className="col-span-12 row-span-12 grid grid-cols-2 auto-rows-[50px] gap-x-3">
