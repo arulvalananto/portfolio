@@ -185,7 +185,7 @@ const ProjectsPage = () => (
             </p>
             <div className="flex flex-col items-end">
               <Image
-                src="/projects_landgenius_look.png"
+                src="/projects_landgenius_look.webp"
                 alt="LandGenius Project"
                 width={600}
                 height={250}
@@ -323,7 +323,7 @@ const ProjectsPage = () => (
             </p>
             <div className="animate-sizeup-slow motion-reduce:animate-none min-h-[137px]">
               <Image
-                src="/projects_framewise_look.png"
+                src="/projects_framewise_look.webp"
                 alt="Framewise Project Overview"
                 width={1600}
                 height={900}
