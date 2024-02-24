@@ -172,7 +172,27 @@ const ProjectsPage = () => (
           </div>
         </div>
         <div className="col-span-12 row-span-12 grid grid-cols-2 auto-rows-[50px] gap-x-3">
-          <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-3"></div>
+          <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-5 space-y-12">
+            <Image
+              src="/projects_landgenius_logo.svg"
+              alt="LandGenius Project"
+              width={191}
+              height={41}
+            />
+            <p className="flex flex-col items-end text-xl font-quicksand text-black font-normal">
+              <span>Comprehensive</span>
+              <span>environmental analysis</span>
+            </p>
+            <div className="flex flex-col items-end">
+              <Image
+                src="/projects_landgenius_look.png"
+                alt="LandGenius Project"
+                width={600}
+                height={250}
+                className="rounded-md"
+              />
+            </div>
+          </div>
           <div className="col-span-1 row-span-12 w-full h-full flex flex-col items-center gap-4">
             <div className="w-full h-[200px] max-h-[200px] flex flex-row items-center gap-4">
               <div className="bg-[#EC753A] w-[200px] h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 relative select-none group">
