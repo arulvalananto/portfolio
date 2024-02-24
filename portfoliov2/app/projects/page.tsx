@@ -112,6 +112,7 @@ const ProjectsPage = () => (
                 width={99}
                 height={71}
                 className="-translate-y-2 -translate-x-6"
+                priority
               />
               <Image
                 src="/projects_thecrawlerman_logo.svg"
