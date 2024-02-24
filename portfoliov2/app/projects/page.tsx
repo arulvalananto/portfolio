@@ -172,7 +172,7 @@ const ProjectsPage = () => (
           </div>
         </div>
         <div className="col-span-12 row-span-12 grid grid-cols-2 auto-rows-[50px] gap-x-3">
-          <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-5 space-y-12">
+          <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-5 space-y-12 cursor-pointer select-none overflow-hidden transition duration-1000 ease-out hover:bg-[length:40px_40px] hover:bg-minus-one hover:bg-dot">
             <Image
               src="/projects_landgenius_logo.svg"
               alt="LandGenius Project"

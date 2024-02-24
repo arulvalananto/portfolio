@@ -12,6 +12,7 @@ const config: Config = {
       backgroundImage: {
         "radial-gradient":
           "radial-gradient(50% 50% at 50% 50%, #ffca43 48%, #ff603d 72%, #fc4dd5 88%)",
+        dot: "radial-gradient(black 1px, transparent 0)",
       },
       keyframes: {
         bouncer: {
@@ -67,6 +68,9 @@ const config: Config = {
         "portfolio-yellowGreen": "#EEFF7C",
         "portfolio-about-section": "#1E1E1E",
         "portfolio-about-title": "#A79CF8",
+      },
+      backgroundPosition: {
+        "minus-one": "-1px -1px",
       },
     },
   },
