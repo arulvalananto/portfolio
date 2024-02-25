@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium, FaTwitter } from "react-icons/fa6";
 
-import { Skill } from "./types";
+import { Skill } from "../about-me/types";
 
 export const bio = `Hey there, digital pioneers! I'm Arul Valan Anto, a Full Stack developer with over 4 years of coding under my belt. My playground? Crafting sleek and savvy web applications that make users go "Wow!".
 In my journey through the ever-evolving realm of web development, I've had the pleasure of dipping my toes into various fields, including AI, marketing, and environmental initiatives. From environmental to AI, I've donned many hats and solved countless puzzles, each experience shaping me into the versatile developer I am today. I'm ready to tackle any challenge that comes our way. Whether you're a startup aiming to disrupt the market or an established enterprise seeking to stay ahead of the curve, I'm here to join forces and turn your vision into reality.`;
@@ -134,7 +134,7 @@ export const skills: Skill = {
       color: "bg-[#47301E]",
       imageClassName: "scale-90 md:scale-110 xl:scale-90",
       yearofexperience: "3.5 years",
-      width: "w-[60px]",
+      width: "w-16",
     },
     {
       src: "/about_skill_typescript.svg",
@@ -160,7 +160,7 @@ export const skills: Skill = {
       className: "bg-[#EEEEEE]",
       color: "bg-black",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      width: "w-[60px]",
+      width: "w-16",
       yearofexperience: "3.5 years",
     },
     {
@@ -178,7 +178,7 @@ export const skills: Skill = {
       className: "bg-[#0B1120]",
       color: "bg-[#35B2E9]",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      width: "w-[70px]",
+      width: "w-[80px]",
       yearofexperience: "3 years",
     },
     {
@@ -359,3 +359,21 @@ export const skills: Skill = {
     },
   ],
 };
+
+export const experienceArea = [
+  {
+    alt: "Web Development",
+    color: "bg-[#5D91BB]",
+    width: "w-40",
+  },
+  {
+    alt: "Architectural Design",
+    color: "bg-[#F05539]",
+    width: "w-40",
+  },
+  {
+    alt: "Web Design",
+    color: "bg-[#0B9DC7]",
+    width: "w-20",
+  },
+];

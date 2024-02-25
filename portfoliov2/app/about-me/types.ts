@@ -1,9 +1,9 @@
 export type SkillInfo = {
-  src: string;
+  src?: string;
   alt: string;
-  className: string;
+  className?: string;
   imageClassName?: string;
-  yearofexperience: string;
+  yearofexperience?: string;
   color?: string;
   width: string;
 };

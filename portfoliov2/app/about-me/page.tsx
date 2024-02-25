@@ -3,7 +3,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import { FcAdvertising } from "react-icons/fc";
 
-import { dancingScript, poppins } from "../lib/fonts";
+import { dancingScript } from "../lib/fonts";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
 import {
   bio,
@@ -13,16 +13,14 @@ import {
   projects,
   skills,
   socialLinks,
-} from "./common";
+} from "../lib/common";
 
 export const metadata: Metadata = {
   title: "Arul Valan Anto :: Profile",
 };
 
 const AboutPage = () => (
-  <main
-    className={`${poppins.variable} ${dancingScript.variable} pb-5 space-y-10`}
-  >
+  <main className={`${dancingScript.variable} pb-5 space-y-10`}>
     <div className="w-full max-w-full xl:w-[1280px] xl:max-w-[1280px] m-auto select-none">
       <div className="w-[165px] h-[50px]">
         <Image
@@ -114,7 +112,7 @@ const AboutPage = () => (
                         tooltipInfo={{
                           name: skill.alt,
                           id: index,
-                          yearofexperience: skill.yearofexperience,
+                          yearofexperience: skill.yearofexperience ?? '1',
                         }}
                       >
                         <a
@@ -126,7 +124,7 @@ const AboutPage = () => (
                         >
                           <Image
                             key={index}
-                            src={skill.src}
+                            src={skill?.src ?? ''}
                             alt={skill.alt}
                             width="24"
                             height="24"
