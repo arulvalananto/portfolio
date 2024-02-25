@@ -147,4 +147,9 @@ ul li::before {
       var(--grid-color) var(--grid-strength),
       transparent var(--grid-strength)
     );
+  transition: all 0.5s ease-in-out;
+}
+
+.dashed-grid-paper:hover {
+  --grid-color: rgba(171, 171, 171, 1);
 }

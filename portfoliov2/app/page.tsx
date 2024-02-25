@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
+
+import SkillBadge from "./ui/skill-badge";
+import { skills } from "./about-me/common";
 
 const Home = () => (
   <main className="w-[1280px] max-w-[1280px] h-full m-auto mt-4">
-    <div className="w-full h-[772px] border-4 border-black rounded-md dashed-grid-paper select-none pt-10 relative overflow-hidden">
+    <div className="dashed-grid-paper w-full h-[772px] border-4 border-black rounded-md select-none pt-10 relative overflow-hidden animate-sizeup-fast">
       <h1 className="text-[40px] font-bold font-DMSans flex flex-col gap-1 items-center">
         <span>Hi, I’m Arul Valan Anto &ndash; Full Stack Developer</span>
         <span>Based In India, Currently Software Engineer</span>
@@ -61,44 +65,51 @@ const Home = () => (
         alt="stars"
         width={32}
         height={15}
-        className="absolute top-10 right-40"
+        className="animate-wiggle absolute top-10 right-40"
       />
       <Image
         src="/stars_v2.svg"
         alt="stars"
         width={12}
         height={15}
-        className="absolute top-20 left-12"
+        className="animate-wiggle absolute top-20 left-12"
       />
       <Image
         src="/stars_v2.svg"
         alt="stars"
         width={12}
         height={15}
-        className="absolute top-28 right-32"
+        className="animate-wiggle absolute top-28 right-32"
       />
       <Image
         src="/stars_v2.svg"
         alt="stars"
         width={12}
         height={15}
-        className="absolute bottom-48 right-16"
+        className="animate-wiggle absolute bottom-48 right-16"
       />
       <Image
         src="/stars_v2.svg"
         alt="stars"
         width={12}
         height={15}
-        className="absolute bottom-40 left-40"
+        className="animate-wiggle absolute bottom-40 left-40"
       />
       <Image
         src="/stars_v2.svg"
         alt="stars"
         width={12}
         height={15}
-        className="absolute top-1/3 left-1/4"
+        className="animate-wiggle absolute top-1/3 left-1/4"
       />
     </div>
+    <Marquee pauseOnHover speed={40} delay={1}>
+      <div className="py-4 flex flex-row gap-4">
+        {[...skills.primary, ...skills.secondary].map((skill) => (
+          <SkillBadge key={skill.alt} {...skill} />
+        ))}
+      </div>
+    </Marquee>
   </main>
 );
 
