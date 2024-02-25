@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Home = () => (
   <main className="w-[1280px] max-w-[1280px] h-full m-auto mt-4">
-    <div className="w-full h-[772px] border-4 border-black rounded-md dashed-grid-paper select-none pt-10 relative">
+    <div className="w-full h-[772px] border-4 border-black rounded-md dashed-grid-paper select-none pt-10 relative overflow-hidden">
       <h1 className="text-[40px] font-bold font-DMSans flex flex-col gap-1 items-center">
         <span>Hi, I’m Arul Valan Anto &ndash; Full Stack Developer</span>
         <span>Based In India, Currently Software Engineer</span>
@@ -52,7 +52,7 @@ const Home = () => (
       <a
         download
         href="/Arul_Valan_Anto_Resume.pdf"
-        className="absolute top-1/2 -translate-y-16 right-20 w-[80px] h-[80px] text-center rounded-full flex items-center justify-center bg-[#22E183] border-2 border-black uppercase font-poppins font-normal text-[10px] -rotate-[15deg]"
+        className="transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-[80px] h-[80px] text-center rounded-full flex items-center justify-center bg-[#22E183] border-2 border-black uppercase font-poppins font-normal text-[10px] -rotate-[15deg] hover:scale-95"
       >
         Download CV
       </a>
