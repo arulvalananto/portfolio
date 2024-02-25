@@ -9,11 +9,11 @@ export const metadata: Metadata = {
 
 const ProjectsPage = () => (
   <main className={`w-full h-full space-y-5 mb-5 ${leagueSpartan.variable}`}>
-    <div className="max-w-[1280px] m-auto pt-4">
-      <div className="grid grid-cols-12 auto-rows-[50px] bg-gray-50 gap-y-0.5">
-        <div className="col-span-12 row-span-5 grid grid-cols-12 auto-rows-[50px] gap-x-3">
-          <div className="col-span-3 row-span-5 bg-[#2563EB] bg-[url('/projects_sprinkle_effect.webp')] select-none rounded-2xl border-4 border-black p-3 flex flex-col gap-3 relative overflow-hidden group">
-            <div className="bg-radial-gradient absolute -bottom-36 -right-36 w-80 h-80 rounded-full filter blur-xl cursor-pointer transition-all ease-in-out delay-150 duration-1000 group-hover:-bottom-32 group-hover:-right-32 group-hover:scale-105"></div>
+    <div className="max-w-[1280px] m-auto pt-4 px-4 xl:px-0">
+      <div className="grid grid-cols-12 auto-rows-[110px] md:auto-rows-[80px] xl:auto-rows-[50px] bg-gray-50 gap-y-0.5">
+        <div className="col-span-12 row-span-9 md:row-span-9 xl:row-span-5 grid grid-cols-12 auto-rows-[100px] md:auto-rows-[55px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
+          <div className="col-span-12 md:col-span-6 xl:col-span-3 row-span-3 md:row-span-5 xl:row-span-5 order-2 xl:order-1 bg-[#2563EB] bg-[url('/projects_sprinkle_effect.webp')] select-none rounded-2xl border-4 border-black p-3 flex flex-col gap-3 relative overflow-hidden group">
+            <div className="bg-radial-gradient absolute -bottom-36 -right-36 w-96 h-96 xl:w-80 xl:h-80 rounded-full filter blur-xl cursor-pointer transition-all ease-in-out delay-150 duration-1000 group-hover:-bottom-32 group-hover:-right-32 group-hover:scale-105"></div>
             <Image
               src="/projects_synthup_logo.svg"
               alt="SynthUp Project"
@@ -29,8 +29,8 @@ const ProjectsPage = () => (
               Coming Soon
             </p>
           </div>
-          <div className="col-span-5 row-span-5 bg-[#7412D7] rounded-2xl border-4 border-black p-3 space-y-3 relative overflow-hidden group cursor-pointer">
-            <div className="absolute bg-[#7412D7] -bottom-[350px] animate-loadIn-iframe motion-reduce:animate-none -right-36 transition-all duration-500 group-hover:-bottom-[320px] w-[500px] h-[500px] cursor-pointer rounded-xl">
+          <div className="col-span-12 xl:col-span-5 row-span-3 md:row-span-6 xl:row-span-5 order-1 xl:order-2 bg-[#7412D7] rounded-2xl border-4 border-black p-3 space-y-3 relative overflow-hidden group cursor-pointer">
+            <div className="w-[640px] sm:w-[700px] md:w-[800px] lg:w-[1000px] xl:w-[500px] h-72 md:h-96 xl:h-[500px] absolute bg-[#7412D7] -bottom-[100px] md:-bottom-[120px] md:-right-[300px] lg:-right-[200px] xl:-bottom-[350px] xl:-right-36 animate-loadIn-iframe motion-reduce:animate-none  transition-all duration-500 group-hover:-bottom-[80px] md:group-hover:-bottom-[100px]  xl:group-hover:-bottom-[320px] cursor-pointer rounded-xl">
               <iframe
                 src="https://highlightt.web.app/embed/zD2w4KaJrTju1iZhUqPN?p=0&bg=7412D7&f=12&ed=allow-me"
                 title="Hightlight: welcome_to_my_portfolio.js"
@@ -49,7 +49,7 @@ const ProjectsPage = () => (
                 className="animate-shaker-reverse-slow"
               />
             </div>
-            <div className="absolute bottom-[40px] animate-loadIn motion-reduce:animate-none flex items-center justify-center">
+            <div className="hidden absolute bottom-[40px] animate-loadIn motion-reduce:animate-none md:flex items-center justify-center">
               <Image
                 src="/projects_highlight_star1.svg"
                 alt="Highlight Project"
@@ -58,7 +58,7 @@ const ProjectsPage = () => (
                 className="animate-shaker"
               />
             </div>
-            <div className="absolute bottom-[15px] left-[75px] animate-loadIn-slow motion-reduce:animate-none flex items-center justify-center">
+            <div className="hidden absolute bottom-[15px] left-[75px] animate-loadIn-slow motion-reduce:animate-none md:flex items-center justify-center">
               <Image
                 src="/projects_highlight_star2.svg"
                 alt="Highlight Project"
@@ -74,12 +74,12 @@ const ProjectsPage = () => (
               height={36}
               priority
             />
-            <p className="font-leagueSpartan font-normal text-xl flex flex-col items-start text-white select-none">
+            <p className="font-leagueSpartan font-normal text-xl flex flex-row md:flex-col gap-1.5 md:gap-0 items-start text-white select-none">
               <span>Better Code</span>
               <span>Snippets!</span>
             </p>
           </div>
-          <div className="col-span-4 row-span-5 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-[18px] overflow-hidden group cursor-pointer select-none">
+          <div className="col-span-12 md:col-span-6 xl:col-span-4 row-span-3 md:row-span-5 xl:row-span-5 order-2 xl:order-3 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-10 xl:gap-[18px] overflow-hidden group cursor-pointer select-none">
             <Image
               src="/projects_annals_logo.svg"
               alt="Highlight Project"
@@ -102,8 +102,8 @@ const ProjectsPage = () => (
             </div>
           </div>
         </div>
-        <div className="col-span-12 row-span-8 grid grid-cols-3 auto-rows-[50px] gap-x-3">
-          <div className="col-span-1 row-span-8 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3 overflow-hidden relative select-none cursor-pointer group">
+        <div className="col-span-12 row-span-7 md:row-span-6 xl:row-span-8 grid grid-cols-2 xl:grid-cols-3 auto-rows-[120px] md:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
+          <div className="col-span-2 md:col-span-1 xl:col-span-1 row-span-3 md:row-span-8 order-2 md:order-1 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3 overflow-hidden relative select-none cursor-pointer group">
             <div className="flex items-center -translate-y-3 h-[99px]">
               <Image
                 src="/projects_thecrawlerman_logo_animation.gif"
@@ -142,8 +142,8 @@ const ProjectsPage = () => (
             </p>
             <div className="bg-black box-wave absolute bottom-0 left-0 w-full h-[72px] z-40 duration-500 transition-all translate-y-[72px] group-hover:translate-y-0"></div>
           </div>
-          <div className="col-span-2 row-span-8 bg-[#6C56F9] rounded-2xl border-4 border-black p-3 flex items-start justify-between group select-none cursor-pointer relative overflow-hidden grid-paper">
-            <div className="flex flex-col gap-4 mt-16">
+          <div className="col-span-2 md:col-span-1 xl:col-span-2 row-span-3 md:row-span-8 order-1 md:order-2 bg-[#6C56F9] rounded-2xl border-4 border-black p-3 flex flex-col xl:flex-row gap-1 md:gap-0 items-start justify-between group select-none cursor-pointer relative overflow-hidden grid-paper">
+            <div className="flex flex-col gap-2 md:gap-4 mt-4 xl:mt-16">
               <Image
                 src="/projects_airdeck_logo.webp"
                 alt="AirDeck Project"
@@ -151,11 +151,11 @@ const ProjectsPage = () => (
                 height={40}
                 priority
               />
-              <p className="text-2xl font-quicksand font-normal">
+              <p className="text-sm sm:text-2xl font-quicksand font-normal">
                 Document Narration Platform
               </p>
             </div>
-            <div className="w-[450px] h-96 flex items-center justify-center animate-sizeup-slow z-50">
+            <div className="w-96 sm:w-[450px] h-96 flex items-center justify-center animate-sizeup-slow z-50">
               <video
                 preload="none"
                 src="/projects_airdeck_demo.mp4"
@@ -177,19 +177,19 @@ const ProjectsPage = () => (
             <div className="transition-all duration-300 absolute -top-10 right-0 w-16 h-16 border-2 rounded-full opacity-40 group-hover:opacity-100 group-hover:top-2 group-hover:right-3 group-hover:w-10 group-hover:h-10 group-hover:bg-white group-hover:border-black"></div>
           </div>
         </div>
-        <div className="col-span-12 row-span-12 grid grid-cols-2 auto-rows-[50px] gap-x-3">
-          <div className="col-span-1 row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-5 space-y-12 cursor-pointer select-none overflow-hidden transition duration-1000 ease-out hover:bg-[length:40px_40px] hover:bg-minus-one hover:bg-dot">
+        <div className="col-span-12 row-span-11 md:row-span-12 grid grid-cols-2 auto-rows-[86px] xl:auto-rows-[50px] gap-x-3 gap-y-4 md:gap-y-3 xl:gap-y-0">
+          <div className="col-span-2 xl:col-span-1 row-span-4 md:row-span-6 xl:row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-5 space-y-6 lg:space-y-12 cursor-pointer select-none overflow-hidden transition duration-1000 ease-out hover:bg-[length:40px_40px] hover:bg-minus-one hover:bg-dot">
             <Image
               src="/projects_landgenius_logo.svg"
               alt="LandGenius Project"
               width={191}
               height={41}
             />
-            <p className="flex flex-col items-end text-xl font-quicksand text-black font-normal">
+            <p className="flex flex-col lg:items-end text-sm md:text-xl font-quicksand text-black font-normal">
               <span>Comprehensive</span>
               <span>environmental analysis</span>
             </p>
-            <div className="flex flex-col items-end">
+            <div className="flex flex-col lg:items-end">
               <Image
                 src="/projects_landgenius_look.webp"
                 alt="LandGenius Project"
@@ -199,9 +199,9 @@ const ProjectsPage = () => (
               />
             </div>
           </div>
-          <div className="col-span-1 row-span-12 w-full h-full flex flex-col items-center gap-4">
-            <div className="w-full h-[200px] max-h-[200px] flex flex-row items-center gap-4">
-              <div className="bg-[#EC753A] w-[200px] h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 relative select-none group cursor-pointer">
+          <div className="col-span-2 xl:col-span-1 row-span-8 md:row-span-4 xl:row-span-12 w-full h-full flex flex-col md:flex-row xl:flex-col items-center gap-4">
+            <div className="flex-1 xl:flex-auto w-full h-full xl:h-[200px] xl:max-h-[200px] flex flex-row items-center gap-4">
+              <div className="bg-[#EC753A] hidden xl:block w-[200px] h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 relative select-none group cursor-pointer">
                 <div className="w-[100px] h-[100px] bg-[#6842EF] border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50 group-hover:scale-105 transition duration-200">
                   <div className="animate-sizeup-slow">
                     <Image
@@ -236,14 +236,14 @@ const ProjectsPage = () => (
                   </div>
                 </div>
               </div>
-              <div className="bg-[#FFEFD6] flex-1 w-full h-full min-h-[187px] max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer relative">
+              <div className="bg-[#FFEFD6] flex-1 w-full h-full xl:min-h-[187px] xl:max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer relative">
                 <div className="animate-sizeup-moderate z-50">
                   <Image
                     src="/projects_dressed_to_kill_logo.svg"
                     alt="Dressed-to-kill project"
                     width={243}
                     height={71}
-                    className="group-hover:scale-110 group-hover:-translate-x-5 transition duration-300 ease-in-out z-20"
+                    className="md:  group-hover:scale-110 md:group-hover:-translate-x-5 transition duration-300 ease-in-out z-20"
                   />
                 </div>
                 <div className="absolute top-50% left-50% animate-sizeup-slow">
@@ -287,8 +287,8 @@ const ProjectsPage = () => (
                 </div>
               </div>
             </div>
-            <div className="flex-1 w-full h-full max-h-[400px] bg-[#77C686] rounded-2xl border-4 border-black p-3 flex items-start relative select-none overflow-hidden group cursor-pointer">
-              <div className="flex flex-col gap-5 mt-10">
+            <div className="flex-1 w-full h-full xl:max-h-[400px] bg-[#77C686] rounded-2xl border-4 border-black p-3 flex flex-col lg:flex-row lg:items-start relative select-none overflow-hidden group cursor-pointer">
+              <div className="flex flex-col gap-3 lg:gap-5 lg:mt-10">
                 <Image
                   src="/projects_vidable_logo.svg"
                   alt="Vidable Project"
@@ -296,7 +296,10 @@ const ProjectsPage = () => (
                   height={32}
                   className="max-h-[32px]"
                 />
-                <p className="flex flex-col text-black font-normal text-xl font-quicksand">
+                <p className="flex flex-row xl:hidden text-black font-normal text-base font-quicksand">
+                  turns video libraries into dynamic assets
+                </p>
+                <p className="hidden xl:flex flex-col text-black font-normal text-xl font-quicksand">
                   <span>turns video libraries into</span>
                   <span>dynamic assets</span>
                 </p>
@@ -309,7 +312,7 @@ const ProjectsPage = () => (
                   height={400}
                 />
               </div>
-              <div className="transition-all duration-500 ease-in-out absolute top-0 -right-8 -rotate-90 -translate-y-20 translate-x-20 group-hover:translate-y-0 group-hover:translate-x-0">
+              <div className="hidden md:block transition-all duration-500 ease-in-out absolute top-0 -right-8 -rotate-90 -translate-y-20 translate-x-20 group-hover:translate-y-0 group-hover:translate-x-0">
                 <Image
                   src="/projects_vidable_overlay_1.svg"
                   alt="Attract People"
@@ -317,7 +320,7 @@ const ProjectsPage = () => (
                   height={112}
                 />
               </div>
-              <div className="transition duration-500 absolute bottom-0 -left-8 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
+              <div className="hidden md:block transition duration-500 absolute bottom-0 -left-8 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
                 <Image
                   src="/projects_vidable_overlay_2.svg"
                   alt="Attract People"
@@ -328,8 +331,8 @@ const ProjectsPage = () => (
             </div>
           </div>
         </div>
-        <div className="col-span-12 row-span-6 grid grid-cols-12 auto-rows-[50px] gap-x-3">
-          <div className="col-span-5 row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group cursor-pointer select-none">
+        <div className="col-span-12 row-span-9 grid grid-cols-12 auto-rows-[156px] md:auto-rows-[80px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
+          <div className="col-span-12 xl:col-span-5 row-span-2 md:row-span-4 xl:row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group cursor-pointer select-none">
             <Image
               src="/projects_scaffolder_logo.svg"
               alt="Framewise Project"
@@ -341,7 +344,7 @@ const ProjectsPage = () => (
               <span>Scaffold</span>
               <span>CLI</span>
             </p>
-            <div className="w-[500px] h-96 scale-90 flex items-center justify-center animate-sizeup-slow">
+            <div className="w-[500px] md:w-[700px] xl:w-[500px] h-96 scale-90 flex items-center justify-center animate-sizeup-slow">
               <video
                 preload="none"
                 src="/projects_scaffolder_demo.mp4"
@@ -355,14 +358,14 @@ const ProjectsPage = () => (
               />
             </div>
           </div>
-          <div className="col-span-3 row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3 flex flex-col justify-between overflow-hidden select-none cursor-pointer group">
+          <div className="col-span-12 md:col-span-6 xl:col-span-3 row-span-2 md:row-span-4 xl:row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3 flex flex-col gap-4 md:gap-0 md:justify-between overflow-hidden select-none cursor-pointer group">
             <Image
               src="/projects_framewise_logo.svg"
               alt="Framewise Project"
               width={115}
               height={25}
             />
-            <p className="flex flex-col text-white font-quicksand text-sm">
+            <p className="flex flex-row gap-1.5 lg:gap-0 lg:flex-col text-white font-quicksand text-xs md:text-sm">
               <span>Read-later app with</span>
               <span>recommendation feature</span>
             </p>
@@ -372,18 +375,18 @@ const ProjectsPage = () => (
                 alt="Framewise Project Overview"
                 width={1600}
                 height={900}
-                className="aspect-auto scale-[1.4] translate-y-10 group-hover:scale-100 group-hover:translate-y-0 transition-all duration-300 group-hover:border-[#C4FF59] rounded-md  group-hover:border-4"
+                className="rounded-md border-none transition-all duration-300 lg:scale-100 xl:scale-[1.4] lg:translate-y-10 lg:group-hover:scale-100 lg:group-hover:translate-y-0 lg:group-hover:border-[#C4FF59] lg:group-hover:border-4"
               />
             </div>
           </div>
-          <div className="col-span-4 row-span-6 bg-[#F0ABFC] rounded-2xl border-4 border-black relative group select-none overflow-hidden flex flex-col gap-6 p-5 cursor-pointer">
+          <div className="col-span-12 md:col-span-6 xl:col-span-4 row-span-2 md:row-span-4 xl:row-span-6 bg-[#F0ABFC] rounded-2xl border-4 border-black relative group select-none overflow-hidden flex flex-col gap-2 md:gap-6 p-5 cursor-pointer">
             <Image
               src="/projects_futurereads_logo.svg"
               alt="FutureReads Project"
               width={183}
               height={23}
             />
-            <p className="flex flex-col text-black font-quicksand text-base">
+            <p className="flex flex-row gap-1.5 md:gap-0 md:flex-col text-black font-quicksand text-base">
               <span>Discover Every Detail</span>
               <span>Frame by Frame</span>
             </p>
@@ -393,7 +396,7 @@ const ProjectsPage = () => (
                 alt="FutureReads Project Overview"
                 width={1600}
                 height={900}
-                className="aspect-auto transition duration-300 translate-x-6 rounded-md group-hover:translate-x-10 group-hover:translate-y-10 group-hover:scale-150"
+                className="transition duration-300 md:translate-x-6 rounded-md group-hover:translate-x-10 group-hover:translate-y-10 md:group-hover:scale-150"
               />
             </div>
           </div>

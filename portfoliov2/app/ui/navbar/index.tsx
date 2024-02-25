@@ -42,7 +42,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full h-full xl:w-[1345px] xl:max-w-[1345px] px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
+    <div className="w-full h-full xl:w-[1280px] xl:max-w-[1280px] px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
       <Link href="/" className="w-10 h-10" title="Arul Valan Anto's Logo">
         <Image
           src="/logo_v6.svg"
