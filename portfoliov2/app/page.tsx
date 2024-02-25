@@ -7,7 +7,7 @@ import SkillBadge from "./ui/skill-badge";
 import { experienceArea, skills } from "./lib/common";
 
 const Home = () => (
-  <main className="w-[1280px] max-w-[1280px] h-full m-auto mt-4 overflow-hidden">
+  <main className="w-[1280px] max-w-[1280px] h-full m-auto mt-4 overflow-hidden xl:overflow-visible">
     <div className="dashed-grid-paper w-full h-[772px] border-4 border-black rounded-md select-none pt-10 relative overflow-hidden animate-sizeup-fast">
       <h1 className="text-[40px] font-bold font-DMSans flex flex-col gap-1 items-center">
         <span>Hi, I’m Arul Valan Anto &ndash; Full Stack Developer</span>
@@ -160,7 +160,7 @@ const Home = () => (
           alt="Vision"
           width={208}
           height={261}
-          className="absolute top-[25px] -left-24"
+          className="absolute top-[125px] -left-24"
         />
         <Image
           src="/home_agenda_shape_2.svg"
