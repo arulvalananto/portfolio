@@ -38,6 +38,7 @@ const ProjectsPage = () => (
                 height="100%"
                 allow="clipboard-write"
                 className="rounded-[12px] bg-[#7412D7]"
+                loading="lazy"
               ></iframe>
             </div>
             <div className="absolute top-1 right-4 animate-loadIn motion-reduce:animate-none flex items-center justify-center">

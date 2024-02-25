@@ -103,3 +103,48 @@ ul li::before {
   background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,
     80px 80px, 80px 80px;
 }
+
+.grid-bg-layout {
+  background: #eeff7c;
+  background-image: linear-gradient(
+      rgba(171, 171, 171, 0.1) 0.1em,
+      transparent 0.1em
+    ),
+    linear-gradient(90deg, rgba(171, 171, 171, 0.1) 0.1em, transparent 0.1em);
+  background-size: 3em 3em;
+  /*background: conic-gradient(from 90deg at 1px 1px, #0000 90deg, #ababab 0) 0 0/50px
+    50px #eeff7c;*/
+}
+
+.dashed-grid-paper {
+  --grid-size: 30px;
+  --grid-strength: 1px;
+  --grid-dash: 10px;
+  --grid-gap: 5px;
+  --grid-color: rgba(171, 171, 171, 0.5);
+  --paper-color: #eeff7c;
+
+  background-color: var(--paper-color);
+  background-size: var(--grid-dash) var(--grid-dash),
+    var(--grid-size) var(--grid-size);
+  background-image: linear-gradient(
+      to bottom,
+      transparent var(--grid-gap),
+      var(--paper-color) var(--grid-gap)
+    ),
+    linear-gradient(
+      to right,
+      var(--grid-color) var(--grid-strength),
+      transparent var(--grid-strength)
+    ),
+    linear-gradient(
+      to right,
+      transparent var(--grid-gap),
+      var(--paper-color) var(--grid-gap)
+    ),
+    linear-gradient(
+      to bottom,
+      var(--grid-color) var(--grid-strength),
+      transparent var(--grid-strength)
+    );
+}
