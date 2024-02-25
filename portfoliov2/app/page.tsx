@@ -1,8 +1,10 @@
+import Link from "next/link";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { FaArrowRightLong } from "react-icons/fa6";
 
-import { experienceArea, skills } from "./lib/common";
 import SkillBadge from "./ui/skill-badge";
+import { experienceArea, skills } from "./lib/common";
 
 const Home = () => (
   <main className="w-[1280px] max-w-[1280px] h-full m-auto mt-4 overflow-hidden">
@@ -167,6 +169,49 @@ const Home = () => (
           height={146}
           className="absolute top-[180px] -right-6"
         />
+      </div>
+    </div>
+    <div className="py-10 w-full flex flex-col gap-20">
+      <div className="w-full flex flex-col items-center justify-center gap-1">
+        <Image
+          src="/home_work_intro_icon.svg"
+          alt="Work"
+          width={32}
+          height={30}
+        />
+        <h5 className="font-bold font-poppins text-2xl uppercase">Work</h5>
+        <p className="text-xs uppercase font-poppins font-normal opacity-50">
+          Selected Work
+        </p>
+      </div>
+      {/*<div>
+        <div className="w-full h-[400px] flex flex-row items-start gap-5">
+          <div className="flex-1 w-full h-full">
+            <h3>AirDeck</h3>
+            <p></p>
+            <div></div>
+            <div>
+              <button
+                type="button"
+                className="py-2 pr-4 flex flex-row gap-3 items-center"
+              >
+                <span>Visit the Site</span>
+                <FaArrowRightLong />
+              </button>
+            </div>
+          </div>
+          <div className="flex-1 w-full h-full flex flex-row items-center justify-center gap-4">
+            <div className="flex-1 w-full h-[350px] bg-[#4F4FF1] border-4 rounded-md border-black"></div>
+          </div>
+        </div>
+      </div>*/}
+      <div className="flex flex-row items-center justify-center">
+        <Link
+          href="/projects"
+          className="text-black font-poppins text-sm font-normal border-2 border-black px-4 py-2 capitalize rounded-md bg-[#A79CF8]"
+        >
+          View All Projects
+        </Link>
       </div>
     </div>
   </main>
