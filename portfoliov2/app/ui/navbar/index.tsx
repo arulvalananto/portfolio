@@ -50,6 +50,7 @@ const Navbar = () => {
           width={38}
           height={39}
           className="object-cover"
+          priority
         />
       </Link>
       <div className="hidden min-[500px]:flex items-center gap-10 lg:gap-[120px] xl:gap-[280px]">

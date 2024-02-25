@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const ProjectsPage = () => (
   <main className={`w-full h-full space-y-5 mb-5 ${leagueSpartan.variable}`}>
     <div className="max-w-[1280px] m-auto pt-4 px-4 xl:px-0">
-      <div className="grid grid-cols-12 auto-rows-[110px] md:auto-rows-[80px] xl:auto-rows-[50px] bg-gray-50 gap-y-0.5">
+      <div className="grid grid-cols-12 auto-rows-[110px] md:auto-rows-[80px] xl:auto-rows-[50px] gap-y-0.5">
         <div className="col-span-12 row-span-9 md:row-span-9 xl:row-span-5 grid grid-cols-12 auto-rows-[100px] md:auto-rows-[55px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
           <div className="col-span-12 md:col-span-6 xl:col-span-3 row-span-3 md:row-span-5 xl:row-span-5 order-2 xl:order-1 bg-[#2563EB] bg-[url('/projects_sprinkle_effect.webp')] select-none rounded-2xl border-4 border-black p-3 flex flex-col gap-3 relative overflow-hidden group">
             <div className="bg-radial-gradient absolute -bottom-36 -right-36 w-96 h-96 xl:w-80 xl:h-80 rounded-full filter blur-xl cursor-pointer transition-all ease-in-out delay-150 duration-1000 group-hover:-bottom-32 group-hover:-right-32 group-hover:scale-105"></div>
@@ -237,7 +237,7 @@ const ProjectsPage = () => (
                 </div>
               </div>
               <div className="bg-[#FFEFD6] flex-1 w-full h-full xl:min-h-[187px] xl:max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer relative">
-                <div className="animate-sizeup-moderate z-50">
+                <div className="animate-sizeup-moderate z-50 flex flex-col items-center">
                   <Image
                     src="/projects_dressed_to_kill_logo.svg"
                     alt="Dressed-to-kill project"
@@ -245,6 +245,9 @@ const ProjectsPage = () => (
                     height={71}
                     className="md:  group-hover:scale-110 md:group-hover:-translate-x-5 transition duration-300 ease-in-out z-20"
                   />
+                  <p className="text-sm font-quicksand transition duration-300 opacity-0 group-hover:opacity-100">
+                    Dress. Slay. Repeat.
+                  </p>
                 </div>
                 <div className="absolute top-50% left-50% animate-sizeup-slow">
                   <div className="bg-[#F2B950] w-10 h-10 rounded-full z-10 group-hover:opacity-100 group-hover:scale-[40] transition duration-500"></div>
@@ -331,7 +334,7 @@ const ProjectsPage = () => (
             </div>
           </div>
         </div>
-        <div className="col-span-12 row-span-9 grid grid-cols-12 auto-rows-[156px] md:auto-rows-[80px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
+        <div className="col-span-12 row-span-9 xl:row-span-6 grid grid-cols-12 auto-rows-[156px] md:auto-rows-[80px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
           <div className="col-span-12 xl:col-span-5 row-span-2 md:row-span-4 xl:row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group cursor-pointer select-none">
             <Image
               src="/projects_scaffolder_logo.svg"

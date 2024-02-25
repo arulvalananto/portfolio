@@ -249,6 +249,7 @@ const AboutPage = () => (
             alt="Arul Valan Anto's profile pic"
             width={290}
             height={316}
+            priority
           />
         </div>
         <div className="w-full flex flex-col sm:justify-center sm:flex-row xl:flex-col gap-5 transition duration-300">
