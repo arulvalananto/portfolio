@@ -532,10 +532,6 @@ export const selectedProjects = [
     ],
     url: "https://vidable.ai/",
     className: "bg-[#FFAB2C]",
-    imageUrl: "/projects_vidable_look.svg",
-    image: {
-      xl: { width: 300, height: 300 },
-      lg: { width: 500, height: 500 },
-    },
+    imageUrl: "/home_vidable_project_look.webp",
   },
 ];

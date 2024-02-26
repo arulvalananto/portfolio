@@ -15,7 +15,7 @@ export const dmSans = DM_Sans({
 
 export const poppins = Poppins({
   subsets: ["devanagari", "latin", "latin-ext"],
-  weight: ["500", "600"],
+  weight: ["500", "600", "800"],
   display: "swap",
   variable: "--font-poppins",
 });

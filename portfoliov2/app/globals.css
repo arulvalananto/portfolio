@@ -153,3 +153,8 @@ ul li::before {
 .dashed-grid-paper:hover {
   --grid-color: rgba(171, 171, 171, 1);
 }
+
+.grid-dots-yellow:hover {
+  background: radial-gradient(rgb(33, 33, 33) 10%, transparent 0px) 25px
+    25px / 10px 10px #FFAB2C;
+}

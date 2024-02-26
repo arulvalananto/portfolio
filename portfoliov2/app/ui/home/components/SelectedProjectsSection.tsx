@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import SkillBadge from "../../skill-badge";
 import { selectedProjects } from "@/app/lib/common";
+import VidableHomePageImage from "./VidableHomePageImage";
 
 const SelectedProjectsSection = () => {
   return (
@@ -24,12 +25,12 @@ const SelectedProjectsSection = () => {
         {selectedProjects.map((project, index) => (
           <div
             key={project.name}
-            className="w-full h-full xl:h-[350px] flex flex-col xl:flex-row items-start gap-2 xl:gap-5"
+            className="w-full h-full xl:h-[350px] flex flex-col xl:flex-row items-start gap-2 md:gap-5"
           >
             <div
               className={`order-2 ${
                 index % 2 === 0 ? "xl:order-1" : "xl:order-2"
-              } flex-1 flex flex-col gap-5 xl:justify-between w-full h-full font-DMSans`}
+              } flex-1 flex flex-col gap-5 xl:gap-8 w-full h-full font-DMSans`}
             >
               <div className="flex flex-col gap-3">
                 <h3 className="text-2xl md:text-[32px] font-bold">
@@ -54,49 +55,97 @@ const SelectedProjectsSection = () => {
                 <FaArrowRightLong className="transition duration-300 group-hover:translate-x-3" />
               </a>
             </div>
-            <div
-              className={`order-1 ${
-                index % 2 === 0 ? "xl:order-2" : "xl:order-1"
-              } xl:flex-1 w-full h-[150px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
-                project.className
-              } border-4 rounded-md border-black overflow-hidden flex items-center justify-center`}
-            >
-              <Image
-                src={project.imageUrl}
-                alt="AirDeck"
-                width={150}
-                height={150}
-                className="rounded-md block xs:hidden"
-              />
-              <Image
-                src={project.imageUrl}
-                alt="AirDeck"
-                width={275}
-                height={150}
-                className="rounded-md hidden xs:block sm:hidden"
-              />
-              <Image
-                src={project.imageUrl}
-                alt="AirDeck"
-                width={350}
-                height={250}
-                className="rounded-md hidden sm:block md:hidden"
-              />
-              <Image
-                src={project.imageUrl}
-                alt="AirDeck"
-                width={project.image?.lg.width ?? 950}
-                height={project.image?.lg.height ?? 600}
-                className="rounded-md hidden lg:block xl:hidden"
-              />
-              <Image
-                src={project.imageUrl}
-                alt="AirDeck"
-                width={project.image?.xl.width ?? 500}
-                height={project.image?.xl.height ?? 350}
-                className="rounded-md hidden md:block lg:hidden xl:block"
-              />
-            </div>
+            {index == 0 ? (
+              <div
+                className={`order-1 ${
+                  index % 2 === 0 ? "xl:order-2" : "xl:order-1"
+                } xl:flex-1 w-full h-[150px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
+                  project.className
+                } border-4 rounded-md border-black overflow-hidden flex items-center justify-center`}
+              >
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={150}
+                  height={150}
+                  className="rounded-md block xs:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={275}
+                  height={150}
+                  className="rounded-md hidden xs:block sm:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={350}
+                  height={250}
+                  className="rounded-md hidden sm:block md:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={950}
+                  height={600}
+                  className="rounded-md hidden lg:block xl:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={500}
+                  height={350}
+                  className="rounded-md hidden md:block lg:hidden xl:block"
+                />
+              </div>
+            ) : index === 1 ? (
+              <div
+                className={`order-1 ${
+                  index % 2 === 0 ? "xl:order-2" : "xl:order-1"
+                } xl:flex-1 w-full h-[150px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
+                  project.className
+                } border-4 rounded-md border-black overflow-hidden flex items-center justify-center`}
+              >
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={150}
+                  height={150}
+                  className="rounded-md block xs:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={275}
+                  height={150}
+                  className="rounded-md hidden xs:block sm:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={350}
+                  height={250}
+                  className="rounded-md hidden sm:block md:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={950}
+                  height={600}
+                  className="rounded-md hidden lg:block xl:hidden"
+                />
+                <Image
+                  src={project.imageUrl}
+                  alt={project.name}
+                  width={500}
+                  height={350}
+                  className="rounded-md hidden md:block lg:hidden xl:block"
+                />
+              </div>
+            ) : (
+              <VidableHomePageImage project={project} index={index} />
+            )}
           </div>
         ))}
       </div>
