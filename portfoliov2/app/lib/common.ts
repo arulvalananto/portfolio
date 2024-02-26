@@ -377,3 +377,158 @@ export const experienceArea = [
     width: "w-20",
   },
 ];
+
+export const selectedProjects = [
+  {
+    name: "AirDeck",
+    description:
+      "AirDeck is a platform that lets you add voice or video to your presentations, track engagement with unique links, record and upload videos, embed existing videos, and view comprehensive analytics, all in one place.",
+    skills: [
+      {
+        alt: "Angular",
+        color: "bg-red-500",
+        width: "w-20",
+      },
+      {
+        alt: "Node JS",
+        color: "bg-[#6AA05B]",
+        width: "w-20",
+      },
+      {
+        alt: "Express JS",
+        color: "bg-black",
+        width: "w-20",
+      },
+      {
+        alt: "MongoDB",
+        color: "bg-[#47301E]",
+        width: "w-20",
+      },
+      {
+        alt: "Redis",
+        color: "bg-[#161F31]",
+        width: "w-20",
+      },
+      {
+        alt: "TypeScript",
+        color: "bg-[#007BCD]",
+        width: "w-20",
+      },
+      {
+        alt: "MySQL",
+        color: "bg-[#265074]",
+        width: "w-20",
+      },
+      {
+        alt: "Websocket",
+        color: "bg-[#0B9DC7]",
+        width: "w-20",
+      },
+      {
+        alt: "Auth0",
+        color: "bg-orange-600",
+        width: "w-20",
+      },
+    ],
+    url: "https://airdeck.co/",
+    className: "bg-[#4F4FF1]",
+  },
+  {
+    name: "LandGenius",
+    description:
+      "A remote sensing application provides quick and comprehensive details about land cover types, wetlands, streams, ponds, flood zones, and endangered species in your project area, which benefits real estate agents, land buyers, developers, and city planners.",
+    skills: [
+      {
+        alt: "React",
+        color: "bg-[#66DBFB]",
+        width: "w-20",
+      },
+      {
+        alt: "Redux",
+        color: "bg-[#7449B9]",
+        width: "w-20",
+      },
+      {
+        alt: "Django",
+        color: "bg-[#082E23]",
+        width: "w-20",
+      },
+      {
+        alt: "PostgreSQL",
+        color: "bg-[#336690]",
+        width: "w-20",
+      },
+      {
+        alt: "Stripe",
+        color: "bg-[#675DFF]",
+        width: "w-20",
+      },
+      {
+        alt: "Mapbox",
+        color: "bg-blue-800",
+        width: "w-20",
+      },
+      {
+        alt: "TurfJS",
+        color: "bg-green-800",
+        width: "w-20",
+      },
+      {
+        alt: "Jest",
+        color: "bg-[#910E1B]",
+        width: "w-20",
+      },
+    ],
+    url: "https://landgeniustest.wpengine.com",
+    className: "bg-[#FF8577]",
+  },
+  {
+    name: "Vidable AI",
+    description:
+      "Vidable makes video libraries better for organizations by improving search, providing useful insights, saving time and money, and ensuring quality standards. This helps users maximize the value of their videos and achieve their goals faster.",
+    skills: [
+      {
+        alt: "React",
+        color: "bg-[#66DBFB]",
+        width: "w-20",
+      },
+      {
+        alt: "Redux",
+        color: "bg-[#7449B9]",
+        width: "w-20",
+      },
+      {
+        alt: "Node JS",
+        color: "bg-[#6AA05B]",
+        width: "w-20",
+      },
+      {
+        alt: "Express JS",
+        color: "bg-black",
+        width: "w-20",
+      },
+      {
+        alt: "MongoDB",
+        color: "bg-[#47301E]",
+        width: "w-20",
+      },
+      {
+        alt: "Redis",
+        color: "bg-[#161F31]",
+        width: "w-20",
+      },
+      {
+        alt: "Jest",
+        color: "bg-[#910E1B]",
+        width: "w-20",
+      },
+      {
+        alt: "PlayWright",
+        color: "bg-[#2B3137]",
+        width: "w-20",
+      },
+    ],
+    url: "https://vidable.ai/",
+    className: "bg-[#FFAB2C]",
+  },
+];
