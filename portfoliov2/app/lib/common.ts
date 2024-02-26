@@ -432,6 +432,7 @@ export const selectedProjects = [
     ],
     url: "https://airdeck.co/",
     className: "bg-[#4F4FF1]",
+    imageUrl: "/home_airdeck_project_look.png",
   },
   {
     name: "LandGenius",
@@ -481,6 +482,7 @@ export const selectedProjects = [
     ],
     url: "https://landgeniustest.wpengine.com",
     className: "bg-[#FF8577]",
+    imageUrl: "/projects_landgenius_look.webp",
   },
   {
     name: "Vidable AI",
@@ -530,5 +532,10 @@ export const selectedProjects = [
     ],
     url: "https://vidable.ai/",
     className: "bg-[#FFAB2C]",
+    imageUrl: "/projects_vidable_look.svg",
+    image: {
+      xl: { width: 300, height: 300 },
+      lg: { width: 500, height: 500 },
+    },
   },
 ];

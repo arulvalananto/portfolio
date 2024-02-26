@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="dashed-grid-paper w-full h-[200px] sm:h-[400px] md:h-[500px] xl:h-[772px] border-4 px-10 xl:px-0 xl:pt-10 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
-      <h1 className="text-xs sm:text-base md:text-2xl lg:text-3xl xl:text-[40px] font-bold font-DMSans flex flex-col gap-1 items-center relative">
+    <div className="dashed-grid-paper w-full h-[250px] xs:h-[300px] sm:h-[400px] md:h-[500px] xl:h-[772px] border-4 px-10 xl:px-0 xl:pt-10 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
+      <h1 className="text-[8px] xs:text-xs sm:text-base md:text-2xl lg:text-3xl xl:text-[40px] font-bold font-DMSans flex flex-col gap-1 md:gap-3 items-center relative">
         <span>Hi, I’m Arul Valan Anto &ndash; Full Stack Developer</span>
         <span>Based In India, Currently Software Engineer</span>
         <span>At Augment</span>

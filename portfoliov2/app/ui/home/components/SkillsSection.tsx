@@ -7,7 +7,7 @@ import { skills } from "@/app/lib/common";
 const SkillsSection = () => {
   return (
     <Marquee pauseOnHover speed={40} delay={1}>
-      <div className="py-4 flex flex-row gap-4">
+      <div className="py-4 pr-4 flex flex-row gap-4">
         {[...skills.primary, ...skills.secondary].map((skill) => (
           <SkillBadge key={skill.alt} {...skill} />
         ))}

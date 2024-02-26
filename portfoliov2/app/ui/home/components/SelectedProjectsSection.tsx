@@ -7,7 +7,7 @@ import { selectedProjects } from "@/app/lib/common";
 
 const SelectedProjectsSection = () => {
   return (
-    <div className="py-10 w-full flex flex-col gap-20">
+    <div className="py-5 xl:py-10 w-full flex flex-col gap-20 select-none">
       <div className="w-full flex flex-col items-center justify-center gap-1">
         <Image
           src="/home_work_intro_icon.svg"
@@ -32,8 +32,10 @@ const SelectedProjectsSection = () => {
               } flex-1 flex flex-col gap-5 xl:justify-between w-full h-full font-DMSans`}
             >
               <div className="flex flex-col gap-3">
-                <h3 className="text-[32px] font-bold">{project.name}</h3>
-                <p className="text-xl font-normal opacity-50">
+                <h3 className="text-2xl md:text-[32px] font-bold">
+                  {project.name}
+                </h3>
+                <p className="text-base md:text-xl font-normal opacity-50">
                   {project.description}
                 </p>
               </div>
@@ -46,32 +48,53 @@ const SelectedProjectsSection = () => {
                 href={project.url}
                 target="_blank"
                 rel="noreferrer noopener nofollow"
-                className="flex flex-row gap-3 items-center"
+                className="flex flex-row gap-2 items-center font-poppins font-medium text-xs group"
               >
                 <span>Visit the Site</span>
-                <FaArrowRightLong />
+                <FaArrowRightLong className="transition duration-300 group-hover:translate-x-3" />
               </a>
             </div>
             <div
               className={`order-1 ${
                 index % 2 === 0 ? "xl:order-2" : "xl:order-1"
-              } xl:flex-1 w-full h-[750px] xl:h-full ${
+              } xl:flex-1 w-full h-[150px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
                 project.className
               } border-4 rounded-md border-black overflow-hidden flex items-center justify-center`}
             >
               <Image
-                src="/projects_framewise_look.webp"
+                src={project.imageUrl}
                 alt="AirDeck"
-                width={500}
-                height={350}
-                className="rounded-md hidden xl:block"
+                width={150}
+                height={150}
+                className="rounded-md block xs:hidden"
               />
               <Image
-                src="/projects_framewise_look.webp"
+                src={project.imageUrl}
                 alt="AirDeck"
-                width={950}
-                height={600}
-                className="rounded-md block xl:hidden"
+                width={275}
+                height={150}
+                className="rounded-md hidden xs:block sm:hidden"
+              />
+              <Image
+                src={project.imageUrl}
+                alt="AirDeck"
+                width={350}
+                height={250}
+                className="rounded-md hidden sm:block md:hidden"
+              />
+              <Image
+                src={project.imageUrl}
+                alt="AirDeck"
+                width={project.image?.lg.width ?? 950}
+                height={project.image?.lg.height ?? 600}
+                className="rounded-md hidden lg:block xl:hidden"
+              />
+              <Image
+                src={project.imageUrl}
+                alt="AirDeck"
+                width={project.image?.xl.width ?? 500}
+                height={project.image?.xl.height ?? 350}
+                className="rounded-md hidden md:block lg:hidden xl:block"
               />
             </div>
           </div>
