@@ -42,7 +42,7 @@ const SelectedProjectsSection = () => {
               </div>
               <div className="flex flex-row items-center flex-wrap gap-4">
                 {project.skills.map((area) => (
-                  <SkillBadge key={area.alt} {...area} />
+                  <SkillBadge key={area.title} {...area} />
                 ))}
               </div>
               <a
@@ -151,7 +151,7 @@ const SelectedProjectsSection = () => {
       </div>
       <div className="flex flex-row items-center justify-center">
         <Link
-          href="/projects"
+          href="/work"
           className="text-black font-poppins text-sm font-normal border-2 border-black px-4 py-2 capitalize rounded-md bg-[#A79CF8]"
         >
           View All Projects

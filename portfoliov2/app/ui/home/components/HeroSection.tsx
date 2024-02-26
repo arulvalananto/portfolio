@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import ExternalLink from "../../external-link";
 
 const HeroSection = () => {
   return (
@@ -31,30 +32,21 @@ const HeroSection = () => {
           <div className="w-[1px] h-[225px] -translate-x-1/2 -translate-y-[300%] origin-bottom -rotate-45 bg-black opacity-50" />
         </div>
         <div className="hidden xl:block">
-          <a
+          <ExternalLink
             href="https://www.linkedin.com/in/arulvalanantos"
             className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-[295px] left-1/2 -translate-x-48 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
-            target="_blank"
-            rel="noreferrer noopener nofollow"
-          >
-            LinkedIn
-          </a>
-          <a
+            title="LinkedIn"
+          />
+          <ExternalLink
             href="https://github.com/arulvalananto"
             className="font-DMSans text-base font-normal text-black opacity-50 absolute top-1/2 -translate-x-1/2 left-1/2 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
-            target="_blank"
-            rel="noreferrer noopener nofollow"
-          >
-            GitHub
-          </a>
-          <a
+            title="GitHub"
+          />
+          <ExternalLink
             href="https://medium.com/@arulvalananto"
             className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-[295px] left-1/2 translate-x-32 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
-            target="_blank"
-            rel="noreferrer noopener nofollow"
-          >
-            Medium
-          </a>
+            title="Medium"
+          />
           <p className="absolute bottom-[110px] left-1/2 -translate-x-72 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
             <span className="font-bold text-2xl">10+</span>
             <span className="font-normal text-xs opacity-50">Projects</span>

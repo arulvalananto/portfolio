@@ -110,22 +110,22 @@ const AboutPage = () => (
                       <AnimatedTooltip
                         key={index}
                         tooltipInfo={{
-                          name: skill.alt,
+                          name: skill.title,
                           id: index,
-                          yearofexperience: skill.yearofexperience ?? '1',
+                          yearofexperience: skill.yearofexperience ?? "1",
                         }}
                       >
                         <a
-                          href={`https://www.google.com/search?q=${skill.alt.toLowerCase()}`}
-                          title={skill.alt}
+                          href={`https://www.google.com/search?q=${skill.title.toLowerCase()}`}
+                          title={skill.title}
                           className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-100 hover:scale-110`}
                           target="_blank"
                           rel="noopener norefferer nofollow"
                         >
                           <Image
                             key={index}
-                            src={skill?.src ?? ''}
-                            alt={skill.alt}
+                            src={skill?.src ?? ""}
+                            alt={skill.title}
                             width="24"
                             height="24"
                             className={`${skill.imageClassName ?? ""}`}
@@ -185,7 +185,7 @@ const AboutPage = () => (
                   Projects
                 </h3>
                 <Link
-                  href="/projects"
+                  href="/work"
                   className="font-quicksand underline underline-offset-2"
                 >
                   See All

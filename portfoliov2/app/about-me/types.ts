@@ -1,11 +1,10 @@
 export type SkillInfo = {
   src?: string;
-  alt: string;
+  title: string;
   className?: string;
   imageClassName?: string;
   yearofexperience?: string;
   color?: string;
-  width: string;
 };
 
 export type Skill = {

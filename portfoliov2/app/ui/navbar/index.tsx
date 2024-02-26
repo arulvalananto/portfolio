@@ -12,6 +12,7 @@ import { GoProjectSymlink } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 import CustomDrawer from "../drawer";
+import ExternalLink from "../external-link";
 
 const Navbar = () => {
   const router = useRouter();
@@ -62,19 +63,16 @@ const Navbar = () => {
             About me
           </Link>
           <Link
-            href="/projects"
+            href="/work"
             className="font-medium text-black text-base font-DMSans"
           >
             Projects
           </Link>
-          <a
+          <ExternalLink
             href="https://read.cv/arulvalananto"
             className="font-medium text-black text-base font-DMSans hidden sm:block"
-            target="_blank"
-            rel="noreferrer noopener nofollow"
-          >
-            Read CV
-          </a>
+            title="Read CV"
+          />
           <a
             download
             href="/Arul_Valan_Anto_Resume.pdf"
@@ -127,7 +125,7 @@ const Navbar = () => {
             <button
               type="button"
               className="group text-left flex items-center gap-3"
-              onClick={() => onNavigateTo("/projects")}
+              onClick={() => onNavigateTo("/work")}
             >
               <GoProjectSymlink
                 size={24}
@@ -159,7 +157,6 @@ const Navbar = () => {
                 size={24}
                 className="transition duration-300 group-hover:rotate-12"
               />
-
               <span className="text-black text-base font-medium font-DMSans">
                 Download Resume
               </span>

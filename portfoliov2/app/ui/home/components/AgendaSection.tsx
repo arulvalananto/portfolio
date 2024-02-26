@@ -65,7 +65,7 @@ const AgendaSection = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center gap-3 md:gap-4">
         {experienceArea.map((area) => (
-          <SkillBadge key={area.alt} {...area} />
+          <SkillBadge key={area.title} {...area} />
         ))}
       </div>
       <div className="hidden xl:block">
