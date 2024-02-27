@@ -4,7 +4,7 @@ type ExternalLinkProps = {
   title: string;
   href: string;
   className?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const ExternalLink: React.FC<ExternalLinkProps> = ({
