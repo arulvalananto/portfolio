@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium, FaTwitter } from "react-icons/fa6";
 
-import { Skill } from "../about-me/types";
+import { ProjectDetails, Skill } from "./types";
 
 export const bio = `Hey there, digital pioneers! I'm Arul Valan Anto, a Full Stack developer with over 4 years of coding under my belt. My playground? Crafting sleek and savvy web applications that make users go "Wow!".
 In my journey through the ever-evolving realm of web development, I've had the pleasure of dipping my toes into various fields, including AI, marketing, and environmental initiatives. From environmental to AI, I've donned many hats and solved countless puzzles, each experience shaping me into the versatile developer I am today. I'm ready to tackle any challenge that comes our way. Whether you're a startup aiming to disrupt the market or an established enterprise seeking to stay ahead of the curve, I'm here to join forces and turn your vision into reality.`;
@@ -59,7 +59,7 @@ export const certificates = [
   },
 ];
 
-export const projects = [
+export const projectsOverview = [
   {
     href: "https://airdeck.co/",
     src: "/about_airdeck_overview.webp",
@@ -480,3 +480,55 @@ export const selectedProjects = [
     imageUrl: "/home_vidable_project_look.webp",
   },
 ];
+
+export const projects: ProjectDetails = {
+  airdeck: {
+    name: selectedProjects[0].name,
+    oneliner: "A Document narration platform for marketing!",
+    role: "Full Stack Developer",
+    tools: selectedProjects[0].skills,
+    timeline: { from: "2022", to: "2023", isPresent: false },
+    description:
+      "AirDeck is a platform that lets you add voice or video to your presentations, track engagement with unique links, record and upload videos, embed existing videos, and view comprehensive analytics, all in one place.",
+    context: "",
+    links: {
+      website: { link: "https://airdeck.co/", title: "Website" },
+    },
+  },
+  landgenius: {
+    name: selectedProjects[1].name,
+    oneliner: "A comprehensive environmental analysis tool",
+    role: "Full Stack Developer",
+    tools: selectedProjects[1].skills,
+    timeline: { from: "2022", to: "", isPresent: true },
+    description:
+      "A remote sensing application provides quick and comprehensive details about land cover types, wetlands, streams, ponds, flood zones, and endangered species in your project area, which benefits real estate agents, land buyers, developers, and city planners.",
+    context: "",
+    links: {
+      website: {
+        link: "https://landgeniustest.wpengine.com/",
+        title: "Website",
+      },
+      application: {
+        link: "http://ec2-18-191-77-185.us-east-2.compute.amazonaws.com/",
+        title: "Visit Application",
+      },
+    },
+  },
+  vidableai: {
+    name: selectedProjects[2].name,
+    oneliner: "An AI for optimizing video management.",
+    role: "Front-end module lead",
+    tools: selectedProjects[2].skills,
+    timeline: { from: "2023", to: "", isPresent: true },
+    description:
+      "Vidable makes video libraries better for organizations by improving search, providing useful insights, saving time and money, and ensuring quality standards. This helps users maximize the value of their videos and achieve their goals faster.",
+    context: "",
+    links: {
+      website: {
+        link: "https://vidable.ai/",
+        title: "Website",
+      },
+    },
+  },
+};

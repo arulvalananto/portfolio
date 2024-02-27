@@ -4,12 +4,14 @@ type ExternalLinkProps = {
   title: string;
   href: string;
   className?: string;
+  children: React.ReactNode;
 };
 
 const ExternalLink: React.FC<ExternalLinkProps> = ({
   title,
   href,
   className,
+  children,
 }) => {
   return (
     <a
@@ -18,7 +20,7 @@ const ExternalLink: React.FC<ExternalLinkProps> = ({
       target="_blank"
       rel="noopener norefferer nofollow"
     >
-      {title}
+      {children ? children : title}
     </a>
   );
 };

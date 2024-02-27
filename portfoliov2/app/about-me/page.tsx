@@ -10,7 +10,7 @@ import {
   certificates,
   educationDetails,
   experienceDetails,
-  projects,
+  projectsOverview,
   skills,
   socialLinks,
 } from "../lib/common";
@@ -192,7 +192,7 @@ const AboutPage = () => (
                 </Link>
               </div>
               <div className="flex items-center gap-4 xl:gap-0 xl:justify-between">
-                {projects.map((project, index) => (
+                {projectsOverview.map((project, index) => (
                   <a
                     key={index}
                     href={project.href}

@@ -72,6 +72,7 @@ const config: Config = {
         leagueSpartan: ["var(--font-leagueSpartan)"],
       },
       colors: {
+        subheading: "#747474",
         "portfolio-blue": "#006FC0",
         "portfolio-yellowGreen": "#EEFF7C",
         "portfolio-about-section": "#1E1E1E",

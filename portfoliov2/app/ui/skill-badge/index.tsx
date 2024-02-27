@@ -1,4 +1,4 @@
-import { SkillInfo } from "@/app/about-me/types";
+import { SkillInfo } from "@/app/lib/types";
 
 import ExternalLink from "../external-link";
 
