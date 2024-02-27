@@ -486,7 +486,7 @@ export const projects: ProjectDetails = {
     name: selectedProjects[0].name,
     oneliner: "A Document narration platform for marketing!",
     role: "Full Stack Developer",
-    tools: selectedProjects[0].skills,
+    tools: selectedProjects[0].skills.map((skill) => skill.title),
     timeline: { from: "2022", to: "2023", isPresent: false },
     description:
       "AirDeck is a platform that lets you add voice or video to your presentations, track engagement with unique links, record and upload videos, embed existing videos, and view comprehensive analytics, all in one place.",
@@ -494,12 +494,29 @@ export const projects: ProjectDetails = {
     links: {
       website: { link: "https://airdeck.co/", title: "Website" },
     },
+    type: "At Augment",
+    category: "Web Application",
+  },
+  highlight: {
+    name: "Highlight",
+    oneliner: "A design tool to animate your code snippets",
+    role: "Full Stack Developer",
+    tools: ["React", "Redux", "TypeScript", "Tailwind CSS", "Vite", "Firebase"],
+    timeline: { from: "2023", to: "2023", isPresent: false },
+    description:
+      "Highlight is the revolutionary web application that empowers developers, bloggers, and designers to create visually stunning, attention-grabbing code snippets like never before!",
+    context: "",
+    links: {
+      website: { link: "https://highlightt.web.app/", title: "Website" },
+    },
+    type: "Side Project",
+    category: ["Web Application", "Outlook Plug-in"],
   },
   landgenius: {
     name: selectedProjects[1].name,
     oneliner: "A comprehensive environmental analysis tool",
     role: "Full Stack Developer",
-    tools: selectedProjects[1].skills,
+    tools: selectedProjects[1].skills.map((skill) => skill.title),
     timeline: { from: "2022", to: "", isPresent: true },
     description:
       "A remote sensing application provides quick and comprehensive details about land cover types, wetlands, streams, ponds, flood zones, and endangered species in your project area, which benefits real estate agents, land buyers, developers, and city planners.",
@@ -514,12 +531,14 @@ export const projects: ProjectDetails = {
         title: "Visit Application",
       },
     },
+    type: "At Augment",
+    category: "Web Application",
   },
   vidableai: {
     name: selectedProjects[2].name,
     oneliner: "An AI for optimizing video management.",
-    role: "Front-end module lead",
-    tools: selectedProjects[2].skills,
+    role: "Module lead",
+    tools: selectedProjects[2].skills.map((skill) => skill.title),
     timeline: { from: "2023", to: "", isPresent: true },
     description:
       "Vidable makes video libraries better for organizations by improving search, providing useful insights, saving time and money, and ensuring quality standards. This helps users maximize the value of their videos and achieve their goals faster.",
@@ -530,5 +549,187 @@ export const projects: ProjectDetails = {
         title: "Website",
       },
     },
+    type: "At Augment",
+    category: "Web Application",
+  },
+  synthup: {
+    name: "SynthUp",
+    oneliner: "Condense long videos into easy-to-digest summaries.",
+    role: "Full Stack Developer",
+    tools: [
+      "React",
+      "Redux",
+      "Tailwind CSS",
+      "FastAPI",
+      "MongoDB",
+      "Formik",
+      "Yup",
+    ],
+    timeline: { from: "2023", to: "", isPresent: true },
+    description:
+      "SynthUp turns long videos into short and easy-to-listen summaries. Get to the point quickly and enjoy your content effortlessly, wherever you are.",
+    context: "",
+    links: {
+      comingSoon: { link: "", title: "Coming Soon" },
+    },
+    type: "Side Project",
+    category: "Web Application",
+  },
+  annals: {
+    name: "Annals",
+    oneliner: "All-in-one personal space for your privacy!",
+    role: ["Full Stack Developer", "Creator"],
+    tools: [
+      "React",
+      "NodeJS",
+      "MongoDB",
+      "Firebase",
+      "Tailwind CSS",
+      "Formik",
+      "Material UI",
+    ],
+    timeline: { from: "2021", to: "2022", isPresent: false },
+    description:
+      "Comprehensive solution for all your digital storage needs. With Annals, you can store and organize your journals, to-do lists, ideas, and passwords in one convenient location.",
+    context: "",
+    links: {
+      website: {
+        link: "https://annals.web.app/",
+        title: "Website",
+      },
+    },
+    type: "Side Project",
+    category: "Web Application",
+  },
+  thecrawlerman: {
+    name: "The Crawler Man",
+    oneliner: "pre-defined APIs provider explicitly designed for scraping",
+    role: ["Backend Developer", "Web Scraping Developer"],
+    tools: ["NodeJS", "MongoDB", "Firebase", "Cheerio", "Puppeteer"],
+    timeline: { from: "2023", to: "", isPresent: true },
+    description:
+      "The Crawler Man offers a comprehensive collection of pre-defined APIs explicitly designed for scraping. With The Crawler Man, you can easily extract data from various websites without the hassle.",
+    context: "",
+    links: {
+      comingSoon: { link: "", title: "Working in progress" },
+    },
+    externalLinks: [
+      {
+        link: "https://github.com/arulvalananto/the_crawler_man",
+        title: "GitHub",
+      },
+    ],
+    type: "Side Project",
+    category: "API",
+  },
+  scafffoldercli: {
+    name: "Scafffolder CLI",
+    oneliner: "A CLI for speeding up your scaffolding experience",
+    role: ["Developer", "Creator"],
+    tools: ["NodeJS", "Chalk", "inquirer"],
+    timeline: { from: "2023", to: "", isPresent: true },
+    description:
+      "A scaffold generator that can assist you in creating a basic structure for your upcoming React and Node application. It can automatically generate the files and folders required to start a project and includes boilerplate code you can build upon.",
+    context: "",
+    links: {
+      cli: {
+        link: "https://www.npmjs.com/package/scafffolder",
+        title: "NPM Link",
+      },
+    },
+    externalLinks: [
+      {
+        link: "https://github.com/arulvalananto/scaffolder",
+        title: "GitHub",
+      },
+    ],
+    type: "Side Project",
+    category: "Command Line Interface (CLI)",
+  },
+  framewiseai: {
+    name: "Framewise",
+    oneliner: "Unleash insights from every video frame.",
+    role: ["Full Stack Developer"],
+    tools: [
+      "React",
+      "Redux",
+      "TypeScript",
+      "TailwindCSS",
+      "MUI",
+      "Firebase",
+      "OpenAI",
+      "Azure Video Indexer AI",
+      "Jest",
+      "Storybook",
+    ],
+    timeline: { from: "2023", to: "2023", isPresent: false },
+    description:
+      "FrameWise is your gateway to a world of limitless possibilities, where videos become a wellspring of insights and inspiration. Seamlessly upload your videos and embark on a transformative journey that unlocks the hidden potential within each frame.",
+    context: "",
+    links: {
+      website: {
+        link: "https://framewiise.web.app/",
+        title: "Website",
+      },
+    },
+    externalLinks: [
+      {
+        link: "https://github.com/arulvalananto/FrameWise",
+        title: "GitHub",
+      },
+    ],
+    type: "Side Project",
+    category: "Web Application",
+  },
+  futurereads: {
+    name: "FutureReads",
+    oneliner: "Read-later app with recommendation feature",
+    role: ["Full Stack Developer"],
+    tools: [
+      "React",
+      "Node JS",
+      "FastAPI",
+      "MongoDB",
+      "TailwindCSS",
+      "Auth0",
+      "Javascript",
+    ],
+    timeline: { from: "2023", to: "2023", isPresent: false },
+    description:
+      "A Chrome browser extension that allows you to save articles to read later and sends you pop-up notifications as reminders when you come across related content while browsing the internet.",
+    context: "",
+    links: {
+      website: {
+        link: "https://futurereads.web.app/",
+        title: "Website",
+      },
+    },
+    externalLinks: [
+      {
+        link: "https://github.com/arulvalananto/FutureReads",
+        title: "GitHub",
+      },
+    ],
+    type: "Side Project",
+    category: ["Web Application", "Chrome Extension"],
+  },
+  dressedtokill: {
+    name: "Dressed-to-kill",
+    oneliner: "Read-later app with recommendation feature",
+    role: ["Front-end Developer"],
+    tools: ["React", "Node JS", "Fireabse", "Javascript"],
+    timeline: { from: "2021", to: "2021", isPresent: false },
+    description:
+      "A fashion and lifestyle e-commerce online shop caters to young people and fashion enthusiasts looking for the latest trends and styles.",
+    context: "",
+    links: {},
+    externalLinks: [
+      {
+        link: "https://github.com/arulvalananto/Dressed-to-kill",
+        title: "GitHub",
+      },
+    ],
+    type: "Side Project",
+    category: "Web Application",
   },
 };

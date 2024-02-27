@@ -1,10 +1,17 @@
 import {
   DM_Sans,
   Dancing_Script,
+  Inter,
   League_Spartan,
   Poppins,
   Quicksand,
 } from "next/font/google";
+
+export const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "900"],
+  variable: "--font-inter",
+});
 
 // If loading a variable font, you don't need to specify the font weight
 export const dmSans = DM_Sans({

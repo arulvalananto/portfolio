@@ -15,8 +15,8 @@ const FutureReads = () => {
         height={23}
       />
       <p className="flex flex-row gap-1.5 md:gap-0 md:flex-col text-black font-quicksand text-base">
-        <span>Discover Every Detail</span>
-        <span>Frame by Frame</span>
+        <span>Read-later app with</span>
+        <span>recommendation feature</span>
       </p>
       <div className="animate-bounce-right motion-reduce:animate-none">
         <Image

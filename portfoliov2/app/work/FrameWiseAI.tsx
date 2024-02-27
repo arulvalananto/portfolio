@@ -15,8 +15,8 @@ const FrameWiseAI = () => {
         height={25}
       />
       <p className="flex flex-row gap-1.5 lg:gap-0 lg:flex-col text-white font-quicksand text-xs md:text-sm">
-        <span>Read-later app with</span>
-        <span>recommendation feature</span>
+        <span>Discover Every Detail</span>
+        <span>Frame by Frame</span>
       </p>
       <div className="animate-sizeup-slow motion-reduce:animate-none min-h-[137px]">
         <Image

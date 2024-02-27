@@ -19,7 +19,7 @@ export type Project = {
   name: string;
   oneliner: string;
   role: string | string[];
-  tools: SkillInfo[];
+  tools: string[];
   timeline: { from: string; to: string; isPresent: boolean };
   description: string;
   context: string;
@@ -28,7 +28,11 @@ export type Project = {
     application?: ProjectLink;
     plugin?: ProjectLink;
     cli?: ProjectLink;
+    comingSoon?: ProjectLink;
   };
+  externalLinks?: ProjectLink[];
+  category: string[] | string;
+  type: string;
 };
 
 export type ProjectDetails = {

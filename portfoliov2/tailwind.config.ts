@@ -70,6 +70,7 @@ const config: Config = {
         quicksand: ["var(--font-quicksand)"],
         dancingScript: ["var(--font-dancingscript)"],
         leagueSpartan: ["var(--font-leagueSpartan)"],
+        inter: ["var(--font-inter)"]
       },
       colors: {
         subheading: "#747474",
