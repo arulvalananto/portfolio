@@ -528,7 +528,7 @@ export const projects: ProjectDetails = {
       },
       application: {
         link: "http://ec2-18-191-77-185.us-east-2.compute.amazonaws.com/",
-        title: "Visit Application",
+        title: "Visit App",
       },
     },
     type: "At Augment",
@@ -715,9 +715,9 @@ export const projects: ProjectDetails = {
   },
   dressedtokill: {
     name: "Dressed-to-kill",
-    oneliner: "Read-later app with recommendation feature",
+    oneliner: "The Online Fashion Store",
     role: ["Front-end Developer"],
-    tools: ["React", "Node JS", "Fireabse", "Javascript"],
+    tools: ["React", "Node JS", "Fireabse", "Javascript", "Stripe"],
     timeline: { from: "2021", to: "2021", isPresent: false },
     description:
       "A fashion and lifestyle e-commerce online shop caters to young people and fashion enthusiasts looking for the latest trends and styles.",

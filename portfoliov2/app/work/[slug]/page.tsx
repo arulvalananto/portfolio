@@ -14,16 +14,16 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
   }
 
   return (
-    <div className={`mt-40 mb-10 ${inter.variable}`}>
-      <div className="w-[800px] max-w-[800px] m-auto flex flex-col gap-8 font-inter">
+    <div className={`my-10 md:mt-40 md:mb-10 ${inter.variable}`}>
+      <div className="w-full lg:w-[800px] lg:max-w-[800px] m-auto flex flex-col gap-8 font-inter p-5 lg:p-0">
         <div className="flex flex-col gap-1">
           <h1 className="text-4xl font-semibold captialize">{project.name}</h1>
           <h4 className="text-base capitalize font-normal">
             {project.oneliner}
           </h4>
         </div>
-        <div className="flex flex-row items-start gap-8">
-          <div className="max-w-[150px] flex flex-col gap-8">
+        <div className="flex flex-col md:flex-row items-start gap-4 md:gap-8">
+          <div className="order-2 md:order-1 max-w-[150px] flex flex-row flex-wrap md:flex-nowrap md:flex-col gap-8">
             <div className="flex flex-col gap-2">
               <h6 className="uppercase text-lg font-semibold">Type</h6>
               <div className="flex flex-col gap-2">
@@ -91,12 +91,12 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
               </div>
             )}
           </div>
-          <div className="flex-1 flex flex-col gap-10">
-            <div className="flex flex-col gap-2">
+          <div className="order-1 md:order-2 flex-1 flex flex-col gap-8">
+            <div className="order-1 flex flex-col gap-2">
               <h6 className="uppercase text-lg font-semibold">Description</h6>
               <p className="text-sm">{project.description}</p>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="order-3 md:order-2 flex flex-col gap-2">
               <h6 className="uppercase text-lg font-semibold">Tools</h6>
               <div className="flex flex-row flex-wrap gap-4">
                 {project.tools.map((tool) => (
@@ -106,12 +106,12 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
                 ))}
               </div>
             </div>
-            <div className="flex flex-row items-center gap-4">
+            <div className="order-2 md:order-3 flex flex-row items-center gap-4">
               {project.links.website && (
                 <ExternalLink
                   title={project.links.website.title}
                   href={project.links.website.link}
-                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-sm"
+                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm"
                 >
                   <span>{project.links.website.title}</span>
                   <BsArrowUpRight />
@@ -121,7 +121,7 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
                 <ExternalLink
                   title={project.links.application.title}
                   href={project.links.application.link}
-                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-sm"
+                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm"
                 >
                   <span>{project.links.application.title}</span>
                   <BsArrowUpRight />
@@ -131,7 +131,7 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
                 <ExternalLink
                   title={project.links.cli.title}
                   href={project.links.cli.link}
-                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-sm"
+                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm"
                 >
                   <span>{project.links.cli.title}</span>
                   <BsArrowUpRight />
@@ -140,7 +140,7 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
               {project.links.comingSoon && (
                 <button
                   type="button"
-                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-sm capitalize"
+                  className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm capitalize"
                 >
                   <span>{project.links.comingSoon.title}</span>
                 </button>
