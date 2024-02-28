@@ -393,7 +393,7 @@ export const selectedProjects = [
     ],
     url: "https://airdeck.co/",
     className: "bg-airdeck",
-    imageUrl: "/home_airdeck_project_look.png",
+    imageUrl: "/home_airdeck_project_look.webp",
   },
   {
     name: "LandGenius",
@@ -496,6 +496,8 @@ export const projects: ProjectDetails = {
     },
     type: "At Augment",
     category: "Web Application",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   highlight: {
     name: "Highlight",
@@ -511,6 +513,8 @@ export const projects: ProjectDetails = {
     },
     type: "Side Project",
     category: ["Web Application", "Outlook Plug-in"],
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   landgenius: {
     name: selectedProjects[1].name,
@@ -533,6 +537,8 @@ export const projects: ProjectDetails = {
     },
     type: "At Augment",
     category: "Web Application",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   vidableai: {
     name: selectedProjects[2].name,
@@ -551,6 +557,8 @@ export const projects: ProjectDetails = {
     },
     type: "At Augment",
     category: "Web Application",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   synthup: {
     name: "SynthUp",
@@ -574,6 +582,8 @@ export const projects: ProjectDetails = {
     },
     type: "Side Project",
     category: "Web Application",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   annals: {
     name: "Annals",
@@ -600,6 +610,8 @@ export const projects: ProjectDetails = {
     },
     type: "Side Project",
     category: "Web Application",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   thecrawlerman: {
     name: "The Crawler Man",
@@ -621,6 +633,8 @@ export const projects: ProjectDetails = {
     ],
     type: "Side Project",
     category: "API",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   scafffoldercli: {
     name: "Scafffolder CLI",
@@ -645,6 +659,8 @@ export const projects: ProjectDetails = {
     ],
     type: "Side Project",
     category: "Command Line Interface (CLI)",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   framewiseai: {
     name: "Framewise",
@@ -680,6 +696,8 @@ export const projects: ProjectDetails = {
     ],
     type: "Side Project",
     category: "Web Application",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   futurereads: {
     name: "FutureReads",
@@ -712,6 +730,8 @@ export const projects: ProjectDetails = {
     ],
     type: "Side Project",
     category: ["Web Application", "Chrome Extension"],
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
   dressedtokill: {
     name: "Dressed-to-kill",
@@ -731,5 +751,7 @@ export const projects: ProjectDetails = {
     ],
     type: "Side Project",
     category: "Web Application",
+    bgImageLayout: "bg-layout1",
+    hasShowImageLayout: false,
   },
 };

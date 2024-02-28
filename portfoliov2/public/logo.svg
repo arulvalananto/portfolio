@@ -1,3 +1,20 @@
-<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M16.9697 23.7674L15.8182 40.093C13.1313 40.093 7.75758 36.6465 7.75758 22.8605L16.9697 23.7674ZM16.9697 23.7674L7.75758 20.1395L2 5.62791L28.4848 2L22.7273 22.8605M16.9697 23.7674L22.7273 22.8605M22.7273 22.8605L40 29.2093L16.9697 40.093L37.697 41L40 31.0233" stroke="black" stroke-width="2"/>
+<svg width="250" height="309" viewBox="0 0 250 309" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="125" cy="148.625" r="125" fill="#F9B9FD"/>
+<line y1="-2" x2="96.1583" y2="-2" transform="matrix(-0.101829 0.994802 -0.972474 -0.233013 135.86 209.967)" stroke="black" stroke-width="4"/>
+<line y1="-2" x2="26.6955" y2="-2" transform="matrix(0.0368689 0.99932 -0.996291 0.086042 198.728 251.091)" stroke="black" stroke-width="4"/>
+<line x1="219.899" y1="246.469" x2="201.332" y2="249.597" stroke="black" stroke-width="4"/>
+<path d="M208.536 262.398L163.339 194.626" stroke="black" stroke-width="4"/>
+<line x1="129.447" y1="283.005" x2="114.447" y2="298.735" stroke="black" stroke-width="4"/>
+<line y1="-2" x2="23.5377" y2="-2" transform="matrix(-0.46399 -0.885841 0.63204 -0.774935 142.012 305.068)" stroke="black" stroke-width="4"/>
+<path d="M16.5588 184.129L58.4257 145.724L73.2499 187.834L16.5588 184.129Z" fill="#24106F"/>
+<ellipse cx="75.7174" cy="75.8064" rx="75.7174" ry="75.8064" transform="matrix(0.977347 -0.211645 0.211895 0.977292 37.5114 88.6758)" fill="#24106F"/>
+<ellipse cx="37.8587" cy="37.9032" rx="37.8587" ry="37.9032" transform="matrix(0.977347 -0.211645 0.211895 0.977292 82.5446 117.707)" fill="white"/>
+<ellipse cx="15.1435" cy="15.1613" rx="15.1435" ry="15.1613" transform="matrix(0.977347 -0.211645 0.211895 0.977292 109.564 135.124)" fill="#24106F"/>
+<path d="M71.9199 23.5122L116.923 55.9002L63.3969 78.2992L71.9199 23.5122Z" fill="#FFFF00"/>
+<path d="M105 10.499L133.5 17.4992L144.597 44.3195L91.0714 66.7185L105 10.499Z" fill="#FFFF00"/>
+<path d="M37.9955 38.0003L85.1303 69.2051L37.9954 88.9297L27.4999 60.5004L37.9955 38.0003Z" fill="#FFFF00"/>
+<rect x="38.0302" y="88.877" width="115.649" height="32.7857" transform="rotate(-22.7079 38.0302 88.877)" fill="#FFFF00"/>
+<rect x="36" y="55.7539" width="9" height="13" rx="4.5" transform="rotate(-24.6518 36 55.7539)" fill="#914444"/>
+<rect x="73" y="39.7539" width="9" height="13" rx="4.5" transform="rotate(-24.6518 73 39.7539)" fill="#3291C6"/>
+<rect x="110" y="23.7539" width="9" height="13" rx="4.5" transform="rotate(-24.6518 110 23.7539)" fill="#9121C6"/>
 </svg>

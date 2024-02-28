@@ -33,6 +33,8 @@ export type Project = {
   externalLinks?: ProjectLink[];
   category: string[] | string;
   type: string;
+  bgImageLayout?: string;
+  hasShowImageLayout?: boolean;
 };
 
 export type ProjectDetails = {

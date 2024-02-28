@@ -46,8 +46,8 @@ const Navbar = () => {
     <div className="w-full h-full xl:w-[1280px] xl:max-w-[1280px] px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
       <Link href="/" className="w-10 h-10" title="Arul Valan Anto's Logo">
         <Image
-          src="/logo_v6.svg"
-          alt="Portfolio Logo"
+          src="/logo.svg"
+          alt="Welcome to Arul Valan Anto's Portfolio"
           width={38}
           height={39}
           className="object-cover"

@@ -70,7 +70,7 @@ const config: Config = {
         quicksand: ["var(--font-quicksand)"],
         dancingScript: ["var(--font-dancingscript)"],
         leagueSpartan: ["var(--font-leagueSpartan)"],
-        inter: ["var(--font-inter)"]
+        inter: ["var(--font-inter)"],
       },
       colors: {
         subheading: "#747474",
@@ -119,6 +119,11 @@ const config: Config = {
         airdeck: "#4F4FF1",
         landgenius: "#FF8577",
         vidable: "#FFAB2C",
+        layout1: "#F2F2F3",
+        layout2: "#F7F7F9",
+        layout3: "#F5EEE8",
+        layout4: "#F0EBDA",
+        layout5: "#F8EBD4",
       },
       backgroundPosition: {
         "minus-one": "-1px -1px",

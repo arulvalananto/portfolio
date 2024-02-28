@@ -5,16 +5,17 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import SkillBadge from "../../skill-badge";
 import { selectedProjects } from "@/app/lib/common";
 import VidableHomePageImage from "./VidableHomePageImage";
+import LandGeniusHomePageImage from "./LandGeniusHomePageImage";
 
 const SelectedProjectsSection = () => {
   return (
     <div className="py-5 xl:py-10 w-full flex flex-col gap-20 select-none">
       <div className="w-full flex flex-col items-center justify-center gap-1">
         <Image
-          src="/home_work_intro_icon.svg"
+          src="/work_section_alien.gif"
           alt="Work"
-          width={32}
-          height={30}
+          width={60}
+          height={60}
         />
         <h5 className="font-bold font-poppins text-2xl uppercase">Work</h5>
         <p className="text-xs uppercase font-poppins font-normal opacity-50">
@@ -100,49 +101,7 @@ const SelectedProjectsSection = () => {
                 />
               </div>
             ) : index === 1 ? (
-              <div
-                className={`order-1 ${
-                  index % 2 === 0 ? "xl:order-2" : "xl:order-1"
-                } xl:flex-1 w-full h-[150px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
-                  project.className
-                } border-4 rounded-md border-black overflow-hidden flex items-center justify-center`}
-              >
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={150}
-                  height={150}
-                  className="rounded-md block xs:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={275}
-                  height={150}
-                  className="rounded-md hidden xs:block sm:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={350}
-                  height={250}
-                  className="rounded-md hidden sm:block md:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={950}
-                  height={600}
-                  className="rounded-md hidden lg:block xl:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={500}
-                  height={350}
-                  className="rounded-md hidden md:block lg:hidden xl:block"
-                />
-              </div>
+              <LandGeniusHomePageImage project={project} index={index} />
             ) : (
               <VidableHomePageImage project={project} index={index} />
             )}
