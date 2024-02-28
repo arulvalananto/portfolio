@@ -476,7 +476,7 @@ export const selectedProjects = [
       },
     ],
     url: "https://vidable.ai/",
-    className: "bg-vidable",
+    className: "bg-layout5",
     imageUrl: "/home_vidable_project_look.webp",
   },
 ];

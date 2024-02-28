@@ -156,7 +156,7 @@ ul li::before {
 
 .grid-dots-yellow:hover {
   background: radial-gradient(rgb(33, 33, 33) 10%, transparent 0px) 25px 25px /
-    10px 10px #ffab2c;
+    10px 10px #f8ebd4;
 }
 
 .typewriter-container:hover .typewriting-effect {

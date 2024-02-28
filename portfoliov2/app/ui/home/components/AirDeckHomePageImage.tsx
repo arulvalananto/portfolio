@@ -24,19 +24,26 @@ const AirDeckHomePageImage: React.FC<AirDeckHomePageImageProps> = ({
           alt={project.name}
           width={350}
           height={350}
-          className="rounded-md z-50 scale-[0.5] xs:scale-100 lg:scale-[2] xl:group-hover:scale-100 xl:scale-105 transition duration-500"
+          className="rounded-md z-50 scale-[0.5] xs:scale-100 lg:scale-[2] xl:group-hover:scale-100 xl:scale-105 transition duration-500 filter blur-sm group-hover:blur-none"
         />
         <Image
           src="/home_airdeck_project_overlay_1.svg"
           alt={project.name}
           width={150}
           height={150}
-          className="transition duration-500 rounded-md absolute top-2 left-0 -translate-x-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-x-0"
+          className="transition duration-500 rounded-md absolute top-2 left-0"
+        />
+        <Image
+          src="/home_airdeck_project_overlay_2.svg"
+          alt={project.name}
+          width={100}
+          height={100}
+          className="transition duration-300 rounded-md absolute bottom-0 right-0"
         />
         <div className="z-10 absolute top-10 left-[150px] transition duration-500 scale-0 group-hover:scale-100 hidden lg:block">
           <div className="relative">
             <div className="absolute top-8 left-9">
-              <h6 className="font-quicksand text-xs typewriting-effect">
+              <h6 className="font-quicksand text-xs font-medium typewriting-effect">
                 A Document Narration platform
               </h6>
             </div>
@@ -49,13 +56,6 @@ const AirDeckHomePageImage: React.FC<AirDeckHomePageImageProps> = ({
             />
           </div>
         </div>
-        <Image
-          src="/home_airdeck_project_overlay_2.svg"
-          alt={project.name}
-          width={100}
-          height={100}
-          className="transition duration-300 rounded-md absolute bottom-0 right-0 translate-y-1/2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0"
-        />
         <div className="absolute top-24 right-24 animate-moveIn">
           <Image
             src="/home_airdeck_project_arrow_1.svg"

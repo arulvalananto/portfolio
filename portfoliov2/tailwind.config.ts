@@ -77,6 +77,7 @@ const config: Config = {
         dancingScript: ["var(--font-dancingscript)"],
         leagueSpartan: ["var(--font-leagueSpartan)"],
         inter: ["var(--font-inter)"],
+        slackOne: ["var(--slackOne)"],
       },
       colors: {
         subheading: "#747474",

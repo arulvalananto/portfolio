@@ -30,7 +30,6 @@ const VidableHomePageImage: React.FC<VidableHomePageImageProps> = ({
       <h4 className="transition duration-500 xs:w-40 sm:w-48 uppercase absolute left-2 top-2 xs:left-5 xs:top-5 font-bold font-DMSans text-xl md:text-3xl opacity-0 translate-x-10 -translate-y-10 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0">
         AI-based Video Analytics Tool
       </h4>
-      <div className="bg-black box-wave absolute bottom-0 left-0 w-full h-[72px] lg:h-[100px] z-40 duration-500 transition-all translate-y-[72px] lg:translate-y-[100px] group-hover:translate-y-0"></div>
     </div>
   );
 };
