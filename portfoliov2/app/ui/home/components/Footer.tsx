@@ -11,13 +11,28 @@ const Footer = () => {
         <div className="flex flex-col gap-5">
           <h5 className="font-bold text-2xl uppercase sm:capitalize">Links</h5>
           <div className="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:flex-col sm:gap-2">
-            <Link href="/about">About</Link>
-            <Link href="/work">Projects</Link>
+            <Link
+              href="/about"
+              className="hover:underline hover:underline-offset-2"
+            >
+              About
+            </Link>
+            <Link
+              href="/work"
+              className="hover:underline hover:underline-offset-2"
+            >
+              Projects
+            </Link>
             <ExternalLink
               href="https://read.cv/arulvalananto"
               title="Read CV"
+              className="hover:underline hover:underline-offset-2"
             />
-            <a download href="/Arul_Valan_Anto_Resume.pdf">
+            <a
+              download
+              href="/Arul_Valan_Anto_Resume.pdf"
+              className="hover:underline hover:underline-offset-2"
+            >
               Resume
             </a>
           </div>
@@ -35,7 +50,12 @@ const Footer = () => {
               if (!title) return;
 
               return (
-                <ExternalLink key={index} href={link.href} title={title} />
+                <ExternalLink
+                  key={index}
+                  href={link.href}
+                  title={title}
+                  className="hover:underline hover:underline-offset-2"
+                />
               );
             })}
           </div>

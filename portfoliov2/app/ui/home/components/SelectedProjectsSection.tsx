@@ -53,7 +53,9 @@ const SelectedProjectsSection = () => {
                 rel="noreferrer noopener nofollow"
                 className="flex flex-row gap-2 items-center font-poppins font-medium text-xs group"
               >
-                <span>Visit the Site</span>
+                <span className="group-hover:scale-105 transition duration-500">
+                  Visit the Site
+                </span>
                 <FaArrowRightLong className="transition duration-500 group-hover:translate-x-3" />
               </a>
             </div>
@@ -70,7 +72,7 @@ const SelectedProjectsSection = () => {
       <div className="flex flex-row items-center justify-center">
         <Link
           href="/work"
-          className="text-black font-poppins text-sm font-normal border-2 border-black px-4 py-2 capitalize rounded-md bg-[#A79CF8]"
+          className="text-black font-poppins text-sm font-normal border-2 border-black px-4 py-2 capitalize rounded-md bg-[#A79CF8] hover:borde-4 hover:scale-105 transition-all duration-500 ease-in-out shadow-md"
         >
           View All Projects
         </Link>
