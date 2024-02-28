@@ -49,6 +49,11 @@ const config: Config = {
           "0%, 100%": { transform: "rotate(-3deg)" },
           "50%": { transform: "rotate(3deg)" },
         },
+        moveIn: {
+          "0%": { transform: "translate(0px, 0px)" },
+          "50%": { transform: "translate(1px, 1px)" },
+          "100%": { transform: "translateX(2px, 2px)" },
+        },
       },
       animation: {
         shaker: "shaker .8s infinite alternate",
@@ -63,6 +68,7 @@ const config: Config = {
         "sizeup-fast": "sizeup .3s forwards",
         "bounce-right": "bouncer 1.5s ease-out",
         wiggle: "wiggle 1s ease-in-out infinite",
+        moveIn: "moveIn 1s ease-in-out infinite",
       },
       fontFamily: {
         DMSans: ["var(--font-DMSans)"],

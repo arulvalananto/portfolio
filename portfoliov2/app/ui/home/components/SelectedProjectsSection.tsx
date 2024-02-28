@@ -5,6 +5,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import SkillBadge from "../../skill-badge";
 import { selectedProjects } from "@/app/lib/common";
 import VidableHomePageImage from "./VidableHomePageImage";
+import AirDeckHomePageImage from "./AirDeckHomePageImage";
 import LandGeniusHomePageImage from "./LandGeniusHomePageImage";
 
 const SelectedProjectsSection = () => {
@@ -53,53 +54,11 @@ const SelectedProjectsSection = () => {
                 className="flex flex-row gap-2 items-center font-poppins font-medium text-xs group"
               >
                 <span>Visit the Site</span>
-                <FaArrowRightLong className="transition duration-300 group-hover:translate-x-3" />
+                <FaArrowRightLong className="transition duration-500 group-hover:translate-x-3" />
               </a>
             </div>
             {index == 0 ? (
-              <div
-                className={`order-1 ${
-                  index % 2 === 0 ? "xl:order-2" : "xl:order-1"
-                } xl:flex-1 w-full h-[150px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
-                  project.className
-                } border-4 rounded-md border-black overflow-hidden flex items-center justify-center`}
-              >
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={150}
-                  height={150}
-                  className="rounded-md block xs:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={275}
-                  height={150}
-                  className="rounded-md hidden xs:block sm:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={350}
-                  height={250}
-                  className="rounded-md hidden sm:block md:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={950}
-                  height={600}
-                  className="rounded-md hidden lg:block xl:hidden"
-                />
-                <Image
-                  src={project.imageUrl}
-                  alt={project.name}
-                  width={500}
-                  height={350}
-                  className="rounded-md hidden md:block lg:hidden xl:block"
-                />
-              </div>
+              <AirDeckHomePageImage project={project} index={index} />
             ) : index === 1 ? (
               <LandGeniusHomePageImage project={project} index={index} />
             ) : (
