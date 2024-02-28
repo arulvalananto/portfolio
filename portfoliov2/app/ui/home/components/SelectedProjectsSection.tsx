@@ -9,7 +9,7 @@ import LandGeniusHomePageImage from "./LandGeniusHomePageImage";
 
 const SelectedProjectsSection = () => {
   return (
-    <div className="py-5 xl:py-10 w-full flex flex-col gap-20 select-none">
+    <div className="py-5 pb-10 xl:py-10 xl:pb-20 w-full flex flex-col gap-20 select-none">
       <div className="w-full flex flex-col items-center justify-center gap-1">
         <Image
           src="/work_section_alien.gif"
