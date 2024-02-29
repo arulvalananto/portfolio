@@ -102,7 +102,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               <ExternalLink
                 title={project.links.website.title}
                 href={project.links.website.link}
-                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out shadow-md"
+                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out custom-cursor-enabled shadow-md"
               >
                 <span>{project.links.website.title}</span>
                 <BsArrowUpRight />
@@ -112,7 +112,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               <ExternalLink
                 title={project.links.application.title}
                 href={project.links.application.link}
-                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out shadow-md"
+                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out custom-cursor-enabled shadow-md"
               >
                 <span>{project.links.application.title}</span>
                 <BsArrowUpRight />
@@ -122,7 +122,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               <ExternalLink
                 title={project.links.cli.title}
                 href={project.links.cli.link}
-                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out shadow-md"
+                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out custom-cursor-enabled shadow-md"
               >
                 <span>{project.links.cli.title}</span>
                 <BsArrowUpRight />
@@ -131,7 +131,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
             {project.links.comingSoon && (
               <button
                 type="button"
-                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out shadow-md capitalize"
+                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out custom-cursor-enabled shadow-md capitalize"
               >
                 <span>{project.links.comingSoon.title}</span>
               </button>

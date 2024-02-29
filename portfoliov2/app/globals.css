@@ -188,3 +188,7 @@ ul li::before {
     border-color: black;
   }
 }
+
+.custom-cursor-enabled {
+  cursor: url("../public/customCursor.svg"), pointer !important;
+}
