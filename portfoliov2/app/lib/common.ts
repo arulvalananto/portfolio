@@ -511,6 +511,9 @@ export const projects: ProjectDetails = {
     links: {
       website: { link: "https://highlightt.web.app/", title: "Website" },
     },
+    externalLinks: [
+      { link: "https://github.com/arulvalananto/highlight", title: "Github" },
+    ],
     type: "Side Project",
     category: ["Web Application", "Outlook Plug-in"],
     bgImageLayout: "bg-layout1",
@@ -612,6 +615,9 @@ export const projects: ProjectDetails = {
     category: "Web Application",
     bgImageLayout: "bg-layout1",
     hasShowImageLayout: false,
+    externalLinks: [
+      { link: "https://github.com/arulvalananto/annals", title: "GitHub" },
+    ],
   },
   thecrawlerman: {
     name: "The Crawler Man",
