@@ -16,7 +16,7 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
 
   return (
     <div
-      className={`my-10 md:mt-40 md:mb-10 ${inter.variable} overflow-hidden`}
+      className={`w-full h-screen py-10 md:pt-40 md:pb-10 ${inter.variable} overflow-hidden`}
     >
       <CustomCursor />
       <ProjectDetails project={project} />

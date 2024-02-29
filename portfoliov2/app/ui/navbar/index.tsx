@@ -58,25 +58,25 @@ const Navbar = () => {
         <div className="flex items-center gap-10 md:gap-16">
           <Link
             href="/about-me"
-            className="font-medium text-black text-base font-DMSans"
+            className="font-medium text-black text-base font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
           >
             About me
           </Link>
           <Link
             href="/work"
-            className="font-medium text-black text-base font-DMSans"
+            className="font-medium text-black text-base font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
           >
             Projects
           </Link>
           <ExternalLink
             href="https://read.cv/arulvalananto"
-            className="font-medium text-black text-base font-DMSans hidden sm:block"
+            className="font-medium text-black text-base font-DMSans hidden sm:block opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
             title="Read CV"
           />
           <a
             download
             href="/Arul_Valan_Anto_Resume.pdf"
-            className="font-medium text-black text-base font-DMSans"
+            className="font-medium text-black text-base font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
           >
             Resume
           </a>
@@ -88,7 +88,7 @@ const Navbar = () => {
             rel="noreferrer"
             className="flex items-center gap-2"
           >
-            <span className="font-medium text-black text-base font-DMSans">
+            <span className="font-medium text-black text-base font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300">
               Let&apos;s Talk
             </span>
             <FaArrowRightLong />
