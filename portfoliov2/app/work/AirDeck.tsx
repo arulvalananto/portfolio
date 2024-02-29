@@ -6,7 +6,7 @@ const AirDeck = () => {
   return (
     <Link
       href="/work/airdeck"
-      className="col-span-2 md:col-span-1 xl:col-span-2 row-span-3 md:row-span-8 order-1 md:order-2 bg-[#6C56F9] rounded-2xl border-4 border-black p-3 flex flex-col xl:flex-row gap-1 md:gap-0 items-start justify-between group select-none cursor-pointer relative overflow-hidden grid-paper"
+      className="custom-cursor-view-more col-span-2 md:col-span-1 xl:col-span-2 row-span-3 md:row-span-8 order-1 md:order-2 bg-[#6C56F9] rounded-2xl border-4 border-black p-3 flex flex-col xl:flex-row gap-1 md:gap-0 items-start justify-between group relative overflow-hidden grid-paper select-none"
     >
       <div className="flex flex-col gap-2 md:gap-4 mt-4 xl:mt-16">
         <Image

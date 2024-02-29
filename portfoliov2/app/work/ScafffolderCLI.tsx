@@ -6,7 +6,7 @@ const ScafffolderCLI = () => {
   return (
     <Link
       href="/work/scafffolder-cli"
-      className="col-span-12 xl:col-span-5 row-span-2 md:row-span-4 xl:row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group cursor-pointer select-none"
+      className="custom-cursor-view-more col-span-12 xl:col-span-5 row-span-2 md:row-span-4 xl:row-span-6 bg-[#B6A1DC] rounded-2xl border-4 border-black p-4 pl-6 flex flex-col gap-2 overflow-hidden group select-none"
     >
       <Image
         src="/projects_scaffolder_logo.svg"

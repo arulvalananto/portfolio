@@ -6,7 +6,7 @@ const Annals = () => {
   return (
     <Link
       href="/work/annals"
-      className="col-span-12 md:col-span-6 xl:col-span-4 row-span-3 md:row-span-5 xl:row-span-5 order-2 xl:order-3 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-10 xl:gap-[18px] overflow-hidden group cursor-pointer select-none"
+      className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-4 row-span-3 md:row-span-5 xl:row-span-5 order-2 xl:order-3 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-10 xl:gap-[18px] overflow-hidden group select-none"
     >
       <Image
         src="/projects_annals_logo.svg"

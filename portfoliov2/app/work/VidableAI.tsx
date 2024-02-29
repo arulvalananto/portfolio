@@ -6,9 +6,9 @@ const VidableAI = () => {
   return (
     <Link
       href="/work/vidable-ai"
-      className="flex-1 w-full h-full xl:max-h-[400px] bg-[#77C686] rounded-2xl border-4 border-black p-3 flex flex-col lg:flex-row lg:items-start relative select-none overflow-hidden group cursor-pointer"
+      className="custom-cursor-view-more flex-1 w-full h-full xl:max-h-[400px] bg-[#77C686] rounded-2xl border-4 border-black p-3 flex flex-col lg:flex-row lg:items-start relative select-none overflow-hidden group"
     >
-      <div className="flex flex-col gap-3 lg:gap-5 lg:mt-10">
+      <div className="flex flex-col gap-3 lg:gap-5 lg:pt-10">
         <Image
           src="/projects_vidable_logo.svg"
           alt="Vidable Project"

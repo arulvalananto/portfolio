@@ -18,7 +18,6 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
     <div
       className={`w-full h-screen py-10 md:pt-40 md:pb-10 ${inter.variable} overflow-hidden`}
     >
-      <CustomCursor />
       <ProjectDetails project={project} />
       {project.hasShowImageLayout && <ProjectImageGallery project={project} />}
     </div>

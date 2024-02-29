@@ -6,7 +6,7 @@ const DressedTpKill = () => {
   return (
     <Link
       href="/work/dressed-to-kill"
-      className="bg-[#FFEFD6] flex-1 w-full h-full xl:min-h-[187px] xl:max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden cursor-pointer relative"
+      className="custom-cursor-view-more bg-[#FFEFD6] flex-1 w-full h-full xl:min-h-[187px] xl:max-h-[187px] rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden relative"
     >
       <div className="animate-sizeup-moderate z-50 flex flex-col items-center">
         <Image

@@ -13,7 +13,7 @@ body {
 }
 
 body * {
-  cursor: url("../public/customCursor.svg"), auto !important;
+  cursor: url("../public/custom_cursor_default.svg"), auto !important;
 }
 
 ul {
@@ -191,4 +191,9 @@ ul li::before {
   50% {
     border-color: black;
   }
+}
+
+.custom-cursor-view-more *,
+.custom-cursor-view-more + * {
+  cursor: url("../public/custom_cursor_view_more.svg"), auto !important;
 }

@@ -6,7 +6,7 @@ const FrameWiseAI = () => {
   return (
     <Link
       href="/work/framewise-ai"
-      className="col-span-12 md:col-span-6 xl:col-span-3 row-span-2 md:row-span-4 xl:row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3 flex flex-col gap-4 md:gap-0 md:justify-between overflow-hidden select-none cursor-pointer group"
+      className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-3 row-span-2 md:row-span-4 xl:row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3 flex flex-col gap-4 md:gap-0 md:justify-between overflow-hidden select-none group"
     >
       <Image
         src="/projects_framewise_logo.svg"

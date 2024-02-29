@@ -6,7 +6,7 @@ const TheCrawlerMan = () => {
   return (
     <Link
       href="/work/the-crawler-man"
-      className="col-span-2 md:col-span-1 xl:col-span-1 row-span-3 md:row-span-8 order-2 md:order-1 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3 overflow-hidden relative select-none cursor-pointer group"
+      className="custom-cursor-view-more col-span-2 md:col-span-1 xl:col-span-1 row-span-3 md:row-span-8 order-2 md:order-1 bg-[#FFCB3B] rounded-2xl border-4 border-black p-3 overflow-hidden relative select-none group"
     >
       <div className="flex items-center -translate-y-3 h-[99px]">
         <Image

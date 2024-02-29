@@ -6,7 +6,7 @@ const FutureReads = () => {
   return (
     <Link
       href="/work/future-reads"
-      className="col-span-12 md:col-span-6 xl:col-span-4 row-span-2 md:row-span-4 xl:row-span-6 bg-[#F0ABFC] rounded-2xl border-4 border-black relative group select-none overflow-hidden flex flex-col gap-2 md:gap-6 p-5 cursor-pointer"
+      className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-4 row-span-2 md:row-span-4 xl:row-span-6 bg-[#F0ABFC] rounded-2xl border-4 border-black relative group select-none overflow-hidden flex flex-col gap-2 md:gap-6 p-5"
     >
       <Image
         src="/projects_futurereads_logo.svg"
