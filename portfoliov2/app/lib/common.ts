@@ -761,3 +761,31 @@ export const projects: ProjectDetails = {
     hasShowImageLayout: false,
   },
 };
+
+export const recentArticles = [
+  {
+    title: "3 Principles in Software Development",
+    href: "https://medium.com/@arulvalananto/3-principles-in-software-development-5b89ed655297",
+    website: "https://medium.com",
+    imageURL: "/3_principles_in_software_development_blog.webp",
+  },
+  {
+    title: "9 Image Optimization Tricks for a Seamless Web Experience",
+    href: "https://medium.com/@arulvalananto/9-image-optimization-tricks-for-a-seamless-web-experience-b41867e87e54",
+    website: "https://medium.com",
+    imageURL: "/image_optimization_blog.webp",
+  },
+  {
+    title: "5 Advanced NodeJS Techniques with ExpressJS",
+    href: "https://medium.com/@arulvalananto/5-advanced-nodejs-techniques-6ac0b7b024a8",
+    website: "https://medium.com",
+    imageURL: "/nodejs_tips_blog.webp",
+  },
+  {
+    title:
+      "Mastering SOLID Principles Like the Back of Your Hand in Just 8 Minutes!",
+    href: "https://hackernoon.com/mastering-solid-principles-like-the-back-of-your-hand-in-just-8-minutes",
+    website: "https://hackernoon.com",
+    imageURL: "/solid_principles_article.gif",
+  },
+];
