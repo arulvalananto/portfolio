@@ -8,8 +8,8 @@ import { PiArrowBendLeftDownThin, PiArrowBendLeftUpThin } from "react-icons/pi";
 
 import { inter } from "../lib/fonts";
 import ExternalLink from "../ui/external-link";
-import { recentArticles, skills } from "../lib/common";
 import { AnimatedTooltip } from "../ui/animated-tooltip";
+import { recentArticles, skills, socialLinks } from "../lib/common";
 
 const AboutPage = () => {
   const [showMore, setShowMore] = useState(false);
@@ -222,11 +222,31 @@ const AboutPage = () => {
       )}
       <section
         id="social profiles"
-        className="col-span-9 row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out"
+        className="col-span-9 row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5"
       >
         <h1 className="font-semibold text-2xl text-black capitalize">
           Find me on
         </h1>
+        <div className="w-full grid grid-cols-3 auto-rows-[50px] gap-5">
+          {socialLinks.map((social, index) => (
+            <ExternalLink
+              key={index}
+              title={social.title}
+              href={social.href}
+              className={`p-4 rounded-2xl group border border-[#F0F0F0] flex flex-col gap-3 shadow-sm transition-all duration-300 hover:-translate-y-1 ${social.bgClassName} ${social.layoutClassName}`}
+            >
+              <social.Icon size={32} className={`${social.iconClassName}`} />
+              <div className="flex flex-col gap-1">
+                <h5 className={`${social.textClassName} text-sm`}>
+                  {social.name}
+                </h5>
+                <p className={`${social.textClassName} text-xs`}>
+                  @{social.username}
+                </p>
+              </div>
+            </ExternalLink>
+          ))}
+        </div>
       </section>
       <section
         id="vidable-ai-project"
