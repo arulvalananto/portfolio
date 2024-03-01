@@ -197,3 +197,31 @@ ul li::before {
 .custom-cursor-view-more + * {
   cursor: url("../public/custom_cursor_view_more.svg"), auto !important;
 }
+
+.styles_marker-pulse__BxsPp {
+  animation: styles_marker-pulse__BxsPp 4s ease-out infinite;
+}
+
+@keyframes styles_marker-pulse__BxsPp {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  35% {
+    transform: translate(-50%, -50%) scale(8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(8);
+    opacity: 0;
+  }
+}
+
+.s-3 {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.opacity-20 {
+  opacity: 0.2;
+}

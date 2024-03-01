@@ -136,7 +136,7 @@ export const skills: Skill = {
     {
       src: "/about_skill_typescript.svg",
       title: "TypeScript",
-      className: "bg-typscript",
+      className: "bg-typescript",
       color: "bg-typescript",
       imageClassName: "scale-100 md:scale-125 xl:scale-100",
       yearofexperience: "3 years",
