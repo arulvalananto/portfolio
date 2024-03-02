@@ -20,12 +20,14 @@ const AboutPage = () => {
 
   return (
     <main
-      className={`py-10 w-[1280px] max-w-[1280px] m-auto grid grid-cols-24 auto-rows-[50px] gap-5 h-full ${inter.variable} font-inter`}
+      className={`px-5 py-10 md:p-10 xl:py-10 w-full xl:w-[1280px] xl:max-w-[1280px] xl:m-auto grid grid-cols-12 xl:grid-cols-24 auto-rows-[50px] gap-5 h-full ${inter.variable} font-inter`}
     >
       <section
         id="bio"
-        className={`col-span-9 ${
-          showMore ? "row-span-11" : "row-span-6"
+        className={`col-span-12 xl:col-span-9 ${
+          showMore
+            ? "row-span-11 md:row-span-10 xl:row-span-11"
+            : "row-span-7 xs:row-span-6 md:row-span-5 xl:row-span-6"
         } bg-layout2 p-5 rounded-2xl overflow-hidden transition duration-300 ease-in-out`}
       >
         <h1 className="text-[32px] font-bold leading-[120%] tracking-[-1px] xl:text-[44px] xl:tracking-[-2px]">
@@ -37,7 +39,7 @@ const AboutPage = () => {
             <span className="text-xs font-bold text-black uppercase">
               [WHO I AM]
             </span>
-            <span>
+            <span className="text-xs sm:text-sm">
               Hey, I am Arul Valan Anto — Full Stack Developer and tech blogger.
               I have more than 4 years of experience in coding under my belt. My
               playground? Crafting sleek and savvy web applications that make
@@ -48,7 +50,7 @@ const AboutPage = () => {
             <span className="text-xs font-bold text-black uppercase">
               [WHAT I DO NOW]
             </span>
-            <span>
+            <span className="text-xs sm:text-sm">
               Today I&apos;m a{" "}
               <span className="font-semibold">Senior Software Engineer</span> at{" "}
               <ExternalLink
@@ -70,7 +72,7 @@ const AboutPage = () => {
             </span>
           </p>
           {showMore && (
-            <p className="flex flex-col gap-2 text-sm">
+            <p className="flex flex-col gap-2 text-xs sm:text-sm">
               <span className="text-xs font-bold text-black uppercase">
                 [WHERE I&apos;M At Now]
               </span>
@@ -88,7 +90,7 @@ const AboutPage = () => {
               <span className="text-xs font-bold text-black uppercase">
                 [WHAT I DO IN MY SPARE TIME]
               </span>
-              <span>
+              <span className="text-xs sm:text-sm">
                 In my free time, I like playing video games and reading books.
                 One of my favorite books is{" "}
                 <span className="font-semibold">
@@ -104,7 +106,7 @@ const AboutPage = () => {
               <span className="text-xs font-bold text-black uppercase">
                 [WHAT I&apos;M Learning Right Now]
               </span>
-              <span>Next.js</span>
+              <span className="text-xs sm:text-sm">Next.js</span>
             </p>
           )}
           {showMore && (
@@ -112,7 +114,7 @@ const AboutPage = () => {
               <span className="text-xs font-bold text-black uppercase">
                 [WHAT I&apos;M LOOKING FOR]
               </span>
-              <span>
+              <span className="text-xs sm:text-sm">
                 Impactful, purposeful work with a diverse team of talented
                 people.
               </span>
@@ -134,10 +136,10 @@ const AboutPage = () => {
       </section>
       <section
         id="skills"
-        className="col-span-15 row-span-3 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 transition duration-300 ease-in-out"
+        className="col-span-12 xl:col-span-15 row-span-6 xs:row-span-5 sm:row-span-4 md:row-span-5 xl:row-span-3 bg-layout2 p-5 sm:pt-6 sm:p-5 xl:p-5 xl:pt-5 rounded-2xl flex flex-col gap-4 sm:gap-7 xl:gap-2 transition duration-300 ease-in-out"
       >
         <h1 className="font-semibold text-2xl text-black">Skills</h1>
-        <div className="flex flex-row flex-wrap gap-5">
+        <div className="flex flex-row flex-wrap gap-5 xl:gap-x-5 xl:gap-y-2">
           {[...skills.primary, ...skills.secondary]?.map((skill, index) => (
             <AnimatedTooltip
               key={index}
@@ -169,16 +171,31 @@ const AboutPage = () => {
       </section>
       <section
         id="airdeck-project"
-        className="col-span-7 row-span-5 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 transition duration-300 ease-in-out"
+        className="group col-span-12 xl:col-span-7 row-span-4 xs:row-span-5 md:row-span-7 xl:row-span-5 grid-paper bg-[#6c56f9] p-5 rounded-2xl flex flex-col justify-center items-center transition duration-300 ease-in-out overflow-hidden"
       >
-        <h1>AirDeck</h1>
+        <h1 className="text-white opacity-0 group-hover:opacity-100 text-3xl font-bold self-start">
+          AirDeck
+        </h1>
+        <div className="w-[250px] xs:w-[300px] sm:w-96 md:w-[600px] xl:w-[300px] h-96 flex items-center justify-center animate-sizeup-slow z-50">
+          <video
+            preload="none"
+            src="/projects_airdeck_demo.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controlsList="nodownload"
+            poster="/projects_airdeck_demo_poster.webp"
+            className="rounded-md transition duration-300 ease-in-out group-hover:scale-95"
+          />
+        </div>
       </section>
       <section
         id="my-recent-articles"
-        className="col-span-8 row-span-8 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 group"
+        className="col-span-12 xl:col-span-8 row-span-8 lg:row-span-5 xl:row-span-8 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 group overflow-hidden"
       >
         <div className="flex flex-row gap-1 items-center justify-between">
-          <h1 className="font-semibold text-2xl text-black capitalize">
+          <h1 className="font-semibold text-lg sm:text-2xl text-black capitalize">
             My Recent Articles
           </h1>
           <ExternalLink
@@ -187,19 +204,23 @@ const AboutPage = () => {
             className="group-hover:opacity-100 opacity-0 transition duration-300 ease-in-out text-xs hover:underline hover:underline-offset-2"
           />
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-center flex-nowrap md:flex-wrap xl:flex-nowrap xl:flex-col gap-4">
           {recentArticles.map((article, index) => (
             <ExternalLink
               key={index}
               title={article.title}
               href={article.href}
-              className="shadow-sm h-[100px] min-h-[100px] max-h-[100px] flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] bg-white rounded-md p-2"
+              className="shadow-sm md:w-full lg:w-[400px] xl:w-full h-[100px] min-h-[100px] max-h-[100px] flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] bg-white rounded-md p-2"
             >
-              <div className="flex flex-col justify-between h-full">
-                <h2 className="text-sm">{article.title}</h2>
-                <p className="text-[12px]">{article.website}</p>
+              <div className="flex flex-col justify-between h-full flex-1 md:flex-auto">
+                <h2 className="text-[10px] xs:text-xs xl:text-sm">
+                  {article.title}
+                </h2>
+                <p className="text-[8px] xs:text-[10px] xl:text-xs">
+                  {article.website}
+                </p>
               </div>
-              <div className="max-w-[114px] max-h-[76px] overflow-hidden rounded-md">
+              <div className=" w-full max-w-[114px] max-h-[76px] xl:h-full xl:max-h-[76px] overflow-hidden rounded-md flex items-center justify-center">
                 <Image
                   src={article.imageURL}
                   alt={article.title}
@@ -215,14 +236,14 @@ const AboutPage = () => {
       {showMore && (
         <section
           id="filler"
-          className="col-span-7 row-span-3 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out"
+          className="col-span-12 xl:col-span-7 row-span-3 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out"
         >
           <h1 className="font-semibold text-2xl text-black">Filler</h1>
         </section>
       )}
       <section
         id="social profiles"
-        className="col-span-9 row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5 hover:shadow-xl"
+        className="col-span-12 xl:col-span-9 row-span-12 sm:row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5 hover:shadow-xl overflow-hidden"
       >
         <h1 className="font-semibold text-2xl text-black capitalize">
           Find me on
@@ -233,7 +254,11 @@ const AboutPage = () => {
               key={index}
               title={social.title}
               href={social.href}
-              className={`p-4 rounded-2xl group border border-[#F0F0F0] flex flex-col gap-3 shadow-sm transition-all duration-300 hover:-translate-y-1 ${social.bgClassName} ${social.layoutClassName}`}
+              className={`${
+                index > 4 ? "hidden sm:flex" : ""
+              } col-span-3 sm:col-span-1 row-span-2 p-4 rounded-2xl group border border-[#F0F0F0] flex-col gap-3 shadow-sm transition-all duration-300 hover:-translate-y-1 ${
+                social.bgClassName
+              }`}
             >
               <social.Icon size={32} className={`${social.iconClassName}`} />
               <div className="flex flex-col gap-1">
@@ -250,13 +275,13 @@ const AboutPage = () => {
       </section>
       <section
         id="vidable-ai-project"
-        className="group relative col-span-7 row-span-5 bg-layout2 hover:bg-[url('/about_vidable_project.webp')] bg-cover p-5 pb-0 rounded-2xl flex flex-col gap-5 transition-all duration-300 ease-in-out hover:shadow-xl"
+        className="group relative col-span-12 xl:col-span-7 row-span-4 xs:row-span-5 md:row-span-7 xl:row-span-5 bg-layout2 hover:bg-[url('/about_vidable_project.webp')] bg-cover p-5 pb-0 rounded-2xl flex flex-col gap-5 transition-all duration-300 ease-in-out hover:shadow-xl"
       >
-        <h1 className="text-6xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 uppercase opacity-0 group-hover:opacity-100 ease-in-out group-hover:top-2 group-hover:text-lg transition-all duration-300">
+        <h1 className="text-6xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 uppercase opacity-0 group-hover:opacity-100 ease-in-out group-hover:left-20 group-hover:top-10 xl:group-hover:left-1/2 xl:group-hover:top-2 group-hover:text-3xl xl:group-hover:text-lg transition-all duration-300">
           Vidable
         </h1>
         <div className="overflow-hidden flex items-center justify-center group relative cursor-pointer">
-          <div className="transition duration-[750ms] z-50 scale-50 xs:scale-100 translate-y-1/3 group-hover:scale-[0.2] xs:group-hover:scale-[0.3] md:group-hover:scale-50 xl:group-hover:scale-[0.5] group-hover:translate-y-10">
+          <div className="transition duration-[750ms] z-50 scale-50 xs:scale-100 translate-y-[100px] sm:translate-y-1/3 group-hover:scale-[0.2] xs:group-hover:scale-[0.3] md:group-hover:scale-50 xl:group-hover:scale-[0.5] group-hover:translate-y-10">
             <Image
               src="/home_vidable_project_look.webp"
               alt="Vidable AI Project"
@@ -268,23 +293,23 @@ const AboutPage = () => {
       </section>
       <section
         id="quote"
-        className="col-span-8 row-span-2 bg-layout2 p-5 rounded-2xl flex flex-col gap-2 transition duration-300 ease-in-out"
+        className="col-span-12 xl:col-span-8 row-span-2 bg-layout2 p-5 rounded-2xl flex flex-col gap-2 transition duration-300 ease-in-out"
       >
         <ImQuotesLeft size={32} />
-        <h6 className="font-medium text-2xl italic">
+        <h6 className="font-medium text-lg md:text-2xl italic">
           What you seek is seeking you.
         </h6>
       </section>
       <section
         id="landgenius-project"
         className={`${
-          showMore ? "col-span-8" : "col-span-7"
-        } group relative row-span-5 bg-[#C2FD00] rounded-2xl transition duration-300 ease-in-out overflow-y-clip flex flex-col items-center justify-center hover:shadow-xl`}
+          showMore ? "col-span-12 xl:col-span-8" : "col-span-12 xl:col-span-7"
+        } group relative row-span-4 xs:row-span-5 md:row-span-7 xl:row-span-5 bg-[#C2FD00] rounded-2xl transition duration-300 ease-in-out overflow-y-clip flex flex-col xl:items-center xl:justify-center hover:shadow-xl`}
       >
-        <h1 className="text-3xl font-bold p-5 pb-0 opacity-0 -translate-x-36 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
+        <h1 className="text-xl md:text-3xl font-bold p-5 pb-0 opacity-0 -translate-x-36 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
           LandGenius
         </h1>
-        <div className="transition duration-500 ease-in-out scale-110 group-hover:scale-125">
+        <div className="transition duration-500 ease-in-out scale-75 group-hover:scale-100 md:scale-75 xl:group-hover:90 xl:scale-110 xl:group-hover:scale-125">
           <Image
             src="/about_landgenius_project.png"
             alt="LandGenius"
@@ -297,7 +322,7 @@ const AboutPage = () => {
         id="location"
         className={`${
           showMore ? "col-span-7" : "col-span-8"
-        } row-span-3 bg-layou2 overflow-hidden rounded-2xl relative transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1`}
+        } hidden xl:block row-span-3 bg-layou2 overflow-hidden rounded-2xl relative transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1`}
       >
         <ExternalLink
           href="https://maps.app.goo.gl/77KHe5BfBXmceoqv6"
@@ -320,7 +345,7 @@ const AboutPage = () => {
       </section>
       <section
         id="call-to-action"
-        className="col-span-9 row-span-1 p-5 bg-black text-white rounded-xl flex items-center justify-center transition-all duration-[0.4s] ease-[cubic-bezier(0.19, 1, 0.22, 1)] hover:-translate-y-1 shadow-md"
+        className="col-span-12 xl:col-span-9 row-span-1 p-5 bg-black text-white rounded-xl flex items-center justify-center transition-all duration-[0.4s] ease-[cubic-bezier(0.19, 1, 0.22, 1)] hover:-translate-y-1 shadow-md"
       >
         <ExternalLink
           href="mailto:arulvalananto@gmail.com"

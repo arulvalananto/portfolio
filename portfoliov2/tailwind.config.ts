@@ -138,6 +138,12 @@ const config: Config = {
       gridColumn: {
         "span-15": "span 15 / span 15",
         "span-24": "span 24 / span 24",
+        "span 16": "span 16 / span 16",
+      },
+      gridRow: {
+        "span-15": "span 15 / span 15",
+        "span-24": "span 24 / span 24",
+        "span 16": "span 16 / span 16",
       },
       gridTemplateColumns: {
         "24": "repeat(24, minmax(0, 1fr))",
