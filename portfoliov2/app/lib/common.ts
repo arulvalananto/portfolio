@@ -1,5 +1,11 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaMedium, FaTwitter } from "react-icons/fa6";
+import {
+  SiReaddotcv,
+  SiBento,
+  SiHackernoon,
+  SiBuymeacoffee,
+} from "react-icons/si";
 
 import { ProjectDetails, Skill } from "./types";
 
@@ -82,28 +88,100 @@ export const projectsOverview = [
 
 export const socialLinks = [
   {
+    name: "LinkedIn",
+    username: "arulvalanantos",
     href: "https://www.linkedin.com/in/arulvalanantos",
     title: "Arul Valan Anto's linkedin",
     className: "bg-linkedIn",
+    bgClassName: "bg-linkedIn",
+    iconClassName: "text-white",
+    textClassName: "text-white",
+    layoutClassName: "col-span-1 row-span-2",
     Icon: FaLinkedin,
   },
   {
+    name: "GitHub",
+    username: "arulvalananto",
     href: "https://github.com/arulvalananto",
     title: "Arul Valan Anto's github",
     className: "bg-github",
+    bgClassName: "bg-github",
+    iconClassName: "text-white",
+    textClassName: "text-white",
+    layoutClassName: "col-span-1 row-span-2",
     Icon: FaGithub,
   },
   {
+    name: "Medium",
+    username: "arulvalananto",
     href: "https://medium.com/@arulvalananto",
     title: "Arul Valan Anto's medium",
     className: "bg-medium",
+    bgClassName: "bg-medium",
+    iconClassName: "text-white",
+    textClassName: "text-white",
+    layoutClassName: "col-span-1 row-span-2",
     Icon: FaMedium,
   },
   {
+    name: "Twitter",
+    username: "arulvalananto_",
     href: "https://twitter.com/arulvalananto_",
     title: "Arul Valan Anto's twitter",
     className: "bg-twitter",
+    bgClassName: "bg-twitter",
+    iconClassName: "text-white",
+    textClassName: "text-white",
+    layoutClassName: "col-span-1 row-span-2",
     Icon: FaTwitter,
+  },
+  {
+    name: "Read CV",
+    username: "arulvalananto",
+    href: "https://read.cv/arulvalananto",
+    title: "Arul Valan Anto's Read CV",
+    className: "bg-white",
+    bgClassName: "bg-white",
+    iconClassName: "text-black",
+    textClassName: "text-black",
+    layoutClassName: "col-span-1 row-span-2",
+    Icon: SiReaddotcv,
+  },
+  {
+    name: "Bento",
+    username: "arulvalananto",
+    href: "https://bento.me/arulvalananto",
+    title: "Arul Valan Anto's Bento",
+    className: "bg-[#768CFF]",
+    bgClassName: "bg-[#768CFF]",
+    iconClassName: "text-white",
+    textClassName: "text-white",
+    layoutClassName: "col-span-1 row-span-2",
+    Icon: SiBento,
+  },
+  {
+    name: "Hackernoon",
+    username: "arulvalananto",
+    href: "https://hackernoon.com/u/arulvalananto",
+    title: "Arul Valan Anto's Hackernoon",
+    className: "bg-white",
+    bgClassName: "bg-white",
+    iconClassName: "text-black",
+    textClassName: "text-black",
+    layoutClassName: "col-span-1 row-span-2",
+    Icon: SiHackernoon,
+  },
+  {
+    name: "BuyMeCoffee",
+    username: "arulvalanantos",
+    href: "https://www.buymeacoffee.com/arulvalanantos",
+    title: "Arul Valan Anto's Buy Me a Coffee",
+    className: "bg-[#FFDD00",
+    bgClassName: "bg-[#FFDD00]",
+    iconClassName: "text-black",
+    textClassName: "text-black",
+    layoutClassName: "col-span-1 row-span-2",
+    Icon: SiBuymeacoffee,
   },
 ];
 
@@ -136,7 +214,7 @@ export const skills: Skill = {
     {
       src: "/about_skill_typescript.svg",
       title: "TypeScript",
-      className: "bg-typscript",
+      className: "bg-typescript",
       color: "bg-typescript",
       imageClassName: "scale-100 md:scale-125 xl:scale-100",
       yearofexperience: "3 years",
@@ -761,3 +839,31 @@ export const projects: ProjectDetails = {
     hasShowImageLayout: false,
   },
 };
+
+export const recentArticles = [
+  {
+    title: "3 Principles in Software Development",
+    href: "https://medium.com/@arulvalananto/3-principles-in-software-development-5b89ed655297",
+    website: "https://medium.com",
+    imageURL: "/3_principles_in_software_development_blog.webp",
+  },
+  {
+    title: "9 Image Optimization Tricks for a Seamless Web Experience",
+    href: "https://medium.com/@arulvalananto/9-image-optimization-tricks-for-a-seamless-web-experience-b41867e87e54",
+    website: "https://medium.com",
+    imageURL: "/image_optimization_blog.webp",
+  },
+  {
+    title: "5 Advanced NodeJS Techniques with ExpressJS",
+    href: "https://medium.com/@arulvalananto/5-advanced-nodejs-techniques-6ac0b7b024a8",
+    website: "https://medium.com",
+    imageURL: "/nodejs_tips_blog.webp",
+  },
+  {
+    title:
+      "Mastering SOLID Principles Like the Back of Your Hand in Just 8 Minutes!",
+    href: "https://hackernoon.com/mastering-solid-principles-like-the-back-of-your-hand-in-just-8-minutes",
+    website: "https://hackernoon.com",
+    imageURL: "/solid_principles_article.gif",
+  },
+];
