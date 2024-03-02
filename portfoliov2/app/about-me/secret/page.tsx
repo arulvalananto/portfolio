@@ -303,7 +303,7 @@ const AboutPage = () => (
             Hire me If you&apos;d like
           </p>
           <Image
-            src="/about_random_player.gif"
+            src="/about_random_player.webm"
             alt="Hire me GIF"
             width={290}
             height={161}

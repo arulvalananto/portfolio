@@ -53,7 +53,7 @@ const MetaTag = () => {
       <meta property="twitter:card" content="summary_large_image" />
       <meta property="twitter:creator" content="@arulvalananto_" />
       <meta property="twitter:url" content="https://arulvalananto.vercel.app" />
-      <link rel="icon" type="image/png" href="/logo.svg" />
+      <link rel="icon" type="image/svg" href="/logo.svg" />
     </head>
   );
 };

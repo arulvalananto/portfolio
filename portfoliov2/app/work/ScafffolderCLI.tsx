@@ -2,7 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-const ScafffolderCLI = () => {
+const 
+ScafffolderCLI = () => {
   return (
     <Link
       href="/work/scafffolder-cli"
@@ -22,7 +23,7 @@ const ScafffolderCLI = () => {
       <div className="w-[500px] md:w-[700px] xl:w-[500px] h-96 scale-90 flex items-center justify-center animate-sizeup-slow">
         <video
           preload="none"
-          src="/projects_scaffolder_demo.mp4"
+          src="/projects_scaffolder_demo.webm"
           autoPlay
           loop
           muted

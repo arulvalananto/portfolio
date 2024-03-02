@@ -179,7 +179,7 @@ const AboutPage = () => {
         <div className="w-[250px] xs:w-[300px] sm:w-96 md:w-[600px] xl:w-[300px] h-96 flex items-center justify-center animate-sizeup-slow z-50">
           <video
             preload="none"
-            src="/projects_airdeck_demo.mp4"
+            src="/projects_airdeck_demo.webm"
             autoPlay
             loop
             muted
@@ -239,7 +239,7 @@ const AboutPage = () => {
           className="col-span-12 xl:col-span-7 row-span-3 bg-portfolio-blue p-5 rounded-2xl transition duration-300 ease-in-out flex items-center justify-center hover:-translate-y-1"
         >
           <Image
-            src="/about_random_player.gif"
+            src="/about_random_player.webm"
             alt="Hire me GIF"
             width={150}
             height={100}

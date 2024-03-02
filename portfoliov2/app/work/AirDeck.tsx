@@ -23,7 +23,7 @@ const AirDeck = () => {
       <div className="w-96 sm:w-[450px] h-96 flex items-center justify-center animate-sizeup-slow z-50">
         <video
           preload="none"
-          src="/projects_airdeck_demo.mp4"
+          src="/projects_airdeck_demo.webm"
           autoPlay
           loop
           muted
