@@ -236,9 +236,15 @@ const AboutPage = () => {
       {showMore && (
         <section
           id="filler"
-          className="col-span-12 xl:col-span-7 row-span-3 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out"
+          className="col-span-12 xl:col-span-7 row-span-3 bg-portfolio-blue p-5 rounded-2xl transition duration-300 ease-in-out flex items-center justify-center hover:-translate-y-1"
         >
-          <h1 className="font-semibold text-2xl text-black">Filler</h1>
+          <Image
+            src="/about_random_player.gif"
+            alt="Hire me GIF"
+            width={150}
+            height={100}
+            className="fade-in-5s"
+          />
         </section>
       )}
       <section
@@ -255,7 +261,7 @@ const AboutPage = () => {
               title={social.title}
               href={social.href}
               className={`${
-                index > 4 ? "hidden sm:flex" : ""
+                index > 4 ? "hidden sm:flex" : "flex"
               } col-span-3 sm:col-span-1 row-span-2 p-4 rounded-2xl group border border-[#F0F0F0] flex-col gap-3 shadow-sm transition-all duration-300 hover:-translate-y-1 ${
                 social.bgClassName
               }`}
@@ -311,7 +317,7 @@ const AboutPage = () => {
         </h1>
         <div className="transition duration-500 ease-in-out scale-75 group-hover:scale-100 md:scale-75 xl:group-hover:90 xl:scale-110 xl:group-hover:scale-125">
           <Image
-            src="/about_landgenius_project.png"
+            src="/about_landgenius_project.webp"
             alt="LandGenius"
             width="840"
             height="669"
