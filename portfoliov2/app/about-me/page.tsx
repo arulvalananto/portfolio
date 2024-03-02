@@ -95,7 +95,7 @@ const AboutPage = () => {
                   &ldquo;The Alchemist.&rdquo;
                 </span>{" "}
                 I also enjoy writing technical articles, where I share what I
-                know on platforms like Medium and Hackernoon.
+                know, on platforms like Medium and Hackernoon.
               </span>
             </p>
           )}
@@ -150,7 +150,7 @@ const AboutPage = () => {
               <a
                 href={`https://www.google.com/search?q=${skill.title.toLowerCase()}`}
                 title={skill.title}
-                className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-100 hover:scale-110`}
+                className={`border-2 border-black rounded-sm ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-500 hover:scale-110`}
                 target="_blank"
                 rel="noopener norefferer nofollow"
               >
@@ -193,7 +193,7 @@ const AboutPage = () => {
               key={index}
               title={article.title}
               href={article.href}
-              className="shadow-sm h-[95px] min-h-[95px] max-h-[95px] flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] rounded-md p-2"
+              className="shadow-sm h-[100px] min-h-[100px] max-h-[100px] flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] bg-white rounded-md p-2"
             >
               <div className="flex flex-col justify-between h-full">
                 <h2 className="text-sm">{article.title}</h2>
@@ -222,7 +222,7 @@ const AboutPage = () => {
       )}
       <section
         id="social profiles"
-        className="col-span-9 row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5"
+        className="col-span-9 row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5 hover:shadow-xl"
       >
         <h1 className="font-semibold text-2xl text-black capitalize">
           Find me on
@@ -250,9 +250,21 @@ const AboutPage = () => {
       </section>
       <section
         id="vidable-ai-project"
-        className="col-span-7 row-span-5 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 transition duration-300 ease-in-out"
+        className="group relative col-span-7 row-span-5 bg-layout2 hover:bg-[url('/about_vidable_project.webp')] bg-cover p-5 pb-0 rounded-2xl flex flex-col gap-5 transition-all duration-300 ease-in-out hover:shadow-xl"
       >
-        <h1>Vidable</h1>
+        <h1 className="text-6xl font-bold absolute top-1/2 left-1/2 -translate-x-1/2 uppercase opacity-0 group-hover:opacity-100 ease-in-out group-hover:top-2 group-hover:text-lg transition-all duration-300">
+          Vidable
+        </h1>
+        <div className="overflow-hidden flex items-center justify-center group relative cursor-pointer">
+          <div className="transition duration-[750ms] z-50 scale-50 xs:scale-100 translate-y-1/3 group-hover:scale-[0.2] xs:group-hover:scale-[0.3] md:group-hover:scale-50 xl:group-hover:scale-[0.5] group-hover:translate-y-10">
+            <Image
+              src="/home_vidable_project_look.webp"
+              alt="Vidable AI Project"
+              width={500}
+              height={500}
+            />
+          </div>
+        </div>
       </section>
       <section
         id="quote"
@@ -267,15 +279,25 @@ const AboutPage = () => {
         id="landgenius-project"
         className={`${
           showMore ? "col-span-8" : "col-span-7"
-        } row-span-5 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 transition duration-300 ease-in-out`}
+        } group relative row-span-5 bg-[#C2FD00] rounded-2xl transition duration-300 ease-in-out overflow-y-clip flex flex-col items-center justify-center hover:shadow-xl`}
       >
-        <h1>LandGenius</h1>
+        <h1 className="text-3xl font-bold p-5 pb-0 opacity-0 -translate-x-36 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
+          LandGenius
+        </h1>
+        <div className="transition duration-500 ease-in-out scale-110 group-hover:scale-125">
+          <Image
+            src="/about_landgenius_project.png"
+            alt="LandGenius"
+            width="840"
+            height="669"
+          />
+        </div>
       </section>
       <section
         id="location"
         className={`${
           showMore ? "col-span-7" : "col-span-8"
-        } row-span-3 bg-layou2 overflow-hidden rounded-2xl relative transition duration-300 ease-in-out`}
+        } row-span-3 bg-layou2 overflow-hidden rounded-2xl relative transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1`}
       >
         <ExternalLink
           href="https://maps.app.goo.gl/77KHe5BfBXmceoqv6"
