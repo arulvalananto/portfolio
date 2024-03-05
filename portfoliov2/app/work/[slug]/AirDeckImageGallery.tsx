@@ -24,7 +24,7 @@ const AirDeckImageGallery = ({ project }: { project: Project }) => {
         </div>
       </div>
       <div
-        className={`${project.bgImageLayout} rounded-lg order-2 col-span-12 md:col-span-6 lg:col-span-3 row-span-1 sm:row-span-2 flex items-center justify-center`}
+        className={`${project.bgImageLayout} rounded-lg order-2 col-span-12 md:col-span-6 lg:col-span-3 row-span-2 flex items-center justify-center`}
       >
         <Image
           src="/airdeck_workflow.svg"
@@ -33,6 +33,7 @@ const AirDeckImageGallery = ({ project }: { project: Project }) => {
           height={456}
           priority
           unoptimized
+          className="xs:scale-90 scale-100"
         />
       </div>
       <div
