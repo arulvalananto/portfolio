@@ -192,7 +192,7 @@ const AboutPage = () => {
       </section>
       <section
         id="my-recent-articles"
-        className="col-span-12 xl:col-span-8 row-span-8 lg:row-span-5 xl:row-span-8 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 group overflow-hidden"
+        className="col-span-12 xl:col-span-8 row-span-8 lg:row-span-5 xl:row-span-8 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 group overflow-hidden hover:-translate-y-1 transition duration-300"
       >
         <div className="flex flex-row gap-1 items-center justify-between">
           <h1 className="font-semibold text-lg sm:text-2xl text-black capitalize">
@@ -210,7 +210,7 @@ const AboutPage = () => {
               key={index}
               title={article.title}
               href={article.href}
-              className="shadow-sm md:w-full lg:w-[400px] xl:w-full h-[100px] min-h-[100px] max-h-[100px] flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] bg-white rounded-md p-2"
+              className="shadow-sm md:w-full lg:w-[400px] xl:w-full h-[100px] min-h-[100px] max-h-[100px] flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] bg-white rounded-md p-2 hover:shadow-md transition-all duration-500"
             >
               <div className="flex flex-col justify-between h-full flex-1 md:flex-auto">
                 <h2 className="text-[10px] xs:text-xs xl:text-sm">
@@ -239,7 +239,7 @@ const AboutPage = () => {
           className="col-span-12 xl:col-span-7 row-span-3 bg-portfolio-blue p-5 rounded-2xl transition duration-300 ease-in-out flex items-center justify-center hover:-translate-y-1"
         >
           <Image
-            src="/about_random_player.webm"
+            src="/about_random_player.gif"
             alt="Hire me GIF"
             width={150}
             height={100}
@@ -299,11 +299,14 @@ const AboutPage = () => {
       </section>
       <section
         id="quote"
-        className="col-span-12 xl:col-span-8 row-span-2 bg-layout2 p-5 rounded-2xl flex flex-col gap-2 transition duration-300 ease-in-out"
+        className="group col-span-12 xl:col-span-8 row-span-2 bg-layout2 p-5 rounded-2xl flex flex-col gap-2 transition duration-300 ease-in-out hover:-translate-y-1"
       >
-        <ImQuotesLeft size={32} />
+        <ImQuotesLeft size={32} className="group-hover:animate-shaker" />
         <h6 className="font-medium text-lg md:text-2xl italic">
-          What you seek is seeking you.
+          What you seek is seeking{" "}
+          <span className="text-black group-hover:bg-black group-hover:text-white transition-all duration-500 rounded-md py-1">
+            you.
+          </span>
         </h6>
       </section>
       <section
