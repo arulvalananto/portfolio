@@ -575,7 +575,7 @@ export const projects: ProjectDetails = {
     type: "Project At Augment",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
-    hasShowImageLayout: false,
+    hasShowImageLayout: true,
   },
   highlight: {
     name: "Highlight",

@@ -10,6 +10,7 @@
 body {
   color: var(--black);
   background: var(--white);
+  overflow-x: hidden;
 }
 
 body * {

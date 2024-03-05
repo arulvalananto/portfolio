@@ -10,7 +10,7 @@ type ProjectDetailsProps = {
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   return (
-    <div className="w-full lg:w-[800px] lg:max-w-[800px] m-auto flex flex-col gap-8 font-inter p-5 lg:p-0">
+    <div className="w-full lg:w-[800px] lg:max-w-[800px] m-auto flex flex-col gap-8 font-inter p-5 lg:p-0 h-full">
       <div className="flex flex-col gap-1">
         <h1 className="text-4xl font-semibold captialize">{project.name}</h1>
         <h4 className="text-base capitalize font-normal">{project.oneliner}</h4>
