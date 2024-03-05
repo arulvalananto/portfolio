@@ -575,6 +575,7 @@ export const projects: ProjectDetails = {
     type: "Project At Augment",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: true,
     hasShowImageLayout: true,
   },
   highlight: {
@@ -595,6 +596,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: ["Web Application", "Outlook Plug-in"],
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   landgenius: {
@@ -619,6 +621,7 @@ export const projects: ProjectDetails = {
     type: "Project At Augment",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   vidableai: {
@@ -639,6 +642,7 @@ export const projects: ProjectDetails = {
     type: "Project At Augment",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   synthup: {
@@ -664,6 +668,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   annals: {
@@ -692,6 +697,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
     externalLinks: [
       { link: "https://github.com/arulvalananto/annals", title: "GitHub" },
@@ -718,6 +724,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: "API",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   scafffoldercli: {
@@ -744,6 +751,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: "Command Line Interface (CLI)",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   framewiseai: {
@@ -781,6 +789,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   futurereads: {
@@ -815,6 +824,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: ["Web Application", "Chrome Extension"],
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
   dressedtokill: {
@@ -836,6 +846,7 @@ export const projects: ProjectDetails = {
     type: "Side Project",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
+    showKeyFeatures: false,
     hasShowImageLayout: false,
   },
 };

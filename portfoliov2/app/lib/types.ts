@@ -35,6 +35,7 @@ export type Project = {
   type: string;
   bgImageLayout?: string;
   hasShowImageLayout?: boolean;
+  showKeyFeatures?: boolean;
 };
 
 export type ProjectDetails = {
