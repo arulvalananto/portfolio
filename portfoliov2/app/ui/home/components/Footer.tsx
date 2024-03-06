@@ -6,11 +6,11 @@ import ExternalLink from "../../external-link";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full sm:h-[250px] bg-black">
-      <div className="w-full max-w-full px-10 xl:px-0 xl:w-[1280px] xl:max-w-[1280px] m-auto h-full font-quicksand font-medium text-white py-10 flex flex-col sm:flex-row gap-10 sm:gap-40">
-        <div className="flex flex-col gap-5">
+    <div className="w-full h-full md:h-[150px] bg-black">
+      <div className="w-full max-w-full px-10 xl:px-0 xl:w-[1280px] xl:max-w-[1280px] m-auto h-full font-quicksand font-medium text-white py-10 flex flex-col gap-5">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
           <h5 className="font-bold text-2xl uppercase sm:capitalize">Links</h5>
-          <div className="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:flex-col sm:gap-2">
+          <div className="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:gap-2">
             <Link
               href="/about"
               className="hover:underline hover:underline-offset-2"
@@ -37,11 +37,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
           <h5 className="font-bold text-2xl uppercase sm:capitalize">
             Social Links
           </h5>
-          <div className="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:flex-col sm:gap-2">
+          <div className="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:gap-2">
             {socialLinks.map((link, index) => {
               const name = link.title.split(" ").at(-1);
               const title = name

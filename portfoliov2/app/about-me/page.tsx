@@ -33,7 +33,7 @@ const AboutPage = () => {
         <h1 className="text-[32px] font-bold leading-[120%] tracking-[-1px] xl:text-[44px] xl:tracking-[-2px]">
           Arul Valan Anto
         </h1>
-        <h6 className="pb-8">Full Stack Developer + Tech Blogger</h6>
+        <h2 className="pb-8">Full Stack Developer + Tech Blogger</h2>
         <div className="flex flex-col gap-4 mb-2">
           <p className="flex flex-col gap-2 text-sm">
             <span className="text-xs font-bold text-black uppercase">
