@@ -7,7 +7,7 @@ const AirDeckKeyFeatures = () => {
       <div className="flex flex-col gap-3">
         <div className="bg-layout1 w-full h-[400px] flex items-center justify-center rounded-md">
           <Image
-            src="/airdeck_voice_personalization.jpg"
+            src="/airdeck_voice_personalization.webp"
             alt="Voice & Video Personalization"
             width={525}
             height={216}
@@ -25,7 +25,7 @@ const AirDeckKeyFeatures = () => {
       <div className="flex flex-col gap-2">
         <div className="bg-layout1 w-full h-[400px] flex items-center justify-center rounded-md">
           <Image
-            src="/airdeck_share_embed.png"
+            src="/airdeck_share_embed.webp"
             alt="Share & Embed"
             width={525}
             height={216}
@@ -43,7 +43,7 @@ const AirDeckKeyFeatures = () => {
       <div className="flex flex-col gap-2">
         <div className="bg-layout1 w-full h-[400px] flex items-center justify-center rounded-md">
           <Image
-            src="/airdeck_survey.jpg"
+            src="/airdeck_survey.webp"
             alt="Lead Capture & Surveys"
             width={525}
             height={216}
@@ -61,7 +61,7 @@ const AirDeckKeyFeatures = () => {
       <div className="flex flex-col gap-2">
         <div className="bg-layout1 w-full h-[400px] flex items-center justify-center rounded-md">
           <Image
-            src="/airdeck_tracking_analytics.png"
+            src="/airdeck_tracking_analytics.webp"
             alt="Document Tracking & Analytics"
             width={525}
             height={216}
@@ -78,7 +78,7 @@ const AirDeckKeyFeatures = () => {
       <div className="flex flex-col gap-2">
         <div className="bg-layout1 w-full h-[400px] flex items-center justify-center rounded-md">
           <Image
-            src="/airdeck_safe_confidential.png"
+            src="/airdeck_safe_confidential.webp"
             alt="Safe & Confidential"
             width={525}
             height={216}
@@ -95,7 +95,7 @@ const AirDeckKeyFeatures = () => {
       <div className="flex flex-col gap-2">
         <div className="bg-layout1 w-full h-[300px] flex items-center justify-center rounded-md">
           <Image
-            src="/airdeck_integration.png"
+            src="/airdeck_integration.webp"
             alt="Integration"
             width={525}
             height={216}

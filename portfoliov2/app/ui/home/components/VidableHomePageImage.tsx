@@ -14,11 +14,11 @@ const VidableHomePageImage: React.FC<VidableHomePageImageProps> = ({
     <div
       className={`order-1 ${
         index % 2 === 0 ? "xl:order-2" : "xl:order-1"
-      } xl:flex-1 w-full h-[150px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
+      } xl:flex-1 w-full h-[200px] xs:h-[300px] sm:h-[350px] md:h-[500px] lg:h-[750px] xl:h-full ${
         project.className
-      } border-4 rounded-md border-black overflow-hidden flex items-center justify-center group relative cursor-pointer grid-dots-yellow`}
+      } border-4 rounded-md border-black overflow-hidden flex items-center justify-center group relative cursor-pointer bg-[url('/home_vidable_project_background.webp')] bg-center`}
     >
-      <div className="transition duration-[750ms] z-50 translate-y-[140px] scale-50 xs:scale-100 xs:translate-y-[450px] md:translate-y-80 xl:translate-y-96 group-hover:scale-[0.2] xs:group-hover:scale-[0.3] md:group-hover:scale-50 xl:group-hover:scale-[0.3] group-hover:translate-y-10">
+      <div className="transition duration-[750ms] z-50 translate-y-[100px] scale-50 xs:scale-100 xs:translate-y-[450px] md:translate-y-80 xl:translate-y-96 group-hover:scale-[0.2] xs:group-hover:scale-[0.3] md:group-hover:scale-50 xl:group-hover:scale-[0.3] group-hover:translate-y-10">
         <Image
           src={project.imageUrl}
           alt={project.name}
