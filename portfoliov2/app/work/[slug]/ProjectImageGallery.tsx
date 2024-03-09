@@ -2,6 +2,7 @@ import React from "react";
 
 import { Project } from "@/app/lib/types";
 import AirDeckImageGallery from "./AirDeckImageGallery";
+import VidableImageGallery from "./VidableImageGallery";
 
 type ProjectImageGalleryProps = {
   project: Project;
@@ -14,6 +15,8 @@ const ProjectImageGallery: React.FC<ProjectImageGalleryProps> = ({
     <div className="my-10 md:mt-20 px-5 md:p-0 w-full md:w-[800px] md:max-w-[800px] lg:w-[1280px] lg:max-w-[1280px] h-full m-auto grid grid-cols-12 auto-rows-[360px] lg:auto-rows-[300px] gap-2">
       {project.name === "AirDeck" ? (
         <AirDeckImageGallery project={project} />
+      ) : project.name === "Vidable AI" ? (
+        <VidableImageGallery project={project} />
       ) : (
         <>
           <div

@@ -469,7 +469,7 @@ export const selectedProjects = [
         color: "bg-orange-600",
       },
     ],
-    url: "https://airdeck.co/",
+    url: "/work/airdeck",
     className: "bg-airdeck",
     imageUrl: "/home_airdeck_project_look.webp",
   },
@@ -511,7 +511,7 @@ export const selectedProjects = [
         color: "bg-jest",
       },
     ],
-    url: "https://landgeniustest.wpengine.com",
+    url: "/work/landgenius",
     className: "bg-landgenius",
     imageUrl: "/projects_landgenius_look.webp",
   },
@@ -553,7 +553,7 @@ export const selectedProjects = [
         color: "bg-playwright",
       },
     ],
-    url: "https://vidable.ai/",
+    url: "/work/vidable-ai",
     className: "bg-layout5",
     imageUrl: "/home_vidable_project_look.webp",
   },
@@ -643,7 +643,7 @@ export const projects: ProjectDetails = {
     category: "Web Application",
     bgImageLayout: "bg-layout1",
     showKeyFeatures: false,
-    hasShowImageLayout: false,
+    hasShowImageLayout: true,
   },
   synthup: {
     name: "SynthUp",
@@ -813,6 +813,10 @@ export const projects: ProjectDetails = {
       website: {
         link: "https://futurereads.web.app/",
         title: "Website",
+      },
+      plugin: {
+        link: "https://chromewebstore.google.com/detail/futurereads/djofoijfbdbanacdognloeopcmaekiic",
+        title: "Chrome Extension Link",
       },
     },
     externalLinks: [

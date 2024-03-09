@@ -47,17 +47,14 @@ const SelectedProjectsSection = () => {
                   <SkillBadge key={area.title} {...area} />
                 ))}
               </div>
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noreferrer noopener nofollow"
+              <Link href={project.url}
                 className="flex flex-row gap-2 items-center font-poppins font-medium text-xs group"
               >
                 <span className="group-hover:scale-105 transition duration-500">
                   Visit the Site
                 </span>
                 <FaArrowRightLong className="transition duration-500 group-hover:translate-x-3" />
-              </a>
+              </Link>
             </div>
             {index == 0 ? (
               <AirDeckHomePageImage project={project} index={index} />

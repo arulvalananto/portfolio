@@ -128,6 +128,16 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                 <BsArrowUpRight />
               </ExternalLink>
             )}
+            {project.links.plugin && (
+              <ExternalLink
+                title={project.links.plugin.title}
+                href={project.links.plugin.link}
+                className="flex flex-row items-center gap-5 border-2 border-black rounded-full px-6 py-2 text-xs md:text-sm hover:bg-black hover:text-white transition-all duration-500 ease-in-out shadow-md"
+              >
+                <span>{project.links.plugin.title}</span>
+                <BsArrowUpRight />
+              </ExternalLink>
+            )}
             {project.links.comingSoon && (
               <button
                 type="button"
