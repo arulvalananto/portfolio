@@ -25,7 +25,7 @@ const ProjectsPage = () => (
         <div className="col-span-12 row-span-9 md:row-span-9 xl:row-span-5 grid grid-cols-12 auto-rows-[100px] md:auto-rows-[55px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
           <SynthUp />
           <Highlight />
-          <Annals />
+          <FutureReads />
         </div>
         <div className="col-span-12 row-span-7 md:row-span-6 xl:row-span-8 grid grid-cols-2 xl:grid-cols-3 auto-rows-[120px] md:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
           <TheCrawlerMan />
@@ -44,7 +44,7 @@ const ProjectsPage = () => (
         <div className="col-span-12 row-span-9 xl:row-span-6 grid grid-cols-12 auto-rows-[156px] md:auto-rows-[80px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
           <ScafffolderCLI />
           <FrameWiseAI />
-          <FutureReads />
+          <Annals />
         </div>
       </div>
     </div>
