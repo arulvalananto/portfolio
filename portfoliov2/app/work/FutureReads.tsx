@@ -13,6 +13,7 @@ const FutureReads = () => {
         alt="FutureReads Project"
         width={183}
         height={23}
+        priority
       />
       <p className="text-black font-quicksand text-base block xs:hidden">
         Read-later app with recommendation feature
@@ -27,6 +28,7 @@ const FutureReads = () => {
           alt="FutureReads Project Overview"
           width={1600}
           height={900}
+          priority
           className="transition duration-300 md:translate-x-6 rounded-md group-hover:translate-x-10 group-hover:translate-y-10 md:group-hover:scale-150"
         />
       </div>
