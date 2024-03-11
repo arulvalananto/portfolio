@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
@@ -169,7 +170,8 @@ const AboutPage = () => {
           ))}
         </div>
       </section>
-      <section
+      <Link
+        href="/work/airdeck"
         id="airdeck-project"
         className="group col-span-12 xl:col-span-7 row-span-4 xs:row-span-5 md:row-span-7 xl:row-span-5 grid-paper bg-[#6c56f9] p-5 rounded-2xl flex flex-col justify-center items-center transition duration-300 ease-in-out overflow-hidden"
       >
@@ -189,7 +191,7 @@ const AboutPage = () => {
             className="rounded-md transition duration-300 ease-in-out group-hover:scale-95"
           />
         </div>
-      </section>
+      </Link>
       <section
         id="my-recent-articles"
         className="col-span-12 xl:col-span-8 row-span-8 lg:row-span-5 xl:row-span-8 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 group overflow-hidden hover:-translate-y-1 transition duration-300"
@@ -279,7 +281,8 @@ const AboutPage = () => {
           ))}
         </div>
       </section>
-      <section
+      <Link
+        href="/work/vidable-ai"
         id="vidable-ai-project"
         className="group relative col-span-12 xl:col-span-7 row-span-4 xs:row-span-5 md:row-span-7 xl:row-span-5 bg-layout2 hover:bg-[url('/about_vidable_project.webp')] bg-cover p-5 pb-0 rounded-2xl flex flex-col gap-5 transition-all duration-300 ease-in-out hover:shadow-xl"
       >
@@ -296,7 +299,7 @@ const AboutPage = () => {
             />
           </div>
         </div>
-      </section>
+      </Link>
       <section
         id="quote"
         className="group col-span-12 xl:col-span-8 row-span-2 bg-layout2 p-5 rounded-2xl flex flex-col gap-2 transition duration-300 ease-in-out hover:-translate-y-1"
@@ -309,7 +312,8 @@ const AboutPage = () => {
           </span>
         </h6>
       </section>
-      <section
+      <Link
+        href="/work/landgenius"
         id="landgenius-project"
         className={`${
           showMore ? "col-span-12 xl:col-span-8" : "col-span-12 xl:col-span-7"
@@ -326,7 +330,7 @@ const AboutPage = () => {
             height="669"
           />
         </div>
-      </section>
+      </Link>
       <section
         id="location"
         className={`${
