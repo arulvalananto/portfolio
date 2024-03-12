@@ -622,7 +622,7 @@ export const projects: ProjectDetails = {
     category: "Web Application",
     bgImageLayout: "bg-layout1",
     showKeyFeatures: false,
-    hasShowImageLayout: false,
+    hasShowImageLayout: true,
   },
   vidableai: {
     name: selectedProjects[2].name,

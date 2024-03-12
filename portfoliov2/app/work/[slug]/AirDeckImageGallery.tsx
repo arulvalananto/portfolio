@@ -1,18 +1,9 @@
-"use client";
-
+import React from "react";
 import Image from "next/image";
-import React, { useState } from "react";
 
 import { Project } from "@/app/lib/types";
 
 const AirDeckImageGallery = ({ project }: { project: Project }) => {
-  const [loaded, setLoaded] = useState(false);
-
-  const handleLoad = () => {
-    console.log("loaded");
-    setLoaded(true);
-  };
-
   return (
     <>
       <div
