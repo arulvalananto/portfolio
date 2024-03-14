@@ -3,13 +3,13 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { VscPerson } from "react-icons/vsc";
 import { CiMenuFries } from "react-icons/ci";
 import { GrDocumentPdf } from "react-icons/gr";
 import { CgFileDocument } from "react-icons/cg";
 import { GoProjectSymlink } from "react-icons/go";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { useRouter, usePathname } from "next/navigation";
 
 import CustomDrawer from "../drawer";
 import ExternalLink from "../external-link";
@@ -17,6 +17,7 @@ import ExternalLink from "../external-link";
 const Navbar = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = React.useState(false);
+  const pathname = usePathname();
 
   const onMailTo = () => {
     window.location.href = "mailto:arulvalananto@gmail.com";
@@ -42,6 +43,8 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  console.log("pathname", pathname);
+
   return (
     <div className="w-full h-full xl:w-[1280px] xl:max-w-[1280px] px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
       <Link href="/" className="w-10 h-10" title="Arul Valan Anto's Logo">
@@ -58,13 +61,21 @@ const Navbar = () => {
         <div className="flex items-center gap-10 md:gap-16">
           <Link
             href="/about-me"
-            className="font-medium text-black text-base font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
+            className={`${
+              pathname === "/about-me"
+                ? "font-bold underline underline-offset-4 text-lg"
+                : "font-medium text-base"
+            } text-black font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
           >
             About me
           </Link>
           <Link
             href="/work"
-            className="font-medium text-black text-base font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
+            className={`${
+              pathname === "/work"
+                ? "font-bold underline underline-offset-4 text-lg"
+                : "font-medium text-base"
+            } text-black font-DMSans opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
           >
             Projects
           </Link>
