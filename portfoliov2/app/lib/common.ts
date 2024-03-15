@@ -663,7 +663,10 @@ export const projects: ProjectDetails = {
       "SynthUp turns long videos into short and easy-to-listen summaries. Get to the point quickly and enjoy your content effortlessly, wherever you are.",
     context: "",
     links: {
-      comingSoon: { link: "", title: "Coming Soon" },
+      website: {
+        link: "https://synthup.framer.ai/",
+        title: "Visit Site",
+      },
     },
     type: "Side Project",
     category: "Web Application",
