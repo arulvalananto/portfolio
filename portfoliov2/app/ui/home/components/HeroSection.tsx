@@ -60,7 +60,7 @@ const HeroSection = () => {
         <div>
           <a
             download
-            href="/Arul_Valan_Anto_Resume.pdf"
+            href="/Arul_Valan_Anto_CV.pdf"
             className="hidden xl:flex transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-[80px] h-[80px] text-center rounded-full items-center justify-center bg-[#22E183] border-2 border-black uppercase font-poppins font-normal text-[10px] -rotate-[15deg] hover:scale-95"
           >
             Download CV
