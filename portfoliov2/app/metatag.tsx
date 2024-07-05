@@ -24,8 +24,8 @@ const MetaTag = () => {
         content="Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence."
       />
       <meta property="og:url" content="https://arulvalananto.dev" />
-      <meta property="og:image" content="/portfolio_cover.webp" />
-      <meta property="og:image:type" content="image/webp" />
+      <meta property="og:image" content="/portfolio_cover.png" />
+      <meta property="og:image:type" content="image/png" />
       <meta
         property="og:image:alt"
         content="Arul Valan Anto :: Full Stack Developer"
@@ -44,7 +44,7 @@ const MetaTag = () => {
         property="twitter:description"
         content="Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence."
       />
-      <meta property="twitter:image" content="/portfolio_cover.webp" />
+      <meta property="twitter:image" content="/portfolio_cover.png" />
       <meta
         property="twitter:image:alt"
         content="Arul Valan Anto :: Full Stack Developer"
