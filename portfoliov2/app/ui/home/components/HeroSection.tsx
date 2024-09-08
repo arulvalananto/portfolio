@@ -48,11 +48,11 @@ const HeroSection = () => {
             title="Medium"
           />
           <p className="absolute bottom-[110px] left-1/2 -translate-x-72 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
-            <span className="font-bold text-2xl">10+</span>
+            <span className="font-bold text-2xl">12+</span>
             <span className="font-normal text-xs opacity-50">Projects</span>
           </p>
           <p className="absolute bottom-[100px] left-1/2 translate-x-60 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
-            <span className="font-bold text-2xl">4+</span>
+            <span className="font-bold text-2xl">4.5+</span>
             <span className="font-normal text-xs opacity-50">Years of</span>
             <span className="font-normal text-xs opacity-50">Experience</span>
           </p>
@@ -61,7 +61,7 @@ const HeroSection = () => {
           <a
             download
             href="/Arul_Valan_Anto_CV.pdf"
-            className="hidden xl:flex transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-[80px] h-[80px] text-center rounded-full items-center justify-center bg-[#22E183] border-2 border-black uppercase font-poppins font-normal text-[10px] -rotate-[15deg] hover:scale-95"
+            className="hidden xl:flex transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-[80px] h-[80px] text-center rounded-full items-center justify-center bg-[#22E183] border-2 border-black uppercase font-normal text-[10px] -rotate-[15deg] hover:scale-95"
           >
             Download CV
           </a>
