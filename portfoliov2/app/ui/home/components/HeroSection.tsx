@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="dashed-grid-paper w-full h-[250px] xs:h-[300px] sm:h-[400px] md:h-[500px] xl:h-[772px] border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
             <h1 className="text-[8px] xs:text-xs sm:text-base md:text-2xl lg:text-3xl xl:text-[40px] font-bold flex flex-col gap-1 md:gap-3 items-center relative">
                 <span className='font-light'>Hi, I’m Arul Valan Anto</span>
-                <span className='text-3xl lg:text-5xl'>Full Stack Developer - based in India</span>
+                <span className='text-xs xs:text-base sm:text-3xl lg:text-5xl'>Full Stack Developer - based in India</span>
                 <Image
                     src="/home_hero_title_expression.svg"
                     alt="stars"

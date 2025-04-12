@@ -67,13 +67,13 @@ export const certificates = [
 
 export const projectsOverview = [
   {
-    href: "https://airdeck.co/",
+    href: "https://airdeck.ai/",
     src: "/about_airdeck_overview.webp",
     alt: "AirDeck",
     title: "AirDeck Project - Overview",
   },
   {
-    href: "https://vidable.ai/",
+    // href: "https://vidable.ai/",
     src: "/about_vidable_overview.webp",
     alt: "Vidable",
     title: "Vidable Project - Overview",
@@ -570,7 +570,7 @@ export const projects: ProjectDetails = {
       "AirDeck is a platform that lets you add voice or video to your presentations, track engagement with unique links, record and upload videos, embed existing videos, and view comprehensive analytics, all in one place.",
     context: "",
     links: {
-      website: { link: "https://airdeck.co/", title: "Website" },
+      website: { link: "https://airdeck.ai/", title: "Website" },
     },
     type: "Project At Augment",
     category: "Web Application",
@@ -634,10 +634,10 @@ export const projects: ProjectDetails = {
       "Vidable makes video libraries better for organizations by improving search, providing useful insights, saving time and money, and ensuring quality standards. This helps users maximize the value of their videos and achieve their goals faster.",
     context: "",
     links: {
-      website: {
-        link: "https://vidable.ai/",
-        title: "Website",
-      },
+      // website: {
+      //   link: "https://vidable.ai/",
+      //   title: "Website",
+      // },
     },
     type: "Project At Augment",
     category: "Web Application",

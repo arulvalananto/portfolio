@@ -153,7 +153,7 @@ export const webapps = [
             },
         },
         links: {
-            websiteURL: 'https://app.airdeck.co/',
+            websiteURL: 'https://app.airdeck.ai/',
         },
         extras: {
             stack: [
