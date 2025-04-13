@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const ProjectsPage = () => (
   <main className={`w-full h-full space-y-5 mb-5 ${leagueSpartan.variable}`}>
     <div className="max-w-[1280px] m-auto pt-4 px-4 xl:px-0">
+      <h2 className="font-bold font-inter text-3xl md:text-5xl mb-5">My Projects</h2>
       <div className="grid grid-cols-12 auto-rows-[110px] md:auto-rows-[80px] xl:auto-rows-[50px] gap-y-0.5">
         <div className="col-span-12 row-span-9 md:row-span-9 xl:row-span-5 grid grid-cols-12 auto-rows-[100px] md:auto-rows-[55px] xl:auto-rows-[50px] gap-x-3 gap-y-3 xl:gap-y-0">
           <SynthUp />

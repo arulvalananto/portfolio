@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Arul Valan Anto :: Profile",
+    title: 'Arul Valan Anto :: Profile',
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return <div>{children}</div>;
+    return <div>{children}</div>;
 }

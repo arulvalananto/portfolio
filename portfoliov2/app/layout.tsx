@@ -3,8 +3,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import "./globals.css";
-import Navbar from "./ui/navbar";
 import MetaTag from "./metatag";
+import ActionBar from "./ui/actionbar";
 import { dmSans, poppins, quickSand } from "./lib/fonts";
 
 export const metadata: Metadata = {
@@ -23,7 +23,8 @@ export default function RootLayout({
     >
       <MetaTag />
       <body>
-        <Navbar />
+        <ActionBar />
+        <div className="h-20"></div>
         {children}
         <SpeedInsights />
         <Analytics />
