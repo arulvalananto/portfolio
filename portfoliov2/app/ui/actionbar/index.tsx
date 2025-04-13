@@ -19,7 +19,18 @@ const ActionBar = () => {
                         pathname === '/' ? 'border-b-2 border-red-400' : ''
                     } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
-                    <Tooltip title="Home" placement="bottom">
+                    <Tooltip
+                        title="Home"
+                        componentsProps={{
+                            tooltip: {
+                                sx: {
+                                    bgcolor: '#000',
+                                    color: '#fff',
+                                    fontSize: '1rem', // Tooltip font size
+                                },
+                            },
+                        }}
+                    >
                         <Image
                             src="/action-bar/home.svg"
                             alt="Home"
@@ -36,7 +47,18 @@ const ActionBar = () => {
                             : ''
                     } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
-                    <Tooltip title="About Me" placement="bottom">
+                    <Tooltip
+                        title="About Me"
+                        componentsProps={{
+                            tooltip: {
+                                sx: {
+                                    bgcolor: '#000',
+                                    color: '#fff',
+                                    fontSize: '1rem', // Tooltip font size
+                                },
+                            },
+                        }}
+                    >
                         <Image
                             src="/action-bar/about.svg"
                             alt="About Me"
@@ -53,7 +75,18 @@ const ActionBar = () => {
                             : ''
                     } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
-                    <Tooltip title="My Work" placement="bottom">
+                    <Tooltip
+                        title="My Work"
+                        componentsProps={{
+                            tooltip: {
+                                sx: {
+                                    bgcolor: '#000',
+                                    color: '#fff',
+                                    fontSize: '1rem', // Tooltip font size
+                                },
+                            },
+                        }}
+                    >
                         <Image
                             src="/action-bar/work.svg"
                             alt="My Work"
@@ -68,10 +101,15 @@ const ActionBar = () => {
                     rel="noreferrer"
                 >
                     <Tooltip
-                        title="Let's Chat"
-                        placement="bottom"
-                        sx={{
-                            background: '#000000 !important',
+                        title="Message me"
+                        componentsProps={{
+                            tooltip: {
+                                sx: {
+                                    bgcolor: '#000',
+                                    color: '#fff',
+                                    fontSize: '1rem', // Tooltip font size
+                                },
+                            },
                         }}
                     >
                         <Image
