@@ -48,7 +48,7 @@ const ActionBar = () => {
                     } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
                     <Tooltip
-                        title="About Me"
+                        title="About me"
                         componentsProps={{
                             tooltip: {
                                 sx: {
@@ -61,7 +61,7 @@ const ActionBar = () => {
                     >
                         <Image
                             src="/action-bar/about.svg"
-                            alt="About Me"
+                            alt="About me"
                             width={24}
                             height={24}
                         />
@@ -76,7 +76,7 @@ const ActionBar = () => {
                     } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
                     <Tooltip
-                        title="My Work"
+                        title="My work"
                         componentsProps={{
                             tooltip: {
                                 sx: {
@@ -89,7 +89,7 @@ const ActionBar = () => {
                     >
                         <Image
                             src="/action-bar/work.svg"
-                            alt="My Work"
+                            alt="My work"
                             width={24}
                             height={24}
                         />
