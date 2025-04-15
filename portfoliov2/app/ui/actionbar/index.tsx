@@ -32,6 +32,7 @@ const ActionBar = () => {
                         }}
                     >
                         <Image
+                            className="pointer-events-none select-none"
                             src="/action-bar/home.svg"
                             alt="Home"
                             width={24}
@@ -60,6 +61,7 @@ const ActionBar = () => {
                         }}
                     >
                         <Image
+                            className="pointer-events-none select-none"
                             src="/action-bar/about.svg"
                             alt="About me"
                             width={24}
@@ -88,6 +90,7 @@ const ActionBar = () => {
                         }}
                     >
                         <Image
+                            className="pointer-events-none select-none"
                             src="/action-bar/work.svg"
                             alt="My work"
                             width={24}
@@ -113,6 +116,7 @@ const ActionBar = () => {
                         }}
                     >
                         <Image
+                            className="pointer-events-none select-none"
                             src="/action-bar/message.svg"
                             alt="Let's Talk"
                             width={24}
