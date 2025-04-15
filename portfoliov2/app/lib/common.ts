@@ -672,7 +672,7 @@ export const projects: ProjectDetails = {
             'Formik',
             'Yup',
         ],
-        timeline: { from: '2025', to: '', isPresent: true },
+        timeline: { from: '2023', to: '2025', isPresent: false },
         description:
             'SynthUp turns long videos into short and easy-to-listen summaries. Get to the point quickly and enjoy your content effortlessly, wherever you are.',
         context: '',
@@ -688,6 +688,12 @@ export const projects: ProjectDetails = {
         showKeyFeatures: false,
         hasShowImageLayout: false,
         status: 'Not Live',
+        externalLinks: [
+            {
+                link: 'https://github.com/arulvalananto/synthup',
+                title: 'GitHub',
+            },
+        ],
     },
     annals: {
         name: 'Annals',
