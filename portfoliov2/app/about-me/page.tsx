@@ -249,6 +249,7 @@ const AboutPage = () => {
                                     width="250"
                                     height="150"
                                     className="rounded-md"
+                                    unoptimized={article.unoptimized ?? false}
                                 />
                             </div>
                         </ExternalLink>
@@ -266,6 +267,7 @@ const AboutPage = () => {
                         width={150}
                         height={100}
                         className="fade-in-5s"
+                        unoptimized
                     />
                 </section>
             )}

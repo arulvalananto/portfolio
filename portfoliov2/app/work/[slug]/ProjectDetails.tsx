@@ -45,6 +45,14 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                             )}
                         </div>
                     </div>
+                    {project?.status && (
+                        <div className="flex flex-col gap-2">
+                            <h6 className="uppercase text-lg font-semibold">
+                                Status
+                            </h6>
+                            <p className="text-sm">{project?.status} </p>
+                        </div>
+                    )}
                     <div className="flex flex-col gap-2">
                         <h6 className="uppercase text-lg font-semibold">
                             Timeline
