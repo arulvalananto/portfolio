@@ -3,226 +3,235 @@
 @tailwind utilities;
 
 :root {
-  --black: black;
-  --white: white;
+    --black: black;
+    --white: white;
 }
 
 body {
-  color: var(--black);
-  background: var(--white);
-  overflow-x: hidden;
+    color: var(--black);
+    background: var(--white);
+    overflow-x: hidden;
 }
 
+*,
 body * {
-  cursor: url("../public/custom_cursor_default.svg"), auto !important;
+    cursor: url('../public/custom_cursor_default.svg'), auto !important;
 }
 
 ul {
-  list-style: none;
-  padding-left: 0;
+    list-style: none;
+    padding-left: 0;
 }
 
 ul li {
-  padding-left: 1.5em;
-  margin-bottom: 0.5em;
-  position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+    position: relative;
 }
 
 ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 1em;
-  height: 1em;
-  background-repeat: no-repeat;
-  background-image: url("../public/stars.svg");
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-image: url('../public/stars.svg');
 }
 
 .fade-in-5s {
-  opacity: 0;
-  transition: opacity 5s ease-in-out;
-  animation: fadeIn 5s;
-  animation-fill-mode: forwards;
+    opacity: 0;
+    transition: opacity 5s ease-in-out;
+    animation: fadeIn 5s;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+    to {
+        opacity: 1;
+    }
 }
 
 .box-wave {
-  --mask: radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%)
-      calc(50% - 60px) 0/120px 100%,
-    radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px
-      100% repeat-x;
-  -webkit-mask: var(--mask);
-  mask: var(--mask);
+    --mask: radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%)
+            calc(50% - 60px) 0/120px 100%,
+        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px
+            100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
 }
 
 .heart {
-  position: relative;
-  width: 10px;
-  height: 9px;
+    position: relative;
+    width: 10px;
+    height: 9px;
 }
 .heart:before,
 .heart:after {
-  position: absolute;
-  content: "";
-  left: 50px;
-  top: 0;
-  width: 50px;
-  height: 80px;
-  background: white;
-  border-radius: 50px 50px 0 0;
-  transform: rotate(-45deg);
-  transform-origin: 0 100%;
+    position: absolute;
+    content: '';
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: white;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
 }
 .heart:after {
-  left: 0;
-  transform: rotate(45deg);
-  transform-origin: 100% 100%;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
 }
 
 .grid-paper:hover {
-  background: linear-gradient(-90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-    linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-    linear-gradient(
-      transparent 3px,
-      #6c56f9 3px,
-      #6c56f9 78px,
-      transparent 78px
-    ),
-    linear-gradient(-90deg, black 1px, transparent 1px),
-    linear-gradient(
-      -90deg,
-      transparent 3px,
-      #6c56f9 3px,
-      #6c56f9 78px,
-      transparent 78px
-    ),
-    linear-gradient(black 1px, transparent 1px), #6c56f9;
-  background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px,
-    80px 80px, 80px 80px;
+    background: linear-gradient(
+            -90deg,
+            rgba(0, 0, 0, 0.05) 1px,
+            transparent 1px
+        ),
+        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+        linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(
+            transparent 3px,
+            #6c56f9 3px,
+            #6c56f9 78px,
+            transparent 78px
+        ),
+        linear-gradient(-90deg, black 1px, transparent 1px),
+        linear-gradient(
+            -90deg,
+            transparent 3px,
+            #6c56f9 3px,
+            #6c56f9 78px,
+            transparent 78px
+        ),
+        linear-gradient(black 1px, transparent 1px), #6c56f9;
+    background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,
+        80px 80px, 80px 80px, 80px 80px;
 }
 
 .grid-bg-layout {
-  background: #eeff7c;
-  background-image: linear-gradient(
-      rgba(171, 171, 171, 0.1) 0.1em,
-      transparent 0.1em
-    ),
-    linear-gradient(90deg, rgba(171, 171, 171, 0.1) 0.1em, transparent 0.1em);
-  background-size: 3em 3em;
-  /*background: conic-gradient(from 90deg at 1px 1px, #0000 90deg, #ababab 0) 0 0/50px
+    background: #eeff7c;
+    background-image: linear-gradient(
+            rgba(171, 171, 171, 0.1) 0.1em,
+            transparent 0.1em
+        ),
+        linear-gradient(
+            90deg,
+            rgba(171, 171, 171, 0.1) 0.1em,
+            transparent 0.1em
+        );
+    background-size: 3em 3em;
+    /*background: conic-gradient(from 90deg at 1px 1px, #0000 90deg, #ababab 0) 0 0/50px
     50px #eeff7c;*/
 }
 
 .dashed-grid-paper {
-  --grid-size: 30px;
-  --grid-strength: 1px;
-  --grid-dash: 10px;
-  --grid-gap: 5px;
-  --grid-color: rgba(171, 171, 171, 0.5);
-  --paper-color: #eeff7c;
+    --grid-size: 30px;
+    --grid-strength: 1px;
+    --grid-dash: 10px;
+    --grid-gap: 5px;
+    --grid-color: rgba(171, 171, 171, 0.5);
+    --paper-color: #eeff7c;
 
-  background-color: var(--paper-color);
-  background-size: var(--grid-dash) var(--grid-dash),
-    var(--grid-size) var(--grid-size);
-  background-image: linear-gradient(
-      to bottom,
-      transparent var(--grid-gap),
-      var(--paper-color) var(--grid-gap)
-    ),
-    linear-gradient(
-      to right,
-      var(--grid-color) var(--grid-strength),
-      transparent var(--grid-strength)
-    ),
-    linear-gradient(
-      to right,
-      transparent var(--grid-gap),
-      var(--paper-color) var(--grid-gap)
-    ),
-    linear-gradient(
-      to bottom,
-      var(--grid-color) var(--grid-strength),
-      transparent var(--grid-strength)
-    );
-  transition: all 0.5s ease-in-out;
+    background-color: var(--paper-color);
+    background-size: var(--grid-dash) var(--grid-dash),
+        var(--grid-size) var(--grid-size);
+    background-image: linear-gradient(
+            to bottom,
+            transparent var(--grid-gap),
+            var(--paper-color) var(--grid-gap)
+        ),
+        linear-gradient(
+            to right,
+            var(--grid-color) var(--grid-strength),
+            transparent var(--grid-strength)
+        ),
+        linear-gradient(
+            to right,
+            transparent var(--grid-gap),
+            var(--paper-color) var(--grid-gap)
+        ),
+        linear-gradient(
+            to bottom,
+            var(--grid-color) var(--grid-strength),
+            transparent var(--grid-strength)
+        );
+    transition: all 0.5s ease-in-out;
 }
 
 .dashed-grid-paper:hover {
-  --grid-color: rgba(171, 171, 171, 1);
+    --grid-color: rgba(171, 171, 171, 1);
 }
 
 .grid-dots-yellow:hover {
-  background: radial-gradient(rgb(33, 33, 33) 10%, transparent 0px) 25px 25px /
-    10px 10px #f8ebd4;
+    background: radial-gradient(rgb(33, 33, 33) 10%, transparent 0px) 25px 25px /
+        10px 10px #f8ebd4;
 }
 
 .typewriter-container:hover .typewriting-effect {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid black; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 1.5s steps(20, end), blink-caret 0.5s step-end infinite;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0.15em; /* Adjust as needed */
+    animation: typing 1.5s steps(20, end), blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
 }
 
 .custom-cursor-view-more *,
 .custom-cursor-view-more + * {
-  cursor: url("../public/custom_cursor_view_more.svg"), auto !important;
+    cursor: url('../public/custom_cursor_view_more.svg'), auto !important;
 }
 
 .styles_marker-pulse__BxsPp {
-  animation: styles_marker-pulse__BxsPp 4s ease-out infinite;
+    animation: styles_marker-pulse__BxsPp 4s ease-out infinite;
 }
 
 @keyframes styles_marker-pulse__BxsPp {
-  0% {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-  }
-  35% {
-    transform: translate(-50%, -50%) scale(8);
-    opacity: 0;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(8);
-    opacity: 0;
-  }
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
+    }
+    35% {
+        transform: translate(-50%, -50%) scale(8);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(8);
+        opacity: 0;
+    }
 }
 
 .s-3 {
-  width: 0.75rem;
-  height: 0.75rem;
+    width: 0.75rem;
+    height: 0.75rem;
 }
 
 .opacity-20 {
-  opacity: 0.2;
+    opacity: 0.2;
 }

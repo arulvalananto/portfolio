@@ -25,7 +25,7 @@ const WorkOverview = ({ params }: { params: { slug: string } }) => {
         <div
             className={`w-full h-full py-10 md:pt-20 md:pb-10 ${inter.variable} overflow-x-hidden`}
         >
-            <div className="w-full lg:w-[800px] lg:max-w-[800px] m-auto mb-4">
+            <div className="w-full lg:w-[800px] lg:max-w-[800px] m-auto px-5 pb-5 lg:px-0">
                 <button
                     className="bg-gray-100 px-2 py-1 rounded-md flex flex-row gap-1 items-center border-[1px] border-gray-200 hover:border-gray-300 transform duration-200 ease-in-out"
                     onClick={() => router.back()}
