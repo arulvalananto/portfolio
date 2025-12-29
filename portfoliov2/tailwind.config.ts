@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import { dancingScript } from "./app/lib/fonts";
 
 const config: Config = {
   content: [

@@ -5,6 +5,60 @@
     --white: white;
 }
 
+@theme {
+    --color-subheading: #747474;
+    --color-portfolio-blue: #006FC0;
+    --color-portfolio-yellowGreen: #EEFF7C;
+    --color-portfolio-about-section: #1E1E1E;
+    --color-portfolio-about-title: #A79CF8;
+    --color-linkedIn: #0A66C2;
+    --color-github: #010409;
+    --color-medium: #292929;
+    --color-twitter: #1D9BF0;
+    --color-webDevelopment: #5D91BB;
+    --color-architectualDesign: #F05539;
+    --color-react: #66DBFB;
+    --color-webDesign: #0B9DC7;
+    --color-node: #6AA05B;
+    --color-mongoDB: #47301E;
+    --color-mongoDBColor: #84C16A;
+    --color-typescript: #007BCD;
+    --color-javascript: #F7E018;
+    --color-expressJS: #EEEEEE;
+    --color-webpack: #2B3A42;
+    --color-tailwindcss: #0B1120;
+    --color-tailwindcssColor: #35B2E9;
+    --color-sass: #CD669A;
+    --color-redux: #272822;
+    --color-reduxColor: #7449B9;
+    --color-formik: #0050CE;
+    --color-playwright: #2B3137;
+    --color-css: #254BDD;
+    --color-git: #FFFFFF;
+    --color-gitColor: #DA4B35;
+    --color-jest: #910E1B;
+    --color-vite: #1B1B1F;
+    --color-python: #265074;
+    --color-firebase: #1A73E8;
+    --color-redis: #161F31;
+    --color-angular: #1257B2;
+    --color-stripe: #675DFF;
+    --color-storybook: #FF4785;
+    --color-fastapi: #009485;
+    --color-mysql: #265074;
+    --color-django: #082E23;
+    --color-postgresql: #336690;
+    --color-figma: #74C0FC;
+    --color-airdeck: #4F4FF1;
+    --color-landgenius: #FF8577;
+    --color-vidable: #FFAB2C;
+    --color-layout1: #F2F2F3;
+    --color-layout2: #F7F7F9;
+    --color-layout3: #F5EEE8;
+    --color-layout4: #F0EBDA;
+    --color-layout5: #F8EBD4;
+}
+
 body {
     color: var(--black);
     background: var(--white);
