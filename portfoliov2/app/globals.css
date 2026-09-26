@@ -211,9 +211,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 4.5rem;
-    min-width: 44px;
-    height: 2.5rem;
+    width: 3.5rem;
+    min-width: 40px;
+    height: 2rem;
     padding: 0 0.4rem;
     color: var(--theme-text);
     background: var(--theme-elevated-surface);
@@ -229,16 +229,16 @@ body {
 
 .theme-toggle__icon {
     z-index: 1;
-    width: 1rem;
-    height: 1rem;
+    width: 14px;
+    height: 14px;
 }
 
 .theme-toggle__thumb {
     position: absolute;
     top: 0.25rem;
     left: 0.25rem;
-    width: 1.875rem;
-    height: 1.875rem;
+    width: 1.4rem;
+    height: 1.4rem;
     background: var(--theme-text);
     border-radius: 50%;
     transform: translateX(0);
@@ -248,7 +248,7 @@ body {
 }
 
 [data-theme='dark'] .theme-toggle__thumb {
-    transform: translateX(2rem);
+    transform: translateX(1.5rem);
 }
 
 @media (max-width: 480px) {

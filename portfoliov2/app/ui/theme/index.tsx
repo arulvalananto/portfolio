@@ -81,8 +81,14 @@ export const ThemeToggle = () => {
             title={`Switch to ${isDark ? 'light' : 'dark'} mode`}
             suppressHydrationWarning
         >
-            <FiSun aria-hidden="true" className="theme-toggle__icon" />
-            <FiMoon aria-hidden="true" className="theme-toggle__icon" />
+            <FiSun
+                aria-hidden="true"
+                className={`transition-all duration-400 theme-toggle__icon ${!isDark ? 'text-white translate-x-0.5' : ''}`}
+            />
+            <FiMoon
+                aria-hidden="true"
+                className={`transition-all duration-400 theme-toggle__icon ${isDark ? 'text-black -translate-x-0.5' : ''}`}
+            />
             <span className="theme-toggle__thumb" aria-hidden="true" />
         </button>
     )
