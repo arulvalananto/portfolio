@@ -1,35 +1,36 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import constants from '../lib/constants';
 
 const AirDeck: React.FC = () => {
     return (
         <Link
-            href="/work/airdeck"
+            href={constants.work.cards.airDeck.href}
             className="custom-cursor-view-more col-span-2 md:col-span-1 xl:col-span-2 row-span-3 md:row-span-8 order-1 md:order-2 bg-[#6C56F9] rounded-2xl border-4 border-black p-3 flex flex-col xl:flex-row gap-1 md:gap-0 items-start justify-between group relative overflow-hidden grid-paper select-none"
         >
             <div className="flex flex-col gap-2 md:gap-4 mt-4 xl:mt-16">
                 <Image
-                    src="/projects_airdeck_logo.webp"
-                    alt="AirDeck Project"
+                    src={constants.work.cards.airDeck.logo.src}
+                    alt={constants.work.cards.airDeck.logo.alt}
                     width={160}
                     height={40}
                     priority
                 />
                 <p className="text-sm sm:text-2xl font-quicksand font-normal">
-                    Document Narration Platform
+                    {constants.work.cards.airDeck.tagline}
                 </p>
             </div>
             <div className="w-96 sm:w-112.5 h-96 flex items-center justify-center animate-sizeup-slow z-50">
                 <video
                     preload="none"
-                    src="/projects_airdeck_demo.webm"
+                    src={constants.work.cards.airDeck.demo.src}
                     autoPlay
                     loop
                     muted
                     playsInline
                     controlsList="nodownload"
-                    poster="/projects_airdeck_demo_poster.webp"
+                    poster={constants.work.cards.airDeck.demo.poster}
                     className="rounded-md transition duration-300 ease-in-out group-hover:scale-95"
                 />
             </div>

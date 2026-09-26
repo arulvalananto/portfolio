@@ -12,17 +12,18 @@ import FutureReads from './FutureReads';
 import TheCrawlerMan from './TheCrawlerMan';
 import DressedToKill from './DressedToKill';
 import { leagueSpartan } from '../lib/fonts';
+import constants from '../lib/constants';
 import ScafffolderCLI from './ScafffolderCLI';
 
 export const metadata: Metadata = {
-    title: 'Arul Valan Anto :: Work',
+    title: constants.work.metadataTitle,
 };
 
 const ProjectsPage = () => (
     <main className={`w-full h-full space-y-5 mb-5 ${leagueSpartan.variable}`}>
         <div className="max-w-7xl m-auto pt-4 px-4 xl:px-0">
             <h2 className="font-bold font-inter text-3xl md:text-5xl mb-5">
-                My Projects
+                {constants.work.heading}
             </h2>
             <div className="grid grid-cols-12 auto-rows-27.5 md:auto-rows-20 xl:auto-rows-12.5 gap-y-0.5">
                 <div className="col-span-12 row-span-9 md:row-span-9 xl:row-span-5 grid grid-cols-12 auto-rows-25 md:auto-rows-13.75 xl:auto-rows-12.5 gap-x-3 gap-y-3 xl:gap-y-0">

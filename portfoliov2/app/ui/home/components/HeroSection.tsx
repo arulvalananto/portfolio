@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import ExternalLink from '../../external-link';
 import { calculateTotalExperience } from '@/app/lib/utils';
+import constants from '@/app/lib/constants';
 
 const HeroSection: React.FC = () => {
     const started = new Date('2020-01-01');
@@ -10,20 +11,20 @@ const HeroSection: React.FC = () => {
     return (
         <div className="dashed-grid-paper w-full h-62.5 xs:h-[300px] sm:h-100 md:h-125 xl:h-193 border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
             <h1 className="text-[8px] xs:text-xs sm:text-base md:text-2xl lg:text-3xl xl:text-[40px] font-bold flex flex-col gap-1 md:gap-3 items-center relative">
-                <span className="font-light">Hi, I’m Arul Valan Anto</span>
+                <span className="font-light">{constants.ui.home.hero.introduction}</span>
                 <span className="text-xs xs:text-base sm:text-3xl lg:text-5xl">
-                    Full Stack Developer - based in India
+                    {constants.ui.home.hero.title}
                 </span>
                 <Image
-                    src="/home_hero_title_expression.svg"
-                    alt="stars"
+                    src={constants.ui.home.hero.expression.src}
+                    alt={constants.ui.home.hero.expression.alt}
                     width={32}
                     height={15}
                     className="animate-wiggle absolute top-0 hidden sm:block -right-10 xl:-top-1 xl:right-35"
                 />
                 <Image
-                    src="/home_hero_title_expression.svg"
-                    alt="stars"
+                    src={constants.ui.home.hero.expression.src}
+                    alt={constants.ui.home.hero.expression.alt}
                     width={16}
                     height={7}
                     className="animate-wiggle block sm:hidden absolute top-0 -right-5 xl:-top-1 xl:right-35"
@@ -55,7 +56,7 @@ const HeroSection: React.FC = () => {
                     <p className="absolute bottom-27.5 left-1/2 -translate-x-72 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
                         <span className="font-bold text-2xl">16+</span>
                         <span className="font-normal text-xs opacity-50">
-                            Projects
+                            {constants.ui.home.hero.projectsLabel}
                         </span>
                     </p>
                     <p className="absolute bottom-25 left-1/2 translate-x-60 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
@@ -63,10 +64,10 @@ const HeroSection: React.FC = () => {
                             {totalExperience}
                         </span>
                         <span className="font-normal text-xs opacity-50">
-                            Years of
+                            {constants.ui.home.hero.yearsLabel[0]}
                         </span>
                         <span className="font-normal text-xs opacity-50">
-                            Experience
+                            {constants.ui.home.hero.yearsLabel[1]}
                         </span>
                     </p>
                 </div>
@@ -76,7 +77,7 @@ const HeroSection: React.FC = () => {
                         href="/Arul_Valan_Anto_Resume.pdf"
                         className="hidden xl:flex transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-20 h-20 text-center rounded-full items-center justify-center bg-[#22E183] border-2 border-black uppercase font-normal text-[10px] rotate-[-15deg] hover:scale-95"
                     >
-                        Download Resume
+                        {constants.ui.navbar.resume.downloadLabel}
                     </a>
                     <Image
                         src="/stars_v2.svg"

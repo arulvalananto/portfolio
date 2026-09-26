@@ -6,15 +6,19 @@ import { redirect, useRouter } from 'next/navigation';
 
 import { inter } from '@/app/lib/fonts';
 import { projects } from '@/app/lib/common';
+import constants from '@/app/lib/constants';
 import ProjectDetails from './ProjectDetails';
 import ProjectKeyFeatures from './ProjectKeyFeatures';
 import ProjectImageGallery from './ProjectImageGallery';
 
-const WorkOverview: React.FC<{ params: { slug: string } }> = ({ params }) => {
+const WorkOverview: React.FC<{ params: Promise<{ slug: string }> }> = ({
+    params,
+}) => {
     const router = useRouter();
+    const { slug } = React.use(params);
 
-    const project = params.slug
-        ? projects[params.slug.split('-').join('')]
+    const project = slug
+        ? projects[slug.split('-').join('')]
         : '';
 
     if (!project) {
@@ -31,7 +35,7 @@ const WorkOverview: React.FC<{ params: { slug: string } }> = ({ params }) => {
                     onClick={() => router.back()}
                 >
                     <IoChevronBack />
-                    <span>back</span>
+                    <span>{constants.work.detail.backLabel}</span>
                 </button>
             </div>
             <ProjectDetails project={project} />

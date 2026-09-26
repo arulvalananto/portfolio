@@ -1,27 +1,28 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import constants from '../lib/constants';
 
 const Annals: React.FC = () => {
     return (
         <Link
-            href="/work/annals"
+            href={constants.work.cards.annals.href}
             className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-4 row-span-2 md:row-span-4 xl:row-span-6 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-10 xl:gap-4.5 overflow-hidden group select-none"
         >
             <Image
-                src="/projects_annals_logo.svg"
-                alt="Highlight Project"
+                src={constants.work.cards.annals.logo.src}
+                alt={constants.work.cards.annals.logo.alt}
                 width={126}
                 height={31}
                 priority
             />
             <p className="font-quicksand text-xl text-white font-normal">
-                All-in-one personal space
+                {constants.work.cards.annals.tagline}
             </p>
             <div className="animate-loadIn-slow">
                 <Image
-                    src="/projects_annals_look.webp"
-                    alt="Highlight Project"
+                    src={constants.work.cards.annals.image.src}
+                    alt={constants.work.cards.annals.image.alt}
                     width={275}
                     height={150}
                     priority

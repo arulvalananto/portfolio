@@ -1,6 +1,7 @@
 import { FaRegWindowClose } from 'react-icons/fa';
 import Drawer, { DrawerProps } from '@mui/material/Drawer';
 import clsx from 'clsx';
+import constants from '../../lib/constants';
 
 type CustomDrawerProps = DrawerProps & {
     isOpen: boolean;
@@ -48,7 +49,7 @@ const CustomDrawer: React.FC<CustomDrawerProps> = ({
                     <button
                         type="button"
                         onClick={onClose}
-                        title="close drawer"
+                        title={constants.ui.drawer.closeTitle}
                         className="transition duration-300 hover:scale-90"
                     >
                         <FaRegWindowClose />

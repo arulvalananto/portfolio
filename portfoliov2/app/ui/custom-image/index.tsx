@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Image, { ImageProps } from 'next/image';
+import constants from '../../lib/constants';
 
 type CustomImageProps = ImageProps & {};
 
@@ -28,8 +29,8 @@ const CustomImage: React.FC<CustomImageProps> = ({
                 alt
                     ? alt
                     : hasImageError
-                      ? 'Image broken'
-                      : 'Welcome to Portfolio'
+                      ? constants.ui.imageFallbacks.broken
+                      : constants.ui.imageFallbacks.default
             }
             className={`${className} transition duration-150 ${
                 isImageLoaded ? 'opacity-100' : 'opacity-0'

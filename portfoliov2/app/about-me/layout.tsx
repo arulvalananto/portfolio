@@ -1,7 +1,9 @@
 import type { Metadata } from 'next';
 
+import constants from '../lib/constants';
+
 export const metadata: Metadata = {
-    title: 'Arul Valan Anto :: Profile',
+    title: constants.aboutMe.metadataTitle,
 };
 
 export default function RootLayout({

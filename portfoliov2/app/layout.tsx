@@ -6,9 +6,10 @@ import "./globals.css";
 import MetaTag from "./metatag";
 import ActionBar from "./ui/actionbar";
 import { dmSans, poppins, quickSand } from "./lib/fonts";
+import constants from "./lib/constants";
 
 export const metadata: Metadata = {
-  title: "Arul Valan Anto :: Software Engineer",
+  title: constants.site.metadataTitle,
 };
 
 export default function RootLayout({
@@ -18,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang={constants.site.language}
       className={`${dmSans.variable} ${poppins.variable} ${quickSand.variable}`}
     >
       <MetaTag />

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Project } from '@/app/lib/types';
+import constants from '@/app/lib/constants';
 import AirDeckImageGallery from './AirDeckImageGallery';
 import VidableImageGallery from './VidableImageGallery';
 import LandGeniusImageGallery from './LandGeniusImageGallery';
@@ -14,11 +15,11 @@ const ProjectImageGallery: React.FC<ProjectImageGalleryProps> = ({
 }) => {
     return (
         <div className="my-10 md:mt-20 px-5 md:p-0 w-full md:w-200 md:max-w-200 lg:w-7xl lg:max-w-7xl h-full m-auto grid grid-cols-12 auto-rows-90 lg:auto-rows-75 gap-2">
-            {project.name === 'AirDeck' ? (
+            {project.name === constants.work.detail.galleryProjects.airDeck ? (
                 <AirDeckImageGallery project={project} />
-            ) : project.name === 'Vidable AI' ? (
+            ) : project.name === constants.work.detail.galleryProjects.vidable ? (
                 <VidableImageGallery project={project} />
-            ) : project.name === 'LandGenius' ? (
+            ) : project.name === constants.work.detail.galleryProjects.landGenius ? (
                 <LandGeniusImageGallery project={project} />
             ) : (
                 <>

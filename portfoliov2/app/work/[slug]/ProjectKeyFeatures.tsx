@@ -1,13 +1,16 @@
 import React from 'react';
 
 import { Project } from '@/app/lib/types';
+import constants from '@/app/lib/constants';
 import AirDeckKeyFeatures from './AirDeckKeyFeatures';
 
-const ProjectKeyFeatures = ({ project }: { project: Project }) => {
+const ProjectKeyFeatures: React.FC<{ project: Project }> = ({ project }) => {
     return (
         <div className="w-full lg:w-200 lg:max-[800px] m-auto font-inter flex flex-col gap-10 mt-20 p-5 lg:p-0">
-            <h3 className="text-3xl font-bold capitalize">Key Features</h3>
-            {project.name === 'AirDeck' ? (
+            <h3 className="text-3xl font-bold capitalize">
+                {constants.work.detail.labels.keyFeatures}
+            </h3>
+            {project.name === constants.work.detail.galleryProjects.airDeck ? (
                 <AirDeckKeyFeatures />
             ) : (
                 <div className="flex flex-col gap-5">

@@ -2,6 +2,7 @@ import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs';
 
 import { Project } from '@/app/lib/types';
+import constants from '@/app/lib/constants';
 import ExternalLink from '@/app/ui/external-link';
 
 type ProjectDetailsProps = {
@@ -23,7 +24,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                 <div className="order-2 md:order-1 max-w-37.5 flex flex-row flex-wrap md:flex-nowrap md:flex-col gap-8">
                     <div className="flex flex-col gap-2">
                         <h6 className="uppercase text-lg font-semibold">
-                            Type
+                            {constants.work.detail.labels.type}
                         </h6>
                         <div className="flex flex-col gap-2">
                             <p className="text-sm">{project.type}</p>
@@ -31,7 +32,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                     </div>
                     <div className="flex flex-col gap-2">
                         <h6 className="uppercase text-lg font-semibold">
-                            Role
+                            {constants.work.detail.labels.role}
                         </h6>
                         <div className="flex flex-col gap-2">
                             {Array.isArray(project.role) ? (
@@ -48,14 +49,14 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                     {project?.status && (
                         <div className="flex flex-col gap-2">
                             <h6 className="uppercase text-lg font-semibold">
-                                Status
+                                {constants.work.detail.labels.status}
                             </h6>
                             <p className="text-sm">{project?.status} </p>
                         </div>
                     )}
                     <div className="flex flex-col gap-2">
                         <h6 className="uppercase text-lg font-semibold">
-                            Timeline
+                            {constants.work.detail.labels.timeline}
                         </h6>
                         <p className="text-sm">
                             {project.timeline.from}{' '}
@@ -63,7 +64,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                                 ? ''
                                 : ` - ${
                                       project.timeline.isPresent
-                                          ? 'Present'
+                                          ? constants.work.detail.present
                                           : project.timeline.to
                                   }`}
                         </p>
@@ -71,7 +72,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                     {project?.category && (
                         <div className="flex flex-col gap-2">
                             <h6 className="uppercase text-lg font-semibold">
-                                Category
+                                {constants.work.detail.labels.category}
                             </h6>
                             <div className="flex flex-col gap-2">
                                 {Array.isArray(project.category) ? (
@@ -91,7 +92,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                     {project?.externalLinks && (
                         <div className="flex flex-col gap-2">
                             <h6 className="uppercase text-lg font-semibold">
-                                Work Links
+                                {constants.work.detail.labels.workLinks}
                             </h6>
                             <div className="flex flex-col gap-2">
                                 {project.externalLinks.map((link) => (
@@ -111,13 +112,13 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                 <div className="order-1 md:order-2 flex-1 flex flex-col gap-8">
                     <div className="order-1 flex flex-col gap-2">
                         <h6 className="uppercase text-lg font-semibold">
-                            Description
+                            {constants.work.detail.labels.description}
                         </h6>
                         <p className="text-sm">{project.description}</p>
                     </div>
                     <div className="order-3 md:order-2 flex flex-col gap-2">
                         <h6 className="uppercase text-lg font-semibold">
-                            Tools
+                            {constants.work.detail.labels.tools}
                         </h6>
                         <div className="flex flex-row flex-wrap gap-4">
                             {project.tools.map((tool) => (
