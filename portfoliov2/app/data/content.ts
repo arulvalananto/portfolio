@@ -1,4 +1,4 @@
-const constants = {
+const content = {
     site: {
         language: 'en',
         metadataTitle: 'Arul Valan Anto :: Software Engineer',
@@ -427,4 +427,4 @@ const constants = {
     },
 };
 
-export default constants;
+export default content;

@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Project } from '@/app/lib/types';
+import { Project } from '@/app/data';
 
 const VidableImageGallery: React.FC<{ project: Project }> = ({ project }) => {
     return (

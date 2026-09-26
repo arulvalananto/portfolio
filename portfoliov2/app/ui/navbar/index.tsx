@@ -11,7 +11,7 @@ import { FaArrowRightLong } from 'react-icons/fa6';
 import { useRouter, usePathname } from 'next/navigation';
 
 import CustomDrawer from '../drawer';
-import constants from '../../lib/constants';
+import { portfolio as constants } from '../../data';
 import ExternalLink from '../external-link';
 
 const Navbar = () => {

@@ -1,8 +1,4 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { FaMedium, FaTwitter } from 'react-icons/fa6';
-import { SiBento, SiHackernoon, SiBuymeacoffee } from 'react-icons/si';
-
-import { ProjectDetails, Skill } from './types';
+import { ProjectDetails, Skill, SocialLink } from './types';
 
 export const bio = `Hey there, digital pioneers! I'm Arul Valan Anto, a Full Stack developer with over 4 years of coding under my belt. My playground? Crafting sleek and savvy web applications that make users go "Wow!".
 In my journey through the ever-evolving realm of web development, I've had the pleasure of dipping my toes into various fields, including AI, marketing, and environmental initiatives. From environmental to AI, I've donned many hats and solved countless puzzles, each experience shaping me into the versatile developer I am today. I'm ready to tackle any challenge that comes our way. Whether you're a startup aiming to disrupt the market or an established enterprise seeking to stay ahead of the curve, I'm here to join forces and turn your vision into reality.`;
@@ -81,7 +77,7 @@ export const projectsOverview = [
     },
 ];
 
-export const socialLinks = [
+export const socialLinks: SocialLink[] = [
     {
         name: 'LinkedIn',
         username: 'arulvalanantos',
@@ -92,7 +88,7 @@ export const socialLinks = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        Icon: FaLinkedin,
+        icon: 'linkedin',
     },
     {
         name: 'GitHub',
@@ -104,7 +100,7 @@ export const socialLinks = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        Icon: FaGithub,
+        icon: 'github',
     },
     {
         name: 'Medium',
@@ -116,7 +112,7 @@ export const socialLinks = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        Icon: FaMedium,
+        icon: 'medium',
     },
     {
         name: 'Twitter',
@@ -128,7 +124,7 @@ export const socialLinks = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        Icon: FaTwitter,
+        icon: 'twitter',
     },
     // {
     //     name: 'Read CV',
@@ -152,7 +148,7 @@ export const socialLinks = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        Icon: SiBento,
+        icon: 'bento',
     },
     {
         name: 'Hackernoon',
@@ -164,7 +160,7 @@ export const socialLinks = [
         iconClassName: 'text-black',
         textClassName: 'text-black',
         layoutClassName: 'col-span-1 row-span-2',
-        Icon: SiHackernoon,
+        icon: 'hackernoon',
     },
     {
         name: 'BuyMeCoffee',
@@ -176,7 +172,7 @@ export const socialLinks = [
         iconClassName: 'text-black',
         textClassName: 'text-black',
         layoutClassName: 'col-span-1 row-span-2',
-        Icon: SiBuymeacoffee,
+        icon: 'buyMeCoffee',
     },
 ];
 

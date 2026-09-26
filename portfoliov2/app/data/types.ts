@@ -1,3 +1,18 @@
+import type { SocialIconKey } from './social-icons';
+
+export type SocialLink = {
+    name: string;
+    username: string;
+    href: string;
+    title: string;
+    className: string;
+    bgClassName: string;
+    iconClassName: string;
+    textClassName: string;
+    layoutClassName: string;
+    icon: SocialIconKey;
+};
+
 export type SkillInfo = {
     src?: string;
     title: string;

@@ -1,7 +1,9 @@
 import React from 'react';
 import Marquee from 'react-fast-marquee';
 
-import { skills } from '@/app/lib/common';
+import { portfolio } from '@/app/data';
+
+const { skills } = portfolio.person;
 import SkillBadge from '../../skill-badge';
 
 const SkillsSection: React.FC = () => {

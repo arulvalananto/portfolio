@@ -1,7 +1,7 @@
 import { FaRegWindowClose } from 'react-icons/fa';
 import Drawer, { DrawerProps } from '@mui/material/Drawer';
 import clsx from 'clsx';
-import constants from '../../lib/constants';
+import { portfolio as constants } from '../../data';
 
 type CustomDrawerProps = DrawerProps & {
     isOpen: boolean;

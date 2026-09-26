@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image, { ImageProps } from 'next/image';
-import constants from '../../lib/constants';
+import { portfolio as constants } from '../../data';
 
 type CustomImageProps = ImageProps & {};
 

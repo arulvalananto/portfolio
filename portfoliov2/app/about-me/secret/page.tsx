@@ -4,17 +4,17 @@ import type { Metadata } from 'next';
 import { FcAdvertising } from 'react-icons/fc';
 
 import { dancingScript } from '../../lib/fonts';
-import constants from '../../lib/constants';
+import { portfolio as constants, getSocialIcon } from '../../data';
 import { AnimatedTooltip } from '../../ui/animated-tooltip';
-import {
+const {
     bio,
     certificates,
-    educationDetails,
-    experienceDetails,
-    projectsOverview,
+    education: educationDetails,
+    experience: experienceDetails,
+    projectOverview: projectsOverview,
     skills,
     socialLinks,
-} from '../../lib/common';
+} = constants.person;
 
 export const metadata: Metadata = {
     title: constants.aboutMeSecret.metadataTitle,
@@ -301,11 +301,14 @@ const AboutPage = () => (
                                 target="_blank"
                                 rel="noopener norefferer nofollow"
                             >
-                                <link.Icon
+                                {(() => {
+                                    const Icon = getSocialIcon(link.icon);
+                                    return <Icon
                                     size={20}
                                     className="group-hover:w-5.25 group-hover:h-5.25"
                                     color="white"
-                                />
+                                    />;
+                                })()}
                             </a>
                         ))}
                         <div className="absolute -top-6 -left-1 md:-left-12 xl:-left-1 flex items-center transition duration-300 select-none">

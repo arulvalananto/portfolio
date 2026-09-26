@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import constants from '../lib/constants';
+import { portfolio as constants } from '../data';
 
 export const metadata: Metadata = {
     title: constants.aboutMe.metadataTitle,

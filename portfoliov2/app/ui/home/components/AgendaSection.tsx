@@ -2,7 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 
 import SkillBadge from '../../skill-badge';
-import { experienceArea } from '@/app/lib/common';
+import { portfolio } from '@/app/data';
+
+const { experienceAreas: experienceArea } = portfolio.person;
 
 const AgendaSection: React.FC = () => {
     return (

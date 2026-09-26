@@ -6,7 +6,7 @@ import "./globals.css";
 import MetaTag from "./metatag";
 import ActionBar from "./ui/actionbar";
 import { dmSans, poppins, quickSand } from "./lib/fonts";
-import constants from "./lib/constants";
+import { portfolio as constants } from './data';
 
 export const metadata: Metadata = {
   title: constants.site.metadataTitle,

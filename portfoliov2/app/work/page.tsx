@@ -12,7 +12,7 @@ import FutureReads from './FutureReads';
 import TheCrawlerMan from './TheCrawlerMan';
 import DressedToKill from './DressedToKill';
 import { leagueSpartan } from '../lib/fonts';
-import constants from '../lib/constants';
+import { portfolio as constants } from '../data';
 import ScafffolderCLI from './ScafffolderCLI';
 
 export const metadata: Metadata = {

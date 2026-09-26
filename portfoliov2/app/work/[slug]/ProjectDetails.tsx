@@ -1,8 +1,8 @@
 import React from 'react';
 import { BsArrowUpRight } from 'react-icons/bs';
 
-import { Project } from '@/app/lib/types';
-import constants from '@/app/lib/constants';
+import { Project } from '@/app/data';
+import { portfolio as constants } from '@/app/data';
 import ExternalLink from '@/app/ui/external-link';
 
 type ProjectDetailsProps = {

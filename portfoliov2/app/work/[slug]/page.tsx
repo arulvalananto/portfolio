@@ -5,8 +5,7 @@ import { IoChevronBack } from 'react-icons/io5';
 import { redirect, useRouter } from 'next/navigation';
 
 import { inter } from '@/app/lib/fonts';
-import { projects } from '@/app/lib/common';
-import constants from '@/app/lib/constants';
+import { portfolio as constants } from '@/app/data';
 import ProjectDetails from './ProjectDetails';
 import ProjectKeyFeatures from './ProjectKeyFeatures';
 import ProjectImageGallery from './ProjectImageGallery';
@@ -17,9 +16,7 @@ const WorkOverview: React.FC<{ params: Promise<{ slug: string }> }> = ({
     const router = useRouter();
     const { slug } = React.use(params);
 
-    const project = slug
-        ? projects[slug.split('-').join('')]
-        : '';
+    const project = slug ? constants.projects.bySlug[slug] : undefined;
 
     if (!project) {
         redirect('/work');

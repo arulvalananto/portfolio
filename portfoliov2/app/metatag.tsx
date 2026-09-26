@@ -1,4 +1,4 @@
-import constants from './lib/constants';
+import { portfolio as constants } from './data';
 
 const MetaTag = () => {
   return (

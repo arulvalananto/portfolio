@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import constants from '../lib/constants';
+import { portfolio as constants } from '../data';
 
 const AirDeck: React.FC = () => {
     return (

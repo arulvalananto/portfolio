@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import constants from '../lib/constants';
+import { portfolio as constants } from '../data';
 
 const Filler: React.FC = () => {
     return (

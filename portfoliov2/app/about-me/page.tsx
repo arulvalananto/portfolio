@@ -8,10 +8,10 @@ import { IoMailOutline } from 'react-icons/io5';
 import { PiArrowBendLeftDownThin, PiArrowBendLeftUpThin } from 'react-icons/pi';
 
 import { inter } from '../lib/fonts';
-import constants from '../lib/constants';
+import { portfolio as constants, getSocialIcon } from '../data';
 import ExternalLink from '../ui/external-link';
 import { AnimatedTooltip } from '../ui/animated-tooltip';
-import { recentArticles, skills, socialLinks } from '../lib/common';
+const { articles: recentArticles, skills, socialLinks } = constants.person;
 
 const AboutPage = () => {
     const [showMore, setShowMore] = useState(false);
@@ -295,10 +295,15 @@ const AboutPage = () => {
                                 social.bgClassName
                             }`}
                         >
-                            <social.Icon
+                            {(() => {
+                                const Icon = getSocialIcon(social.icon);
+                                return (
+                            <Icon
                                 size={32}
                                 className={`${social.iconClassName}`}
                             />
+                                );
+                            })()}
                             <div className="flex flex-col gap-1">
                                 <h5
                                     className={`${social.textClassName} text-sm`}

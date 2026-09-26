@@ -1,7 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-import { socialLinks } from '@/app/lib/common';
+import { portfolio } from '@/app/data';
+
+const { socialLinks } = portfolio.person;
 import ExternalLink from '../../external-link';
 
 const Footer: React.FC = () => {

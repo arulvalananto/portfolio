@@ -3,7 +3,9 @@ import Image from 'next/image';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 import SkillBadge from '../../skill-badge';
-import { selectedProjects } from '@/app/lib/common';
+import { portfolio } from '@/app/data';
+
+const { featured: selectedProjects } = portfolio.projects;
 import VidableHomePageImage from './VidableHomePageImage';
 import AirDeckHomePageImage from './AirDeckHomePageImage';
 import LandGeniusHomePageImage from './LandGeniusHomePageImage';

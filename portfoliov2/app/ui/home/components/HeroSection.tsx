@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import ExternalLink from '../../external-link';
 import { calculateTotalExperience } from '@/app/lib/utils';
-import constants from '@/app/lib/constants';
+import { portfolio as constants } from '@/app/data';
 
 const HeroSection: React.FC = () => {
     const started = new Date('2020-01-01');
