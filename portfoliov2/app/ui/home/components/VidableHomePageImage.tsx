@@ -26,7 +26,7 @@ const VidableHomePageImage: React.FC<VidableHomePageImageProps> = ({ project, in
                     className="rounded-md"
                 />
             </div>
-            <h4 className="transition duration-500 xs:w-40 sm:w-48 uppercase absolute left-2 top-2 xs:left-5 xs:top-5 font-bold font-DMSans text-xl md:text-3xl opacity-0 translate-x-10 -translate-y-10 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0">
+            <h4 className="transition duration-500 xs:w-40 sm:w-48 uppercase absolute left-2 top-2 xs:left-5 xs:top-5 font-bold font-DMSans text-black text-xl md:text-3xl opacity-0 translate-x-10 -translate-y-10 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0">
                 AI-based Video Analytics Tool
             </h4>
         </div>
