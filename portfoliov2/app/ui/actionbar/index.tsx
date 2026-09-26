@@ -1,14 +1,14 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import Image from 'next/image';
-import { usePathname } from 'next/navigation';
-import { Tooltip } from '@mui/material';
+import Link from 'next/link'
+import Image from 'next/image'
+import { Tooltip } from '@mui/material'
+import { usePathname } from 'next/navigation'
 
 const ActionBar = () => {
-    const pathname = usePathname();
+    const pathname = usePathname()
 
-    console.log('pathname', pathname);
+    console.log('pathname', pathname)
 
     return (
         <div className="fixed top-5 left-1/2 -translate-x-1/2 z-50 group">
@@ -26,9 +26,9 @@ const ActionBar = () => {
                                 sx: {
                                     bgcolor: 'var(--color-tooltip-surface)',
                                     color: 'var(--color-tooltip-text)',
-                                    fontSize: '1rem', // Tooltip font size
-                                },
-                            },
+                                    fontSize: '1rem' // Tooltip font size
+                                }
+                            }
                         }}
                     >
                         <Image
@@ -43,9 +43,7 @@ const ActionBar = () => {
                 <Link
                     href="/about-me"
                     className={`${
-                        pathname === '/about-me'
-                            ? 'border-b-2 border-red-400'
-                            : ''
+                        pathname === '/about-me' ? 'border-b-2 border-red-400' : ''
                     } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
                     <Tooltip
@@ -55,9 +53,9 @@ const ActionBar = () => {
                                 sx: {
                                     bgcolor: 'var(--color-tooltip-surface)',
                                     color: 'var(--color-tooltip-text)',
-                                    fontSize: '1rem', // Tooltip font size
-                                },
-                            },
+                                    fontSize: '1rem' // Tooltip font size
+                                }
+                            }
                         }}
                     >
                         <Image
@@ -72,9 +70,7 @@ const ActionBar = () => {
                 <Link
                     href="/work"
                     className={`${
-                        pathname.split('/').includes('work')
-                            ? 'border-b-2 border-red-400'
-                            : ''
+                        pathname.split('/').includes('work') ? 'border-b-2 border-red-400' : ''
                     } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
                     <Tooltip
@@ -84,9 +80,9 @@ const ActionBar = () => {
                                 sx: {
                                     bgcolor: 'var(--color-tooltip-surface)',
                                     color: 'var(--color-tooltip-text)',
-                                    fontSize: '1rem', // Tooltip font size
-                                },
-                            },
+                                    fontSize: '1rem' // Tooltip font size
+                                }
+                            }
                         }}
                     >
                         <Image
@@ -98,11 +94,7 @@ const ActionBar = () => {
                         />
                     </Tooltip>
                 </Link>
-                <a
-                    href="mailto:arulvalananto@gmail.com"
-                    target="_blank"
-                    rel="noreferrer"
-                >
+                <a href="mailto:arulvalananto@gmail.com" target="_blank" rel="noreferrer">
                     <Tooltip
                         title="Message me"
                         slotProps={{
@@ -110,9 +102,9 @@ const ActionBar = () => {
                                 sx: {
                                     bgcolor: 'var(--color-tooltip-surface)',
                                     color: 'var(--color-tooltip-text)',
-                                    fontSize: '1rem', // Tooltip font size
-                                },
-                            },
+                                    fontSize: '1rem' // Tooltip font size
+                                }
+                            }
                         }}
                     >
                         <Image
@@ -126,7 +118,7 @@ const ActionBar = () => {
                 </a>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ActionBar;
+export default ActionBar

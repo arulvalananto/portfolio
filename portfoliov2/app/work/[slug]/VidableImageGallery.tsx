@@ -1,6 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import { Project } from '@/app/data';
+import React from 'react'
+import Image from 'next/image'
+
+import { Project } from '@/app/data'
 
 const VidableImageGallery: React.FC<{ project: Project }> = ({ project }) => {
     return (
@@ -54,7 +55,7 @@ const VidableImageGallery: React.FC<{ project: Project }> = ({ project }) => {
                 />
             </div>
         </>
-    );
-};
+    )
+}
 
-export default VidableImageGallery;
+export default VidableImageGallery

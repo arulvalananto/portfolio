@@ -1,7 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { portfolio as constants } from '../data';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { portfolio as constants } from '../data'
 
 const DressedTpKill = () => {
     return (
@@ -61,7 +62,7 @@ const DressedTpKill = () => {
                 />
             </div>
         </Link>
-    );
-};
+    )
+}
 
-export default DressedTpKill;
+export default DressedTpKill

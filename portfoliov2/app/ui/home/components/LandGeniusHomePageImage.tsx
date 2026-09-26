@@ -1,14 +1,13 @@
-import React from 'react';
+import React from 'react'
+
+import type { HomeProject } from '@/app/data'
 
 export type LandGeniusHomePageImageProps = {
-    project: any;
-    index: number;
-};
+    project: HomeProject
+    index: number
+}
 
-const LandGeniusHomePageImage: React.FC<LandGeniusHomePageImageProps> = ({
-    project,
-    index,
-}) => {
+const LandGeniusHomePageImage: React.FC<LandGeniusHomePageImageProps> = ({ project, index }) => {
     return (
         <div
             className={`order-1 ${
@@ -20,7 +19,7 @@ const LandGeniusHomePageImage: React.FC<LandGeniusHomePageImageProps> = ({
             <div className="absolute w-full h-full bg-black z-50 opacity-0 group-hover:opacity-15 transition duration-500"></div>
             <div className="bg-[url('/home_landgenius_overview.webp')] bg-center bg-cover w-full h-full transition duration-[2500ms] group-hover:scale-150 z-40"></div>
         </div>
-    );
-};
+    )
+}
 
-export default LandGeniusHomePageImage;
+export default LandGeniusHomePageImage

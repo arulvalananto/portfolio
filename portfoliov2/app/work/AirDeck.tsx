@@ -1,7 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { portfolio as constants } from '../data';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { portfolio as constants } from '../data'
 
 const AirDeck: React.FC = () => {
     return (
@@ -44,7 +45,7 @@ const AirDeck: React.FC = () => {
                 <div className="transition-all duration-300 absolute -top-10 right-0 w-16 h-16 border-2 rounded-full opacity-40 group-hover:opacity-100 group-hover:top-2 group-hover:right-3 group-hover:w-10 group-hover:h-10 group-hover:bg-white group-hover:border-black"></div>
             </div>
         </Link>
-    );
-};
+    )
+}
 
-export default AirDeck;
+export default AirDeck

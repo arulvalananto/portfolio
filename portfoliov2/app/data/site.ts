@@ -1,3 +1,3 @@
-import content from './content';
+import content from './content'
 
-export const site = content.site;
+export const site = content.site

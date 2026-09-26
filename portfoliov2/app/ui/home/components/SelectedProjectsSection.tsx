@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { FaArrowRightLong } from 'react-icons/fa6';
+import Link from 'next/link'
+import Image from 'next/image'
+import { FaArrowRightLong } from 'react-icons/fa6'
 
-import SkillBadge from '../../skill-badge';
-import { portfolio } from '@/app/data';
+import { portfolio } from '@/app/data'
+import SkillBadge from '../../skill-badge'
 
-const { featured: selectedProjects } = portfolio.projects;
-import VidableHomePageImage from './VidableHomePageImage';
-import AirDeckHomePageImage from './AirDeckHomePageImage';
-import LandGeniusHomePageImage from './LandGeniusHomePageImage';
+const { featured: selectedProjects } = portfolio.projects
+import VidableHomePageImage from './VidableHomePageImage'
+import AirDeckHomePageImage from './AirDeckHomePageImage'
+import LandGeniusHomePageImage from './LandGeniusHomePageImage'
 
 const SelectedProjectsSection = () => {
     return (
@@ -21,9 +21,7 @@ const SelectedProjectsSection = () => {
                     height={60}
                     unoptimized
                 />
-                <h5 className="font-bold font-poppins text-2xl uppercase">
-                    Work
-                </h5>
+                <h5 className="font-bold font-poppins text-2xl uppercase">Work</h5>
                 <p className="text-xs uppercase font-poppins font-normal opacity-50">
                     Selected Work
                 </p>
@@ -63,20 +61,11 @@ const SelectedProjectsSection = () => {
                             </Link>
                         </div>
                         {index == 0 ? (
-                            <AirDeckHomePageImage
-                                project={project}
-                                index={index}
-                            />
+                            <AirDeckHomePageImage project={project} index={index} />
                         ) : index === 1 ? (
-                            <LandGeniusHomePageImage
-                                project={project}
-                                index={index}
-                            />
+                            <LandGeniusHomePageImage project={project} index={index} />
                         ) : (
-                            <VidableHomePageImage
-                                project={project}
-                                index={index}
-                            />
+                            <VidableHomePageImage project={project} index={index} />
                         )}
                     </div>
                 ))}
@@ -90,7 +79,7 @@ const SelectedProjectsSection = () => {
                 </Link>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default SelectedProjectsSection;
+export default SelectedProjectsSection

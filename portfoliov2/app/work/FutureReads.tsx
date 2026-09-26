@@ -1,7 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { portfolio as constants } from '../data';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { portfolio as constants } from '../data'
 
 const FutureReads: React.FC = () => {
     return (
@@ -34,7 +35,7 @@ const FutureReads: React.FC = () => {
                 />
             </div>
         </Link>
-    );
-};
+    )
+}
 
-export default FutureReads;
+export default FutureReads

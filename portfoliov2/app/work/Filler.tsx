@@ -1,6 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
-import { portfolio as constants } from '../data';
+import React from 'react'
+import Image from 'next/image'
+
+import { portfolio as constants } from '../data'
 
 const Filler: React.FC = () => {
     return (
@@ -39,7 +40,7 @@ const Filler: React.FC = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Filler;
+export default Filler

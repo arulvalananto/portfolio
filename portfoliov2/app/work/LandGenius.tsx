@@ -1,7 +1,8 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { portfolio as constants } from '../data';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { portfolio as constants } from '../data'
 
 const LandGenius: React.FC = () => {
     return (
@@ -38,7 +39,7 @@ const LandGenius: React.FC = () => {
                 />
             </div>
         </Link>
-    );
-};
+    )
+}
 
-export default LandGenius;
+export default LandGenius

@@ -1,7 +1,7 @@
-import HeroSection from './ui/home/components/HeroSection';
-import AgendaSection from './ui/home/components/AgendaSection';
-import SkillsSection from './ui/home/components/SkillsSection';
-import SelectedProjectsSection from './ui/home/components/SelectedProjectsSection';
+import HeroSection from './ui/home/components/HeroSection'
+import AgendaSection from './ui/home/components/AgendaSection'
+import SkillsSection from './ui/home/components/SkillsSection'
+import SelectedProjectsSection from './ui/home/components/SelectedProjectsSection'
 
 const Home = () => (
     <main className="w-full h-full">
@@ -12,6 +12,6 @@ const Home = () => (
             <SelectedProjectsSection />
         </div>
     </main>
-);
+)
 
-export default Home;
+export default Home

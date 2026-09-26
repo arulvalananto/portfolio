@@ -1,12 +1,13 @@
-import React from 'react';
-import Image from 'next/image';
-import ExternalLink from '../../external-link';
-import { calculateTotalExperience } from '@/app/lib/utils';
-import { portfolio as constants } from '@/app/data';
+import React from 'react'
+import Image from 'next/image'
+
+import ExternalLink from '../../external-link'
+import { portfolio as constants } from '@/app/data'
+import { calculateTotalExperience } from '@/app/lib/utils'
 
 const HeroSection: React.FC = () => {
-    const started = new Date('2020-01-01');
-    const totalExperience = calculateTotalExperience(started);
+    const started = new Date('2020-01-01')
+    const totalExperience = calculateTotalExperience(started)
 
     return (
         <div className="dashed-grid-paper w-full h-62.5 xs:h-[300px] sm:h-100 md:h-125 xl:h-193 border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
@@ -60,9 +61,7 @@ const HeroSection: React.FC = () => {
                         </span>
                     </p>
                     <p className="absolute bottom-25 left-1/2 translate-x-60 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
-                        <span className="font-bold text-2xl">
-                            {totalExperience}
-                        </span>
+                        <span className="font-bold text-2xl">{totalExperience}</span>
                         <span className="font-normal text-xs opacity-50">
                             {constants.ui.home.hero.yearsLabel[0]}
                         </span>
@@ -117,7 +116,7 @@ const HeroSection: React.FC = () => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default HeroSection;
+export default HeroSection

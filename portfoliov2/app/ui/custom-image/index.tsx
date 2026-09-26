@@ -1,26 +1,23 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import Image, { ImageProps } from 'next/image';
-import { portfolio as constants } from '../../data';
+import React, { useState } from 'react'
+import Image, { ImageProps } from 'next/image'
 
-type CustomImageProps = ImageProps & {};
+import { portfolio as constants } from '../../data'
 
-const CustomImage: React.FC<CustomImageProps> = ({
-    className,
-    alt,
-    ...restProps
-}) => {
-    const [isImageLoaded, setIsImageLoaded] = useState(false);
-    const [hasImageError, setHasImageError] = useState(false);
+type CustomImageProps = ImageProps & {}
+
+const CustomImage: React.FC<CustomImageProps> = ({ className, alt, ...restProps }) => {
+    const [isImageLoaded, setIsImageLoaded] = useState(false)
+    const [hasImageError, setHasImageError] = useState(false)
 
     const onError = () => {
-        setHasImageError(true);
-    };
+        setHasImageError(true)
+    }
 
     const onLoadingComplete = () => {
-        setIsImageLoaded(true);
-    };
+        setIsImageLoaded(true)
+    }
 
     return (
         <Image
@@ -38,7 +35,7 @@ const CustomImage: React.FC<CustomImageProps> = ({
             onLoad={onLoadingComplete}
             onError={onError}
         />
-    );
-};
+    )
+}
 
-export default CustomImage;
+export default CustomImage

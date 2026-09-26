@@ -1,10 +1,10 @@
-import React from 'react';
-import Marquee from 'react-fast-marquee';
+import React from 'react'
+import Marquee from 'react-fast-marquee'
 
-import { portfolio } from '@/app/data';
+import { portfolio } from '@/app/data'
 
-const { skills } = portfolio.person;
-import SkillBadge from '../../skill-badge';
+const { skills } = portfolio.person
+import SkillBadge from '../../skill-badge'
 
 const SkillsSection: React.FC = () => {
     return (
@@ -15,7 +15,7 @@ const SkillsSection: React.FC = () => {
                 ))}
             </div>
         </Marquee>
-    );
-};
+    )
+}
 
-export default SkillsSection;
+export default SkillsSection

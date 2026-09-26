@@ -1,15 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
+
+import type { HomeProject } from '@/app/data'
 
 export type AirDeckHomePageImageProps = {
-    project: any;
-    index: number;
-};
+    project: HomeProject
+    index: number
+}
 
-const AirDeckHomePageImage: React.FC<AirDeckHomePageImageProps> = ({
-    project,
-    index,
-}) => {
+const AirDeckHomePageImage: React.FC<AirDeckHomePageImageProps> = ({ project, index }) => {
     return (
         <div
             className={`order-1 ${
@@ -76,7 +75,7 @@ const AirDeckHomePageImage: React.FC<AirDeckHomePageImageProps> = ({
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default AirDeckHomePageImage;
+export default AirDeckHomePageImage

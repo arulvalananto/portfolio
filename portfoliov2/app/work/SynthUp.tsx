@@ -1,7 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { portfolio as constants } from '../data';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { portfolio as constants } from '../data'
 
 const Synthup: React.FC = () => {
     return (
@@ -22,7 +23,7 @@ const Synthup: React.FC = () => {
                 <span>{constants.work.cards.synthUp.tagline[1]}</span>
             </p>
         </Link>
-    );
-};
+    )
+}
 
-export default Synthup;
+export default Synthup

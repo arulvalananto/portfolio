@@ -7,8 +7,8 @@ import {
     projectsOverview,
     recentArticles,
     skills,
-    socialLinks,
-} from './catalog';
+    socialLinks
+} from './catalog'
 
 export const person = {
     bio,
@@ -19,5 +19,5 @@ export const person = {
     socialLinks,
     articles: recentArticles,
     projectOverview: projectsOverview,
-    experienceAreas: experienceArea,
-} as const;
+    experienceAreas: experienceArea
+} as const

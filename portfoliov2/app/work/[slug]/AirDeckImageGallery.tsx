@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
 
-import { Project } from '@/app/data';
+import { Project } from '@/app/data'
 
 const AirDeckImageGallery = ({ project }: { project: Project }) => {
     return (
@@ -65,7 +65,7 @@ const AirDeckImageGallery = ({ project }: { project: Project }) => {
                 />
             </div>
         </>
-    );
-};
+    )
+}
 
-export default AirDeckImageGallery;
+export default AirDeckImageGallery

@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
     --black: black;
@@ -7,90 +7,90 @@
 
 @theme {
     --color-ink: #000000;
-    --color-surface-default: #FFFFFF;
+    --color-surface-default: #ffffff;
     --color-subheading: #747474;
-    --color-portfolio-blue: #006FC0;
-    --color-portfolio-yellowGreen: #EEFF7C;
-    --color-portfolio-about-section: #1E1E1E;
-    --color-portfolio-about-title: #A79CF8;
-    --color-linkedIn: #0A66C2;
+    --color-portfolio-blue: #006fc0;
+    --color-portfolio-yellowGreen: #eeff7c;
+    --color-portfolio-about-section: #1e1e1e;
+    --color-portfolio-about-title: #a79cf8;
+    --color-linkedIn: #0a66c2;
     --color-github: #010409;
     --color-medium: #292929;
-    --color-twitter: #1D9BF0;
-    --color-webDevelopment: #5D91BB;
-    --color-architectualDesign: #F05539;
-    --color-react: #66DBFB;
-    --color-webDesign: #0B9DC7;
-    --color-node: #6AA05B;
-    --color-mongoDB: #47301E;
-    --color-mongoDBColor: #84C16A;
-    --color-typescript: #007BCD;
-    --color-javascript: #F7E018;
-    --color-expressJS: #EEEEEE;
-    --color-webpack: #2B3A42;
-    --color-tailwindcss: #0B1120;
-    --color-tailwindcssColor: #35B2E9;
-    --color-sass: #CD669A;
+    --color-twitter: #1d9bf0;
+    --color-webDevelopment: #5d91bb;
+    --color-architectualDesign: #f05539;
+    --color-react: #66dbfb;
+    --color-webDesign: #0b9dc7;
+    --color-node: #6aa05b;
+    --color-mongoDB: #47301e;
+    --color-mongoDBColor: #84c16a;
+    --color-typescript: #007bcd;
+    --color-javascript: #f7e018;
+    --color-expressJS: #eeeeee;
+    --color-webpack: #2b3a42;
+    --color-tailwindcss: #0b1120;
+    --color-tailwindcssColor: #35b2e9;
+    --color-sass: #cd669a;
     --color-redux: #272822;
-    --color-reduxColor: #7449B9;
-    --color-formik: #0050CE;
-    --color-playwright: #2B3137;
-    --color-css: #254BDD;
-    --color-git: #FFFFFF;
-    --color-gitColor: #DA4B35;
-    --color-jest: #910E1B;
-    --color-vite: #1B1B1F;
+    --color-reduxColor: #7449b9;
+    --color-formik: #0050ce;
+    --color-playwright: #2b3137;
+    --color-css: #254bdd;
+    --color-git: #ffffff;
+    --color-gitColor: #da4b35;
+    --color-jest: #910e1b;
+    --color-vite: #1b1b1f;
     --color-python: #265074;
-    --color-firebase: #1A73E8;
-    --color-redis: #161F31;
-    --color-angular: #1257B2;
-    --color-stripe: #675DFF;
-    --color-storybook: #FF4785;
+    --color-firebase: #1a73e8;
+    --color-redis: #161f31;
+    --color-angular: #1257b2;
+    --color-stripe: #675dff;
+    --color-storybook: #ff4785;
     --color-fastapi: #009485;
     --color-mysql: #265074;
-    --color-django: #082E23;
+    --color-django: #082e23;
     --color-postgresql: #336690;
-    --color-figma: #74C0FC;
-    --color-airdeck: #4F4FF1;
-    --color-landgenius: #FF8577;
-    --color-vidable: #FFAB2C;
-    --color-layout1: #F2F2F3;
-    --color-layout2: #F7F7F9;
-    --color-layout3: #F5EEE8;
-    --color-layout4: #F0EBDA;
-    --color-layout5: #F8EBD4;
-    --color-provider-bento: #768CFF;
-    --color-provider-buy-me-coffee: #FFDD00;
-    --color-action-bar-surface: #FAFAFA;
+    --color-figma: #74c0fc;
+    --color-airdeck: #4f4ff1;
+    --color-landgenius: #ff8577;
+    --color-vidable: #ffab2c;
+    --color-layout1: #f2f2f3;
+    --color-layout2: #f7f7f9;
+    --color-layout3: #f5eee8;
+    --color-layout4: #f0ebda;
+    --color-layout5: #f8ebd4;
+    --color-provider-bento: #768cff;
+    --color-provider-buy-me-coffee: #ffdd00;
+    --color-action-bar-surface: #fafafa;
     --color-tooltip-surface: #000000;
-    --color-tooltip-text: #FFFFFF;
-    --color-home-cta: #22E183;
-    --color-work-card-airdeck: #6C56F9;
-    --color-work-card-annals: #0F172A;
-    --color-work-card-crawler-man: #FFCB3B;
-    --color-work-card-dressed-to-kill: #FFEFD6;
-    --color-work-card-dressed-to-kill-accent: #F2B950;
-    --color-work-card-framewise: #403E4E;
-    --color-work-card-future-reads: #F0ABFC;
-    --color-work-card-highlight: #7412D7;
-    --color-work-card-landgenius: #A5B4FC;
-    --color-work-card-scafffolder: #B6A1DC;
-    --color-work-card-synthup: #2563EB;
-    --color-work-card-vidable: #77C686;
-    --color-work-filler-orange: #EC753A;
-    --color-work-filler-purple: #6842EF;
-    --color-work-filler-pink: #F1ADE2;
-    --color-work-filler-blue: #5BB1EC;
-    --color-work-card-framewise-hover-border: #C4FF59;
-    --color-gallery-landgenius-dark: #3E464E;
-    --color-gallery-landgenius-accent: #5155FF;
-    --color-gallery-vidable-dark: #2B2B2B;
-    --color-gallery-vidable-accent: #F0712A;
-    --color-about-secret-surface: #4B24B5;
-    --color-about-skill-border: #F0F0F0;
-    --color-about-cta: #C2FD00;
-    --color-map-marker: #679BFF;
-    --color-external-link: #0000FF;
+    --color-tooltip-text: #ffffff;
+    --color-home-cta: #22e183;
+    --color-work-card-airdeck: #6c56f9;
+    --color-work-card-annals: #0f172a;
+    --color-work-card-crawler-man: #ffcb3b;
+    --color-work-card-dressed-to-kill: #ffefd6;
+    --color-work-card-dressed-to-kill-accent: #f2b950;
+    --color-work-card-framewise: #403e4e;
+    --color-work-card-future-reads: #f0abfc;
+    --color-work-card-highlight: #7412d7;
+    --color-work-card-landgenius: #a5b4fc;
+    --color-work-card-scafffolder: #b6a1dc;
+    --color-work-card-synthup: #2563eb;
+    --color-work-card-vidable: #77c686;
+    --color-work-filler-orange: #ec753a;
+    --color-work-filler-purple: #6842ef;
+    --color-work-filler-pink: #f1ade2;
+    --color-work-filler-blue: #5bb1ec;
+    --color-work-card-framewise-hover-border: #c4ff59;
+    --color-gallery-landgenius-dark: #3e464e;
+    --color-gallery-landgenius-accent: #5155ff;
+    --color-gallery-vidable-dark: #2b2b2b;
+    --color-gallery-vidable-accent: #f0712a;
+    --color-about-secret-surface: #4b24b5;
+    --color-about-skill-border: #f0f0f0;
+    --color-about-cta: #c2fd00;
+    --color-map-marker: #679bff;
+    --color-external-link: #0000ff;
     --color-border-subtle: rgb(0 0 0 / 10%);
     --color-grid-paper-line-subtle: rgb(0 0 0 / 5%);
     --color-grid-paper-line-faint: rgb(0 0 0 / 4%);
@@ -98,9 +98,9 @@
     --color-dashed-grid-line: rgb(171 171 171 / 50%);
     --color-dashed-grid-line-hover: rgb(171 171 171);
     --color-grid-dot-ink: rgb(33 33 33);
-    --color-synthup-glow-yellow: #FFCA43;
-    --color-synthup-glow-orange: #FF603D;
-    --color-synthup-glow-pink: #FC4DD5;
+    --color-synthup-glow-yellow: #ffca43;
+    --color-synthup-glow-orange: #ff603d;
+    --color-synthup-glow-pink: #fc4dd5;
 }
 
 body {
@@ -150,10 +150,9 @@ ul li::before {
 }
 
 .box-wave {
-    --mask: radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%)
-            calc(50% - 60px) 0/120px 100%,
-        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px
-            100% repeat-x;
+    --mask:
+        radial-gradient(67.08px at 50% 90px, #000 99%, #0000 101%) calc(50% - 60px) 0/120px 100%,
+        radial-gradient(67.08px at 50% -60px, #0000 99%, #000 101%) 50% 30px/120px 100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
 }
@@ -183,11 +182,8 @@ ul li::before {
 }
 
 .grid-paper:hover {
-    background: linear-gradient(
-            -90deg,
-            var(--color-grid-paper-line-subtle) 1px,
-            transparent 1px
-        ),
+    background:
+        linear-gradient(-90deg, var(--color-grid-paper-line-subtle) 1px, transparent 1px),
         linear-gradient(var(--color-grid-paper-line-subtle) 1px, transparent 1px),
         linear-gradient(-90deg, var(--color-grid-paper-line-faint) 1px, transparent 1px),
         linear-gradient(var(--color-grid-paper-line-faint) 1px, transparent 1px),
@@ -206,21 +202,22 @@ ul li::before {
             transparent 78px
         ),
         linear-gradient(black 1px, transparent 1px), var(--color-work-card-airdeck);
-    background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,
-        80px 80px, 80px 80px, 80px 80px;
+    background-size:
+        4px 4px,
+        4px 4px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px,
+        80px 80px;
 }
 
 .grid-bg-layout {
     background: var(--color-portfolio-yellowGreen);
-    background-image: linear-gradient(
-            var(--color-grid-layout-line) 0.1em,
-            transparent 0.1em
-        ),
-        linear-gradient(
-            90deg,
-            var(--color-grid-layout-line) 0.1em,
-            transparent 0.1em
-        );
+    background-image:
+        linear-gradient(var(--color-grid-layout-line) 0.1em, transparent 0.1em),
+        linear-gradient(90deg, var(--color-grid-layout-line) 0.1em, transparent 0.1em);
     background-size: 3em 3em;
 }
 
@@ -233,23 +230,17 @@ ul li::before {
     --paper-color: var(--color-portfolio-yellowGreen);
 
     background-color: var(--paper-color);
-    background-size: var(--grid-dash) var(--grid-dash),
+    background-size:
+        var(--grid-dash) var(--grid-dash),
         var(--grid-size) var(--grid-size);
-    background-image: linear-gradient(
-            to bottom,
-            transparent var(--grid-gap),
-            var(--paper-color) var(--grid-gap)
-        ),
+    background-image:
+        linear-gradient(to bottom, transparent var(--grid-gap), var(--paper-color) var(--grid-gap)),
         linear-gradient(
             to right,
             var(--grid-color) var(--grid-strength),
             transparent var(--grid-strength)
         ),
-        linear-gradient(
-            to right,
-            transparent var(--grid-gap),
-            var(--paper-color) var(--grid-gap)
-        ),
+        linear-gradient(to right, transparent var(--grid-gap), var(--paper-color) var(--grid-gap)),
         linear-gradient(
             to bottom,
             var(--grid-color) var(--grid-strength),
@@ -263,8 +254,8 @@ ul li::before {
 }
 
 .grid-dots-yellow:hover {
-    background: radial-gradient(var(--color-grid-dot-ink) 10%, transparent 0px) 25px 25px /
-        10px 10px var(--color-layout5);
+    background: radial-gradient(var(--color-grid-dot-ink) 10%, transparent 0px) 25px 25px / 10px
+        10px var(--color-layout5);
 }
 
 .typewriter-container:hover .typewriting-effect {
@@ -273,7 +264,9 @@ ul li::before {
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 1.5s steps(20, end), blink-caret 0.5s step-end infinite;
+    animation:
+        typing 1.5s steps(20, end),
+        blink-caret 0.5s step-end infinite;
 }
 
 /* The typing effect */

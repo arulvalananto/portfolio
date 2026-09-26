@@ -1,23 +1,23 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
 
-import Filler from './Filler';
-import Annals from './Annals';
-import AirDeck from './AirDeck';
-import SynthUp from './SynthUp';
-import VidableAI from './VidableAI';
-import Highlight from './Highlight';
-import LandGenius from './LandGenius';
-import FrameWiseAI from './FrameWiseAI';
-import FutureReads from './FutureReads';
-import TheCrawlerMan from './TheCrawlerMan';
-import DressedToKill from './DressedToKill';
-import { leagueSpartan } from '../lib/fonts';
-import { portfolio as constants } from '../data';
-import ScafffolderCLI from './ScafffolderCLI';
+import Filler from './Filler'
+import Annals from './Annals'
+import AirDeck from './AirDeck'
+import SynthUp from './SynthUp'
+import VidableAI from './VidableAI'
+import Highlight from './Highlight'
+import LandGenius from './LandGenius'
+import FrameWiseAI from './FrameWiseAI'
+import FutureReads from './FutureReads'
+import TheCrawlerMan from './TheCrawlerMan'
+import DressedToKill from './DressedToKill'
+import { leagueSpartan } from '../lib/fonts'
+import ScafffolderCLI from './ScafffolderCLI'
+import { portfolio as constants } from '../data'
 
 export const metadata: Metadata = {
-    title: constants.work.metadataTitle,
-};
+    title: constants.work.metadataTitle
+}
 
 const ProjectsPage = () => (
     <main className={`w-full h-full space-y-5 mb-5 ${leagueSpartan.variable}`}>
@@ -53,6 +53,6 @@ const ProjectsPage = () => (
             </div>
         </div>
     </main>
-);
+)
 
-export default ProjectsPage;
+export default ProjectsPage

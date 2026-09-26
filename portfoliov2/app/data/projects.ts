@@ -1,8 +1,8 @@
-import content from './content';
-import { projects, selectedProjects } from './catalog';
-import type { Project } from './types';
+import content from './content'
+import type { Project } from './types'
+import { projects, selectedProjects } from './catalog'
 
-export type ProjectRecord = Project & { slug: string };
+export type ProjectRecord = Project & { slug: string }
 
 const slugAliases = {
     vidableai: 'vidable-ai',
@@ -10,22 +10,19 @@ const slugAliases = {
     futurereads: 'future-reads',
     thecrawlerman: 'the-crawler-man',
     scafffoldercli: 'scafffolder-cli',
-    dressedtokill: 'dressed-to-kill',
-} as const;
+    dressedtokill: 'dressed-to-kill'
+} as const
 
-const getSlug = (key: string) =>
-    slugAliases[key as keyof typeof slugAliases] ?? key;
+const getSlug = (key: string) => slugAliases[key as keyof typeof slugAliases] ?? key
 
 export const projectEntries: ProjectRecord[] = Object.entries(projects).map(([key, project]) => ({
     ...project,
-    slug: getSlug(key),
-}));
+    slug: getSlug(key)
+}))
 
 export const projectData = {
-    bySlug: Object.fromEntries(
-        projectEntries.map((project) => [project.slug, project]),
-    ),
+    bySlug: Object.fromEntries(projectEntries.map((project) => [project.slug, project])),
     featured: selectedProjects,
     details: projects,
-    cards: content.work.cards,
-} as const;
+    cards: content.work.cards
+} as const

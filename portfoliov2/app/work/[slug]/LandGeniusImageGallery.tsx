@@ -1,7 +1,7 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
 
-import { Project } from '@/app/data';
+import { Project } from '@/app/data'
 
 const LandGeniusImageGallery = ({ project }: { project: Project }) => {
     return (
@@ -63,7 +63,7 @@ const LandGeniusImageGallery = ({ project }: { project: Project }) => {
                 />
             </div>
         </>
-    );
-};
+    )
+}
 
-export default LandGeniusImageGallery;
+export default LandGeniusImageGallery

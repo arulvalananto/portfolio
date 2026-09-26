@@ -1,6 +1,6 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Highlight: React.FC = () => {
     return (
@@ -58,7 +58,7 @@ const Highlight: React.FC = () => {
                 <span>Snippets!</span>
             </p>
         </Link>
-    );
-};
+    )
+}
 
-export default Highlight;
+export default Highlight

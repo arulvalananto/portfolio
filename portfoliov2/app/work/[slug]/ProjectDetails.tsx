@@ -1,24 +1,20 @@
-import React from 'react';
-import { BsArrowUpRight } from 'react-icons/bs';
+import React from 'react'
+import { BsArrowUpRight } from 'react-icons/bs'
 
-import { Project } from '@/app/data';
-import { portfolio as constants } from '@/app/data';
-import ExternalLink from '@/app/ui/external-link';
+import { Project } from '@/app/data'
+import ExternalLink from '@/app/ui/external-link'
+import { portfolio as constants } from '@/app/data'
 
 type ProjectDetailsProps = {
-    project: Project;
-};
+    project: Project
+}
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
     return (
         <div className="w-full lg:w-200 lg:max-w-200 m-auto flex flex-col gap-8 font-inter p-5 lg:p-0 h-full">
             <div className="flex flex-col gap-1">
-                <h1 className="text-4xl font-semibold capitalize">
-                    {project.name}
-                </h1>
-                <h4 className="text-base capitalize font-normal">
-                    {project.oneliner}
-                </h4>
+                <h1 className="text-4xl font-semibold capitalize">{project.name}</h1>
+                <h4 className="text-base capitalize font-normal">{project.oneliner}</h4>
             </div>
             <div className="flex flex-col md:flex-row items-start gap-4 md:gap-8">
                 <div className="order-2 md:order-1 max-w-37.5 flex flex-row flex-wrap md:flex-nowrap md:flex-col gap-8">
@@ -82,9 +78,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                                         </p>
                                     ))
                                 ) : (
-                                    <p className="text-sm">
-                                        {project.category}
-                                    </p>
+                                    <p className="text-sm">{project.category}</p>
                                 )}
                             </div>
                         </div>
@@ -122,10 +116,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                         </h6>
                         <div className="flex flex-row flex-wrap gap-4">
                             {project.tools.map((tool) => (
-                                <p
-                                    key={tool}
-                                    className="font-base text-sm capitalize"
-                                >
+                                <p key={tool} className="font-base text-sm capitalize">
                                     {tool}
                                 </p>
                             ))}
@@ -184,7 +175,7 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default ProjectDetails;
+export default ProjectDetails

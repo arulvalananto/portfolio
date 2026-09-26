@@ -1,30 +1,22 @@
-import React from 'react';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
 
-import { portfolio } from '@/app/data';
+import { portfolio } from '@/app/data'
 
-const { socialLinks } = portfolio.person;
-import ExternalLink from '../../external-link';
+const { socialLinks } = portfolio.person
+import ExternalLink from '../../external-link'
 
 const Footer: React.FC = () => {
     return (
         <div className="w-full h-full md:h-37.5 bg-black">
             <div className="w-full max-w-full px-10 xl:px-0 xl:w-7xl xl:max-w-7xl m-auto h-full font-quicksand font-medium text-white py-10 flex flex-col gap-5">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
-                    <h5 className="font-bold text-2xl uppercase sm:capitalize">
-                        Links
-                    </h5>
+                    <h5 className="font-bold text-2xl uppercase sm:capitalize">Links</h5>
                     <div className="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:gap-2">
-                        <Link
-                            href="/about"
-                            className="hover:underline hover:underline-offset-2"
-                        >
+                        <Link href="/about" className="hover:underline hover:underline-offset-2">
                             About
                         </Link>
-                        <Link
-                            href="/work"
-                            className="hover:underline hover:underline-offset-2"
-                        >
+                        <Link href="/work" className="hover:underline hover:underline-offset-2">
                             Projects
                         </Link>
                         <ExternalLink
@@ -42,16 +34,12 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
-                    <h5 className="font-bold text-2xl uppercase sm:capitalize">
-                        Social Links
-                    </h5>
+                    <h5 className="font-bold text-2xl uppercase sm:capitalize">Social Links</h5>
                     <div className="flex flex-row flex-wrap gap-5 sm:flex-nowrap sm:gap-2">
                         {socialLinks.map((link, index) => {
-                            const name = link.title.split(' ').at(-1);
-                            const title = name
-                                ? name.charAt(0).toUpperCase() + name.slice(1)
-                                : '';
-                            if (!title) return;
+                            const name = link.title.split(' ').at(-1)
+                            const title = name ? name.charAt(0).toUpperCase() + name.slice(1) : ''
+                            if (!title) return
 
                             return (
                                 <ExternalLink
@@ -60,13 +48,13 @@ const Footer: React.FC = () => {
                                     title={title}
                                     className="hover:underline hover:underline-offset-2"
                                 />
-                            );
+                            )
                         })}
                     </div>
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Footer;
+export default Footer

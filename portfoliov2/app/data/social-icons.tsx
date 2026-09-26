@@ -1,6 +1,6 @@
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { FaMedium, FaTwitter } from 'react-icons/fa6';
-import { SiBento, SiBuymeacoffee, SiHackernoon } from 'react-icons/si';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaMedium, FaTwitter } from 'react-icons/fa6'
+import { SiBento, SiBuymeacoffee, SiHackernoon } from 'react-icons/si'
 
 const socialIcons = {
     linkedin: FaLinkedin,
@@ -9,9 +9,9 @@ const socialIcons = {
     twitter: FaTwitter,
     bento: SiBento,
     hackernoon: SiHackernoon,
-    buyMeCoffee: SiBuymeacoffee,
-} as const;
+    buyMeCoffee: SiBuymeacoffee
+} as const
 
-export type SocialIconKey = keyof typeof socialIcons;
+export type SocialIconKey = keyof typeof socialIcons
 
-export const getSocialIcon = (key: SocialIconKey) => socialIcons[key];
+export const getSocialIcon = (key: SocialIconKey) => socialIcons[key]

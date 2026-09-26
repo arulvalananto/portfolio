@@ -1,37 +1,37 @@
-import { ProjectDetails, Skill, SocialLink } from './types';
+import { ProjectDetails, Skill, SocialLink } from './types'
 
 export const bio = `Hey there, digital pioneers! I'm Arul Valan Anto, a Full Stack developer with over 4 years of coding under my belt. My playground? Crafting sleek and savvy web applications that make users go "Wow!".
-In my journey through the ever-evolving realm of web development, I've had the pleasure of dipping my toes into various fields, including AI, marketing, and environmental initiatives. From environmental to AI, I've donned many hats and solved countless puzzles, each experience shaping me into the versatile developer I am today. I'm ready to tackle any challenge that comes our way. Whether you're a startup aiming to disrupt the market or an established enterprise seeking to stay ahead of the curve, I'm here to join forces and turn your vision into reality.`;
+In my journey through the ever-evolving realm of web development, I've had the pleasure of dipping my toes into various fields, including AI, marketing, and environmental initiatives. From environmental to AI, I've donned many hats and solved countless puzzles, each experience shaping me into the versatile developer I am today. I'm ready to tackle any challenge that comes our way. Whether you're a startup aiming to disrupt the market or an established enterprise seeking to stay ahead of the curve, I'm here to join forces and turn your vision into reality.`
 
 export const educationDetails = [
     {
         degree: 'Bachelor’s degree, Computer Science Engineering',
         school: 'Loyola ICAM College of Engineering and Technology, Chennai, India',
         date: 'July 2015 --- May 2019',
-        score: 'CGPA - 7.33 / 10',
+        score: 'CGPA - 7.33 / 10'
     },
     {
         degree: 'Higher Secondary Certificate (HSC)',
         school: 'Carmel Higher Secondary School, Kanyakumari, India',
         date: 'June 2014 --- June 2015',
-        score: 'Score - 87 Percent',
-    },
-];
+        score: 'Score - 87 Percent'
+    }
+]
 
 export const experienceDetails = [
     {
         position: 'Senior Software Engineer',
         company: 'Augment',
         location: 'Remote',
-        date: 'February 2022 --- Present',
+        date: 'February 2022 --- Present'
     },
     {
         position: 'Junior Software Developer',
         company: 'Coding Space',
         location: 'Remote',
-        date: 'January 2020 --- January 2022',
-    },
-];
+        date: 'January 2020 --- January 2022'
+    }
+]
 
 export const certificates = [
     {
@@ -42,7 +42,7 @@ export const certificates = [
         width: 40,
         height: 40,
         mobileWidth: 80,
-        mobileHeight: 80,
+        mobileHeight: 80
     },
     {
         href: 'https://zsecurity.org/certification/validation/?cert_number=k7l7HJMa',
@@ -52,30 +52,30 @@ export const certificates = [
         width: 40,
         height: 36,
         mobileWidth: 80,
-        mobileHeight: 76,
-    },
-];
+        mobileHeight: 76
+    }
+]
 
 export const projectsOverview = [
     {
         href: 'https://airdeck.ai/',
         src: '/about_airdeck_overview.webp',
         alt: 'AirDeck',
-        title: 'AirDeck Project - Overview',
+        title: 'AirDeck Project - Overview'
     },
     {
         // href: "https://vidable.ai/",
         src: '/about_vidable_overview.webp',
         alt: 'Vidable',
-        title: 'Vidable Project - Overview',
+        title: 'Vidable Project - Overview'
     },
     {
         href: 'https://landgeniustest.wpengine.com/',
         src: '/about_landgenius_overview.webp',
         alt: 'LandGenius',
-        title: 'LandGenius Project - Overview',
-    },
-];
+        title: 'LandGenius Project - Overview'
+    }
+]
 
 export const socialLinks: SocialLink[] = [
     {
@@ -88,7 +88,7 @@ export const socialLinks: SocialLink[] = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        icon: 'linkedin',
+        icon: 'linkedin'
     },
     {
         name: 'GitHub',
@@ -100,7 +100,7 @@ export const socialLinks: SocialLink[] = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        icon: 'github',
+        icon: 'github'
     },
     {
         name: 'Medium',
@@ -112,7 +112,7 @@ export const socialLinks: SocialLink[] = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        icon: 'medium',
+        icon: 'medium'
     },
     {
         name: 'Twitter',
@@ -124,7 +124,7 @@ export const socialLinks: SocialLink[] = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        icon: 'twitter',
+        icon: 'twitter'
     },
     // {
     //     name: 'Read CV',
@@ -148,7 +148,7 @@ export const socialLinks: SocialLink[] = [
         iconClassName: 'text-white',
         textClassName: 'text-white',
         layoutClassName: 'col-span-1 row-span-2',
-        icon: 'bento',
+        icon: 'bento'
     },
     {
         name: 'Hackernoon',
@@ -160,7 +160,7 @@ export const socialLinks: SocialLink[] = [
         iconClassName: 'text-black',
         textClassName: 'text-black',
         layoutClassName: 'col-span-1 row-span-2',
-        icon: 'hackernoon',
+        icon: 'hackernoon'
     },
     {
         name: 'BuyMeCoffee',
@@ -172,9 +172,9 @@ export const socialLinks: SocialLink[] = [
         iconClassName: 'text-black',
         textClassName: 'text-black',
         layoutClassName: 'col-span-1 row-span-2',
-        icon: 'buyMeCoffee',
-    },
-];
+        icon: 'buyMeCoffee'
+    }
+]
 
 export const skills: Skill = {
     primary: [
@@ -184,7 +184,7 @@ export const skills: Skill = {
             className: 'bg-react',
             color: 'bg-react',
             imageClassName: 'scale-100 md:scale-125 xl:scale-100',
-            yearofexperience: '4+ years',
+            yearofexperience: '4+ years'
         },
         {
             src: '/about_skill_node.svg',
@@ -192,7 +192,7 @@ export const skills: Skill = {
             className: 'bg-node',
             color: 'bg-node',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '3.5 years',
+            yearofexperience: '3.5 years'
         },
         {
             src: '/about_skill_mongoDB.svg',
@@ -200,7 +200,7 @@ export const skills: Skill = {
             className: 'bg-mongoDB border-mongoDBColor',
             color: 'bg-mongoDB',
             imageClassName: 'scale-90 md:scale-110 xl:scale-90',
-            yearofexperience: '3.5 years',
+            yearofexperience: '3.5 years'
         },
         {
             src: '/about_skill_typescript.svg',
@@ -208,7 +208,7 @@ export const skills: Skill = {
             className: 'bg-typescript',
             color: 'bg-typescript',
             imageClassName: 'scale-100 md:scale-125 xl:scale-100',
-            yearofexperience: '3 years',
+            yearofexperience: '3 years'
         },
         {
             src: '/about_skill_javascript.svg',
@@ -216,7 +216,7 @@ export const skills: Skill = {
             className: 'bg-javascript',
             color: 'bg-javascript',
             imageClassName: 'scale-100 md:scale-125 xl:scale-100',
-            yearofexperience: '4+ years',
+            yearofexperience: '4+ years'
         },
         {
             src: '/about_skill_expressJS.svg',
@@ -224,7 +224,7 @@ export const skills: Skill = {
             className: 'bg-expressJS',
             color: 'bg-black',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '3.5 years',
+            yearofexperience: '3.5 years'
         },
         {
             src: '/about_skill_webpack.svg',
@@ -232,7 +232,7 @@ export const skills: Skill = {
             className: 'bg-webpack',
             color: 'bg-webpack',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '2 years',
+            yearofexperience: '2 years'
         },
         {
             src: '/about_skill_tailwindcss.svg',
@@ -240,14 +240,14 @@ export const skills: Skill = {
             className: 'bg-tailwindcss',
             color: 'bg-tailwindcssColor',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '3 years',
+            yearofexperience: '3 years'
         },
         {
             src: '/about_skill_sass.svg',
             title: 'Sass',
             className: 'bg-sass',
             color: 'bg-sass',
-            yearofexperience: '4+ years',
+            yearofexperience: '4+ years'
         },
         {
             src: '/about_skill_redux.svg',
@@ -255,21 +255,21 @@ export const skills: Skill = {
             className: 'bg-redux',
             color: 'bg-reduxColor',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '4 years',
+            yearofexperience: '4 years'
         },
         {
             src: '/about_skill_formik.svg',
             title: 'Formik',
             className: 'bg-formik',
             color: 'bg-formik',
-            yearofexperience: '3 years',
+            yearofexperience: '3 years'
         },
         {
             src: '/about_skill_playwright.svg',
             title: 'PlayWright',
             className: 'bg-playwright',
             color: 'bg-playwright',
-            yearofexperience: '2 years',
+            yearofexperience: '2 years'
         },
         {
             src: '/about_skill_css.svg',
@@ -277,7 +277,7 @@ export const skills: Skill = {
             className: 'bg-css',
             color: 'bg-css',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '4+ years',
+            yearofexperience: '4+ years'
         },
         {
             src: '/about_skill_git.svg',
@@ -285,7 +285,7 @@ export const skills: Skill = {
             className: 'bg-git',
             color: 'bg-gitColor',
             imageClassName: 'scale-90 md:scale-100 xl:scale-90',
-            yearofexperience: '4+ years',
+            yearofexperience: '4+ years'
         },
         {
             src: '/about_skill_jest.svg',
@@ -293,15 +293,15 @@ export const skills: Skill = {
             className: 'bg-jest',
             color: 'bg-jest',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '2.5 years',
+            yearofexperience: '2.5 years'
         },
         {
             src: '/about_skill_vite.svg',
             title: 'Vite',
             className: 'bg-vite',
             color: 'bg-vite',
-            yearofexperience: '1.5 years',
-        },
+            yearofexperience: '1.5 years'
+        }
     ],
     secondary: [
         {
@@ -311,7 +311,7 @@ export const skills: Skill = {
                 'bg-gradient-to-t from-python from-80% via-transparent to-80% to-transparent to-100%',
             color: 'bg-python',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '2 years',
+            yearofexperience: '2 years'
         },
         {
             src: '/about_skill_firebase.svg',
@@ -319,7 +319,7 @@ export const skills: Skill = {
             className:
                 'bg-gradient-to-t from-firebase from-80% via-transparent to-80% to-transparent to-100%',
             color: 'bg-firebase',
-            yearofexperience: '3 years',
+            yearofexperience: '3 years'
         },
         {
             src: '/about_skill_redis.svg',
@@ -328,7 +328,7 @@ export const skills: Skill = {
                 'bg-gradient-to-t from-redis from-70% via-transparent to-70% to-transparent to-100%',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
             color: 'bg-redis',
-            yearofexperience: '2 years',
+            yearofexperience: '2 years'
         },
         {
             src: '/about_skill_angular.svg',
@@ -336,7 +336,7 @@ export const skills: Skill = {
             className:
                 'bg-gradient-to-t from-angular from-60% via-transparent to-60% to-transparent to-100%',
             color: 'bg-red-500',
-            yearofexperience: '2 years',
+            yearofexperience: '2 years'
         },
         {
             src: '/about_skill_stripe.svg',
@@ -345,7 +345,7 @@ export const skills: Skill = {
                 'bg-gradient-to-t from-stripe from-60% via-transparent to-60% to-transparent to-100%',
             color: 'bg-stripe',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
-            yearofexperience: '1 year',
+            yearofexperience: '1 year'
         },
         {
             src: '/about_skill_storybook.svg',
@@ -353,7 +353,7 @@ export const skills: Skill = {
             className:
                 'bg-gradient-to-t from-storybook from-55% via-transparent to-55% to-transparent to-100%',
             color: 'bg-storybook',
-            yearofexperience: '1.5 years',
+            yearofexperience: '1.5 years'
         },
         {
             src: '/about_skill_fastapi.svg',
@@ -362,7 +362,7 @@ export const skills: Skill = {
                 'bg-gradient-to-t from-fastapi from-55% via-transparent to-55% to-transparent to-100%',
             color: 'bg-fastapi',
             imageClassName: 'scale-90 md:scale-100 xl:scale-90',
-            yearofexperience: '1 year',
+            yearofexperience: '1 year'
         },
         {
             src: '/about_skill_mysql.svg',
@@ -370,7 +370,7 @@ export const skills: Skill = {
             className:
                 'bg-gradient-to-t from-mysql from-50% via-transparent to-50% to-transparent to-100%',
             color: 'bg-mysql',
-            yearofexperience: '1 year',
+            yearofexperience: '1 year'
         },
         {
             src: '/about_skill_django.svg',
@@ -379,7 +379,7 @@ export const skills: Skill = {
                 'bg-gradient-to-t from-django from-50% via-transparent to-50% to-transparent to-100%',
             color: 'bg-django',
             imageClassName: 'scale-50 md:scale-100 xl:scale-50',
-            yearofexperience: '1 year',
+            yearofexperience: '1 year'
         },
         {
             src: '/about_skill_postgresql.svg',
@@ -388,7 +388,7 @@ export const skills: Skill = {
                 'bg-gradient-to-t from-white from-40% via-transparent to-40% to-transparent to-100%',
             color: 'bg-postgresql',
             imageClassName: 'scale-90 md:scale-100 xl:scale-90',
-            yearofexperience: '6 months',
+            yearofexperience: '6 months'
         },
         {
             src: '/about_skill_figma.svg',
@@ -397,25 +397,25 @@ export const skills: Skill = {
                 'bg-gradient-to-t from-figma from-10% via-green-500 via-30% via-yellow-500 via-55% via-red-500 via-80% to-transparent to-80%',
             imageClassName: 'scale-50 md:scale-75 xl:scale-50',
             color: 'bg-red-400',
-            yearofexperience: '2+ years',
-        },
-    ],
-};
+            yearofexperience: '2+ years'
+        }
+    ]
+}
 
 export const experienceArea = [
     {
         title: 'Web Development',
-        color: 'bg-webDevelopment',
+        color: 'bg-webDevelopment'
     },
     {
         title: 'Architectural Design',
-        color: 'bg-architectualDesign',
+        color: 'bg-architectualDesign'
     },
     {
         title: 'Web Design',
-        color: 'bg-webDesign',
-    },
-];
+        color: 'bg-webDesign'
+    }
+]
 
 export const selectedProjects = [
     {
@@ -425,44 +425,44 @@ export const selectedProjects = [
         skills: [
             {
                 title: 'Angular',
-                color: 'bg-red-500',
+                color: 'bg-red-500'
             },
             {
                 title: 'Node JS',
-                color: 'bg-node',
+                color: 'bg-node'
             },
             {
                 title: 'Express JS',
-                color: 'bg-black',
+                color: 'bg-black'
             },
             {
                 title: 'MongoDB',
-                color: 'bg-mongoDB',
+                color: 'bg-mongoDB'
             },
             {
                 title: 'Redis',
-                color: 'bg-redis',
+                color: 'bg-redis'
             },
             {
                 title: 'TypeScript',
-                color: 'bg-typescript',
+                color: 'bg-typescript'
             },
             {
                 title: 'MySQL',
-                color: 'bg-mysql',
+                color: 'bg-mysql'
             },
             {
                 title: 'Websocket',
-                color: 'bg-webDesign',
+                color: 'bg-webDesign'
             },
             {
                 title: 'Auth0',
-                color: 'bg-orange-600',
-            },
+                color: 'bg-orange-600'
+            }
         ],
         url: '/work/airdeck',
         className: 'bg-airdeck',
-        imageUrl: '/home_airdeck_project_look.webp',
+        imageUrl: '/home_airdeck_project_look.webp'
     },
     {
         name: 'LandGenius',
@@ -471,40 +471,40 @@ export const selectedProjects = [
         skills: [
             {
                 title: 'React',
-                color: 'bg-react',
+                color: 'bg-react'
             },
             {
                 title: 'Redux',
-                color: 'bg-reduxColor',
+                color: 'bg-reduxColor'
             },
             {
                 title: 'Django',
-                color: 'bg-django',
+                color: 'bg-django'
             },
             {
                 title: 'PostgreSQL',
-                color: 'bg-postgresql',
+                color: 'bg-postgresql'
             },
             {
                 title: 'Stripe',
-                color: 'bg-stripe',
+                color: 'bg-stripe'
             },
             {
                 title: 'Mapbox',
-                color: 'bg-blue-800',
+                color: 'bg-blue-800'
             },
             {
                 title: 'TurfJS',
-                color: 'bg-green-800',
+                color: 'bg-green-800'
             },
             {
                 title: 'Jest',
-                color: 'bg-jest',
-            },
+                color: 'bg-jest'
+            }
         ],
         url: '/work/landgenius',
         className: 'bg-landgenius',
-        imageUrl: '/projects_landgenius_look.webp',
+        imageUrl: '/projects_landgenius_look.webp'
     },
     {
         name: 'Vidable AI',
@@ -513,42 +513,42 @@ export const selectedProjects = [
         skills: [
             {
                 title: 'React',
-                color: 'bg-react',
+                color: 'bg-react'
             },
             {
                 title: 'Redux',
-                color: 'bg-redux',
+                color: 'bg-redux'
             },
             {
                 title: 'Node JS',
-                color: 'bg-node',
+                color: 'bg-node'
             },
             {
                 title: 'Express JS',
-                color: 'bg-black',
+                color: 'bg-black'
             },
             {
                 title: 'MongoDB',
-                color: 'bg-mongoDB',
+                color: 'bg-mongoDB'
             },
             {
                 title: 'Redis',
-                color: 'bg-redis',
+                color: 'bg-redis'
             },
             {
                 title: 'Jest',
-                color: 'bg-jest',
+                color: 'bg-jest'
             },
             {
                 title: 'PlayWright',
-                color: 'bg-playwright',
-            },
+                color: 'bg-playwright'
+            }
         ],
         url: '/work/vidable-ai',
         className: 'bg-layout5',
-        imageUrl: '/home_vidable_project_look.webp',
-    },
-];
+        imageUrl: '/home_vidable_project_look.webp'
+    }
+]
 
 export const projects: ProjectDetails = {
     airdeck: {
@@ -561,46 +561,39 @@ export const projects: ProjectDetails = {
             'AirDeck is a platform that lets you add voice or video to your presentations, track engagement with unique links, record and upload videos, embed existing videos, and view comprehensive analytics, all in one place.',
         context: '',
         links: {
-            website: { link: 'https://airdeck.ai/', title: 'Website' },
+            website: { link: 'https://airdeck.ai/', title: 'Website' }
         },
         type: 'Project At Augment',
         category: 'Web Application',
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: true,
         hasShowImageLayout: true,
-        status: 'Live',
+        status: 'Live'
     },
     highlight: {
         name: 'Highlight',
         oneliner: 'A design tool to animate your code snippets',
         role: 'Full Stack Developer',
-        tools: [
-            'React',
-            'Redux',
-            'TypeScript',
-            'Tailwind CSS',
-            'Vite',
-            'Firebase',
-        ],
+        tools: ['React', 'Redux', 'TypeScript', 'Tailwind CSS', 'Vite', 'Firebase'],
         timeline: { from: '2023', to: '2023', isPresent: false },
         description:
             'Highlight is the revolutionary web application that empowers developers, bloggers, and designers to create visually stunning, attention-grabbing code snippets like never before!',
         context: '',
         links: {
-            website: { link: 'https://highlightt.web.app/', title: 'Website' },
+            website: { link: 'https://highlightt.web.app/', title: 'Website' }
         },
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/highlight',
-                title: 'Github',
-            },
+                title: 'Github'
+            }
         ],
         type: 'Side Project',
         category: ['Web Application'],
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
         hasShowImageLayout: false,
-        status: 'Live',
+        status: 'Live'
     },
     landgenius: {
         name: selectedProjects[1].name,
@@ -614,19 +607,19 @@ export const projects: ProjectDetails = {
         links: {
             website: {
                 link: 'https://landgeniustest.wpengine.com/',
-                title: 'Website',
+                title: 'Website'
             },
             application: {
                 link: 'http://ec2-18-191-77-185.us-east-2.compute.amazonaws.com/',
-                title: 'Visit App',
-            },
+                title: 'Visit App'
+            }
         },
         type: 'Project At Augment',
         category: 'Web Application',
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
         hasShowImageLayout: true,
-        status: 'On Hold (Budget Constraints)',
+        status: 'On Hold (Budget Constraints)'
     },
     vidableai: {
         name: selectedProjects[2].name,
@@ -648,21 +641,13 @@ export const projects: ProjectDetails = {
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
         hasShowImageLayout: true,
-        status: 'Built, but Dropped Pre-Launch',
+        status: 'Built, but Dropped Pre-Launch'
     },
     synthup: {
         name: 'SynthUp',
         oneliner: 'Condense long videos into easy-to-digest summaries.',
         role: 'Full Stack Developer',
-        tools: [
-            'React',
-            'Redux',
-            'Tailwind CSS',
-            'FastAPI',
-            'MongoDB',
-            'Formik',
-            'Yup',
-        ],
+        tools: ['React', 'Redux', 'Tailwind CSS', 'FastAPI', 'MongoDB', 'Formik', 'Yup'],
         timeline: { from: '2023', to: '2025', isPresent: false },
         description:
             'SynthUp turns long videos into short and easy-to-listen summaries. Get to the point quickly and enjoy your content effortlessly, wherever you are.',
@@ -670,8 +655,8 @@ export const projects: ProjectDetails = {
         links: {
             website: {
                 link: 'https://synthup.framer.ai/',
-                title: 'Visit Site',
-            },
+                title: 'Visit Site'
+            }
         },
         type: 'Side Project',
         category: 'Web Application',
@@ -682,23 +667,15 @@ export const projects: ProjectDetails = {
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/synthup',
-                title: 'GitHub',
-            },
-        ],
+                title: 'GitHub'
+            }
+        ]
     },
     annals: {
         name: 'Annals',
         oneliner: 'All-in-one personal space for your privacy!',
         role: ['Full Stack Developer', 'Creator'],
-        tools: [
-            'React',
-            'NodeJS',
-            'MongoDB',
-            'Firebase',
-            'Tailwind CSS',
-            'Formik',
-            'Material UI',
-        ],
+        tools: ['React', 'NodeJS', 'MongoDB', 'Firebase', 'Tailwind CSS', 'Formik', 'Material UI'],
         timeline: { from: '2021', to: '2022', isPresent: false },
         description:
             'Comprehensive solution for all your digital storage needs. With Annals, you can store and organize your journals, to-do lists, ideas, and passwords in one convenient location.',
@@ -706,8 +683,8 @@ export const projects: ProjectDetails = {
         links: {
             website: {
                 link: 'https://annals.web.app/',
-                title: 'Website',
-            },
+                title: 'Website'
+            }
         },
         type: 'Side Project',
         category: 'Web Application',
@@ -717,9 +694,9 @@ export const projects: ProjectDetails = {
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/annals',
-                title: 'GitHub',
-            },
-        ],
+                title: 'GitHub'
+            }
+        ]
     },
     thecrawlerman: {
         name: 'The Crawler Man',
@@ -731,20 +708,20 @@ export const projects: ProjectDetails = {
             'The Crawler Man offers a comprehensive collection of pre-defined APIs explicitly designed for scraping. With The Crawler Man, you can easily extract data from various websites without the hassle.',
         context: '',
         links: {
-            comingSoon: { link: '', title: 'Working in progress' },
+            comingSoon: { link: '', title: 'Working in progress' }
         },
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/the_crawler_man',
-                title: 'GitHub',
-            },
+                title: 'GitHub'
+            }
         ],
         type: 'Side Project',
         category: ['API', 'Web Crawler'],
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
         hasShowImageLayout: false,
-        status: 'In Progress',
+        status: 'In Progress'
     },
     scafffoldercli: {
         name: 'Scafffolder CLI',
@@ -758,20 +735,20 @@ export const projects: ProjectDetails = {
         links: {
             cli: {
                 link: 'https://www.npmjs.com/package/scafffolder',
-                title: 'NPM Link',
-            },
+                title: 'NPM Link'
+            }
         },
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/scaffolder',
-                title: 'GitHub',
-            },
+                title: 'GitHub'
+            }
         ],
         type: 'Side Project',
         category: 'Command Line Interface (CLI)',
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
-        hasShowImageLayout: false,
+        hasShowImageLayout: false
     },
     framewiseai: {
         name: 'Framewise',
@@ -787,7 +764,7 @@ export const projects: ProjectDetails = {
             'OpenAI',
             'Azure Video Indexer AI',
             'Jest',
-            'Storybook',
+            'Storybook'
         ],
         timeline: { from: '2023', to: '2023', isPresent: false },
         description:
@@ -796,34 +773,26 @@ export const projects: ProjectDetails = {
         links: {
             website: {
                 link: 'https://framewiise.web.app/',
-                title: 'Website',
-            },
+                title: 'Website'
+            }
         },
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/FrameWise',
-                title: 'GitHub',
-            },
+                title: 'GitHub'
+            }
         ],
         type: 'Side Project',
         category: 'Web Application',
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
-        hasShowImageLayout: false,
+        hasShowImageLayout: false
     },
     futurereads: {
         name: 'FutureReads',
         oneliner: 'Read-later app with recommendation feature',
         role: ['Full Stack Developer'],
-        tools: [
-            'React',
-            'Node JS',
-            'FastAPI',
-            'MongoDB',
-            'TailwindCSS',
-            'Auth0',
-            'Javascript',
-        ],
+        tools: ['React', 'Node JS', 'FastAPI', 'MongoDB', 'TailwindCSS', 'Auth0', 'Javascript'],
         timeline: { from: '2023', to: '2023', isPresent: false },
         description:
             'A Chrome browser extension that allows you to save articles to read later and sends you pop-up notifications as reminders when you come across related content while browsing the internet.',
@@ -831,24 +800,24 @@ export const projects: ProjectDetails = {
         links: {
             website: {
                 link: 'https://futurereads.web.app/',
-                title: 'Website',
+                title: 'Website'
             },
             plugin: {
                 link: 'https://chromewebstore.google.com/detail/futurereads/djofoijfbdbanacdognloeopcmaekiic',
-                title: 'Chrome Extension Link',
-            },
+                title: 'Chrome Extension Link'
+            }
         },
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/FutureReads',
-                title: 'GitHub',
-            },
+                title: 'GitHub'
+            }
         ],
         type: 'Side Project',
         category: ['Web Application', 'Chrome Extension'],
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
-        hasShowImageLayout: false,
+        hasShowImageLayout: false
     },
     dressedtokill: {
         name: 'Dressed-to-kill',
@@ -863,41 +832,41 @@ export const projects: ProjectDetails = {
         externalLinks: [
             {
                 link: 'https://github.com/arulvalananto/Dressed-to-kill',
-                title: 'GitHub',
-            },
+                title: 'GitHub'
+            }
         ],
         type: 'Side Project',
         category: 'Web Application',
         bgImageLayout: 'bg-layout1',
         showKeyFeatures: false,
-        hasShowImageLayout: false,
-    },
-};
+        hasShowImageLayout: false
+    }
+}
 
 export const recentArticles = [
     {
         title: '3 Principles in Software Development',
         href: 'https://medium.com/@arulvalananto/3-principles-in-software-development-5b89ed655297',
         website: 'https://medium.com',
-        imageURL: '/3_principles_in_software_development_blog.webp',
+        imageURL: '/3_principles_in_software_development_blog.webp'
     },
     {
         title: '9 Image Optimization Tricks for a Seamless Web Experience',
         href: 'https://medium.com/@arulvalananto/9-image-optimization-tricks-for-a-seamless-web-experience-b41867e87e54',
         website: 'https://medium.com',
-        imageURL: '/image_optimization_blog.webp',
+        imageURL: '/image_optimization_blog.webp'
     },
     {
         title: '5 Advanced NodeJS Techniques with ExpressJS',
         href: 'https://medium.com/@arulvalananto/5-advanced-nodejs-techniques-6ac0b7b024a8',
         website: 'https://medium.com',
-        imageURL: '/nodejs_tips_blog.webp',
+        imageURL: '/nodejs_tips_blog.webp'
     },
     {
         title: 'Mastering SOLID Principles Like the Back of Your Hand in Just 8 Minutes!',
         href: 'https://hackernoon.com/mastering-solid-principles-like-the-back-of-your-hand-in-just-8-minutes',
         website: 'https://hackernoon.com',
         imageURL: '/solid_principles_article.gif',
-        unoptimized: true,
-    },
-];
+        unoptimized: true
+    }
+]

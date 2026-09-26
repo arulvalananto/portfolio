@@ -1,11 +1,11 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import type { Metadata } from 'next';
-import { FcAdvertising } from 'react-icons/fc';
+import Link from 'next/link'
+import Image from 'next/image'
+import type { Metadata } from 'next'
+import { FcAdvertising } from 'react-icons/fc'
 
-import { dancingScript } from '../../lib/fonts';
-import { portfolio as constants, getSocialIcon } from '../../data';
-import { AnimatedTooltip } from '../../ui/animated-tooltip';
+import { dancingScript } from '../../lib/fonts'
+import { AnimatedTooltip } from '../../ui/animated-tooltip'
+import { portfolio as constants, getSocialIcon } from '../../data'
 const {
     bio,
     certificates,
@@ -13,12 +13,12 @@ const {
     experience: experienceDetails,
     projectOverview: projectsOverview,
     skills,
-    socialLinks,
-} = constants.person;
+    socialLinks
+} = constants.person
 
 export const metadata: Metadata = {
-    title: constants.aboutMeSecret.metadataTitle,
-};
+    title: constants.aboutMeSecret.metadataTitle
+}
 
 const AboutPage = () => (
     <main className={`${dancingScript.variable} pb-5 space-y-10`}>
@@ -62,10 +62,7 @@ const AboutPage = () => (
                                     <p className="text-[10px] flex items-center gap-2 italic">
                                         <span>{education.date}</span>
                                         <span>
-                                            {
-                                                constants.aboutMeSecret
-                                                    .educationDetailsSeparator
-                                            }
+                                            {constants.aboutMeSecret.educationDetailsSeparator}
                                         </span>
                                         <span>{education.score}</span>
                                     </p>
@@ -86,12 +83,8 @@ const AboutPage = () => (
                                     <h5 className="font-quicksand text-base">
                                         <b>{experience.position}</b>{' '}
                                         <span>
-                                            {
-                                                constants.aboutMeSecret
-                                                    .experienceAt
-                                            }{' '}
-                                            {experience.company},{' '}
-                                            {experience.location}
+                                            {constants.aboutMeSecret.experienceAt}{' '}
+                                            {experience.company}, {experience.location}
                                         </span>
                                     </h5>
                                     <p className="font-quicksand text-white text-xs italic">
@@ -111,60 +104,46 @@ const AboutPage = () => (
                             {constants.aboutMeSecret.sectionTitles.skills}
                         </h3>
                         <div className="space-y-3">
-                            {constants.aboutMeSecret.skillTypes.map(
-                                (skillType) => (
-                                    <div className="space-y-3" key={skillType}>
-                                        <h6 className="text-sm font-light font-quicksand">
-                                            {skillType[0].toUpperCase() +
-                                                skillType.slice(1)}
-                                            {
-                                                constants.aboutMeSecret
-                                                    .skillTypeLabelSuffix
-                                            }
-                                        </h6>
-                                        <div className="flex flex-row flex-wrap gap-4">
-                                            {skills[skillType]?.map(
-                                                (skill, index) => (
-                                                    <AnimatedTooltip
+                            {constants.aboutMeSecret.skillTypes.map((skillType) => (
+                                <div className="space-y-3" key={skillType}>
+                                    <h6 className="text-sm font-light font-quicksand">
+                                        {skillType[0].toUpperCase() + skillType.slice(1)}
+                                        {constants.aboutMeSecret.skillTypeLabelSuffix}
+                                    </h6>
+                                    <div className="flex flex-row flex-wrap gap-4">
+                                        {skills[skillType]?.map((skill, index) => (
+                                            <AnimatedTooltip
+                                                key={index}
+                                                tooltipInfo={{
+                                                    name: skill.title,
+                                                    id: index,
+                                                    yearofexperience:
+                                                        skill.yearofexperience ??
+                                                        constants.aboutMeSecret
+                                                            .defaultYearsOfExperience
+                                                }}
+                                            >
+                                                <a
+                                                    href={`${constants.aboutMeSecret.googleSearchUrl}${skill.title.toLowerCase()}`}
+                                                    title={skill.title}
+                                                    className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-100 hover:scale-110`}
+                                                    target="_blank"
+                                                    rel="noopener norefferer nofollow"
+                                                >
+                                                    <Image
                                                         key={index}
-                                                        tooltipInfo={{
-                                                            name: skill.title,
-                                                            id: index,
-                                                            yearofexperience:
-                                                                skill.yearofexperience ??
-                                                                constants
-                                                                    .aboutMeSecret
-                                                                    .defaultYearsOfExperience,
-                                                        }}
-                                                    >
-                                                        <a
-                                                            href={`${constants.aboutMeSecret.googleSearchUrl}${skill.title.toLowerCase()}`}
-                                                            title={skill.title}
-                                                            className={`border-2 border-black ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-100 hover:scale-110`}
-                                                            target="_blank"
-                                                            rel="noopener norefferer nofollow"
-                                                        >
-                                                            <Image
-                                                                key={index}
-                                                                src={
-                                                                    skill?.src ??
-                                                                    ''
-                                                                }
-                                                                alt={
-                                                                    skill.title
-                                                                }
-                                                                width="24"
-                                                                height="24"
-                                                                className={`${skill.imageClassName ?? ''}`}
-                                                            />
-                                                        </a>
-                                                    </AnimatedTooltip>
-                                                ),
-                                            )}
-                                        </div>
+                                                        src={skill?.src ?? ''}
+                                                        alt={skill.title}
+                                                        width="24"
+                                                        height="24"
+                                                        className={`${skill.imageClassName ?? ''}`}
+                                                    />
+                                                </a>
+                                            </AnimatedTooltip>
+                                        ))}
                                     </div>
-                                ),
-                            )}
+                                </div>
+                            ))}
                         </div>
                     </section>
                     <div className="flex-1 w-full h-full text-white rounded-md flex flex-col gap-5">
@@ -173,10 +152,7 @@ const AboutPage = () => (
                             className="w-full h-full xl:h-23 bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-2 order-2 xl:order-1 select-none transition duration-300"
                         >
                             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
-                                {
-                                    constants.aboutMeSecret.sectionTitles
-                                        .certificates
-                                }
+                                {constants.aboutMeSecret.sectionTitles.certificates}
                             </h3>
                             <div className="flex items-center gap-5">
                                 {certificates.map((certificate, index) => (
@@ -214,15 +190,10 @@ const AboutPage = () => (
                         >
                             <div className="flex items-center justify-between">
                                 <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
-                                    {
-                                        constants.aboutMeSecret.sectionTitles
-                                            .projects
-                                    }
+                                    {constants.aboutMeSecret.sectionTitles.projects}
                                 </h3>
                                 <Link
-                                    href={
-                                        constants.aboutMeSecret.allProjects.href
-                                    }
+                                    href={constants.aboutMeSecret.allProjects.href}
                                     className="font-quicksand underline underline-offset-2"
                                 >
                                     {constants.aboutMeSecret.allProjects.label}
@@ -264,10 +235,7 @@ const AboutPage = () => (
                                         />
                                         <div className="hidden group-hover:flex items-center justify-center bg-black opacity-50 absolute top-0 left-0 w-full h-full">
                                             <p className="font-quicksand text-xs md:text-xl xl:text-base font-medium">
-                                                {
-                                                    constants.aboutMeSecret
-                                                        .readMoreLabel
-                                                }
+                                                {constants.aboutMeSecret.readMoreLabel}
                                             </p>
                                         </div>
                                     </a>
@@ -302,12 +270,14 @@ const AboutPage = () => (
                                 rel="noopener norefferer nofollow"
                             >
                                 {(() => {
-                                    const Icon = getSocialIcon(link.icon);
-                                    return <Icon
-                                    size={20}
-                                    className="group-hover:w-5.25 group-hover:h-5.25"
-                                    color="white"
-                                    />;
+                                    const Icon = getSocialIcon(link.icon)
+                                    return (
+                                        <Icon
+                                            size={20}
+                                            className="group-hover:w-5.25 group-hover:h-5.25"
+                                            color="white"
+                                        />
+                                    )
                                 })()}
                             </a>
                         ))}
@@ -317,14 +287,8 @@ const AboutPage = () => (
                             </p>
                             <div className="animate-bounce">
                                 <Image
-                                    src={
-                                        constants.aboutMeSecret.socialProfile
-                                            .arrowImage.src
-                                    }
-                                    alt={
-                                        constants.aboutMeSecret.socialProfile
-                                            .arrowImage.alt
-                                    }
+                                    src={constants.aboutMeSecret.socialProfile.arrowImage.src}
+                                    alt={constants.aboutMeSecret.socialProfile.arrowImage.alt}
                                     width={15}
                                     height={15}
                                     className="translate-y-4 -translate-x-5 rotate-45 md:translate-y-4 md:rotate-0 md:translate-x-0 xl:translate-y-4 xl:-translate-x-5 xl:rotate-45"
@@ -364,6 +328,6 @@ const AboutPage = () => (
             </section>
         </div>
     </main>
-);
+)
 
-export default AboutPage;
+export default AboutPage

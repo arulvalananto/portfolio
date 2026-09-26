@@ -1,25 +1,23 @@
-'use client';
+'use client'
 
-import React from 'react';
-import { IoChevronBack } from 'react-icons/io5';
-import { redirect, useRouter } from 'next/navigation';
+import React from 'react'
+import { IoChevronBack } from 'react-icons/io5'
+import { redirect, useRouter } from 'next/navigation'
 
-import { inter } from '@/app/lib/fonts';
-import { portfolio as constants } from '@/app/data';
-import ProjectDetails from './ProjectDetails';
-import ProjectKeyFeatures from './ProjectKeyFeatures';
-import ProjectImageGallery from './ProjectImageGallery';
+import { inter } from '@/app/lib/fonts'
+import ProjectDetails from './ProjectDetails'
+import { portfolio as constants } from '@/app/data'
+import ProjectKeyFeatures from './ProjectKeyFeatures'
+import ProjectImageGallery from './ProjectImageGallery'
 
-const WorkOverview: React.FC<{ params: Promise<{ slug: string }> }> = ({
-    params,
-}) => {
-    const router = useRouter();
-    const { slug } = React.use(params);
+const WorkOverview: React.FC<{ params: Promise<{ slug: string }> }> = ({ params }) => {
+    const router = useRouter()
+    const { slug } = React.use(params)
 
-    const project = slug ? constants.projects.bySlug[slug] : undefined;
+    const project = slug ? constants.projects.bySlug[slug] : undefined
 
     if (!project) {
-        redirect('/work');
+        redirect('/work')
     }
 
     return (
@@ -36,14 +34,10 @@ const WorkOverview: React.FC<{ params: Promise<{ slug: string }> }> = ({
                 </button>
             </div>
             <ProjectDetails project={project} />
-            {project.hasShowImageLayout && (
-                <ProjectImageGallery project={project} />
-            )}
-            {project.showKeyFeatures && (
-                <ProjectKeyFeatures project={project} />
-            )}
+            {project.hasShowImageLayout && <ProjectImageGallery project={project} />}
+            {project.showKeyFeatures && <ProjectKeyFeatures project={project} />}
         </div>
-    );
-};
+    )
+}
 
-export default WorkOverview;
+export default WorkOverview

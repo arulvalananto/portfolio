@@ -1,7 +1,8 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { portfolio as constants } from '../data';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import { portfolio as constants } from '../data'
 
 const ScafffolderCLI = () => {
     return (
@@ -16,7 +17,9 @@ const ScafffolderCLI = () => {
                 height={41}
             />
             <p className="text-black font-quicksand text-base transition-all duration-300 flex flex-row gap-1 group-hover:gap-2">
-                {constants.work.cards.scafffolder.tagline.map((item) => <span key={item}>{item}</span>)}
+                {constants.work.cards.scafffolder.tagline.map((item) => (
+                    <span key={item}>{item}</span>
+                ))}
             </p>
             <div className="w-125 md:w-175 xl:w-125 h-96 scale-90 flex items-center justify-center animate-sizeup-slow">
                 <video
@@ -32,7 +35,7 @@ const ScafffolderCLI = () => {
                 />
             </div>
         </Link>
-    );
-};
+    )
+}
 
-export default ScafffolderCLI;
+export default ScafffolderCLI

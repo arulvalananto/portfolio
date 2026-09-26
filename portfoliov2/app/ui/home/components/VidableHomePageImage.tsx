@@ -1,15 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
+
+import type { HomeProject } from '@/app/data'
 
 export type VidableHomePageImageProps = {
-    project: any;
-    index: number;
-};
+    project: HomeProject
+    index: number
+}
 
-const VidableHomePageImage: React.FC<VidableHomePageImageProps> = ({
-    project,
-    index,
-}) => {
+const VidableHomePageImage: React.FC<VidableHomePageImageProps> = ({ project, index }) => {
     return (
         <div
             className={`order-1 ${
@@ -31,7 +30,7 @@ const VidableHomePageImage: React.FC<VidableHomePageImageProps> = ({
                 AI-based Video Analytics Tool
             </h4>
         </div>
-    );
-};
+    )
+}
 
-export default VidableHomePageImage;
+export default VidableHomePageImage

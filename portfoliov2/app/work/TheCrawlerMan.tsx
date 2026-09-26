@@ -1,6 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const TheCrawlerMan: React.FC = () => {
     return (
@@ -48,7 +48,7 @@ const TheCrawlerMan: React.FC = () => {
             </p>
             <div className="bg-black box-wave absolute bottom-0 left-0 w-full h-18 z-40 duration-500 transition-all translate-y-18 group-hover:translate-y-0"></div>
         </Link>
-    );
-};
+    )
+}
 
-export default TheCrawlerMan;
+export default TheCrawlerMan

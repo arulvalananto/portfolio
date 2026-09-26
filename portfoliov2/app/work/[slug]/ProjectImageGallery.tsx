@@ -1,18 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-import { Project } from '@/app/data';
-import { portfolio as constants } from '@/app/data';
-import AirDeckImageGallery from './AirDeckImageGallery';
-import VidableImageGallery from './VidableImageGallery';
-import LandGeniusImageGallery from './LandGeniusImageGallery';
+import { Project } from '@/app/data'
+import { portfolio as constants } from '@/app/data'
+import AirDeckImageGallery from './AirDeckImageGallery'
+import VidableImageGallery from './VidableImageGallery'
+import LandGeniusImageGallery from './LandGeniusImageGallery'
 
 type ProjectImageGalleryProps = {
-    project: Project;
-};
+    project: Project
+}
 
-const ProjectImageGallery: React.FC<ProjectImageGalleryProps> = ({
-    project,
-}) => {
+const ProjectImageGallery: React.FC<ProjectImageGalleryProps> = ({ project }) => {
     return (
         <div className="my-10 md:mt-20 px-5 md:p-0 w-full md:w-200 md:max-w-200 lg:w-7xl lg:max-w-7xl h-full m-auto grid grid-cols-12 auto-rows-90 lg:auto-rows-75 gap-2">
             {project.name === constants.work.detail.galleryProjects.airDeck ? (
@@ -44,7 +42,7 @@ const ProjectImageGallery: React.FC<ProjectImageGalleryProps> = ({
                 </>
             )}
         </div>
-    );
-};
+    )
+}
 
-export default ProjectImageGallery;
+export default ProjectImageGallery

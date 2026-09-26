@@ -1,24 +1,24 @@
-'use client';
-import Link from 'next/link';
-import Image from 'next/image';
-import { useState } from 'react';
-import Marquee from 'react-fast-marquee';
-import { ImQuotesLeft } from 'react-icons/im';
-import { IoMailOutline } from 'react-icons/io5';
-import { PiArrowBendLeftDownThin, PiArrowBendLeftUpThin } from 'react-icons/pi';
+'use client'
+import Link from 'next/link'
+import Image from 'next/image'
+import { useState } from 'react'
+import Marquee from 'react-fast-marquee'
+import { ImQuotesLeft } from 'react-icons/im'
+import { IoMailOutline } from 'react-icons/io5'
+import { PiArrowBendLeftDownThin, PiArrowBendLeftUpThin } from 'react-icons/pi'
 
-import { inter } from '../lib/fonts';
-import { portfolio as constants, getSocialIcon } from '../data';
-import ExternalLink from '../ui/external-link';
-import { AnimatedTooltip } from '../ui/animated-tooltip';
-const { articles: recentArticles, skills, socialLinks } = constants.person;
+import { inter } from '../lib/fonts'
+import ExternalLink from '../ui/external-link'
+import { AnimatedTooltip } from '../ui/animated-tooltip'
+import { portfolio as constants, getSocialIcon } from '../data'
+const { articles: recentArticles, skills, socialLinks } = constants.person
 
 const AboutPage = () => {
-    const [showMore, setShowMore] = useState(false);
+    const [showMore, setShowMore] = useState(false)
 
     const handleShowMore = () => {
-        setShowMore(!showMore);
-    };
+        setShowMore(!showMore)
+    }
 
     return (
         <main
@@ -139,15 +139,9 @@ const AboutPage = () => {
                             : constants.aboutMe.bio.showLessLabel}
                     </span>
                     {!showMore ? (
-                        <PiArrowBendLeftDownThin
-                            size={16}
-                            className="animate-bounce"
-                        />
+                        <PiArrowBendLeftDownThin size={16} className="animate-bounce" />
                     ) : (
-                        <PiArrowBendLeftUpThin
-                            size={16}
-                            className="animate-bounce"
-                        />
+                        <PiArrowBendLeftUpThin size={16} className="animate-bounce" />
                     )}
                 </button>
             </section>
@@ -159,40 +153,35 @@ const AboutPage = () => {
                     {constants.aboutMe.skills.heading}
                 </h1>
                 <div className="flex flex-row flex-wrap gap-5 xl:gap-x-5 xl:gap-y-2">
-                    {[...skills.primary, ...skills.secondary]?.map(
-                        (skill, index) => (
-                            <AnimatedTooltip
-                                key={index}
-                                tooltipInfo={{
-                                    name: skill.title,
-                                    id: index,
-                                    yearofexperience:
-                                        skill.yearofexperience ??
-                                        constants.aboutMe.skills
-                                            .defaultYearsOfExperience,
-                                }}
+                    {[...skills.primary, ...skills.secondary]?.map((skill, index) => (
+                        <AnimatedTooltip
+                            key={index}
+                            tooltipInfo={{
+                                name: skill.title,
+                                id: index,
+                                yearofexperience:
+                                    skill.yearofexperience ??
+                                    constants.aboutMe.skills.defaultYearsOfExperience
+                            }}
+                        >
+                            <a
+                                href={`${constants.aboutMe.skills.googleSearchUrl}${skill.title.toLowerCase()}`}
+                                title={skill.title}
+                                className={`border-2 border-black rounded-sm ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-500 hover:scale-110`}
+                                target="_blank"
+                                rel="noopener norefferer nofollow"
                             >
-                                <a
-                                    href={`${constants.aboutMe.skills.googleSearchUrl}${skill.title.toLowerCase()}`}
-                                    title={skill.title}
-                                    className={`border-2 border-black rounded-sm ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-500 hover:scale-110`}
-                                    target="_blank"
-                                    rel="noopener norefferer nofollow"
-                                >
-                                    <Image
-                                        key={index}
-                                        src={skill?.src ?? ''}
-                                        alt={skill.title}
-                                        width="24"
-                                        height="24"
-                                        className={`${
-                                            skill.imageClassName ?? ''
-                                        }`}
-                                    />
-                                </a>
-                            </AnimatedTooltip>
-                        ),
-                    )}
+                                <Image
+                                    key={index}
+                                    src={skill?.src ?? ''}
+                                    alt={skill.title}
+                                    width="24"
+                                    height="24"
+                                    className={`${skill.imageClassName ?? ''}`}
+                                />
+                            </a>
+                        </AnimatedTooltip>
+                    ))}
                 </div>
             </section>
             <Link
@@ -296,23 +285,12 @@ const AboutPage = () => {
                             }`}
                         >
                             {(() => {
-                                const Icon = getSocialIcon(social.icon);
-                                return (
-                            <Icon
-                                size={32}
-                                className={`${social.iconClassName}`}
-                            />
-                                );
+                                const Icon = getSocialIcon(social.icon)
+                                return <Icon size={32} className={`${social.iconClassName}`} />
                             })()}
                             <div className="flex flex-col gap-1">
-                                <h5
-                                    className={`${social.textClassName} text-sm`}
-                                >
-                                    {social.name}
-                                </h5>
-                                <p
-                                    className={`${social.textClassName} text-xs`}
-                                >
+                                <h5 className={`${social.textClassName} text-sm`}>{social.name}</h5>
+                                <p className={`${social.textClassName} text-xs`}>
                                     @{social.username}
                                 </p>
                             </div>
@@ -343,10 +321,7 @@ const AboutPage = () => {
                 id="quote"
                 className="group col-span-12 xl:col-span-8 row-span-2 bg-layout2 p-5 rounded-2xl flex flex-col gap-2 transition duration-300 ease-in-out hover:-translate-y-1"
             >
-                <ImQuotesLeft
-                    size={32}
-                    className="group-hover:animate-shaker"
-                />
+                <ImQuotesLeft size={32} className="group-hover:animate-shaker" />
                 <h6 className="font-medium text-lg md:text-2xl italic">
                     {constants.aboutMe.quote.text}{' '}
                     <span className="text-black group-hover:bg-black group-hover:text-white transition-all duration-500 rounded-md py-1">
@@ -358,9 +333,7 @@ const AboutPage = () => {
                 href={constants.aboutMe.projects.landGenius.href}
                 id="landgenius-project"
                 className={`${
-                    showMore
-                        ? 'col-span-12 xl:col-span-8'
-                        : 'col-span-12 xl:col-span-7'
+                    showMore ? 'col-span-12 xl:col-span-8' : 'col-span-12 xl:col-span-7'
                 } group relative row-span-4 xs:row-span-5 md:row-span-7 xl:row-span-5 bg-about-cta rounded-2xl transition duration-300 ease-in-out overflow-y-clip flex flex-col xl:items-center xl:justify-center hover:shadow-xl`}
             >
                 <h1 className="text-xl md:text-3xl font-bold p-5 pb-0 opacity-0 -translate-x-36 group-hover:translate-x-0 group-hover:opacity-100 transition-all duration-500">
@@ -433,7 +406,7 @@ const AboutPage = () => {
                 </ExternalLink>
             </section>
         </main>
-    );
-};
+    )
+}
 
-export default AboutPage;
+export default AboutPage

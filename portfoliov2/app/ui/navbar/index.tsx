@@ -1,49 +1,41 @@
-'use client';
+'use client'
 
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import { VscPerson } from 'react-icons/vsc';
-import { CiMenuFries } from 'react-icons/ci';
-import { GrDocumentPdf } from 'react-icons/gr';
-import { GoProjectSymlink } from 'react-icons/go';
-import { FaArrowRightLong } from 'react-icons/fa6';
-import { useRouter, usePathname } from 'next/navigation';
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import { VscPerson } from 'react-icons/vsc'
+import { CiMenuFries } from 'react-icons/ci'
+import { GrDocumentPdf } from 'react-icons/gr'
+import { GoProjectSymlink } from 'react-icons/go'
+import { FaArrowRightLong } from 'react-icons/fa6'
+import { useRouter, usePathname } from 'next/navigation'
 
-import CustomDrawer from '../drawer';
-import { portfolio as constants } from '../../data';
-import ExternalLink from '../external-link';
+import CustomDrawer from '../drawer'
+import ExternalLink from '../external-link'
+import { portfolio as constants } from '../../data'
 
 const Navbar = () => {
-    const router = useRouter();
-    const [isOpen, setIsOpen] = React.useState(false);
-    const pathname = usePathname();
+    const router = useRouter()
+    const [isOpen, setIsOpen] = React.useState(false)
+    const pathname = usePathname()
 
     const onMailTo = () => {
-        window.location.href = 'mailto:arulvalananto@gmail.com';
-    };
+        window.location.href = 'mailto:arulvalananto@gmail.com'
+    }
 
     const onDownloadResume = () => {
-        const downloadLink = document.createElement('a');
-        downloadLink.href = '/Arul_Valan_Anto_Resume.pdf';
-        downloadLink.download = 'Arul_Valan_Anto_Resume.pdf';
-        downloadLink.click();
-    };
-
-    const onNavigateToCV = () => {
-        const downloadLink = document.createElement('a');
-        downloadLink.href = 'https://read.cv/arulvalananto';
-        downloadLink.target = '_blank';
-        downloadLink.rel = 'noreferrer noopener nofollow';
-        downloadLink.click();
-    };
+        const downloadLink = document.createElement('a')
+        downloadLink.href = '/Arul_Valan_Anto_Resume.pdf'
+        downloadLink.download = 'Arul_Valan_Anto_Resume.pdf'
+        downloadLink.click()
+    }
 
     const onNavigateTo = (path: string) => {
-        router.push(path);
-        setIsOpen(false);
-    };
+        router.push(path)
+        setIsOpen(false)
+    }
 
-    console.log('pathname', pathname);
+    console.log('pathname', pathname)
 
     return (
         <div className="w-full h-full xl:w-7xl xl:max-w-7xl px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
@@ -113,10 +105,7 @@ const Navbar = () => {
                     title="portfolio nav menu"
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    <CiMenuFries
-                        color="black"
-                        className="font-medium text-black text-xl"
-                    />
+                    <CiMenuFries color="black" className="font-medium text-black text-xl" />
                 </button>
                 <CustomDrawer isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <div className="mt-10 flex flex-col gap-5 px-3">
@@ -173,7 +162,7 @@ const Navbar = () => {
                 </CustomDrawer>
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default Navbar;
+export default Navbar

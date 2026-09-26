@@ -1,8 +1,8 @@
-import content from './content';
-import { copy } from './copy';
-import { person } from './person';
-import { projectData } from './projects';
-import { site } from './site';
+import { copy } from './copy'
+import { site } from './site'
+import content from './content'
+import { person } from './person'
+import { projectData } from './projects'
 
 export const portfolio = {
     ...content,
@@ -10,8 +10,8 @@ export const portfolio = {
     copy,
     person,
     projects: projectData,
-    resumeDriveLink: content.resumeDriveLink,
-} as const;
+    resumeDriveLink: content.resumeDriveLink
+} as const
 
-export { getSocialIcon } from './social-icons';
-export type * from './types';
+export { getSocialIcon } from './social-icons'
+export type * from './types'

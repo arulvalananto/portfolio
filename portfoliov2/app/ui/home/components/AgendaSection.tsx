@@ -1,10 +1,10 @@
-import React from 'react';
-import Image from 'next/image';
+import React from 'react'
+import Image from 'next/image'
 
-import SkillBadge from '../../skill-badge';
-import { portfolio } from '@/app/data';
+import { portfolio } from '@/app/data'
+import SkillBadge from '../../skill-badge'
 
-const { experienceAreas: experienceArea } = portfolio.person;
+const { experienceAreas: experienceArea } = portfolio.person
 
 const AgendaSection: React.FC = () => {
     return (
@@ -87,7 +87,7 @@ const AgendaSection: React.FC = () => {
                 />
             </div>
         </div>
-    );
-};
+    )
+}
 
-export default AgendaSection;
+export default AgendaSection
