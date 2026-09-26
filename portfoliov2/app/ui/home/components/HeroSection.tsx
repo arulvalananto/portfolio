@@ -10,7 +10,7 @@ const HeroSection: React.FC = () => {
     const totalExperience = calculateTotalExperience(started)
 
     return (
-        <div className="dashed-grid-paper w-full h-62.5 xs:h-[300px] sm:h-100 md:h-125 xl:h-193 border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
+        <div className="hero-section dashed-grid-paper w-full h-62.5 xs:h-[300px] sm:h-100 md:h-125 xl:h-193 border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
             <h1 className="text-[8px] xs:text-xs sm:text-base md:text-2xl lg:text-3xl xl:text-[40px] font-bold flex flex-col gap-1 md:gap-3 items-center relative">
                 <span className="font-light">{constants.ui.home.hero.introduction}</span>
                 <span className="text-xs xs:text-base sm:text-3xl lg:text-5xl">
@@ -41,17 +41,17 @@ const HeroSection: React.FC = () => {
                 <div className="hidden xl:block">
                     <ExternalLink
                         href="https://www.linkedin.com/in/arulvalanantos"
-                        className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-73.75 left-1/2 -translate-x-48 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
+                        className="font-DMSans text-base font-normal theme-text opacity-50 absolute bottom-73.75 left-1/2 -translate-x-48 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
                         title="LinkedIn"
                     />
                     <ExternalLink
                         href="https://github.com/arulvalananto"
-                        className="font-DMSans text-base font-normal text-black opacity-50 absolute top-1/2 -translate-x-1/2 left-1/2 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
+                        className="font-DMSans text-base font-normal theme-text opacity-50 absolute top-1/2 -translate-x-1/2 left-1/2 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
                         title="GitHub"
                     />
                     <ExternalLink
                         href="https://medium.com/@arulvalananto"
-                        className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-73.75 left-1/2 translate-x-32 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
+                        className="font-DMSans text-base font-normal theme-text opacity-50 absolute bottom-73.75 left-1/2 translate-x-32 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
                         title="Medium"
                     />
                     <p className="absolute bottom-27.5 left-1/2 -translate-x-72 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">

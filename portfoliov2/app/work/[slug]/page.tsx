@@ -26,7 +26,7 @@ const WorkOverview: React.FC<{ params: Promise<{ slug: string }> }> = ({ params 
         >
             <div className="w-full lg:w-200 lg:max-w-200 m-auto px-5 pb-5 lg:px-0">
                 <button
-                    className="bg-gray-100 px-2 py-1 rounded-md flex flex-row gap-1 items-center border border-gray-200 hover:border-gray-300 transform duration-200 ease-in-out"
+                    className="theme-elevated px-2 py-1 rounded-md flex flex-row gap-1 items-center border hover:border-[var(--theme-border-strong)] transform duration-200 ease-in-out"
                     onClick={() => router.back()}
                 >
                     <IoChevronBack />

@@ -9,13 +9,13 @@ const ActionBar = () => {
     const pathname = usePathname()
 
     return (
-        <div className="fixed top-5 left-1/2 -translate-x-1/2 z-50 group">
-            <div className="bg-action-bar-surface shadow-sm w-full h-full rounded-md flex flex-row items-center justify-around gap-10 px-4 py-2 border-gray-200 border-[0.5px] group-hover:border-gray-400 group-hover:shadow-md transform duration-500 ease-in-out">
+        <div className="fixed top-16 xs:top-5 left-1/2 -translate-x-1/2 z-50 group">
+            <div className="theme-elevated shadow-sm w-full h-full rounded-md flex flex-row items-center justify-around gap-10 px-4 py-2 border-[0.5px] group-hover:shadow-md transform duration-500 ease-in-out">
                 <Link
                     href="/"
                     className={`${
                         pathname === '/' ? 'border-b-2 border-red-400' : ''
-                    } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
+                    } pb-1 theme-text font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
                     <Tooltip
                         title="Home"
@@ -43,7 +43,7 @@ const ActionBar = () => {
                     href="/about-me"
                     className={`${
                         pathname === '/about-me' ? 'border-b-2 border-red-400' : ''
-                    } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
+                    } pb-1 theme-text font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
                     <Tooltip
                         title="About me"
@@ -71,7 +71,7 @@ const ActionBar = () => {
                     href="/work"
                     className={`${
                         pathname.split('/').includes('work') ? 'border-b-2 border-red-400' : ''
-                    } pb-1 text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
+                    } pb-1 theme-text font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                 >
                     <Tooltip
                         title="My work"

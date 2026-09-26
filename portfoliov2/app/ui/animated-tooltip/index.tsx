@@ -50,16 +50,12 @@ export const AnimatedTooltip: React.FC<AnimatedTooltipProps> = ({ tooltipInfo, c
                             rotate: rotate,
                             whiteSpace: 'nowrap'
                         }}
-                        className="absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs  flex-col items-center justify-center rounded-md bg-black z-50 shadow-xl px-4 py-2"
+                        className="theme-tooltip absolute -top-16 -left-1/2 translate-x-1/2 flex text-xs flex-col items-center justify-center rounded-md z-50 shadow-xl px-4 py-2"
                     >
                         <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-linear-to-r from-transparent via-emerald-500 to-transparent h-px " />
                         <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-linear-to-r from-transparent via-sky-500 to-transparent h-px " />
-                        <div className="font-bold text-white relative z-30 text-base">
-                            {tooltipInfo.name}
-                        </div>
-                        <div className="text-white text-xs">
-                            {tooltipInfo.yearofexperience} of experience
-                        </div>
+                        <div className="font-bold relative z-30 text-base">{tooltipInfo.name}</div>
+                        <div className="text-xs">{tooltipInfo.yearofexperience} of experience</div>
                     </motion.div>
                 )}
             </AnimatePresence>

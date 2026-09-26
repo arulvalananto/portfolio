@@ -3,6 +3,29 @@
 :root {
     --black: black;
     --white: white;
+    --theme-background: #ffffff;
+    --theme-text: #111111;
+    --theme-muted-text: #686868;
+    --theme-surface: #f7f7f9;
+    --theme-elevated-surface: #fafafa;
+    --theme-border: rgb(0 0 0 / 14%);
+    --theme-border-strong: rgb(0 0 0 / 30%);
+    --theme-tooltip-surface: #000000;
+    --theme-tooltip-text: #ffffff;
+}
+
+[data-theme='dark'] {
+    --theme-background: #121212;
+    --theme-text: #f3f1ed;
+    --theme-muted-text: #beb9b1;
+    --theme-surface: #202020;
+    --theme-elevated-surface: #282828;
+    --theme-border: rgb(255 255 255 / 16%);
+    --theme-border-strong: rgb(255 255 255 / 32%);
+    --theme-tooltip-surface: #f3f1ed;
+    --theme-tooltip-text: #121212;
+    --color-tooltip-surface: #f3f1ed;
+    --color-tooltip-text: #121212;
 }
 
 @theme {
@@ -104,9 +127,153 @@
 }
 
 body {
-    color: var(--black);
-    background: var(--white);
+    color: var(--theme-text);
+    background: var(--theme-background);
     overflow-x: hidden;
+    transition:
+        color 180ms ease,
+        background-color 180ms ease;
+}
+
+.theme-text {
+    color: var(--theme-text) !important;
+}
+
+.theme-surface {
+    background-color: var(--theme-surface);
+}
+
+.theme-elevated {
+    color: var(--theme-text);
+    background-color: var(--theme-elevated-surface);
+    border-color: var(--theme-border);
+}
+
+.theme-button {
+    color: var(--theme-text) !important;
+    border-color: var(--theme-border-strong) !important;
+}
+
+.theme-button:hover {
+    color: var(--theme-background) !important;
+    background-color: var(--theme-text);
+}
+
+.theme-tooltip {
+    color: var(--theme-tooltip-text);
+    background-color: var(--theme-tooltip-surface);
+}
+
+[data-theme='dark'] .bg-layout1,
+[data-theme='dark'] .bg-layout2,
+[data-theme='dark'] .bg-gray-100 {
+    background-color: var(--theme-surface);
+}
+
+[data-theme='dark'] .bg-white {
+    background-color: var(--theme-elevated-surface);
+}
+
+[data-theme='dark'] .hero-section {
+    --paper-color: #273029;
+    --grid-color: rgb(243 241 237 / 18%);
+    border-color: var(--theme-border-strong);
+}
+
+[data-theme='dark'] .hero-section .bg-black:not(.box-wave) {
+    background-color: var(--theme-muted-text);
+}
+
+[data-theme='dark'] .hero-section .border-b-black {
+    border-bottom-color: #080a09;
+}
+
+[data-theme='dark'] .border-border-subtle,
+[data-theme='dark'] .border-gray-200,
+[data-theme='dark'] .border-gray-300 {
+    border-color: var(--theme-border);
+}
+
+[data-theme='dark'] .MuiDrawer-paper {
+    color: var(--theme-text);
+    background-color: var(--theme-elevated-surface);
+}
+
+[data-theme='dark'] .fixed img[src^='/action-bar/'] {
+    filter: invert(1);
+}
+
+.theme-toggle {
+    position: fixed;
+    z-index: 60;
+    top: max(1rem, env(safe-area-inset-top));
+    right: max(1rem, env(safe-area-inset-right));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 4.5rem;
+    min-width: 44px;
+    height: 2.5rem;
+    padding: 0 0.4rem;
+    color: var(--theme-text);
+    background: var(--theme-elevated-surface);
+    border: 1px solid var(--theme-border-strong);
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 12%);
+}
+
+.theme-toggle:focus-visible {
+    outline: 3px solid var(--color-portfolio-blue);
+    outline-offset: 3px;
+}
+
+.theme-toggle__icon {
+    z-index: 1;
+    width: 1rem;
+    height: 1rem;
+}
+
+.theme-toggle__thumb {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    width: 1.875rem;
+    height: 1.875rem;
+    background: var(--theme-text);
+    border-radius: 50%;
+    transform: translateX(0);
+    transition:
+        transform 220ms ease,
+        background-color 180ms ease;
+}
+
+[data-theme='dark'] .theme-toggle__thumb {
+    transform: translateX(2rem);
+}
+
+@media (max-width: 480px) {
+    .theme-toggle {
+        top: max(0.75rem, env(safe-area-inset-top));
+        right: max(0.75rem, env(safe-area-inset-right));
+        width: 4rem;
+        height: 2.25rem;
+    }
+
+    .theme-toggle__thumb {
+        width: 1.625rem;
+        height: 1.625rem;
+    }
+
+    [data-theme='dark'] .theme-toggle__thumb {
+        transform: translateX(1.75rem);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body,
+    .theme-toggle__thumb {
+        transition: none;
+    }
 }
 
 *,

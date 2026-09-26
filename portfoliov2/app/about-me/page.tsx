@@ -38,7 +38,7 @@ const AboutPage = () => {
                 <h2 className="pb-8">{constants.aboutMe.title}</h2>
                 <div className="flex flex-col gap-4 mb-2">
                     <p className="flex flex-col gap-2 text-sm">
-                        <span className="text-xs font-bold text-black uppercase">
+                        <span className="text-xs font-bold theme-text uppercase">
                             {constants.aboutMe.bio.whoIAm.heading}
                         </span>
                         <span className="text-xs sm:text-sm">
@@ -46,7 +46,7 @@ const AboutPage = () => {
                         </span>
                     </p>
                     <p className="flex flex-col gap-2 text-sm">
-                        <span className="text-xs font-bold text-black uppercase">
+                        <span className="text-xs font-bold theme-text uppercase">
                             {constants.aboutMe.bio.whatIDoNow.heading}
                         </span>
                         <span className="text-xs sm:text-sm">
@@ -81,7 +81,7 @@ const AboutPage = () => {
                     </p>
                     {showMore && (
                         <p className="flex flex-col gap-2 text-xs sm:text-sm">
-                            <span className="text-xs font-bold text-black uppercase">
+                            <span className="text-xs font-bold theme-text uppercase">
                                 {constants.aboutMe.bio.whereIAmNow.heading}
                             </span>
                             <span>
@@ -95,7 +95,7 @@ const AboutPage = () => {
                     )}
                     {showMore && (
                         <p className="flex flex-col gap-2 text-sm">
-                            <span className="text-xs font-bold text-black uppercase">
+                            <span className="text-xs font-bold theme-text uppercase">
                                 {constants.aboutMe.bio.spareTime.heading}
                             </span>
                             <span className="text-xs sm:text-sm">
@@ -109,7 +109,7 @@ const AboutPage = () => {
                     )}
                     {showMore && (
                         <p className="flex flex-col gap-2 text-sm">
-                            <span className="text-xs font-bold text-black uppercase">
+                            <span className="text-xs font-bold theme-text uppercase">
                                 {constants.aboutMe.bio.learning.heading}
                             </span>
                             <span className="text-xs sm:text-sm">
@@ -119,7 +119,7 @@ const AboutPage = () => {
                     )}
                     {showMore && (
                         <p className="flex flex-col gap-2 text-sm">
-                            <span className="text-xs font-bold text-black uppercase">
+                            <span className="text-xs font-bold theme-text uppercase">
                                 {constants.aboutMe.bio.lookingFor.heading}
                             </span>
                             <span className="text-xs sm:text-sm">
@@ -149,7 +149,7 @@ const AboutPage = () => {
                 id="skills"
                 className="col-span-12 xl:col-span-15 row-span-6 xs:row-span-5 sm:row-span-4 md:row-span-5 xl:row-span-3 bg-layout2 p-5 sm:pt-6 sm:p-5 xl:p-5 xl:pt-5 rounded-2xl flex flex-col gap-4 sm:gap-7 xl:gap-2 transition duration-300 ease-in-out"
             >
-                <h1 className="font-semibold text-2xl text-black">
+                <h1 className="font-semibold text-2xl theme-text">
                     {constants.aboutMe.skills.heading}
                 </h1>
                 <div className="flex flex-row flex-wrap gap-5 xl:gap-x-5 xl:gap-y-2">
@@ -167,7 +167,7 @@ const AboutPage = () => {
                             <a
                                 href={`${constants.aboutMe.skills.googleSearchUrl}${skill.title.toLowerCase()}`}
                                 title={skill.title}
-                                className={`border-2 border-black rounded-sm ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-500 hover:scale-110`}
+                                className={`border-2 theme-button rounded-sm ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-500 hover:scale-110`}
                                 target="_blank"
                                 rel="noopener norefferer nofollow"
                             >
@@ -211,7 +211,7 @@ const AboutPage = () => {
                 className="col-span-12 xl:col-span-8 row-span-8 lg:row-span-5 xl:row-span-8 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 group overflow-hidden hover:-translate-y-1 transition duration-300"
             >
                 <div className="flex flex-row gap-1 items-center justify-between">
-                    <h1 className="font-semibold text-lg sm:text-2xl text-black capitalize">
+                    <h1 className="font-semibold text-lg sm:text-2xl theme-text capitalize">
                         {constants.aboutMe.articles.heading}
                     </h1>
                     <ExternalLink
@@ -269,7 +269,7 @@ const AboutPage = () => {
                 id="social profiles"
                 className="col-span-12 xl:col-span-9 row-span-12 sm:row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5 hover:shadow-xl overflow-hidden"
             >
-                <h1 className="font-semibold text-2xl text-black capitalize">
+                <h1 className="font-semibold text-2xl theme-text capitalize">
                     {constants.aboutMe.socialHeading}
                 </h1>
                 <div className="w-full grid grid-cols-3 auto-rows-12.5 gap-5">
@@ -286,11 +286,34 @@ const AboutPage = () => {
                         >
                             {(() => {
                                 const Icon = getSocialIcon(social.icon)
-                                return <Icon size={32} className={`${social.iconClassName}`} />
+                                return (
+                                    <Icon
+                                        size={32}
+                                        className={
+                                            social.name === 'Hackernoon'
+                                                ? 'theme-text'
+                                                : social.iconClassName
+                                        }
+                                    />
+                                )
                             })()}
                             <div className="flex flex-col gap-1">
-                                <h5 className={`${social.textClassName} text-sm`}>{social.name}</h5>
-                                <p className={`${social.textClassName} text-xs`}>
+                                <h5
+                                    className={`${
+                                        social.name === 'Hackernoon'
+                                            ? 'theme-text'
+                                            : social.textClassName
+                                    } text-sm`}
+                                >
+                                    {social.name}
+                                </h5>
+                                <p
+                                    className={`${
+                                        social.name === 'Hackernoon'
+                                            ? 'theme-text'
+                                            : social.textClassName
+                                    } text-xs`}
+                                >
                                     @{social.username}
                                 </p>
                             </div>
@@ -324,7 +347,7 @@ const AboutPage = () => {
                 <ImQuotesLeft size={32} className="group-hover:animate-shaker" />
                 <h6 className="font-medium text-lg md:text-2xl italic">
                     {constants.aboutMe.quote.text}{' '}
-                    <span className="text-black group-hover:bg-black group-hover:text-white transition-all duration-500 rounded-md py-1">
+                    <span className="theme-text group-hover:bg-black group-hover:text-white transition-all duration-500 rounded-md py-1">
                         {constants.aboutMe.quote.emphasis}
                     </span>
                 </h6>

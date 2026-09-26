@@ -5,7 +5,9 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import './globals.css'
 import MetaTag from './metatag'
 import ActionBar from './ui/actionbar'
+import ThemeScript from './ui/theme/script'
 import { portfolio as constants } from './data'
+import { ThemeProvider, ThemeToggle } from './ui/theme'
 import { dmSans, poppins, quickSand } from './lib/fonts'
 
 export const metadata: Metadata = {
@@ -21,14 +23,21 @@ export default function RootLayout({
         <html
             lang={constants.site.language}
             className={`${dmSans.variable} ${poppins.variable} ${quickSand.variable}`}
+            suppressHydrationWarning
         >
-            <MetaTag />
+            <head>
+                <ThemeScript />
+                <MetaTag />
+            </head>
             <body>
-                <ActionBar />
-                <div className="h-20"></div>
-                {children}
-                <SpeedInsights />
-                <Analytics />
+                <ThemeProvider>
+                    <ActionBar />
+                    <ThemeToggle />
+                    <div className="h-28 xs:h-20"></div>
+                    {children}
+                    <SpeedInsights />
+                    <Analytics />
+                </ThemeProvider>
             </body>
         </html>
     )

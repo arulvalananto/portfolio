@@ -2,7 +2,7 @@ import { portfolio as constants } from './data'
 
 const MetaTag = () => {
     return (
-        <head>
+        <>
             <meta name="theme-color" content={constants.site.meta.themeColor} />
             <meta name="robots" content={constants.site.meta.robots} />
             <meta name="author" content={constants.site.meta.author} />
@@ -29,7 +29,7 @@ const MetaTag = () => {
             <meta property="twitter:creator" content={constants.site.meta.twitterHandle} />
             <meta property="twitter:url" content={constants.site.meta.url} />
             <link rel="icon" type="image/svg" href={constants.site.meta.favicon} />
-        </head>
+        </>
     )
 }
 

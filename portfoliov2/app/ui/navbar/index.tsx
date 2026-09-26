@@ -55,7 +55,7 @@ const Navbar = () => {
                             pathname === '/about-me'
                                 ? 'font-bold underline underline-offset-4 text-lg'
                                 : 'font-medium text-base'
-                        } text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
+                        } theme-text font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                     >
                         About me
                     </Link>
@@ -65,31 +65,31 @@ const Navbar = () => {
                             pathname === '/work'
                                 ? 'font-bold underline underline-offset-4 text-lg'
                                 : 'font-medium text-base'
-                        } text-black font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
+                        } theme-text font-inter opacity-75 hover:opacity-100 hover:scale-105 transition duration-300`}
                     >
                         My Work
                     </Link>
                     <ExternalLink
                         href={constants.resumeDriveLink}
-                        className="font-medium font-inter text-black text-base hidden sm:block opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
+                        className="font-medium font-inter theme-text text-base hidden sm:block opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
                         title="Resume"
                     />
                     {/* <a
                         download
                         href="/Arul_Valan_Anto_Resume.pdf"
-                        className="font-medium font-inter text-black text-base opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
+                        className="font-medium font-inter theme-text text-base opacity-75 hover:opacity-100 hover:scale-105 transition duration-300"
                     >
                         Resume
                     </a> */}
                 </div>
-                <div className="border-b-2 border-black">
+                <div className="border-b-2 theme-button">
                     <a
                         href="mailto:arulvalananto@gmail.com"
                         target="_blank"
                         rel="noreferrer"
                         className="flex items-center gap-2"
                     >
-                        <span className="font-medium text-black text-base opacity-75 hover:opacity-100 hover:scale-105 transition duration-300">
+                        <span className="font-medium theme-text text-base opacity-75 hover:opacity-100 hover:scale-105 transition duration-300">
                             Let&apos;s Talk
                         </span>
                         <FaArrowRightLong />
@@ -103,7 +103,7 @@ const Navbar = () => {
                     title="portfolio nav menu"
                     onClick={() => setIsOpen(!isOpen)}
                 >
-                    <CiMenuFries color="black" className="font-medium text-black text-xl" />
+                    <CiMenuFries className="font-medium theme-text text-xl" />
                 </button>
                 <CustomDrawer isOpen={isOpen} onClose={() => setIsOpen(false)}>
                     <div className="mt-10 flex flex-col gap-5 px-3">
@@ -116,7 +116,7 @@ const Navbar = () => {
                                 size={24}
                                 className="transition duration-300 group-hover:rotate-12"
                             />
-                            <span className="font-medium text-black text-base font-DMSans">
+                            <span className="font-medium theme-text text-base font-DMSans">
                                 About me
                             </span>
                         </button>
@@ -129,7 +129,7 @@ const Navbar = () => {
                                 size={24}
                                 className="transition duration-300 group-hover:rotate-12"
                             />
-                            <span className="font-medium text-black text-base font-DMSans">
+                            <span className="font-medium theme-text text-base font-DMSans">
                                 My Work
                             </span>
                         </button>
@@ -142,7 +142,7 @@ const Navbar = () => {
                                 size={24}
                                 className="transition duration-300 group-hover:rotate-12"
                             />
-                            <span className="text-black text-base font-medium font-DMSans">
+                            <span className="theme-text text-base font-medium font-DMSans">
                                 Download Resume
                             </span>
                         </button>
@@ -151,7 +151,7 @@ const Navbar = () => {
                             onClick={onMailTo}
                             className="group flex items-center gap-3"
                         >
-                            <span className="font-medium text-black text-base font-DMSans">
+                            <span className="font-medium theme-text text-base font-DMSans">
                                 Let&apos;s Talk
                             </span>
                             <FaArrowRightLong className="transition duration-300 group-hover:translate-x-2" />
