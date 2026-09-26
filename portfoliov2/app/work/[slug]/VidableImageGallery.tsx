@@ -16,7 +16,7 @@ const VidableImageGallery: React.FC<{ project: Project }> = ({ project }) => {
                     src="/home_vidable_project_look.webp"
                     alt="Vidable AI image"
                     width={200}
-                    height={200}
+                    height={414}
                     className="rounded-md group-hover:scale-110 transition duration-1000"
                 />
             </div>
@@ -51,7 +51,7 @@ const VidableImageGallery: React.FC<{ project: Project }> = ({ project }) => {
                     src="/vidable_overview_6.webp"
                     alt="Vidable Overview 6"
                     width={450}
-                    height={300}
+                    height={248}
                 />
             </div>
         </>

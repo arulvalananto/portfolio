@@ -16,6 +16,8 @@ export type SocialLink = {
 export type SkillInfo = {
     src?: string
     title: string
+    width?: number
+    height?: number
     className?: string
     imageClassName?: string
     yearofexperience?: string

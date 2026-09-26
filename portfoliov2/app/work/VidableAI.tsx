@@ -15,7 +15,7 @@ const VidableAI: React.FC = () => {
                     src={constants.work.cards.vidable.logo.src}
                     alt={constants.work.cards.vidable.logo.alt}
                     width={160}
-                    height={32}
+                    height={27}
                     className="max-h-8"
                 />
                 <p className="flex flex-row xl:hidden text-black font-normal text-base font-quicksand">
@@ -31,7 +31,7 @@ const VidableAI: React.FC = () => {
                     src={constants.work.cards.vidable.image.src}
                     alt={constants.work.cards.vidable.image.alt}
                     width={366}
-                    height={400}
+                    height={370}
                 />
             </div>
             <div className="hidden md:block transition-all duration-500 ease-in-out absolute top-0 -right-8 -rotate-90 -translate-y-20 translate-x-20 group-hover:translate-y-0 group-hover:translate-x-0">
@@ -39,7 +39,7 @@ const VidableAI: React.FC = () => {
                     src={constants.work.cards.vidable.overlays[0].src}
                     alt={constants.work.cards.vidable.overlays[0].alt}
                     width={133}
-                    height={112}
+                    height={89}
                 />
             </div>
             <div className="hidden md:block transition duration-500 absolute bottom-0 -left-8 scale-0 opacity-0 group-hover:scale-100 group-hover:opacity-100">
@@ -47,7 +47,7 @@ const VidableAI: React.FC = () => {
                     src={constants.work.cards.vidable.overlays[1].src}
                     alt={constants.work.cards.vidable.overlays[1].alt}
                     width={133}
-                    height={112}
+                    height={133}
                 />
             </div>
         </Link>

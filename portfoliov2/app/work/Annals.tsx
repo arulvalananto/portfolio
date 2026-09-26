@@ -14,7 +14,7 @@ const Annals: React.FC = () => {
                 src={constants.work.cards.annals.logo.src}
                 alt={constants.work.cards.annals.logo.alt}
                 width={126}
-                height={31}
+                height={29}
                 priority
             />
             <p className="font-quicksand text-xl text-white font-normal">
@@ -25,7 +25,7 @@ const Annals: React.FC = () => {
                     src={constants.work.cards.annals.image.src}
                     alt={constants.work.cards.annals.image.alt}
                     width={275}
-                    height={150}
+                    height={155}
                     priority
                     className="rounded-md transition duration-300 group-hover:scale-90 group-hover:rotate-3 group-hover:translate-x-2 group-hover:-translate-y-4 group-hover:border-4 group-hover:border-white"
                 />

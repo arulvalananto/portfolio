@@ -35,8 +35,6 @@ const Navbar = () => {
         setIsOpen(false)
     }
 
-    console.log('pathname', pathname)
-
     return (
         <div className="w-full h-full xl:w-7xl xl:max-w-7xl px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
             <Link href="/" className="w-10 h-10" title="Arul Valan Anto's Logo">

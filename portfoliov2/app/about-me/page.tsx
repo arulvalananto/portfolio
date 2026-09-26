@@ -175,8 +175,8 @@ const AboutPage = () => {
                                     key={index}
                                     src={skill?.src ?? ''}
                                     alt={skill.title}
-                                    width="24"
-                                    height="24"
+                                    width={skill.width ?? 24}
+                                    height={skill.height ?? 24}
                                     className={`${skill.imageClassName ?? ''}`}
                                 />
                             </a>

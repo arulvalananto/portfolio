@@ -24,7 +24,7 @@ const Highlight: React.FC = () => {
                     src="/projects_highlight_star2.svg"
                     alt="Highlight Project"
                     width={14}
-                    height={14}
+                    height={13}
                     className="animate-shaker-reverse-slow"
                 />
             </div>
@@ -33,7 +33,7 @@ const Highlight: React.FC = () => {
                     src="/projects_highlight_star1.svg"
                     alt="Highlight Project"
                     width={24}
-                    height={23}
+                    height={24}
                     className="animate-shaker"
                 />
             </div>
@@ -50,7 +50,7 @@ const Highlight: React.FC = () => {
                 src="/projects_highlight_logo.svg"
                 alt="Highlight Project"
                 width={176}
-                height={36}
+                height={39}
                 priority
             />
             <p className="font-leagueSpartan font-normal text-xl flex flex-row md:flex-col gap-1.5 md:gap-0 items-start text-white select-none">

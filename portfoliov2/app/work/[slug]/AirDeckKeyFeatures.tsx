@@ -10,7 +10,7 @@ const AirDeckKeyFeatures: React.FC = () => {
                         src="/airdeck_voice_personalization.webp"
                         alt="Voice & Video Personalization"
                         width={525}
-                        height={216}
+                        height={328}
                         className="rounded-md scale-75 sm:scale-100"
                     />
                 </div>

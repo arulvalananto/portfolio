@@ -15,7 +15,7 @@ const Synthup: React.FC = () => {
                 src={constants.work.cards.synthUp.logo.src}
                 alt={constants.work.cards.synthUp.logo.alt}
                 width={150}
-                height={26}
+                height={55}
                 priority
             />
             <p className="font-quicksand font-medium text-base flex flex-col items-start">

@@ -34,7 +34,7 @@ const Filler: React.FC = () => {
                         src={constants.work.cards.filler[2].src}
                         alt={constants.work.cards.filler[2].alt}
                         width={28}
-                        height={32}
+                        height={34}
                         className="translate-x-1 hover:scale-150 transition duration-300 ease-in-out hover:translate-y-5"
                     />
                 </div>

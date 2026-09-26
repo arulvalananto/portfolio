@@ -22,7 +22,7 @@ const VidableHomePageImage: React.FC<VidableHomePageImageProps> = ({ project, in
                     src={project.imageUrl}
                     alt={project.name}
                     width={500}
-                    height={500}
+                    height={1036}
                     className="rounded-md"
                 />
             </div>

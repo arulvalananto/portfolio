@@ -13,7 +13,7 @@ const TheCrawlerMan: React.FC = () => {
                     src="/projects_thecrawlerman_logo_animation.gif"
                     alt="The crawlerman logo animation"
                     width={99}
-                    height={71}
+                    height={99}
                     className="-translate-y-2 -translate-x-6"
                     priority
                     unoptimized
@@ -22,7 +22,7 @@ const TheCrawlerMan: React.FC = () => {
                     src="/projects_thecrawlerman_logo.svg"
                     alt="The crawlerman logo text"
                     width={202}
-                    height={42}
+                    height={16}
                     className="-translate-x-9"
                     priority
                 />
@@ -39,7 +39,7 @@ const TheCrawlerMan: React.FC = () => {
                     src="/projects_thecrawlerman_demo_animation.gif"
                     alt=""
                     width={268}
-                    height={213}
+                    height={201}
                     unoptimized
                 />
             </div>

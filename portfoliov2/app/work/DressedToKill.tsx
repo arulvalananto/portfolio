@@ -15,7 +15,7 @@ const DressedTpKill = () => {
                     src={constants.work.cards.dressedToKill.logo.src}
                     alt={constants.work.cards.dressedToKill.logo.alt}
                     width={243}
-                    height={71}
+                    height={72}
                     className="md:  group-hover:scale-110 md:group-hover:-translate-x-5 transition duration-300 ease-in-out z-20"
                 />
                 <p className="text-sm font-quicksand transition duration-300 opacity-0 group-hover:opacity-100">

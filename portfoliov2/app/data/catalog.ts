@@ -189,6 +189,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_node.svg',
             title: 'NodeJS',
+            width: 24,
+            height: 27,
             className: 'bg-node',
             color: 'bg-node',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
@@ -197,6 +199,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_mongoDB.svg',
             title: 'Mongo DB',
+            width: 24,
+            height: 23,
             className: 'bg-mongoDB border-mongoDBColor',
             color: 'bg-mongoDB',
             imageClassName: 'scale-90 md:scale-110 xl:scale-90',
@@ -205,6 +209,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_typescript.svg',
             title: 'TypeScript',
+            width: 24,
+            height: 22,
             className: 'bg-typescript',
             color: 'bg-typescript',
             imageClassName: 'scale-100 md:scale-125 xl:scale-100',
@@ -213,6 +219,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_javascript.svg',
             title: 'JavaScript',
+            width: 24,
+            height: 22,
             className: 'bg-javascript',
             color: 'bg-javascript',
             imageClassName: 'scale-100 md:scale-125 xl:scale-100',
@@ -274,6 +282,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_css.svg',
             title: 'CSS',
+            width: 24,
+            height: 29,
             className: 'bg-css',
             color: 'bg-css',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
@@ -307,6 +317,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_python.svg',
             title: 'Python',
+            width: 24,
+            height: 23,
             className:
                 'bg-gradient-to-t from-python from-80% via-transparent to-80% to-transparent to-100%',
             color: 'bg-python',
@@ -316,6 +328,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_firebase.svg',
             title: 'Firebase',
+            width: 24,
+            height: 23,
             className:
                 'bg-gradient-to-t from-firebase from-80% via-transparent to-80% to-transparent to-100%',
             color: 'bg-firebase',
@@ -324,6 +338,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_redis.svg',
             title: 'Redis',
+            width: 24,
+            height: 23,
             className:
                 'bg-gradient-to-t from-redis from-70% via-transparent to-70% to-transparent to-100%',
             imageClassName: 'scale-75 md:scale-100 xl:scale-75',
@@ -341,6 +357,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_stripe.svg',
             title: 'Stripe',
+            width: 24,
+            height: 25,
             className:
                 'bg-gradient-to-t from-stripe from-60% via-transparent to-60% to-transparent to-100%',
             color: 'bg-stripe',
@@ -367,6 +385,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_mysql.svg',
             title: 'MySQL',
+            width: 24,
+            height: 21,
             className:
                 'bg-gradient-to-t from-mysql from-50% via-transparent to-50% to-transparent to-100%',
             color: 'bg-mysql',
@@ -375,6 +395,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_django.svg',
             title: 'Django',
+            width: 24,
+            height: 31,
             className:
                 'bg-gradient-to-t from-django from-50% via-transparent to-50% to-transparent to-100%',
             color: 'bg-django',
@@ -384,6 +406,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_postgresql.svg',
             title: 'PostgreSQL',
+            width: 24,
+            height: 23,
             className:
                 'bg-gradient-to-t from-white from-40% via-transparent to-40% to-transparent to-100%',
             color: 'bg-postgresql',
@@ -393,6 +417,8 @@ export const skills: Skill = {
         {
             src: '/about_skill_figma.svg',
             title: 'Figma',
+            width: 24,
+            height: 34,
             className:
                 'bg-gradient-to-t from-figma from-10% via-green-500 via-30% via-yellow-500 via-55% via-red-500 via-80% to-transparent to-80%',
             imageClassName: 'scale-50 md:scale-75 xl:scale-50',

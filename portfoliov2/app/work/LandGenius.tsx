@@ -34,7 +34,7 @@ const LandGenius: React.FC = () => {
                     src={constants.work.cards.landGenius.images[1].src}
                     alt={constants.work.cards.landGenius.images[1].alt}
                     width={150}
-                    height={150}
+                    height={160}
                     className="rounded-md"
                 />
             </div>

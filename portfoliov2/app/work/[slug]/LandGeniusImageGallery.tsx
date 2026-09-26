@@ -29,7 +29,7 @@ const LandGeniusImageGallery = ({ project }: { project: Project }) => {
                     src="/landgenius_project_overview_features.svg"
                     alt="Landgenius flow"
                     width={500}
-                    height={500}
+                    height={281}
                     className="transition duration-300 ease-in-out group-hover:scale-95"
                 />
             </div>
@@ -57,7 +57,7 @@ const LandGeniusImageGallery = ({ project }: { project: Project }) => {
                     src="/landgenius_project_overview_flow.gif"
                     alt="Landgenius flow"
                     width={500}
-                    height={500}
+                    height={281}
                     className="transition duration-300 ease-in-out group-hover:scale-95"
                     unoptimized
                 />

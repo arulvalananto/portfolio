@@ -14,7 +14,7 @@ const ScafffolderCLI = () => {
                 src={constants.work.cards.scafffolder.logo.src}
                 alt={constants.work.cards.scafffolder.logo.alt}
                 width={201}
-                height={41}
+                height={31}
             />
             <p className="text-black font-quicksand text-base transition-all duration-300 flex flex-row gap-1 group-hover:gap-2">
                 {constants.work.cards.scafffolder.tagline.map((item) => (

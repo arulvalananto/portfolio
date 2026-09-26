@@ -30,7 +30,7 @@ const AirDeckImageGallery = ({ project }: { project: Project }) => {
                     src="/airdeck_workflow.svg"
                     alt="AirDeck Workflow"
                     width={276}
-                    height={456}
+                    height={455}
                     priority
                     unoptimized
                     className="xs:scale-90 scale-100"
@@ -59,7 +59,7 @@ const AirDeckImageGallery = ({ project }: { project: Project }) => {
                     src="/airdeck_integrate_embed_video.webp"
                     alt="AirDeck Workflow"
                     width={276}
-                    height={456}
+                    height={141}
                     priority
                     className="group-hover:scale-105 transition duration-300"
                 />
