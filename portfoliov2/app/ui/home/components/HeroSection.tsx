@@ -20,14 +20,14 @@ const HeroSection: React.FC = () => {
                     src={constants.ui.home.hero.expression.src}
                     alt={constants.ui.home.hero.expression.alt}
                     width={32}
-                    height={15}
+                    height={16}
                     className="animate-wiggle absolute top-0 hidden sm:block -right-10 xl:-top-1 xl:right-35"
                 />
                 <Image
                     src={constants.ui.home.hero.expression.src}
                     alt={constants.ui.home.hero.expression.alt}
                     width={16}
-                    height={7}
+                    height={8}
                     className="animate-wiggle block sm:hidden absolute top-0 -right-5 xl:-top-1 xl:right-35"
                 />
             </h1>
@@ -82,35 +82,35 @@ const HeroSection: React.FC = () => {
                         src="/stars_v2.svg"
                         alt="stars"
                         width={12}
-                        height={15}
+                        height={14}
                         className="animate-wiggle absolute top-2 left-1.5 sm:top-20 sm:left-12"
                     />
                     <Image
                         src="/stars_v2.svg"
                         alt="stars"
                         width={12}
-                        height={15}
+                        height={14}
                         className="animate-wiggle absolute top-9 right-5 sm:top-28 sm:right-32"
                     />
                     <Image
                         src="/stars_v2.svg"
                         alt="stars"
                         width={12}
-                        height={15}
+                        height={14}
                         className="animate-wiggle absolute bottom-4 right-12 sm:bottom-48 sm:right-16"
                     />
                     <Image
                         src="/stars_v2.svg"
                         alt="stars"
                         width={12}
-                        height={15}
+                        height={14}
                         className="animate-wiggle absolute bottom-10 left-10 sm:bottom-40 sm:left-40"
                     />
                     <Image
                         src="/stars_v2.svg"
                         alt="stars"
                         width={12}
-                        height={15}
+                        height={14}
                         className="animate-wiggle absolute top-1/4 left-1/3 sm:top-1/3 sm:left-1/4"
                     />
                 </div>

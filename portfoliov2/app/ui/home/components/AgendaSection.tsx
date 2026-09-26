@@ -23,7 +23,7 @@ const AgendaSection: React.FC = () => {
                         src="/home_agenda_vision.svg"
                         alt="Vision"
                         width={17}
-                        height={15}
+                        height={16}
                         className="block xs:hidden"
                     />
                     <span>Visions</span>
@@ -41,7 +41,7 @@ const AgendaSection: React.FC = () => {
                         src="/home_agenda_reality.svg"
                         alt="Vision"
                         width={15}
-                        height={10}
+                        height={11}
                         className="block xs:hidden"
                     />
                     <span>where Dreams Ignite,</span>
@@ -52,14 +52,14 @@ const AgendaSection: React.FC = () => {
                         src="/home_agenda_outcome.svg"
                         alt="Vision"
                         width={24}
-                        height={35}
+                        height={31}
                         className="hidden xs:block"
                     />
                     <Image
                         src="/home_agenda_outcome.svg"
                         alt="Vision"
                         width={12}
-                        height={17}
+                        height={16}
                         className="block xs:hidden"
                     />
                     <span>Outcomes&quot;</span>
@@ -75,7 +75,7 @@ const AgendaSection: React.FC = () => {
                     src="/home_agenda_shape_1.svg"
                     alt="Vision"
                     width={208}
-                    height={261}
+                    height={262}
                     className="absolute top-31.25 -left-24"
                 />
                 <Image
