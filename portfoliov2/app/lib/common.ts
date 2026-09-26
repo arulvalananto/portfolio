@@ -1,11 +1,6 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { FaMedium, FaTwitter } from 'react-icons/fa6';
-import {
-    SiReaddotcv,
-    SiBento,
-    SiHackernoon,
-    SiBuymeacoffee,
-} from 'react-icons/si';
+import { SiBento, SiHackernoon, SiBuymeacoffee } from 'react-icons/si';
 
 import { ProjectDetails, Skill } from './types';
 

@@ -21,7 +21,7 @@ const AboutPage = () => {
 
     return (
         <main
-            className={`px-5 py-10 md:p-10 xl:py-10 w-full xl:w-[1280px] xl:max-w-[1280px] xl:m-auto grid grid-cols-12 xl:grid-cols-24 auto-rows-[50px] gap-5 h-full ${inter.variable} font-inter`}
+            className={`px-5 py-10 md:p-10 xl:py-10 w-full xl:w-7xl xl:max-w-7xl xl:m-auto grid grid-cols-12 xl:grid-cols-24 auto-rows-12.5 gap-5 h-full ${inter.variable} font-inter`}
         >
             <section
                 id="bio"
@@ -186,7 +186,7 @@ const AboutPage = () => {
                                     />
                                 </a>
                             </AnimatedTooltip>
-                        )
+                        ),
                     )}
                 </div>
             </section>
@@ -198,7 +198,7 @@ const AboutPage = () => {
                 <h1 className="text-white opacity-0 group-hover:opacity-100 text-3xl font-bold self-start">
                     AirDeck
                 </h1>
-                <div className="w-[250px] xs:w-[300px] sm:w-96 md:w-[600px] xl:w-[300px] h-96 flex items-center justify-center animate-sizeup-slow z-50">
+                <div className="w-62.5 xs:w-[300px] sm:w-96 md:w-150 xl:w-75 h-96 flex items-center justify-center animate-sizeup-slow z-50">
                     <video
                         preload="none"
                         src="/projects_airdeck_demo.webm"
@@ -232,7 +232,7 @@ const AboutPage = () => {
                             key={index}
                             title={article.title}
                             href={article.href}
-                            className="shadow-sm md:w-full lg:w-[400px] xl:w-full h-[100px] min-h-[100px] max-h-[100px] flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] bg-white rounded-md p-2 hover:shadow-md transition-all duration-500"
+                            className="shadow-sm md:w-full lg:w-100 xl:w-full h-25 min-h-25 max-h-25 flex flex-row gap-5 items-start border border-[rgba(0,0,0,0.1)] bg-white rounded-md p-2 hover:shadow-md transition-all duration-500"
                         >
                             <div className="flex flex-col justify-between h-full flex-1 md:flex-auto">
                                 <h2 className="text-[10px] xs:text-xs xl:text-sm">
@@ -242,7 +242,7 @@ const AboutPage = () => {
                                     {article.website}
                                 </p>
                             </div>
-                            <div className=" w-full max-w-[114px] max-h-[76px] xl:h-full xl:max-h-[76px] overflow-hidden rounded-md flex items-center justify-center">
+                            <div className=" w-full max-w-28.5 max-h-19 xl:h-full xl:max-h-19 overflow-hidden rounded-md flex items-center justify-center">
                                 <Image
                                     src={article.imageURL}
                                     alt={article.title}
@@ -278,7 +278,7 @@ const AboutPage = () => {
                 <h1 className="font-semibold text-2xl text-black capitalize">
                     Find me on
                 </h1>
-                <div className="w-full grid grid-cols-3 auto-rows-[50px] gap-5">
+                <div className="w-full grid grid-cols-3 auto-rows-12.5 gap-5">
                     {socialLinks.map((social, index) => (
                         <ExternalLink
                             key={index}
@@ -319,7 +319,7 @@ const AboutPage = () => {
                     Vidable
                 </h1>
                 <div className="overflow-hidden flex items-center justify-center group relative cursor-pointer">
-                    <div className="transition duration-[750ms] z-50 scale-50 xs:scale-100 translate-y-[100px] sm:translate-y-1/3 group-hover:scale-[0.2] xs:group-hover:scale-[0.3] md:group-hover:scale-50 xl:group-hover:scale-[0.5] group-hover:translate-y-10">
+                    <div className="transition duration-750 z-50 scale-50 xs:scale-100 translate-y-25 sm:translate-y-1/3 group-hover:scale-[0.2] xs:group-hover:scale-[0.3] md:group-hover:scale-50 xl:group-hover:scale-[0.5] group-hover:translate-y-10">
                         <Image
                             src="/home_vidable_project_look.webp"
                             alt="Vidable AI Project"
@@ -369,7 +369,7 @@ const AboutPage = () => {
                 id="location"
                 className={`${
                     showMore ? 'col-span-7' : 'col-span-8'
-                } hidden xl:block row-span-3 bg-layou2 overflow-hidden rounded-2xl relative transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1`}
+                } hidden xl:block row-span-3 overflow-hidden rounded-2xl relative transition duration-300 ease-in-out hover:shadow-lg hover:-translate-y-1`}
             >
                 <ExternalLink
                     href="https://maps.app.goo.gl/77KHe5BfBXmceoqv6"
@@ -383,8 +383,8 @@ const AboutPage = () => {
                         className="scale-150"
                         unoptimized
                     />
-                    <div className="absolute left-[102px] top-[76px] rounded-full bg-[#679BFF] opacity-20 s-3 styles_marker-pulse__BxsPp"></div>
-                    <div className="absolute w-3 h-3 left-[96px] top-[72px] rounded-full bg-[#679BFF] border-2 border-white shadow-md"></div>
+                    <div className="absolute left-25.5 top-19 rounded-full bg-[#679BFF] opacity-20 s-3 styles_marker-pulse__BxsPp"></div>
+                    <div className="absolute w-3 h-3 left-24 top-18 rounded-full bg-[#679BFF] border-2 border-white shadow-md"></div>
                     <p className="absolute bottom-0 right-0 font-normal text-xs px-2 py-1 m-2 bg-layout2 bg-opacity-50 rounded-md">
                         Kanyakumari, TN, India
                     </p>

@@ -30,7 +30,7 @@ const SelectedProjectsSection = () => {
                 {selectedProjects.map((project, index) => (
                     <div
                         key={project.name}
-                        className="w-full h-full xl:h-[350px] flex flex-col xl:flex-row items-start gap-2 md:gap-5"
+                        className="w-full h-full xl:h-87.5 flex flex-col xl:flex-row items-start gap-2 md:gap-5"
                     >
                         <div
                             className={`order-2 ${
@@ -82,7 +82,7 @@ const SelectedProjectsSection = () => {
             <div className="flex flex-row items-center justify-center">
                 <Link
                     href="/work"
-                    className="text-black font-poppins text-sm font-normal border-2 border-black px-4 py-2 capitalize rounded-md bg-[#A79CF8] hover:borde-4 hover:scale-105 transition-all duration-500 ease-in-out shadow-md"
+                    className="text-black font-poppins text-sm font-normal border-2 border-black px-4 py-2 capitalize rounded-md bg-portfolio-about-title hover:borde-4 hover:scale-105 transition-all duration-500 ease-in-out shadow-md"
                 >
                     View All Projects
                 </Link>

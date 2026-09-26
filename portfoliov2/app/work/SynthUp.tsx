@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Synthup = () => {
+const Synthup: React.FC = () => {
     return (
         <Link
             href="/work/synthup"

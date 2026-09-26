@@ -21,7 +21,7 @@ const ActionBar = () => {
                 >
                     <Tooltip
                         title="Home"
-                        componentsProps={{
+                        slotProps={{
                             tooltip: {
                                 sx: {
                                     bgcolor: '#000',
@@ -50,7 +50,7 @@ const ActionBar = () => {
                 >
                     <Tooltip
                         title="About me"
-                        componentsProps={{
+                        slotProps={{
                             tooltip: {
                                 sx: {
                                     bgcolor: '#000',
@@ -79,7 +79,7 @@ const ActionBar = () => {
                 >
                     <Tooltip
                         title="My work"
-                        componentsProps={{
+                        slotProps={{
                             tooltip: {
                                 sx: {
                                     bgcolor: '#000',
@@ -105,7 +105,7 @@ const ActionBar = () => {
                 >
                     <Tooltip
                         title="Message me"
-                        componentsProps={{
+                        slotProps={{
                             tooltip: {
                                 sx: {
                                     bgcolor: '#000',

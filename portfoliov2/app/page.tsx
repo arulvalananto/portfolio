@@ -5,7 +5,7 @@ import SelectedProjectsSection from './ui/home/components/SelectedProjectsSectio
 
 const Home = () => (
     <main className="w-full h-full">
-        <div className="px-5 xl:px-0 xl:w-[1280px] xl:max-w-[1280px] h-full m-auto mt-4 overflow-hidden xl:overflow-visible">
+        <div className="px-5 xl:px-0 xl:w-7xl xl:max-w-7xl h-full m-auto mt-4 overflow-hidden xl:overflow-visible">
             <HeroSection />
             <SkillsSection />
             <AgendaSection />

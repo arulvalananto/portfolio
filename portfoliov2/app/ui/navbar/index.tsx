@@ -6,7 +6,6 @@ import Image from 'next/image';
 import { VscPerson } from 'react-icons/vsc';
 import { CiMenuFries } from 'react-icons/ci';
 import { GrDocumentPdf } from 'react-icons/gr';
-import { CgFileDocument } from 'react-icons/cg';
 import { GoProjectSymlink } from 'react-icons/go';
 import { FaArrowRightLong } from 'react-icons/fa6';
 import { useRouter, usePathname } from 'next/navigation';
@@ -47,7 +46,7 @@ const Navbar = () => {
     console.log('pathname', pathname);
 
     return (
-        <div className="w-full h-full xl:w-[1280px] xl:max-w-[1280px] px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
+        <div className="w-full h-full xl:w-7xl xl:max-w-7xl px-5 py-4 xl:px-4 m-auto flex items-center justify-between">
             <Link href="/" className="w-10 h-10" title="Arul Valan Anto's Logo">
                 <Image
                     src="/logo.svg"
@@ -58,7 +57,7 @@ const Navbar = () => {
                     priority
                 />
             </Link>
-            <div className="hidden min-[500px]:flex items-center gap-10 lg:gap-[120px] xl:gap-[280px]">
+            <div className="hidden min-[500px]:flex items-center gap-10 lg:gap-30 xl:gap-70">
                 <div className="flex items-center gap-10 md:gap-16">
                     <Link
                         href="/about-me"

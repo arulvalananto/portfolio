@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 
 const AboutPage = () => (
   <main className={`${dancingScript.variable} pb-5 space-y-10`}>
-    <div className="w-full max-w-full xl:w-[1280px] xl:max-w-[1280px] m-auto select-none">
-      <div className="w-[165px] h-[50px]">
+    <div className="w-full max-w-full xl:w-7xl xl:max-w-7xl m-auto select-none">
+      <div className="w-41.25 h-12.5">
         <Image
           src="/about_hello.svg"
           width={0}
@@ -32,18 +32,18 @@ const AboutPage = () => (
         />
       </div>
     </div>
-    <div className="w-full max-w-full h-full xl:w-[1280px] xl:max-w-[1280px] xl:h-[737px] m-auto flex flex-col xl:flex-row gap-4 p-4 xl:p-0">
+    <div className="w-full max-w-full h-full xl:w-7xl xl:max-w-7xl xl:h-184.25 m-auto flex flex-col xl:flex-row gap-4 p-4 xl:p-0">
       <div className="flex-1 flex flex-col gap-5 order-2 xl:order-1">
         <section
           id="about"
-          className="w-full h-full xl:h-[220px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1 select-none transition duration-300"
+          className="w-full h-full xl:h-55 bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-3 order-1 select-none transition duration-300"
         >
           <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
             About
           </h3>
           <p>{bio}</p>
         </section>
-        <div className="w-full h-full xl:h-[170px] flex flex-col xl:flex-row items-center gap-5 order-3 xl:order-2 select-none">
+        <div className="w-full h-full xl:h-42.5 flex flex-col xl:flex-row items-center gap-5 order-3 xl:order-2 select-none">
           <section
             id="education"
             className="flex-1 w-full h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-1 order-2 xl:order-1 transition duration-300"
@@ -94,7 +94,7 @@ const AboutPage = () => (
         <div className="w-full h-full flex-1 flex flex-col xl:flex-row items-center gap-5 order-2 xl:order-3">
           <section
             id="skills"
-            className="flex-1 w-full xl:max-w-[472px] h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 select-none transition duration-300"
+            className="flex-1 w-full xl:max-w-118 h-full bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 select-none transition duration-300"
           >
             <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
               Skills
@@ -141,7 +141,7 @@ const AboutPage = () => (
           <div className="flex-1 w-full h-full text-white rounded-md flex flex-col gap-5">
             <section
               id="certificates"
-              className="w-full h-full xl:h-[92px] bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-2 order-2 xl:order-1 select-none transition duration-300"
+              className="w-full h-full xl:h-23 bg-portfolio-about-section text-white rounded-md p-4 xl:px-4 xl:py-2 space-y-2 order-2 xl:order-1 select-none transition duration-300"
             >
               <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
                 Certificates
@@ -196,7 +196,7 @@ const AboutPage = () => (
                   <a
                     key={index}
                     href={project.href}
-                    className="w-[75px] h-[75px] md:w-[224px] md:h-[224px] xl:w-[125px] xl:h-[125px]  bg-violet-500 border-2 border-black relative group transition duration-300 hover:scale-95"
+                    className="w-18.75 h-18.75 md:w-56 md:h-56 xl:w-31.25 xl:h-31.25 bg-violet-500 border-2 border-black relative group transition duration-300 hover:scale-95"
                     title={project.title}
                     target="_blank"
                     rel="noopener norefferer nofollow"
@@ -239,9 +239,9 @@ const AboutPage = () => (
       </div>
       <section
         id="profile"
-        className="w-full xl:w-[290px] xl:max-w-[290px] flex flex-col items-center gap-5 xl:gap-0  xl:justify-between order-1 xl:order-2"
+        className="w-full xl:w-72.5 xl:max-w-72.5 flex flex-col items-center gap-5 xl:gap-0  xl:justify-between order-1 xl:order-2"
       >
-        <div className="border-2 border-black rounded-md xl:w-full h-[316px] flex items-end justify-end bg-[#4B24B5] select-none relative">
+        <div className="border-2 border-black rounded-md xl:w-full h-79 flex items-end justify-end bg-[#4B24B5] select-none relative">
           <Image
             src="/about_profile.webp"
             alt="Arul Valan Anto's profile pic"
@@ -251,19 +251,19 @@ const AboutPage = () => (
           />
         </div>
         <div className="w-full flex flex-col sm:justify-center sm:flex-row xl:flex-col gap-5 transition duration-300">
-          <div className="bg-portfolio-yellowGreen w-full max-w-full sm:w-[300px] sm:max-w-[300px] xl:w-[290px] xl:max-w-[290px] h-[68px] border-2 border-black rounded-md flex items-center justify-between p-2 relative transition duration-300">
+          <div className="bg-portfolio-yellowGreen w-full max-w-full sm:w-75 sm:max-w-75 xl:w-72.5 xl:max-w-72.5 h-17 border-2 border-black rounded-md flex items-center justify-between p-2 relative transition duration-300">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
                 href={link.href}
                 title={link.title}
-                className={`w-10 h-10 rounded-full ${link.className} border-2 border-black flex items-center justify-center group transition duration-300 hover:translate-y-[1px]`}
+                className={`w-10 h-10 rounded-full ${link.className} border-2 border-black flex items-center justify-center group transition duration-300 hover:translate-y-px`}
                 target="_blank"
                 rel="noopener norefferer nofollow"
               >
                 <link.Icon
                   size={20}
-                  className="group-hover:w-[21px] group-hover:h-[21px]"
+                  className="group-hover:w-5.25 group-hover:h-5.25"
                   color="white"
                 />
               </a>
@@ -283,7 +283,7 @@ const AboutPage = () => (
           </div>
           <button
             type="button"
-            className="bg-black w-full max-w-full sm:w-[300px] sm:max-w-[300px] px-3 xl:px-0 xl:w-full xl:max-w-full h-[68px] rounded-md flex items-center justify-center gap-3 select-none transition duration-300 hover:-translate-y-[2px]"
+            className="bg-black w-full max-w-full sm:w-75 sm:max-w-75 px-3 xl:px-0 xl:w-full xl:max-w-full h-17 rounded-md flex items-center justify-center gap-3 select-none transition duration-300 hover:-translate-y-0.5"
           >
             <FcAdvertising size={32} />
             <span className="text-white text-base font-medium font-poppins">
@@ -291,13 +291,13 @@ const AboutPage = () => (
             </span>
           </button>
         </div>
-        <div className="w-full h-[212px] bg-portfolio-blue text-white relative border-2 border-black rounded-md p-2 pt-4 group hidden xl:block select-none transition duration-300">
+        <div className="w-full h-53 bg-portfolio-blue text-white relative border-2 border-black rounded-md p-2 pt-4 group hidden xl:block select-none transition duration-300">
           <Image
             src="/about_curly_arrow.svg"
             alt="Hire me arrow"
             width={60}
             height={60}
-            className="absolute -top-6 left-[135px] transition duration-300 group-hover:-translate-y-1"
+            className="absolute -top-6 left-33.75 transition duration-300 group-hover:-translate-y-1"
           />
           <p className="text-md font-normal font-dancingScript">
             Hire me If you&apos;d like

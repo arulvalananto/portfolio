@@ -5,7 +5,6 @@ import {
     League_Spartan,
     Poppins,
     Quicksand,
-    Slackside_One,
 } from 'next/font/google';
 
 export const inter = Inter({

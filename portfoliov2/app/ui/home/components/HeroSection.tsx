@@ -3,41 +3,43 @@ import Image from 'next/image';
 import ExternalLink from '../../external-link';
 import { calculateTotalExperience } from '@/app/lib/utils';
 
-const HeroSection = () => {
+const HeroSection: React.FC = () => {
     const started = new Date('2020-01-01');
     const totalExperience = calculateTotalExperience(started);
 
     return (
-        <div className="dashed-grid-paper w-full h-[250px] xs:h-[300px] sm:h-[400px] md:h-[500px] xl:h-[772px] border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
+        <div className="dashed-grid-paper w-full h-62.5 xs:h-[300px] sm:h-100 md:h-125 xl:h-193 border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">
             <h1 className="text-[8px] xs:text-xs sm:text-base md:text-2xl lg:text-3xl xl:text-[40px] font-bold flex flex-col gap-1 md:gap-3 items-center relative">
-                <span className='font-light'>Hi, I’m Arul Valan Anto</span>
-                <span className='text-xs xs:text-base sm:text-3xl lg:text-5xl'>Full Stack Developer - based in India</span>
+                <span className="font-light">Hi, I’m Arul Valan Anto</span>
+                <span className="text-xs xs:text-base sm:text-3xl lg:text-5xl">
+                    Full Stack Developer - based in India
+                </span>
                 <Image
                     src="/home_hero_title_expression.svg"
                     alt="stars"
                     width={32}
                     height={15}
-                    className="animate-wiggle absolute top-0 hidden sm:block -right-10 xl:-top-1 xl:right-[140px]"
+                    className="animate-wiggle absolute top-0 hidden sm:block -right-10 xl:-top-1 xl:right-35"
                 />
                 <Image
                     src="/home_hero_title_expression.svg"
                     alt="stars"
                     width={16}
                     height={7}
-                    className="animate-wiggle block sm:hidden absolute top-0 -right-5 xl:-top-1 xl:right-[140px]"
+                    className="animate-wiggle block sm:hidden absolute top-0 -right-5 xl:-top-1 xl:right-35"
                 />
             </h1>
             <div>
-                <div className="hidden xl:block absolute bottom-0 left-0 w-0 h-0 border-l-[640px] border-r-[640px] border-l-transparent border-r-transparent border-b-[130px] border-b-black">
-                    <div className="w-[450px] h-[1px] -translate-x-1/2 bg-black opacity-50" />
-                    <div className="w-[1px] h-[225px] -translate-x-1/2 -translate-y-[100%] bg-black opacity-50" />
-                    <div className="w-[1px] h-[225px] -translate-x-1/2 -translate-y-[200%] origin-bottom rotate-45 bg-black opacity-50" />
-                    <div className="w-[1px] h-[225px] -translate-x-1/2 -translate-y-[300%] origin-bottom -rotate-45 bg-black opacity-50" />
+                <div className="hidden xl:block absolute bottom-0 left-0 w-0 h-0 border-l-640 border-r-640 border-l-transparent border-r-transparent border-b-130 border-b-black">
+                    <div className="w-112.5 h-px -translate-x-1/2 bg-black opacity-50" />
+                    <div className="w-px h-56.25 -translate-x-1/2 -translate-y-full bg-black opacity-50" />
+                    <div className="w-px h-56.25 -translate-x-1/2 translate-y-[-200%] origin-bottom rotate-45 bg-black opacity-50" />
+                    <div className="w-px h-56.25 -translate-x-1/2 translate-y-[-300%] origin-bottom -rotate-45 bg-black opacity-50" />
                 </div>
                 <div className="hidden xl:block">
                     <ExternalLink
                         href="https://www.linkedin.com/in/arulvalanantos"
-                        className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-[295px] left-1/2 -translate-x-48 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
+                        className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-73.75 left-1/2 -translate-x-48 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
                         title="LinkedIn"
                     />
                     <ExternalLink
@@ -47,16 +49,16 @@ const HeroSection = () => {
                     />
                     <ExternalLink
                         href="https://medium.com/@arulvalananto"
-                        className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-[295px] left-1/2 translate-x-32 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
+                        className="font-DMSans text-base font-normal text-black opacity-50 absolute bottom-73.75 left-1/2 translate-x-32 hover:underline underline-offset-4 hover:opacity-100 transition duration-300"
                         title="Medium"
                     />
-                    <p className="absolute bottom-[110px] left-1/2 -translate-x-72 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
+                    <p className="absolute bottom-27.5 left-1/2 -translate-x-72 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
                         <span className="font-bold text-2xl">16+</span>
                         <span className="font-normal text-xs opacity-50">
                             Projects
                         </span>
                     </p>
-                    <p className="absolute bottom-[100px] left-1/2 translate-x-60 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
+                    <p className="absolute bottom-25 left-1/2 translate-x-60 flex flex-col font-DMSans items-center transition duration-300 hover:scale-110">
                         <span className="font-bold text-2xl">
                             {totalExperience}
                         </span>
@@ -72,7 +74,7 @@ const HeroSection = () => {
                     <a
                         download
                         href="/Arul_Valan_Anto_Resume.pdf"
-                        className="hidden xl:flex transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-[80px] h-[80px] text-center rounded-full items-center justify-center bg-[#22E183] border-2 border-black uppercase font-normal text-[10px] -rotate-[15deg] hover:scale-95"
+                        className="hidden xl:flex transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-20 h-20 text-center rounded-full items-center justify-center bg-[#22E183] border-2 border-black uppercase font-normal text-[10px] rotate-[-15deg] hover:scale-95"
                     >
                         Download Resume
                     </a>

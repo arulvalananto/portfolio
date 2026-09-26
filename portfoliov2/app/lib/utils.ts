@@ -7,7 +7,7 @@ export function cn(...inputs: ClassValue[]) {
 
 export function calculateTotalExperience(
     startDate: Date,
-    currentDate = new Date()
+    currentDate = new Date(),
 ) {
     const started = new Date(startDate);
     const today = new Date(currentDate);

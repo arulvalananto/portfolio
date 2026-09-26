@@ -36,7 +36,7 @@ const LandGeniusImageGallery = ({ project }: { project: Project }) => {
             <div
                 className={`${project.bgImageLayout} rounded-lg order-4 lg:order-3 col-span-12 lg:col-span-6 sm:row-span-2 row-span-1 flex items-center justify-center group`}
             >
-                <div className="w-[600px] h-[300px] flex items-center justify-center animate-sizeup-slow z-50">
+                <div className="w-150 h-75 flex items-center justify-center animate-sizeup-slow z-50">
                     <video
                         preload="none"
                         src="/landgenius_project_overview_demo.webm"

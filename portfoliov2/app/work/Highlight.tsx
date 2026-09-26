@@ -2,20 +2,20 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const Highlight = () => {
+const Highlight: React.FC = () => {
     return (
         <Link
             href="/work/highlight"
             className="custom-cursor-view-more col-span-12 xl:col-span-5 row-span-3 md:row-span-6 xl:row-span-5 order-1 xl:order-2 bg-[#7412D7] rounded-2xl border-4 border-black p-3 space-y-3 relative overflow-hidden group"
         >
-            <div className="w-[640px] sm:w-[700px] md:w-[800px] lg:w-[1000px] xl:w-[500px] h-72 md:h-96 xl:h-[500px] absolute bg-[#7412D7] -bottom-[100px] md:-bottom-[120px] md:-right-[300px] lg:-right-[200px] xl:-bottom-[350px] xl:-right-36 animate-loadIn-iframe motion-reduce:animate-none  transition-all duration-500 group-hover:-bottom-[80px] md:group-hover:-bottom-[100px]  xl:group-hover:-bottom-[320px] select-none rounded-xl">
+            <div className="w-160 sm:w-175 md:w-200 lg:w-250 xl:w-125 h-72 md:h-96 xl:h-125 absolute bg-[#7412D7] -bottom-25 md:-bottom-30 md:-right-75 lg:-right-50 xl:-bottom-87.5 xl:-right-36 animate-loadIn-iframe motion-reduce:animate-none  transition-all duration-500 group-hover:-bottom-20 md:group-hover:-bottom-25  xl:group-hover:-bottom-80 select-none rounded-xl">
                 <iframe
                     src="https://highlightt.web.app/embed/zD2w4KaJrTju1iZhUqPN?p=0&bg=7412D7&f=12&ed=allow-me"
-                    title="Hightlight: welcome_to_my_portfolio.js"
+                    title="Highlight: welcome_to_my_portfolio.js"
                     width="100%"
                     height="100%"
                     allow="clipboard-write"
-                    className="rounded-[12px] bg-[#7412D7]"
+                    className="rounded-xl bg-[#7412D7]"
                     loading="lazy"
                 />
             </div>
@@ -28,7 +28,7 @@ const Highlight = () => {
                     className="animate-shaker-reverse-slow"
                 />
             </div>
-            <div className="hidden absolute bottom-[40px] animate-loadIn motion-reduce:animate-none md:flex items-center justify-center">
+            <div className="hidden absolute bottom-10 animate-loadIn motion-reduce:animate-none md:flex items-center justify-center">
                 <Image
                     src="/projects_highlight_star1.svg"
                     alt="Highlight Project"
@@ -37,7 +37,7 @@ const Highlight = () => {
                     className="animate-shaker"
                 />
             </div>
-            <div className="hidden absolute bottom-[15px] left-[75px] animate-loadIn-slow motion-reduce:animate-none md:flex items-center justify-center">
+            <div className="hidden absolute bottom-3.75 left-18.75 animate-loadIn-slow motion-reduce:animate-none md:flex items-center justify-center">
                 <Image
                     src="/projects_highlight_star2.svg"
                     alt="Highlight Project"
