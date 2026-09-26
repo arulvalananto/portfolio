@@ -6,6 +6,8 @@
 }
 
 @theme {
+    --color-ink: #000000;
+    --color-surface-default: #FFFFFF;
     --color-subheading: #747474;
     --color-portfolio-blue: #006FC0;
     --color-portfolio-yellowGreen: #EEFF7C;
@@ -57,6 +59,48 @@
     --color-layout3: #F5EEE8;
     --color-layout4: #F0EBDA;
     --color-layout5: #F8EBD4;
+    --color-provider-bento: #768CFF;
+    --color-provider-buy-me-coffee: #FFDD00;
+    --color-action-bar-surface: #FAFAFA;
+    --color-tooltip-surface: #000000;
+    --color-tooltip-text: #FFFFFF;
+    --color-home-cta: #22E183;
+    --color-work-card-airdeck: #6C56F9;
+    --color-work-card-annals: #0F172A;
+    --color-work-card-crawler-man: #FFCB3B;
+    --color-work-card-dressed-to-kill: #FFEFD6;
+    --color-work-card-dressed-to-kill-accent: #F2B950;
+    --color-work-card-framewise: #403E4E;
+    --color-work-card-future-reads: #F0ABFC;
+    --color-work-card-highlight: #7412D7;
+    --color-work-card-landgenius: #A5B4FC;
+    --color-work-card-scafffolder: #B6A1DC;
+    --color-work-card-synthup: #2563EB;
+    --color-work-card-vidable: #77C686;
+    --color-work-filler-orange: #EC753A;
+    --color-work-filler-purple: #6842EF;
+    --color-work-filler-pink: #F1ADE2;
+    --color-work-filler-blue: #5BB1EC;
+    --color-work-card-framewise-hover-border: #C4FF59;
+    --color-gallery-landgenius-dark: #3E464E;
+    --color-gallery-landgenius-accent: #5155FF;
+    --color-gallery-vidable-dark: #2B2B2B;
+    --color-gallery-vidable-accent: #F0712A;
+    --color-about-secret-surface: #4B24B5;
+    --color-about-skill-border: #F0F0F0;
+    --color-about-cta: #C2FD00;
+    --color-map-marker: #679BFF;
+    --color-external-link: #0000FF;
+    --color-border-subtle: rgb(0 0 0 / 10%);
+    --color-grid-paper-line-subtle: rgb(0 0 0 / 5%);
+    --color-grid-paper-line-faint: rgb(0 0 0 / 4%);
+    --color-grid-layout-line: rgb(171 171 171 / 10%);
+    --color-dashed-grid-line: rgb(171 171 171 / 50%);
+    --color-dashed-grid-line-hover: rgb(171 171 171);
+    --color-grid-dot-ink: rgb(33 33 33);
+    --color-synthup-glow-yellow: #FFCA43;
+    --color-synthup-glow-orange: #FF603D;
+    --color-synthup-glow-pink: #FC4DD5;
 }
 
 body {
@@ -141,45 +185,43 @@ ul li::before {
 .grid-paper:hover {
     background: linear-gradient(
             -90deg,
-            rgba(0, 0, 0, 0.05) 1px,
+            var(--color-grid-paper-line-subtle) 1px,
             transparent 1px
         ),
-        linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
-        linear-gradient(-90deg, rgba(0, 0, 0, 0.04) 1px, transparent 1px),
-        linear-gradient(rgba(0, 0, 0, 0.04) 1px, transparent 1px),
+        linear-gradient(var(--color-grid-paper-line-subtle) 1px, transparent 1px),
+        linear-gradient(-90deg, var(--color-grid-paper-line-faint) 1px, transparent 1px),
+        linear-gradient(var(--color-grid-paper-line-faint) 1px, transparent 1px),
         linear-gradient(
             transparent 3px,
-            #6c56f9 3px,
-            #6c56f9 78px,
+            var(--color-work-card-airdeck) 3px,
+            var(--color-work-card-airdeck) 78px,
             transparent 78px
         ),
         linear-gradient(-90deg, black 1px, transparent 1px),
         linear-gradient(
             -90deg,
             transparent 3px,
-            #6c56f9 3px,
-            #6c56f9 78px,
+            var(--color-work-card-airdeck) 3px,
+            var(--color-work-card-airdeck) 78px,
             transparent 78px
         ),
-        linear-gradient(black 1px, transparent 1px), #6c56f9;
+        linear-gradient(black 1px, transparent 1px), var(--color-work-card-airdeck);
     background-size: 4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px,
         80px 80px, 80px 80px, 80px 80px;
 }
 
 .grid-bg-layout {
-    background: #eeff7c;
+    background: var(--color-portfolio-yellowGreen);
     background-image: linear-gradient(
-            rgba(171, 171, 171, 0.1) 0.1em,
+            var(--color-grid-layout-line) 0.1em,
             transparent 0.1em
         ),
         linear-gradient(
             90deg,
-            rgba(171, 171, 171, 0.1) 0.1em,
+            var(--color-grid-layout-line) 0.1em,
             transparent 0.1em
         );
     background-size: 3em 3em;
-    /*background: conic-gradient(from 90deg at 1px 1px, #0000 90deg, #ababab 0) 0 0/50px
-    50px #eeff7c;*/
 }
 
 .dashed-grid-paper {
@@ -187,8 +229,8 @@ ul li::before {
     --grid-strength: 1px;
     --grid-dash: 10px;
     --grid-gap: 5px;
-    --grid-color: rgba(171, 171, 171, 0.5);
-    --paper-color: #eeff7c;
+    --grid-color: var(--color-dashed-grid-line);
+    --paper-color: var(--color-portfolio-yellowGreen);
 
     background-color: var(--paper-color);
     background-size: var(--grid-dash) var(--grid-dash),
@@ -217,12 +259,12 @@ ul li::before {
 }
 
 .dashed-grid-paper:hover {
-    --grid-color: rgba(171, 171, 171, 1);
+    --grid-color: var(--color-dashed-grid-line-hover);
 }
 
 .grid-dots-yellow:hover {
-    background: radial-gradient(rgb(33, 33, 33) 10%, transparent 0px) 25px 25px /
-        10px 10px #f8ebd4;
+    background: radial-gradient(var(--color-grid-dot-ink) 10%, transparent 0px) 25px 25px /
+        10px 10px var(--color-layout5);
 }
 
 .typewriter-container:hover .typewriting-effect {

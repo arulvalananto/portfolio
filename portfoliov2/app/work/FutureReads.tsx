@@ -7,7 +7,7 @@ const FutureReads: React.FC = () => {
     return (
         <Link
             href={constants.work.cards.futureReads.href}
-            className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-4 row-span-3 md:row-span-5 xl:row-span-5 order-2 xl:order-3 bg-[#F0ABFC] rounded-2xl border-4 border-black relative group select-none overflow-hidden flex flex-col gap-2 md:gap-6 p-5"
+            className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-4 row-span-3 md:row-span-5 xl:row-span-5 order-2 xl:order-3 bg-work-card-future-reads rounded-2xl border-4 border-black relative group select-none overflow-hidden flex flex-col gap-2 md:gap-6 p-5"
         >
             <Image
                 src={constants.work.cards.futureReads.logo.src}

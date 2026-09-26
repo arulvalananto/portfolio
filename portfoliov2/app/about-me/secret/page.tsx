@@ -281,7 +281,7 @@ const AboutPage = () => (
                 id="profile"
                 className="w-full xl:w-72.5 xl:max-w-72.5 flex flex-col items-center gap-5 xl:gap-0  xl:justify-between order-1 xl:order-2"
             >
-                <div className="border-2 border-black rounded-md xl:w-full h-79 flex items-end justify-end bg-[#4B24B5] select-none relative">
+                <div className="border-2 border-black rounded-md xl:w-full h-79 flex items-end justify-end bg-about-secret-surface select-none relative">
                     <Image
                         src={constants.aboutMeSecret.profileImage.src}
                         alt={constants.aboutMeSecret.profileImage.alt}

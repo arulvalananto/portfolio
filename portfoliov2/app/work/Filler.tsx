@@ -4,8 +4,8 @@ import { portfolio as constants } from '../data';
 
 const Filler: React.FC = () => {
     return (
-        <div className="bg-[#EC753A] hidden xl:block w-50 h-full min-h-46.75 max-h-46.75 rounded-2xl border-4 border-black p-3 relative select-none group cursor-pointer">
-            <div className="w-25 h-25 bg-[#6842EF] border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50 group-hover:scale-105 transition duration-200">
+        <div className="bg-work-filler-orange hidden xl:block w-50 h-full min-h-46.75 max-h-46.75 rounded-2xl border-4 border-black p-3 relative select-none group cursor-pointer">
+            <div className="w-25 h-25 bg-work-filler-purple border-4 border-black rounded-full absolute top-1/2 -translate-y-1/2 z-50 group-hover:scale-105 transition duration-200">
                 <div className="animate-sizeup-slow">
                     <Image
                         src={constants.work.cards.filler[0].src}
@@ -16,7 +16,7 @@ const Filler: React.FC = () => {
                     />
                 </div>
             </div>
-            <div className="w-18.75 h-18.75 bg-[#F1ADE2] border-4 border-black rounded-full absolute top-17.5 left-22.5 -translate-y-1/2 z-40 group-hover:scale-105 transition duration-200">
+            <div className="w-18.75 h-18.75 bg-work-filler-pink border-4 border-black rounded-full absolute top-17.5 left-22.5 -translate-y-1/2 z-40 group-hover:scale-105 transition duration-200">
                 <div className="animate-sizeup-moderate">
                     <Image
                         src={constants.work.cards.filler[1].src}
@@ -27,7 +27,7 @@ const Filler: React.FC = () => {
                     />
                 </div>
             </div>
-            <div className="w-12.5 h-12.5 bg-[#5BB1EC] border-4 border-black rounded-full absolute top-25 left-26.5 z-30 flex items-center justify-center group-hover:scale-105 transition duration-200">
+            <div className="w-12.5 h-12.5 bg-work-filler-blue border-4 border-black rounded-full absolute top-25 left-26.5 z-30 flex items-center justify-center group-hover:scale-105 transition duration-200">
                 <div className="animate-sizeup-fast">
                     <Image
                         src={constants.work.cards.filler[2].src}

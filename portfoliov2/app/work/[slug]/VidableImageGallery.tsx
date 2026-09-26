@@ -6,7 +6,7 @@ const VidableImageGallery: React.FC<{ project: Project }> = ({ project }) => {
     return (
         <>
             <div
-                className={`${project.bgImageLayout} rounded-lg col-span-12 md:col-span-6 lg:col-span-3 row-span-1 bg-[#2B2B2B] bg-[url('/vidable_overview_1.svg')] bg-cover bg-center`}
+                className={`${project.bgImageLayout} rounded-lg col-span-12 md:col-span-6 lg:col-span-3 row-span-1 bg-gallery-vidable-dark bg-[url('/vidable_overview_1.svg')] bg-cover bg-center`}
             ></div>
             <div
                 className={`${project.bgImageLayout} rounded-lg col-span-12 md:col-span-6 lg:col-span-3 row-span-1 sm:row-span-2 bg-[url('/vidable_overview_2_bg.svg')] bg-cover bg-center flex items-center justify-center group`}
@@ -41,10 +41,10 @@ const VidableImageGallery: React.FC<{ project: Project }> = ({ project }) => {
                 />
             </div>
             <div
-                className={`${project.bgImageLayout} rounded-lg col-span-12 md:col-span-6 lg:col-span-3 row-span-1 bg-[#2B2B2B] bg-[url('/vidable_overview_5.svg')] bg-cover bg-center`}
+                className={`${project.bgImageLayout} rounded-lg col-span-12 md:col-span-6 lg:col-span-3 row-span-1 bg-gallery-vidable-dark bg-[url('/vidable_overview_5.svg')] bg-cover bg-center`}
             ></div>
             <div
-                className={`${project.bgImageLayout} rounded-lg col-span-12 lg:col-span-6 row-span-1 bg-[#F0712A] flex items-center justify-center`}
+                className={`${project.bgImageLayout} rounded-lg col-span-12 lg:col-span-6 row-span-1 bg-gallery-vidable-accent flex items-center justify-center`}
             >
                 <Image
                     src="/vidable_overview_6.webp"

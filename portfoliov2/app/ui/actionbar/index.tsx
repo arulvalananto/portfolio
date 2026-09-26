@@ -12,7 +12,7 @@ const ActionBar = () => {
 
     return (
         <div className="fixed top-5 left-1/2 -translate-x-1/2 z-50 group">
-            <div className="bg-[#fafafa] shadow-sm w-full h-full rounded-md flex flex-row items-center justify-around gap-10 px-4 py-2 border-gray-200 border-[0.5px] group-hover:border-gray-400 group-hover:shadow-md transform duration-500 ease-in-out">
+            <div className="bg-action-bar-surface shadow-sm w-full h-full rounded-md flex flex-row items-center justify-around gap-10 px-4 py-2 border-gray-200 border-[0.5px] group-hover:border-gray-400 group-hover:shadow-md transform duration-500 ease-in-out">
                 <Link
                     href="/"
                     className={`${
@@ -24,8 +24,8 @@ const ActionBar = () => {
                         slotProps={{
                             tooltip: {
                                 sx: {
-                                    bgcolor: '#000',
-                                    color: '#fff',
+                                    bgcolor: 'var(--color-tooltip-surface)',
+                                    color: 'var(--color-tooltip-text)',
                                     fontSize: '1rem', // Tooltip font size
                                 },
                             },
@@ -53,8 +53,8 @@ const ActionBar = () => {
                         slotProps={{
                             tooltip: {
                                 sx: {
-                                    bgcolor: '#000',
-                                    color: '#fff',
+                                    bgcolor: 'var(--color-tooltip-surface)',
+                                    color: 'var(--color-tooltip-text)',
                                     fontSize: '1rem', // Tooltip font size
                                 },
                             },
@@ -82,8 +82,8 @@ const ActionBar = () => {
                         slotProps={{
                             tooltip: {
                                 sx: {
-                                    bgcolor: '#000',
-                                    color: '#fff',
+                                    bgcolor: 'var(--color-tooltip-surface)',
+                                    color: 'var(--color-tooltip-text)',
                                     fontSize: '1rem', // Tooltip font size
                                 },
                             },
@@ -108,8 +108,8 @@ const ActionBar = () => {
                         slotProps={{
                             tooltip: {
                                 sx: {
-                                    bgcolor: '#000',
-                                    color: '#fff',
+                                    bgcolor: 'var(--color-tooltip-surface)',
+                                    color: 'var(--color-tooltip-text)',
                                     fontSize: '1rem', // Tooltip font size
                                 },
                             },

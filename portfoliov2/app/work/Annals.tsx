@@ -7,7 +7,7 @@ const Annals: React.FC = () => {
     return (
         <Link
             href={constants.work.cards.annals.href}
-            className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-4 row-span-2 md:row-span-4 xl:row-span-6 bg-[#0F172A] rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-10 xl:gap-4.5 overflow-hidden group select-none"
+            className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-4 row-span-2 md:row-span-4 xl:row-span-6 bg-work-card-annals rounded-2xl border-4 border-black p-3 flex flex-col items-center gap-10 xl:gap-4.5 overflow-hidden group select-none"
         >
             <Image
                 src={constants.work.cards.annals.logo.src}

@@ -3,7 +3,7 @@ const content = {
         language: 'en',
         metadataTitle: 'Arul Valan Anto :: Software Engineer',
         meta: {
-            themeColor: '#ffffff',
+            themeColor: 'white',
             robots: 'index, follow',
             author: 'Arul Valan Anto S',
             type: 'website',

@@ -7,7 +7,7 @@ const LandGenius: React.FC = () => {
     return (
         <Link
             href={constants.work.cards.landGenius.href}
-            className="custom-cursor-view-more relative group col-span-2 xl:col-span-1 row-span-4 md:row-span-6 xl:row-span-12 bg-[#A5B4FC] rounded-2xl border-4 border-black p-5 space-y-6 lg:space-y-12 select-none overflow-hidden transition duration-1000 ease-out hover:bg-size-[40px_40px] hover:bg-minus-one hover:bg-dot"
+            className="custom-cursor-view-more relative group col-span-2 xl:col-span-1 row-span-4 md:row-span-6 xl:row-span-12 bg-work-card-landgenius rounded-2xl border-4 border-black p-5 space-y-6 lg:space-y-12 select-none overflow-hidden transition duration-1000 ease-out hover:bg-size-[40px_40px] hover:bg-minus-one hover:bg-dot"
         >
             <Image
                 src={constants.work.cards.landGenius.logo.src}

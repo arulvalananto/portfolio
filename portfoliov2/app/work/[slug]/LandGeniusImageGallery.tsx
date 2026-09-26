@@ -7,7 +7,7 @@ const LandGeniusImageGallery = ({ project }: { project: Project }) => {
     return (
         <>
             <div
-                className={`rounded-lg col-span-12 md:col-span-6 lg:col-span-3 row-span-1 bg-[#3E464E] flex items-end justify-center group overflow-hidden`}
+                className={`rounded-lg col-span-12 md:col-span-6 lg:col-span-3 row-span-1 bg-gallery-landgenius-dark flex items-end justify-center group overflow-hidden`}
             >
                 <div className="w-full h-full flex items-end justify-center">
                     <video
@@ -51,7 +51,7 @@ const LandGeniusImageGallery = ({ project }: { project: Project }) => {
                 </div>
             </div>
             <div
-                className={`rounded-lg order-3 lg:order-4 col-span-12 lg:col-span-6 row-span-1 bg-[#5155FF] flex items-center justify-center group`}
+                className={`rounded-lg order-3 lg:order-4 col-span-12 lg:col-span-6 row-span-1 bg-gallery-landgenius-accent flex items-center justify-center group`}
             >
                 <Image
                     src="/landgenius_project_overview_flow.gif"

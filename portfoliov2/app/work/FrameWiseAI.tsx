@@ -7,7 +7,7 @@ const FrameWiseAI: React.FC = () => {
     return (
         <Link
             href={constants.work.cards.frameWise.href}
-            className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-3 row-span-2 md:row-span-4 xl:row-span-6 bg-[#403E4E] rounded-2xl border-4 border-black p-3 flex flex-col gap-4 md:gap-0 md:justify-between overflow-hidden select-none group"
+            className="custom-cursor-view-more col-span-12 md:col-span-6 xl:col-span-3 row-span-2 md:row-span-4 xl:row-span-6 bg-work-card-framewise rounded-2xl border-4 border-black p-3 flex flex-col gap-4 md:gap-0 md:justify-between overflow-hidden select-none group"
         >
             <Image
                 src={constants.work.cards.frameWise.logo.src}
@@ -25,7 +25,7 @@ const FrameWiseAI: React.FC = () => {
                     alt={constants.work.cards.frameWise.image.alt}
                     width={1600}
                     height={900}
-                    className="rounded-md border-none transition-all duration-300 lg:scale-100 xl:scale-[1.4] lg:translate-y-10 lg:group-hover:scale-100 lg:group-hover:translate-y-0 lg:group-hover:border-[#C4FF59] lg:group-hover:border-4"
+                    className="rounded-md border-none transition-all duration-300 lg:scale-100 xl:scale-[1.4] lg:translate-y-10 lg:group-hover:scale-100 lg:group-hover:translate-y-0 lg:group-hover:border-work-card-framewise-hover-border lg:group-hover:border-4"
                 />
             </div>
         </Link>

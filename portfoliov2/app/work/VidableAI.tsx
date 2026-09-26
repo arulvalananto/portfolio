@@ -7,7 +7,7 @@ const VidableAI: React.FC = () => {
     return (
         <Link
             href={constants.work.cards.vidable.href}
-            className="custom-cursor-view-more flex-1 w-full h-full xl:max-h-100 bg-[#77C686] rounded-2xl border-4 border-black p-3 flex flex-col lg:flex-row lg:items-start relative select-none overflow-hidden group"
+            className="custom-cursor-view-more flex-1 w-full h-full xl:max-h-100 bg-work-card-vidable rounded-2xl border-4 border-black p-3 flex flex-col lg:flex-row lg:items-start relative select-none overflow-hidden group"
         >
             <div className="flex flex-col gap-3 lg:gap-5 lg:pt-10">
                 <Image

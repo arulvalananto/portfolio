@@ -7,7 +7,7 @@ const DressedTpKill = () => {
     return (
         <Link
             href={constants.work.cards.dressedToKill.href}
-            className="custom-cursor-view-more bg-[#FFEFD6] flex-1 w-full h-full xl:min-h-46.75 xl:max-h-46.75 rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden relative"
+            className="custom-cursor-view-more bg-work-card-dressed-to-kill flex-1 w-full h-full xl:min-h-46.75 xl:max-h-46.75 rounded-2xl border-4 border-black p-3 flex items-center justify-center group overflow-hidden relative"
         >
             <div className="animate-sizeup-moderate z-50 flex flex-col items-center">
                 <Image
@@ -22,7 +22,7 @@ const DressedTpKill = () => {
                 </p>
             </div>
             <div className="absolute top-50% left-50% animate-sizeup-slow">
-                <div className="bg-[#F2B950] w-10 h-10 rounded-full z-10 group-hover:opacity-100 group-hover:scale-[40] transition duration-500"></div>
+                <div className="bg-work-card-dressed-to-kill-accent w-10 h-10 rounded-full z-10 group-hover:opacity-100 group-hover:scale-[40] transition duration-500"></div>
             </div>
             <div className="absolute top-0 left-0 z-50 group-hover:animate-wiggle">
                 <Image
