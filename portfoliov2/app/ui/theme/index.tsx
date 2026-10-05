@@ -12,10 +12,8 @@ const ThemeContext = createContext<ThemeContextValue | null>(null)
 const getSystemTheme = (): Theme =>
     window.matchMedia?.('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
 
-const getInitialTheme = (): Theme => {
-    if (typeof document === 'undefined') return 'light'
-    return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'
-}
+const getDocumentTheme = (): Theme =>
+    document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light'
 
 const applyTheme = (theme: Theme) => {
     document.documentElement.dataset.theme = theme
@@ -26,16 +24,20 @@ const applyTheme = (theme: Theme) => {
 }
 
 export const ThemeProvider = ({ children }: { children: ReactNode }) => {
-    const [theme, setTheme] = useState<Theme>(getInitialTheme)
+    const [theme, setTheme] = useState<Theme>('light')
 
     useEffect(() => {
         const storedTheme = window.localStorage.getItem(STORAGE_KEY) as Theme | null
         const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+        const syncThemeState = () => queueMicrotask(() => setTheme(getDocumentTheme()))
 
         if (storedTheme === 'light' || storedTheme === 'dark') {
             applyTheme(storedTheme)
+            syncThemeState()
             return
         }
+
+        syncThemeState()
 
         const syncSystemTheme = () => {
             const savedTheme = window.localStorage.getItem(STORAGE_KEY)

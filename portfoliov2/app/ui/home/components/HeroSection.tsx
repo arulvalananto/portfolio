@@ -21,6 +21,7 @@ const HeroSection: React.FC = () => {
                     alt={constants.ui.home.hero.expression.alt}
                     width={32}
                     height={16}
+                    loading="eager"
                     className="animate-wiggle absolute top-0 hidden sm:block -right-10 xl:-top-1 xl:right-35"
                 />
                 <Image
@@ -28,6 +29,7 @@ const HeroSection: React.FC = () => {
                     alt={constants.ui.home.hero.expression.alt}
                     width={16}
                     height={8}
+                    loading="eager"
                     className="animate-wiggle block sm:hidden absolute top-0 -right-5 xl:-top-1 xl:right-35"
                 />
             </h1>

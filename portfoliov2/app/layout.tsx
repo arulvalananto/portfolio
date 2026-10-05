@@ -30,7 +30,7 @@ export default function RootLayout({
                 <ThemeScript />
                 <MetaTag />
             </head>
-            <body>
+            <body suppressHydrationWarning>
                 <ThemeProvider>
                     <ActionBar />
                     <ThemeToggle />
