@@ -9,6 +9,7 @@ import ThemeScript from './ui/theme/script'
 import { portfolio as constants } from './data'
 import { ThemeProvider, ThemeToggle } from './ui/theme'
 import { dmSans, poppins, quickSand } from './lib/fonts'
+import PortfolioClickAnalytics from './ui/analytics/PortfolioClickAnalytics'
 
 export const metadata: Metadata = {
     title: constants.site.metadataTitle
@@ -33,6 +34,7 @@ export default function RootLayout({
                 <ThemeProvider>
                     <ActionBar />
                     <ThemeToggle />
+                    <PortfolioClickAnalytics />
                     <div className="h-28 xs:h-20"></div>
                     {children}
                     <SpeedInsights />

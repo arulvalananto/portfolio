@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import posthog from 'posthog-js'
 import Marquee from 'react-fast-marquee'
 import { ImQuotesLeft } from 'react-icons/im'
 import { IoMailOutline } from 'react-icons/io5'
@@ -17,6 +18,10 @@ const AboutPage = () => {
     const [showMore, setShowMore] = useState(false)
 
     const handleShowMore = () => {
+        if (!showMore) {
+            posthog.capture('about_details_expanded')
+        }
+
         setShowMore(!showMore)
     }
 

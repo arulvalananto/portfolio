@@ -3,6 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import posthog from 'posthog-js'
 import { VscPerson } from 'react-icons/vsc'
 import { CiMenuFries } from 'react-icons/ci'
 import { GrDocumentPdf } from 'react-icons/gr'
@@ -20,10 +21,12 @@ const Navbar = () => {
     const pathname = usePathname()
 
     const onMailTo = () => {
+        posthog.capture('contact_email_opened', { placement: pathname })
         window.location.href = 'mailto:arulvalananto@gmail.com'
     }
 
     const onDownloadResume = () => {
+        posthog.capture('resume_downloaded', { placement: pathname })
         const downloadLink = document.createElement('a')
         downloadLink.href = '/Arul_Valan_Anto_Resume.pdf'
         downloadLink.download = 'Arul_Valan_Anto_Resume.pdf'
