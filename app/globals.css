@@ -101,6 +101,8 @@
   --color-work-card-synthup: #2563eb;
   --color-work-card-vidable: #77c686;
   --color-work-card-looksuite: #0f766e;
+  --color-looksuite-preview-deep: #063f3b;
+  --color-looksuite-preview-accent: #a7f3d0;
   --color-work-card-auggy: #db2777;
   --color-work-card-stadium-rover: #b45309;
   --color-work-card-seedlinked: #65a30d;
@@ -110,6 +112,13 @@
   --color-work-card-acat: #e11d48;
   --color-work-card-gts-agent-assist: #7c3aed;
   --color-work-card-jojopay: #ea580c;
+  --color-jojopay-preview-surface: #e7f4f7;
+  --color-jojopay-preview-ink: #172033;
+  --color-jojopay-preview-muted: #718096;
+  --color-jojopay-preview-line: #dbe8ed;
+  --color-jojopay-preview-mint: #20a887;
+  --color-jojopay-preview-peach: #ed8b67;
+  --color-jojopay-preview-lilac: #8b78d7;
   --color-work-card-ticketezy: #0e7490;
   --color-work-filler-orange: #ec753a;
   --color-work-filler-purple: #6842ef;
@@ -295,23 +304,6 @@ body * {
 ul {
   list-style: none;
   padding-left: 0;
-}
-
-ul li {
-  padding-left: 1.5em;
-  margin-bottom: 0.5em;
-  position: relative;
-}
-
-ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 6px;
-  width: 1em;
-  height: 1em;
-  background-repeat: no-repeat;
-  background-image: url("../public/stars.svg");
 }
 
 .fade-in-5s {

@@ -32,6 +32,11 @@ export type Skill = {
 
 export type ProjectLink = { link: string; title: string };
 
+export type ProjectAchievement = {
+  title?: string;
+  description: string;
+};
+
 export type HomeProject = {
   name: string;
   className: string;
@@ -46,6 +51,7 @@ export type Project = {
   timeline: { from: string; to: string; isPresent: boolean };
   description: string;
   context: string;
+  achievements?: ProjectAchievement[];
   links: {
     website?: ProjectLink;
     application?: ProjectLink;

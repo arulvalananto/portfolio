@@ -26,9 +26,9 @@ const WorkOverview: React.FC<{ params: Promise<{ slug: string }> }> = ({
     <div
       className={`w-full h-full py-10 md:pt-20 md:pb-10 ${inter.variable} overflow-x-hidden`}
     >
-      <div className="w-full lg:w-200 lg:max-w-200 m-auto px-5 pb-5 lg:px-0">
+      <div className="w-full lg:w-225 lg:max-w-225 m-auto flex flex-col gap-8 font-inter px-5 lg:px-0 h-full mb-3">
         <button
-          className="theme-elevated px-2 py-1 rounded-md flex flex-row gap-1 items-center border hover:border-[var(--theme-border-strong)] transform duration-200 ease-in-out"
+          className="w-20 theme-elevated px-2 py-1 rounded-md flex flex-row gap-1 items-center border hover:border-[var(--theme-border-strong)] transform duration-200 ease-in-out"
           onClick={() => router.back()}
         >
           <IoChevronBack />

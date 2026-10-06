@@ -441,6 +441,7 @@ const content = {
         category: "Category",
         workLinks: "Work Links",
         description: "Description",
+        achievements: "Achievements",
         tools: "Tools",
         keyFeatures: "Key Features",
       },
