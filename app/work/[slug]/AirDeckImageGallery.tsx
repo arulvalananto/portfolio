@@ -1,0 +1,71 @@
+import React from "react";
+import Image from "next/image";
+
+import { Project } from "@/app/data";
+
+const AirDeckImageGallery = ({ project }: { project: Project }) => {
+  return (
+    <>
+      <div
+        className={`${project.bgImageLayout} rounded-lg order-1 col-span-12 md:col-span-6 lg:col-span-3 row-span-1 flex items-center justify-center group`}
+      >
+        <div className="w-62.5 xs:w-96 sm:w-87.5 md:w-75 lg:w-62.5 group-hover:rotate-6 transition duration-300">
+          <video
+            preload="none"
+            src="/projects_airdeck_demo.webm"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controlsList="nodownload"
+            poster="/projects_airdeck_demo_poster.webp"
+            className="rounded-md transition duration-300 ease-in-out group-hover:scale-95"
+          />
+        </div>
+      </div>
+      <div
+        className={`${project.bgImageLayout} rounded-lg order-2 col-span-12 md:col-span-6 lg:col-span-3 row-span-2 flex items-center justify-center`}
+      >
+        <Image
+          src="/airdeck_workflow.svg"
+          alt="AirDeck Workflow"
+          width={276}
+          height={455}
+          priority
+          unoptimized
+          className="xs:scale-90 scale-100"
+        />
+      </div>
+      <div
+        className={`${project.bgImageLayout} rounded-lg order-4 lg:order-3 col-span-12 lg:col-span-6 sm:row-span-2 flex items-center justify-center`}
+      >
+        <div className="w-75 sm:w-100 md:w-150 h-62.5 sm:h-75 md:h-100 lg::h-3/4 rounded-md">
+          <iframe
+            name="AirDeck"
+            title="AirDeck"
+            loading="lazy"
+            allowFullScreen
+            src="https://app.airdeck.co/view-decks/53616c7465645f5fb802b1a1538f5184b0bb3f28625a323c6a6acc11fdef841c/iframe-play?act=decks-1430919g6hkuswtg5f"
+            data-lf-yt-playback-inspected-belvo73qyepazmqj="true"
+            data-lf-vimeo-playback-inspected-belvo73qyepazmqj="true"
+            className="w-full h-full rounded-md"
+          ></iframe>
+        </div>
+      </div>
+      <div
+        className={`${project.bgImageLayout} rounded-lg order-3 lg:order-4 col-span-12 md:col-span-6 lg:col-span-3 row-span-1 flex items-center justify-center group`}
+      >
+        <Image
+          src="/airdeck_integrate_embed_video.webp"
+          alt="AirDeck Workflow"
+          width={276}
+          height={141}
+          priority
+          className="group-hover:scale-105 transition duration-300"
+        />
+      </div>
+    </>
+  );
+};
+
+export default AirDeckImageGallery;

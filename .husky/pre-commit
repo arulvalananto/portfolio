@@ -1,2 +1,2 @@
 #!/usr/bin/env sh
-cd portfoliov2 && npm run pre-commit
+npm run pre-commit
