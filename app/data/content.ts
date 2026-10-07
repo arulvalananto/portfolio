@@ -8,7 +8,7 @@ const content = {
       author: "Arul Valan Anto S",
       type: "website",
       description:
-        "Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence.",
+        "Hey! I am a Software Engineer based in India with {{experienceYears}} of experience. I design and build robust software products and always strive for excellence.",
       keywords:
         "Arul Valan Anto, Portfolio, Software Engineer, React Developer",
       socialTitle: "Arul Valan Anto :: Full Stack Developer",
@@ -22,127 +22,35 @@ const content = {
     },
   },
   ui: {
-    imageFallbacks: {
-      broken: "Image broken",
-      default: "Welcome to Portfolio",
-    },
-    drawer: {
-      closeTitle: "close drawer",
-    },
     actionBar: {
       navigation: [
-        { href: "/", label: "Home", image: "/action-bar/home.svg" },
+        { href: "/", label: "Home" },
+        { href: "/work", label: "Work" },
         {
           href: "/about-me",
-          label: "About me",
-          image: "/action-bar/about.svg",
+          label: "About",
         },
-        { href: "/work", label: "My work", image: "/action-bar/work.svg" },
       ],
       contact: {
         href: "mailto:arulvalananto@gmail.com",
-        label: "Message me",
-        image: "/action-bar/message.svg",
-        imageAlt: "Let's Talk",
+        label: "Say Hello",
       },
     },
     navbar: {
-      home: {
-        href: "/",
-        title: "Arul Valan Anto's Logo",
-        logo: {
-          src: "/logo.svg",
-          alt: "Welcome to Arul Valan Anto's Portfolio",
-        },
-      },
-      about: { href: "/about-me", label: "About me" },
-      work: { href: "/work", label: "My Work" },
       resume: {
-        href: "/Arul_Valan_Anto_Resume.pdf",
-        filename: "Arul_Valan_Anto_Resume.pdf",
-        label: "Resume",
+        href: "https://drive.google.com/file/d/1gtxcEEBqIwGBiAbqNo9-azsztmsqPEXG/view?usp=sharing",
+        downloadHref:
+          "https://drive.usercontent.google.com/download?id=1gtxcEEBqIwGBiAbqNo9-azsztmsqPEXG&export=download&confirm=t",
         downloadLabel: "Download Resume",
       },
-      cv: "https://read.cv/arulvalananto",
-      contact: { href: "mailto:arulvalananto@gmail.com", label: "Let's Talk" },
-      menuLabel: "portfolio nav menu",
     },
     home: {
       hero: {
         introduction: "Hi, I’m Arul Valan Anto",
         title: "Full Stack Developer - based in India",
         expression: { src: "/home_hero_title_expression.svg", alt: "stars" },
-        stars: { src: "/stars_v2.svg", alt: "stars" },
-        social: [
-          {
-            href: "https://www.linkedin.com/in/arulvalanantos",
-            label: "LinkedIn",
-          },
-          { href: "https://github.com/arulvalananto", label: "GitHub" },
-          { href: "https://medium.com/@arulvalananto", label: "Medium" },
-        ],
-        projectCount: "16+",
         projectsLabel: "Projects",
         yearsLabel: ["Years of", "Experience"],
-      },
-      selectedProjects: {
-        image: { src: "/work_section_alien.gif", alt: "Work" },
-        heading: "Work",
-        subtitle: "Selected Work",
-        visitLabel: "Visit the Site",
-        allProjects: { href: "/work", label: "View All Projects" },
-        vidableTitle: "AI-based Video Analytics Tool",
-      },
-    },
-  },
-  resumeDriveLink:
-    "https://drive.google.com/file/d/1gtxcEEBqIwGBiAbqNo9-azsztmsqPEXG/view",
-  aboutMeSecret: {
-    metadataTitle: "Arul Valan Anto :: Profile",
-    helloImage: {
-      src: "/about_hello.svg",
-      alt: "Welcome to About Page!",
-    },
-    sectionTitles: {
-      about: "About",
-      education: "Education",
-      experience: "Experience",
-      skills: "Skills",
-      certificates: "Certificates",
-      projects: "Projects",
-    },
-    educationDetailsSeparator: "|",
-    experienceAt: "at",
-    skillTypes: ["primary", "secondary"] as const,
-    skillTypeLabelSuffix: ":",
-    defaultYearsOfExperience: "1",
-    googleSearchUrl: "https://www.google.com/search?q=",
-    allProjects: {
-      href: "/work",
-      label: "See All",
-    },
-    readMoreLabel: "Read More",
-    profileImage: {
-      src: "/about_profile.webp",
-      alt: "Arul Valan Anto's profile pic",
-    },
-    socialProfile: {
-      arrowImage: {
-        src: "/about_arrow_social_profile.svg",
-        alt: "arrow for social profile",
-      },
-      label: "I'm in",
-    },
-    emailLabel: "Shoot me an email",
-    hireMe: {
-      arrowImage: {
-        src: "/about_curly_arrow.svg",
-        alt: "Hire me arrow",
-      },
-      label: "Hire me If you'd like",
-      animation: {
-        src: "/about_random_player.webm",
-        alt: "Hire me GIF",
       },
     },
   },
@@ -154,7 +62,7 @@ const content = {
       whoIAm: {
         heading: "[WHO I AM]",
         description:
-          "Hey, I am Arul Valan Anto — Full Stack Developer and tech blogger. I have more than 5 years of experience in coding under my belt. My playground? Crafting sleek and savvy web applications that make users go “Wow!”.",
+          "Hey, I am Arul Valan Anto — Full Stack Developer and tech blogger. I have {{experienceYears}} of experience in coding under my belt. My playground? Crafting sleek and savvy web applications that make users go “Wow!”.",
       },
       whatIDoNow: {
         heading: "[WHAT I DO NOW]",
@@ -203,7 +111,6 @@ const content = {
     },
     skills: {
       heading: "Skills",
-      defaultYearsOfExperience: "1",
       googleSearchUrl: "https://www.google.com/search?q=",
     },
     projects: {
@@ -441,6 +348,7 @@ const content = {
         category: "Category",
         workLinks: "Work Links",
         description: "Description",
+        achievements: "Achievements",
         tools: "Tools",
         keyFeatures: "Key Features",
       },

@@ -1,23 +1,15 @@
 import {
-  bio,
-  certificates,
-  educationDetails,
+  careerStartDate,
   experienceArea,
-  experienceDetails,
-  projectsOverview,
   recentArticles,
   skills,
   socialLinks,
 } from "./catalog";
 
 export const person = {
-  bio,
-  education: educationDetails,
-  experience: experienceDetails,
+  careerStartDate,
   skills,
-  certificates,
   socialLinks,
   articles: recentArticles,
-  projectOverview: projectsOverview,
   experienceAreas: experienceArea,
 } as const;

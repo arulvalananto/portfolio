@@ -20,9 +20,10 @@ export type SkillInfo = {
   height?: number;
   className?: string;
   imageClassName?: string;
-  yearofexperience?: string;
   color?: string;
 };
+
+export type CareerSkill = Pick<SkillInfo, "title"> & { color: string };
 
 export type Skill = {
   [key: string]: SkillInfo[];
@@ -31,6 +32,11 @@ export type Skill = {
 };
 
 export type ProjectLink = { link: string; title: string };
+
+export type ProjectAchievement = {
+  title?: string;
+  description: string;
+};
 
 export type HomeProject = {
   name: string;
@@ -46,6 +52,7 @@ export type Project = {
   timeline: { from: string; to: string; isPresent: boolean };
   description: string;
   context: string;
+  achievements?: ProjectAchievement[];
   links: {
     website?: ProjectLink;
     application?: ProjectLink;

@@ -3,7 +3,9 @@
 import posthog from "posthog-js";
 import { useEffect } from "react";
 
-const resumePath = "/Arul_Valan_Anto_Resume.pdf";
+import { portfolio } from "@/app/data";
+
+const resumeUrl = portfolio.ui.navbar.resume.downloadHref;
 const portfolioLogger = posthog.logger;
 
 function capturePortfolioLinkClick(link: HTMLAnchorElement) {
@@ -17,7 +19,7 @@ function capturePortfolioLinkClick(link: HTMLAnchorElement) {
   const label = link.textContent?.trim().replace(/\s+/g, " ").slice(0, 100);
   const title = link.getAttribute("title")?.toLowerCase();
 
-  if (destination.pathname === resumePath || title === "resume") {
+  if (destination.href === resumeUrl || title === "resume") {
     posthog.capture("resume_downloaded", {
       placement: window.location.pathname,
     });

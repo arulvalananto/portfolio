@@ -1,5 +1,5 @@
 import React from "react";
-import { BsArrowUpRight } from "react-icons/bs";
+import { BsArrowUpRight, BsCheck2Circle } from "react-icons/bs";
 
 import { Project } from "@/app/data";
 import ExternalLink from "@/app/ui/external-link";
@@ -11,50 +11,55 @@ type ProjectDetailsProps = {
 
 const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
   return (
-    <div className="w-full lg:w-200 lg:max-w-200 m-auto flex flex-col gap-8 font-inter p-5 lg:p-0 h-full">
-      <div className="flex flex-col gap-1">
-        <h1 className="text-4xl font-semibold capitalize">{project.name}</h1>
-        <h4 className="text-base capitalize font-normal">{project.oneliner}</h4>
+    <div className="w-full lg:w-225 lg:max-w-225 m-auto flex flex-col gap-8 font-inter px-5 lg:px-0 h-full">
+      <div className="border-b border-[var(--theme-border)] pb-8">
+        <p className="mb-3 text-xs font-semibold uppercase tracking-[0.18em] text-[var(--theme-muted-text)]">
+          {project.type}
+        </p>
+        <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+          {project.name}
+        </h1>
+        <h4 className="mt-3 max-w-2xl text-lg font-normal leading-relaxed text-[var(--theme-muted-text)]">
+          {project.oneliner}
+        </h4>
       </div>
-      <div className="flex flex-col md:flex-row items-start gap-4 md:gap-8">
-        <div className="order-2 md:order-1 max-w-37.5 flex flex-row flex-wrap md:flex-nowrap md:flex-col gap-8">
+      <div className="grid items-start gap-8 lg:grid-cols-[13.5rem_minmax(0,1fr)]">
+        <aside className="theme-elevated grid grid-cols-2 gap-x-6 gap-y-7 rounded-2xl border p-5 sm:grid-cols-3 lg:grid-cols-1">
           <div className="flex flex-col gap-2">
-            <h6 className="uppercase text-lg font-semibold">
+            <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
               {constants.work.detail.labels.type}
             </h6>
-            <div className="flex flex-col gap-2">
-              <p className="text-sm">{project.type}</p>
-            </div>
+            <p className="text-sm leading-relaxed">{project.type}</p>
           </div>
           <div className="flex flex-col gap-2">
-            <h6 className="uppercase text-lg font-semibold">
+            <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
               {constants.work.detail.labels.role}
             </h6>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
               {Array.isArray(project.role) ? (
                 project.role.map((role) => (
-                  <p key={role} className="text-sm">
+                  <p key={role} className="text-sm leading-relaxed">
                     {role}
                   </p>
                 ))
               ) : (
-                <p className="text-sm">{project.role}</p>
+                <p className="text-sm leading-relaxed">{project.role}</p>
               )}
             </div>
           </div>
           {project?.status && (
             <div className="flex flex-col gap-2">
-              <h6 className="uppercase text-lg font-semibold">
+              <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
                 {constants.work.detail.labels.status}
               </h6>
-              <p className="text-sm">{project?.status} </p>
+              <p className="text-sm leading-relaxed">{project.status}</p>
             </div>
           )}
           <div className="flex flex-col gap-2">
-            <h6 className="uppercase text-lg font-semibold">
+            <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
               {constants.work.detail.labels.timeline}
             </h6>
-            <p className="text-sm">
+            <p className="text-sm leading-relaxed">
               {project.timeline.from}{" "}
               {project.timeline.from === project.timeline.to
                 ? ""
@@ -67,25 +72,25 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
           </div>
           {project?.category && (
             <div className="flex flex-col gap-2">
-              <h6 className="uppercase text-lg font-semibold">
+              <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
                 {constants.work.detail.labels.category}
               </h6>
-              <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1">
                 {Array.isArray(project.category) ? (
                   project.category.map((category) => (
-                    <p key={category} className="text-sm">
+                    <p key={category} className="text-sm leading-relaxed">
                       {category}
                     </p>
                   ))
                 ) : (
-                  <p className="text-sm">{project.category}</p>
+                  <p className="text-sm leading-relaxed">{project.category}</p>
                 )}
               </div>
             </div>
           )}
           {project?.externalLinks && (
             <div className="flex flex-col gap-2">
-              <h6 className="uppercase text-lg font-semibold">
+              <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
                 {constants.work.detail.labels.workLinks}
               </h6>
               <div className="flex flex-col gap-2">
@@ -102,27 +107,64 @@ const ProjectDetails: React.FC<ProjectDetailsProps> = ({ project }) => {
               </div>
             </div>
           )}
-        </div>
-        <div className="order-1 md:order-2 flex-1 flex flex-col gap-8">
-          <div className="order-1 flex flex-col gap-2">
-            <h6 className="uppercase text-lg font-semibold">
+        </aside>
+        <div className="flex min-w-0 flex-col gap-9">
+          <section className="flex flex-col gap-3">
+            <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
               {constants.work.detail.labels.description}
             </h6>
-            <p className="text-sm">{project.description}</p>
-          </div>
-          <div className="order-3 md:order-2 flex flex-col gap-2">
-            <h6 className="uppercase text-lg font-semibold">
+            <p className="max-w-3xl text-base leading-7">
+              {project.description}
+            </p>
+          </section>
+          {project.achievements && project.achievements.length > 0 && (
+            <section className="theme-elevated rounded-2xl border p-5 md:p-6">
+              <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
+                {constants.work.detail.labels.achievements}
+              </h6>
+              <ul className="mt-5 flex flex-col divide-y divide-[var(--theme-border)]">
+                {project.achievements.map((achievement) => (
+                  <li
+                    key={achievement.description}
+                    className="flex gap-3 py-5 first:pt-0 last:pb-0"
+                  >
+                    <BsCheck2Circle
+                      className="mt-0.5 shrink-0 text-lg"
+                      aria-hidden="true"
+                    />
+                    <div>
+                      {achievement.title && (
+                        <h3 className="text-sm font-semibold">
+                          {achievement.title}
+                        </h3>
+                      )}
+                      <p
+                        className={`${achievement.title ? "mt-1" : "-mt-0.5"} text-sm leading-6 text-[var(--theme-muted-text)]`}
+                      >
+                        {achievement.description}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+          <section className="flex flex-col gap-3">
+            <h6 className="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--theme-muted-text)]">
               {constants.work.detail.labels.tools}
             </h6>
-            <div className="flex flex-row flex-wrap gap-4">
+            <div className="flex flex-row flex-wrap gap-2">
               {project.tools.map((tool) => (
-                <p key={tool} className="font-base text-sm capitalize">
+                <p
+                  key={tool}
+                  className="rounded-full border border-[var(--theme-border)] px-3 py-1 text-sm"
+                >
                   {tool}
                 </p>
               ))}
             </div>
-          </div>
-          <div className="order-2 md:order-3 flex flex-row items-center gap-4">
+          </section>
+          <div className="flex flex-row flex-wrap items-center gap-3">
             {project.links.website && (
               <ExternalLink
                 title={project.links.website.title}

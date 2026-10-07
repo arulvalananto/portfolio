@@ -1,4 +1,3 @@
-import content from "./content";
 import type { Project } from "./types";
 import { projects, selectedProjects } from "./catalog";
 
@@ -28,6 +27,4 @@ export const projectData = {
     projectEntries.map((project) => [project.slug, project]),
   ),
   featured: selectedProjects,
-  details: projects,
-  cards: content.work.cards,
 } as const;
