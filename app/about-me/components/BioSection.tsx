@@ -1,5 +1,6 @@
 import { portfolio } from "@/app/data";
 import ExternalLink from "@/app/ui/external-link";
+import ViewportReveal from "@/app/ui/viewport-reveal";
 import { formatExperienceYears } from "@/app/lib/utils";
 
 export default function BioSection() {
@@ -8,7 +9,8 @@ export default function BioSection() {
   );
 
   return (
-    <section
+    <ViewportReveal
+      as="section"
       id="bio"
       className={`col-span-12 xl:col-span-9 row-span-8 xl:row-span-11 bg-layout2 p-5 rounded-2xl overflow-hidden transition duration-300 ease-in-out`}
     >
@@ -103,6 +105,6 @@ export default function BioSection() {
           </span>
         </p>
       </div>
-    </section>
+    </ViewportReveal>
   );
 }

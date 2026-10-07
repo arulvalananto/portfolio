@@ -1,3 +1,4 @@
+import ViewportReveal from "./ui/viewport-reveal";
 import { getCareerSkills } from "./data/career-skills";
 import HeroSection from "./ui/home/components/HeroSection";
 import AgendaSection from "./ui/home/components/AgendaSection";
@@ -10,9 +11,15 @@ const Home = async () => {
   return (
     <main className="w-full h-full">
       <div className="px-5 xl:px-0 xl:w-7xl xl:max-w-7xl h-full m-auto mt-4 overflow-hidden xl:overflow-visible">
-        <HeroSection />
-        <SkillsSection skills={skills} />
-        <AgendaSection />
+        <ViewportReveal>
+          <HeroSection />
+        </ViewportReveal>
+        <ViewportReveal delay={0.05}>
+          <SkillsSection skills={skills} />
+        </ViewportReveal>
+        <ViewportReveal>
+          <AgendaSection />
+        </ViewportReveal>
         <SelectedProjectsSection />
       </div>
     </main>

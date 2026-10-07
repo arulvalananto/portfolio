@@ -1,11 +1,13 @@
 import ExternalLink from "@/app/ui/external-link";
 import { getSocialIcon, portfolio } from "@/app/data";
+import ViewportReveal from "@/app/ui/viewport-reveal";
 
 export default function SocialProfilesSection() {
   const { socialLinks } = portfolio.person;
 
   return (
-    <section
+    <ViewportReveal
+      as="section"
       id="social profiles"
       className="col-span-12 xl:col-span-7 row-span-3 xl:row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5 hover:shadow-xl overflow-hidden"
     >
@@ -45,6 +47,6 @@ export default function SocialProfilesSection() {
           );
         })}
       </div>
-    </section>
+    </ViewportReveal>
   );
 }

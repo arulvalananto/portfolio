@@ -4,6 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import { portfolio } from "@/app/data";
 import SkillBadge from "../../skill-badge";
+import ViewportReveal from "@/app/ui/viewport-reveal";
 
 const { featured: selectedProjects } = portfolio.projects;
 import VidableHomePageImage from "./VidableHomePageImage";
@@ -13,7 +14,7 @@ import LandGeniusHomePageImage from "./LandGeniusHomePageImage";
 const SelectedProjectsSection = () => {
   return (
     <div className="py-5 pb-10 xl:py-10 xl:pb-20 w-full flex flex-col gap-20 select-none">
-      <div className="w-full flex flex-col items-center justify-center gap-1">
+      <ViewportReveal className="w-full flex flex-col items-center justify-center gap-1">
         <Image
           src="/work_section_alien.gif"
           alt="Work"
@@ -25,11 +26,12 @@ const SelectedProjectsSection = () => {
         <p className="text-xs uppercase font-poppins font-normal opacity-50">
           Selected Work
         </p>
-      </div>
+      </ViewportReveal>
       <div className="flex flex-col gap-10 xl:gap-40">
         {selectedProjects.map((project, index) => (
-          <div
+          <ViewportReveal
             key={project.name}
+            delay={index * 0.05}
             className="w-full h-full xl:h-87.5 flex flex-col xl:flex-row items-start gap-2 md:gap-5"
           >
             <div
@@ -67,7 +69,7 @@ const SelectedProjectsSection = () => {
             ) : (
               <VidableHomePageImage project={project} index={index} />
             )}
-          </div>
+          </ViewportReveal>
         ))}
       </div>
       <div className="flex flex-row items-center justify-center">

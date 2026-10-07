@@ -1,12 +1,14 @@
 import Image from "next/image";
 
 import { portfolio } from "@/app/data";
+import ViewportReveal from "@/app/ui/viewport-reveal";
 
 export default function SkillsSection() {
   const { skills } = portfolio.person;
 
   return (
-    <section
+    <ViewportReveal
+      as="section"
       id="skills"
       className="col-span-12 xl:col-span-15 row-span-6 xs:row-span-5 sm:row-span-4 md:row-span-5 xl:row-span-3 bg-layout2 p-5 sm:pt-6 sm:p-5 xl:p-5 xl:pt-5 rounded-2xl flex flex-col gap-4 sm:gap-7 xl:gap-2 transition duration-300 ease-in-out"
     >
@@ -29,6 +31,6 @@ export default function SkillsSection() {
           </div>
         ))}
       </div>
-    </section>
+    </ViewportReveal>
   );
 }

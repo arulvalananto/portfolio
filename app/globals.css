@@ -294,6 +294,11 @@ body {
   .theme-toggle__thumb {
     transition: none;
   }
+
+  .viewport-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 *,

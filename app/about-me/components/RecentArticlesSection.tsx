@@ -2,12 +2,14 @@ import Image from "next/image";
 
 import { portfolio } from "@/app/data";
 import ExternalLink from "@/app/ui/external-link";
+import ViewportReveal from "@/app/ui/viewport-reveal";
 
 export default function RecentArticlesSection() {
   const { articles } = portfolio.person;
 
   return (
-    <section
+    <ViewportReveal
+      as="section"
       id="my-recent-articles"
       className="col-span-12 xl:col-span-8 row-span-8 lg:row-span-5 xl:row-span-8 bg-layout2 p-5 rounded-2xl flex flex-col gap-5 group overflow-hidden hover:-translate-y-1 transition duration-300"
     >
@@ -50,6 +52,6 @@ export default function RecentArticlesSection() {
           </ExternalLink>
         ))}
       </div>
-    </section>
+    </ViewportReveal>
   );
 }
