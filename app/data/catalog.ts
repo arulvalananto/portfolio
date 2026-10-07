@@ -1511,7 +1511,7 @@ export const projects: ProjectDetails = {
     links: {
       website: { link: "https://jojopay.com.ph/", title: "Website" },
     },
-    type: "Project At Coding Space",
+    type: "Project At Coding Space India",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
     showKeyFeatures: false,
@@ -1537,7 +1537,7 @@ export const projects: ProjectDetails = {
       },
     ],
     links: {},
-    type: "Project At Coding Space",
+    type: "Project At Coding Space India",
     category: "Web Application",
     bgImageLayout: "bg-layout1",
     showKeyFeatures: false,

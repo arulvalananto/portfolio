@@ -23,6 +23,8 @@ export type SkillInfo = {
   color?: string;
 };
 
+export type CareerSkill = Pick<SkillInfo, "title"> & { color: string };
+
 export type Skill = {
   [key: string]: SkillInfo[];
   primary: SkillInfo[];

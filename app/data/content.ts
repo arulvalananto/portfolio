@@ -32,16 +32,16 @@ const content = {
     actionBar: {
       navigation: [
         { href: "/", label: "Home", image: "/action-bar/home.svg" },
+        { href: "/work", label: "Work", image: "/action-bar/work.svg" },
         {
           href: "/about-me",
-          label: "About me",
+          label: "About",
           image: "/action-bar/about.svg",
         },
-        { href: "/work", label: "My work", image: "/action-bar/work.svg" },
       ],
       contact: {
         href: "mailto:arulvalananto@gmail.com",
-        label: "Message me",
+        label: "Say Hello",
         image: "/action-bar/message.svg",
         imageAlt: "Let's Talk",
       },
