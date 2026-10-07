@@ -77,8 +77,9 @@ const HeroSection: React.FC = () => {
         </div>
         <div>
           <a
-            download
-            href="/Arul_Valan_Anto_Resume.pdf"
+            href={constants.ui.navbar.resume.downloadHref}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden xl:flex transition duration-300 absolute top-1/2 -translate-y-16 right-20 w-20 h-20 text-center rounded-full items-center justify-center bg-home-cta border-2 border-black uppercase font-normal text-[10px] rotate-[-15deg] hover:scale-95"
           >
             {constants.ui.navbar.resume.downloadLabel}
