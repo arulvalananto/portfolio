@@ -21,7 +21,7 @@ export default function RecentArticlesSection() {
           className="group-hover:opacity-100 opacity-0 transition duration-300 ease-in-out text-xs hover:underline hover:underline-offset-2"
         />
       </div>
-      <div className="flex flex-col md:flex-row md:items-center md:justify-center flex-nowrap md:flex-wrap xl:flex-nowrap xl:flex-col gap-4">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-start flex-nowrap md:flex-wrap xl:flex-nowrap xl:flex-col gap-4">
         {articles.map((article, index) => (
           <ExternalLink
             key={index}

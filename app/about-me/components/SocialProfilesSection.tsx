@@ -7,12 +7,12 @@ export default function SocialProfilesSection() {
   return (
     <section
       id="social profiles"
-      className="col-span-12 xl:col-span-9 row-span-12 sm:row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5 hover:shadow-xl overflow-hidden"
+      className="col-span-12 xl:col-span-7 row-span-3 xl:row-span-8 bg-layout2 p-5 rounded-2xl transition duration-300 ease-in-out flex flex-col gap-5 hover:shadow-xl overflow-hidden"
     >
       <h1 className="font-semibold text-2xl theme-text capitalize">
         {portfolio.aboutMe.socialHeading}
       </h1>
-      <div className="w-full grid grid-cols-3 auto-rows-12.5 gap-5">
+      <div className="w-full flex flex-row flex-wrap gap-2">
         {socialLinks.map((social, index) => {
           const Icon = getSocialIcon(social.icon);
           const textClassName =
@@ -25,12 +25,12 @@ export default function SocialProfilesSection() {
               href={social.href}
               className={`${
                 index > 4 ? "hidden sm:flex" : "flex"
-              } col-span-3 sm:col-span-1 row-span-2 p-4 rounded-2xl group border border-about-skill-border flex-col gap-3 shadow-sm transition-all duration-300 hover:-translate-y-1 ${
+              } xl:flex-1/2 p-3 rounded-2xl group border border-about-skill-border flex-col gap-3 shadow-sm transition-all duration-300 hover:-translate-y-1 ${
                 social.bgClassName
               }`}
             >
               <Icon
-                size={32}
+                size={20}
                 className={
                   social.name === "Hackernoon"
                     ? "theme-text"

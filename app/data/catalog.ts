@@ -118,18 +118,6 @@ export const socialLinks: SocialLink[] = [
     icon: "medium",
   },
   {
-    name: "Twitter",
-    username: "arulvalananto_",
-    href: "https://twitter.com/arulvalananto_",
-    title: "Arul Valan Anto's twitter",
-    className: "bg-twitter",
-    bgClassName: "bg-twitter",
-    iconClassName: "text-white",
-    textClassName: "text-white",
-    layoutClassName: "col-span-1 row-span-2",
-    icon: "twitter",
-  },
-  {
     name: "Hackernoon",
     username: "arulvalananto",
     href: "https://hackernoon.com/u/arulvalananto",
@@ -140,18 +128,6 @@ export const socialLinks: SocialLink[] = [
     textClassName: "text-black",
     layoutClassName: "col-span-1 row-span-2",
     icon: "hackernoon",
-  },
-  {
-    name: "BuyMeCoffee",
-    username: "arulvalanantos",
-    href: "https://www.buymeacoffee.com/arulvalanantos",
-    title: "Arul Valan Anto's Buy Me a Coffee",
-    className: "bg-provider-buy-me-coffee",
-    bgClassName: "bg-provider-buy-me-coffee",
-    iconClassName: "text-black",
-    textClassName: "text-black",
-    layoutClassName: "col-span-1 row-span-2",
-    icon: "buyMeCoffee",
   },
 ];
 
@@ -1425,7 +1401,10 @@ export const projects: ProjectDetails = {
       },
     ],
     links: {
-      website: { link: "https://acuityconcepts.com/acat/", title: "Website" },
+      website: {
+        link: "https://acuityconcepts.com/acat/",
+        title: "Website",
+      },
     },
     type: "Project At Augment",
     category: "Web Application",
@@ -1453,7 +1432,10 @@ export const projects: ProjectDetails = {
       },
     ],
     links: {
-      website: { link: "https://www.gtscx.ai/omniassist", title: "Website" },
+      website: {
+        link: "https://www.gtscx.ai/omniassist",
+        title: "Website",
+      },
     },
     type: "Project At Augment",
     category: "Embedded Web Application",
