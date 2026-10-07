@@ -5,18 +5,18 @@ import posthog from "posthog-js";
 
 import { portfolio } from "@/app/data";
 import { inter } from "@/app/lib/fonts";
-import { formatExperienceYears } from "@/app/lib/utils";
-import VidableProjectCard from "./components/VidableProjectCard";
-import SocialProfilesSection from "./components/SocialProfilesSection";
-import SkillsSection from "./components/SkillsSection";
-import RecentArticlesSection from "./components/RecentArticlesSection";
 import QuoteCard from "./components/QuoteCard";
-import LocationCard from "./components/LocationCard";
-import LandGeniusProjectCard from "./components/LandGeniusProjectCard";
 import FillerCard from "./components/FillerCard";
-import ContactMarquee from "./components/ContactMarquee";
 import BioSection from "./components/BioSection";
+import LocationCard from "./components/LocationCard";
+import SkillsSection from "./components/SkillsSection";
+import { formatExperienceYears } from "@/app/lib/utils";
+import ContactMarquee from "./components/ContactMarquee";
+import VidableProjectCard from "./components/VidableProjectCard";
 import AirdeckProjectCard from "./components/AirdeckProjectCard";
+import SocialProfilesSection from "./components/SocialProfilesSection";
+import RecentArticlesSection from "./components/RecentArticlesSection";
+import LandGeniusProjectCard from "./components/LandGeniusProjectCard";
 
 export default function AboutPage() {
   const [showMore, setShowMore] = useState(false);
