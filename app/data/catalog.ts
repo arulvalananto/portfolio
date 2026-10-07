@@ -306,8 +306,7 @@ export const skills: Skill = {
       title: "Python",
       width: 24,
       height: 23,
-      className:
-        "bg-gradient-to-t from-python from-80% via-transparent to-80% to-transparent to-100%",
+      className: "bg-python",
       color: "bg-python",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
     },
@@ -316,8 +315,7 @@ export const skills: Skill = {
       title: "Firebase",
       width: 24,
       height: 23,
-      className:
-        "bg-gradient-to-t from-firebase from-80% via-transparent to-80% to-transparent to-100%",
+      className: "bg-firebase",
       color: "bg-firebase",
     },
     {
@@ -325,16 +323,14 @@ export const skills: Skill = {
       title: "Redis",
       width: 24,
       height: 23,
-      className:
-        "bg-gradient-to-t from-redis from-70% via-transparent to-70% to-transparent to-100%",
+      className: "bg-redis",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
       color: "bg-redis",
     },
     {
       src: "/about_skill_angular.svg",
       title: "Angular",
-      className:
-        "bg-gradient-to-t from-angular from-60% via-transparent to-60% to-transparent to-100%",
+      className: "bg-angular",
       color: "bg-red-500",
     },
     {
@@ -342,23 +338,20 @@ export const skills: Skill = {
       title: "Stripe",
       width: 24,
       height: 25,
-      className:
-        "bg-gradient-to-t from-stripe from-60% via-transparent to-60% to-transparent to-100%",
+      className: "bg-stripe",
       color: "bg-stripe",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
     },
     {
       src: "/about_skill_storybook.svg",
       title: "Storybook",
-      className:
-        "bg-gradient-to-t from-storybook from-55% via-transparent to-55% to-transparent to-100%",
+      className: "bg-storybook",
       color: "bg-storybook",
     },
     {
       src: "/about_skill_fastapi.svg",
       title: "Fast API",
-      className:
-        "bg-gradient-to-t from-fastapi from-55% via-transparent to-55% to-transparent to-100%",
+      className: "bg-fastapi",
       color: "bg-fastapi",
       imageClassName: "scale-90 md:scale-100 xl:scale-90",
     },
@@ -367,8 +360,7 @@ export const skills: Skill = {
       title: "MySQL",
       width: 24,
       height: 21,
-      className:
-        "bg-gradient-to-t from-mysql from-50% via-transparent to-50% to-transparent to-100%",
+      className: "bg-mysql",
       color: "bg-mysql",
     },
     {
@@ -376,8 +368,7 @@ export const skills: Skill = {
       title: "Django",
       width: 24,
       height: 31,
-      className:
-        "bg-gradient-to-t from-django from-50% via-transparent to-50% to-transparent to-100%",
+      className: "bg-django",
       color: "bg-django",
       imageClassName: "scale-50 md:scale-100 xl:scale-50",
     },
@@ -386,8 +377,7 @@ export const skills: Skill = {
       title: "PostgreSQL",
       width: 24,
       height: 23,
-      className:
-        "bg-gradient-to-t from-white from-40% via-transparent to-40% to-transparent to-100%",
+      className: "bg-postgresql",
       color: "bg-postgresql",
       imageClassName: "scale-90 md:scale-100 xl:scale-90",
     },
@@ -396,8 +386,7 @@ export const skills: Skill = {
       title: "Figma",
       width: 24,
       height: 34,
-      className:
-        "bg-gradient-to-t from-figma from-10% via-green-500 via-30% via-yellow-500 via-55% via-red-500 via-80% to-transparent to-80%",
+      className: "bg-figma",
       imageClassName: "scale-50 md:scale-75 xl:scale-50",
       color: "bg-red-400",
     },
