@@ -20,7 +20,6 @@ export type SkillInfo = {
   height?: number;
   className?: string;
   imageClassName?: string;
-  yearofexperience?: string;
   color?: string;
 };
 

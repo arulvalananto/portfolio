@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { FcAdvertising } from "react-icons/fc";
 
 import { dancingScript } from "../../lib/fonts";
+import { formatExperienceYears } from "../../lib/utils";
 import { AnimatedTooltip } from "../../ui/animated-tooltip";
 import { portfolio as constants, getSocialIcon } from "../../data";
 const {
@@ -15,6 +16,8 @@ const {
   skills,
   socialLinks,
 } = constants.person;
+
+const experienceYears = formatExperienceYears(constants.person.careerStartDate);
 
 export const metadata: Metadata = {
   title: constants.aboutMeSecret.metadataTitle,
@@ -42,7 +45,7 @@ const AboutPage = () => (
           <h3 className="font-quicksand font-bold text-xl text-portfolio-about-title">
             {constants.aboutMeSecret.sectionTitles.about}
           </h3>
-          <p>{bio}</p>
+          <p>{bio.replace("{{experienceYears}}", experienceYears)}</p>
         </section>
         <div className="w-full h-full xl:h-42.5 flex flex-col xl:flex-row items-center gap-5 order-3 xl:order-2 select-none">
           <section
@@ -117,9 +120,7 @@ const AboutPage = () => (
                         tooltipInfo={{
                           name: skill.title,
                           id: index,
-                          yearofexperience:
-                            skill.yearofexperience ??
-                            constants.aboutMeSecret.defaultYearsOfExperience,
+                          yearofexperience: experienceYears,
                         }}
                       >
                         <a

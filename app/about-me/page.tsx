@@ -10,12 +10,15 @@ import { PiArrowBendLeftDownThin, PiArrowBendLeftUpThin } from "react-icons/pi";
 
 import { inter } from "../lib/fonts";
 import ExternalLink from "../ui/external-link";
-import { AnimatedTooltip } from "../ui/animated-tooltip";
+import { formatExperienceYears } from "../lib/utils";
 import { portfolio as constants, getSocialIcon } from "../data";
 const { articles: recentArticles, skills, socialLinks } = constants.person;
 
 const AboutPage = () => {
   const [showMore, setShowMore] = useState(false);
+  const experienceYears = formatExperienceYears(
+    constants.person.careerStartDate,
+  );
 
   const handleShowMore = () => {
     if (!showMore) {
@@ -47,7 +50,10 @@ const AboutPage = () => {
               {constants.aboutMe.bio.whoIAm.heading}
             </span>
             <span className="text-xs sm:text-sm">
-              {constants.aboutMe.bio.whoIAm.description}
+              {constants.aboutMe.bio.whoIAm.description.replace(
+                "{{experienceYears}}",
+                experienceYears,
+              )}
             </span>
           </p>
           <p className="flex flex-col gap-2 text-sm">
@@ -159,33 +165,18 @@ const AboutPage = () => {
         </h1>
         <div className="flex flex-row flex-wrap gap-5 xl:gap-x-5 xl:gap-y-2">
           {[...skills.primary, ...skills.secondary]?.map((skill, index) => (
-            <AnimatedTooltip
+            <div
               key={index}
-              tooltipInfo={{
-                name: skill.title,
-                id: index,
-                yearofexperience:
-                  skill.yearofexperience ??
-                  constants.aboutMe.skills.defaultYearsOfExperience,
-              }}
+              className={`border-2 border-[--theme-border-strong] theme-text rounded-sm ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8`}
             >
-              <a
-                href={`${constants.aboutMe.skills.googleSearchUrl}${skill.title.toLowerCase()}`}
-                title={skill.title}
-                className={`border-2 theme-button rounded-sm ${skill.className} flex items-center justify-center w-8 h-8 md:w-12 md:h-12 xl:w-8 xl:h-8 transition duration-500 hover:scale-110`}
-                target="_blank"
-                rel="noopener norefferer nofollow"
-              >
-                <Image
-                  key={index}
-                  src={skill?.src ?? ""}
-                  alt={skill.title}
-                  width={skill.width ?? 24}
-                  height={skill.height ?? 24}
-                  className={`${skill.imageClassName ?? ""}`}
-                />
-              </a>
-            </AnimatedTooltip>
+              <Image
+                src={skill?.src ?? ""}
+                alt={skill.title}
+                width={skill.width ?? 24}
+                height={skill.height ?? 24}
+                className={`${skill.imageClassName ?? ""}`}
+              />
+            </div>
           ))}
         </div>
       </section>

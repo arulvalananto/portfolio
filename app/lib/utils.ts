@@ -6,7 +6,7 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function calculateTotalExperience(
-  startDate: Date,
+  startDate: Date | string,
   currentDate = new Date(),
 ) {
   const started = new Date(startDate);
@@ -21,4 +21,8 @@ export function calculateTotalExperience(
   } else {
     return years + "+";
   }
+}
+
+export function formatExperienceYears(startDate: Date | string) {
+  return `${calculateTotalExperience(startDate)} years`;
 }

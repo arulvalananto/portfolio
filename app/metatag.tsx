@@ -1,6 +1,12 @@
 import { portfolio as constants } from "./data";
+import { formatExperienceYears } from "./lib/utils";
 
 const MetaTag = () => {
+  const description = constants.site.meta.description.replace(
+    "{{experienceYears}}",
+    formatExperienceYears(constants.person.careerStartDate),
+  );
+
   return (
     <>
       <meta name="theme-color" content={constants.site.meta.themeColor} />
@@ -8,14 +14,11 @@ const MetaTag = () => {
       <meta name="author" content={constants.site.meta.author} />
       <meta name="publisher" content={constants.site.meta.author} />
       <meta name="type" content={constants.site.meta.type} />
-      <meta name="description" content={constants.site.meta.description} />
+      <meta name="description" content={description} />
       <meta name="keywords" content={constants.site.meta.keywords} />
 
       <meta property="og:title" content={constants.site.meta.socialTitle} />
-      <meta
-        property="og:description"
-        content={constants.site.meta.description}
-      />
+      <meta property="og:description" content={description} />
       <meta property="og:url" content={constants.site.meta.url} />
       <meta property="og:image" content={constants.site.meta.image} />
       <meta property="og:image:type" content={constants.site.meta.imageType} />
@@ -27,10 +30,7 @@ const MetaTag = () => {
         property="twitter:title"
         content={constants.site.meta.socialTitle}
       />
-      <meta
-        property="twitter:description"
-        content={constants.site.meta.description}
-      />
+      <meta property="twitter:description" content={description} />
       <meta property="twitter:image" content={constants.site.meta.image} />
       <meta
         property="twitter:image:alt"

@@ -6,8 +6,9 @@ import { portfolio as constants } from "@/app/data";
 import { calculateTotalExperience } from "@/app/lib/utils";
 
 const HeroSection: React.FC = () => {
-  const started = new Date("2020-01-01");
-  const totalExperience = calculateTotalExperience(started);
+  const totalExperience = calculateTotalExperience(
+    constants.person.careerStartDate,
+  );
 
   return (
     <div className="hero-section dashed-grid-paper w-full h-62.5 xs:h-[300px] sm:h-100 md:h-125 xl:h-193 border-4 px-10 xl:px-0 xl:pt-32 border-black rounded-md select-none flex items-center justify-center xl:block relative overflow-hidden animate-sizeup-fast">

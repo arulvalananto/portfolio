@@ -8,7 +8,7 @@ const content = {
       author: "Arul Valan Anto S",
       type: "website",
       description:
-        "Hey! I am a Software Engineer based in India with more than four years of experience. I design and build robust software products and always strive for excellence.",
+        "Hey! I am a Software Engineer based in India with {{experienceYears}} of experience. I design and build robust software products and always strive for excellence.",
       keywords:
         "Arul Valan Anto, Portfolio, Software Engineer, React Developer",
       socialTitle: "Arul Valan Anto :: Full Stack Developer",
@@ -115,7 +115,6 @@ const content = {
     experienceAt: "at",
     skillTypes: ["primary", "secondary"] as const,
     skillTypeLabelSuffix: ":",
-    defaultYearsOfExperience: "1",
     googleSearchUrl: "https://www.google.com/search?q=",
     allProjects: {
       href: "/work",
@@ -154,7 +153,7 @@ const content = {
       whoIAm: {
         heading: "[WHO I AM]",
         description:
-          "Hey, I am Arul Valan Anto — Full Stack Developer and tech blogger. I have more than 5 years of experience in coding under my belt. My playground? Crafting sleek and savvy web applications that make users go “Wow!”.",
+          "Hey, I am Arul Valan Anto — Full Stack Developer and tech blogger. I have {{experienceYears}} of experience in coding under my belt. My playground? Crafting sleek and savvy web applications that make users go “Wow!”.",
       },
       whatIDoNow: {
         heading: "[WHAT I DO NOW]",
@@ -203,7 +202,6 @@ const content = {
     },
     skills: {
       heading: "Skills",
-      defaultYearsOfExperience: "1",
       googleSearchUrl: "https://www.google.com/search?q=",
     },
     projects: {

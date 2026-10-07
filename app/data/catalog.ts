@@ -1,6 +1,9 @@
 import { ProjectDetails, Skill, SocialLink } from "./types";
 
-export const bio = `Hey there, digital pioneers! I'm Arul Valan Anto, a Full Stack developer with over 4 years of coding under my belt. My playground? Crafting sleek and savvy web applications that make users go "Wow!".
+// The single source of truth for every career-duration calculation.
+export const careerStartDate = "2020-01-01";
+
+export const bio = `Hey there, digital pioneers! I'm Arul Valan Anto, a Full Stack developer with {{experienceYears}} of coding under my belt. My playground? Crafting sleek and savvy web applications that make users go "Wow!".
 In my journey through the ever-evolving realm of web development, I've had the pleasure of dipping my toes into various fields, including AI, marketing, and environmental initiatives. From environmental to AI, I've donned many hats and solved countless puzzles, each experience shaping me into the versatile developer I am today. I'm ready to tackle any challenge that comes our way. Whether you're a startup aiming to disrupt the market or an established enterprise seeking to stay ahead of the curve, I'm here to join forces and turn your vision into reality.`;
 
 export const educationDetails = [
@@ -184,7 +187,6 @@ export const skills: Skill = {
       className: "bg-react",
       color: "bg-react",
       imageClassName: "scale-100 md:scale-125 xl:scale-100",
-      yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_node.svg",
@@ -194,7 +196,6 @@ export const skills: Skill = {
       className: "bg-node",
       color: "bg-node",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "3.5 years",
     },
     {
       src: "/about_skill_mongoDB.svg",
@@ -204,7 +205,6 @@ export const skills: Skill = {
       className: "bg-mongoDB border-mongoDBColor",
       color: "bg-mongoDB",
       imageClassName: "scale-90 md:scale-110 xl:scale-90",
-      yearofexperience: "3.5 years",
     },
     {
       src: "/about_skill_typescript.svg",
@@ -214,7 +214,6 @@ export const skills: Skill = {
       className: "bg-typescript",
       color: "bg-typescript",
       imageClassName: "scale-100 md:scale-125 xl:scale-100",
-      yearofexperience: "3 years",
     },
     {
       src: "/about_skill_javascript.svg",
@@ -224,7 +223,6 @@ export const skills: Skill = {
       className: "bg-javascript",
       color: "bg-javascript",
       imageClassName: "scale-100 md:scale-125 xl:scale-100",
-      yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_expressJS.svg",
@@ -232,7 +230,6 @@ export const skills: Skill = {
       className: "bg-expressJS",
       color: "bg-black",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "3.5 years",
     },
     {
       src: "/about_skill_webpack.svg",
@@ -240,7 +237,6 @@ export const skills: Skill = {
       className: "bg-webpack",
       color: "bg-webpack",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "2 years",
     },
     {
       src: "/about_skill_tailwindcss.svg",
@@ -248,14 +244,12 @@ export const skills: Skill = {
       className: "bg-tailwindcss",
       color: "bg-tailwindcssColor",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "3 years",
     },
     {
       src: "/about_skill_sass.svg",
       title: "Sass",
       className: "bg-sass",
       color: "bg-sass",
-      yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_redux.svg",
@@ -263,21 +257,18 @@ export const skills: Skill = {
       className: "bg-redux",
       color: "bg-reduxColor",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "4 years",
     },
     {
       src: "/about_skill_formik.svg",
       title: "Formik",
       className: "bg-formik",
       color: "bg-formik",
-      yearofexperience: "3 years",
     },
     {
       src: "/about_skill_playwright.svg",
       title: "PlayWright",
       className: "bg-playwright",
       color: "bg-playwright",
-      yearofexperience: "2 years",
     },
     {
       src: "/about_skill_css.svg",
@@ -287,7 +278,6 @@ export const skills: Skill = {
       className: "bg-css",
       color: "bg-css",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_git.svg",
@@ -295,7 +285,6 @@ export const skills: Skill = {
       className: "bg-git",
       color: "bg-gitColor",
       imageClassName: "scale-90 md:scale-100 xl:scale-90",
-      yearofexperience: "4+ years",
     },
     {
       src: "/about_skill_jest.svg",
@@ -303,14 +292,12 @@ export const skills: Skill = {
       className: "bg-jest",
       color: "bg-jest",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "2.5 years",
     },
     {
       src: "/about_skill_vite.svg",
       title: "Vite",
       className: "bg-vite",
       color: "bg-vite",
-      yearofexperience: "1.5 years",
     },
   ],
   secondary: [
@@ -323,7 +310,6 @@ export const skills: Skill = {
         "bg-gradient-to-t from-python from-80% via-transparent to-80% to-transparent to-100%",
       color: "bg-python",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "2 years",
     },
     {
       src: "/about_skill_firebase.svg",
@@ -333,7 +319,6 @@ export const skills: Skill = {
       className:
         "bg-gradient-to-t from-firebase from-80% via-transparent to-80% to-transparent to-100%",
       color: "bg-firebase",
-      yearofexperience: "3 years",
     },
     {
       src: "/about_skill_redis.svg",
@@ -344,7 +329,6 @@ export const skills: Skill = {
         "bg-gradient-to-t from-redis from-70% via-transparent to-70% to-transparent to-100%",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
       color: "bg-redis",
-      yearofexperience: "2 years",
     },
     {
       src: "/about_skill_angular.svg",
@@ -352,7 +336,6 @@ export const skills: Skill = {
       className:
         "bg-gradient-to-t from-angular from-60% via-transparent to-60% to-transparent to-100%",
       color: "bg-red-500",
-      yearofexperience: "2 years",
     },
     {
       src: "/about_skill_stripe.svg",
@@ -363,7 +346,6 @@ export const skills: Skill = {
         "bg-gradient-to-t from-stripe from-60% via-transparent to-60% to-transparent to-100%",
       color: "bg-stripe",
       imageClassName: "scale-75 md:scale-100 xl:scale-75",
-      yearofexperience: "1 year",
     },
     {
       src: "/about_skill_storybook.svg",
@@ -371,7 +353,6 @@ export const skills: Skill = {
       className:
         "bg-gradient-to-t from-storybook from-55% via-transparent to-55% to-transparent to-100%",
       color: "bg-storybook",
-      yearofexperience: "1.5 years",
     },
     {
       src: "/about_skill_fastapi.svg",
@@ -380,7 +361,6 @@ export const skills: Skill = {
         "bg-gradient-to-t from-fastapi from-55% via-transparent to-55% to-transparent to-100%",
       color: "bg-fastapi",
       imageClassName: "scale-90 md:scale-100 xl:scale-90",
-      yearofexperience: "1 year",
     },
     {
       src: "/about_skill_mysql.svg",
@@ -390,7 +370,6 @@ export const skills: Skill = {
       className:
         "bg-gradient-to-t from-mysql from-50% via-transparent to-50% to-transparent to-100%",
       color: "bg-mysql",
-      yearofexperience: "1 year",
     },
     {
       src: "/about_skill_django.svg",
@@ -401,7 +380,6 @@ export const skills: Skill = {
         "bg-gradient-to-t from-django from-50% via-transparent to-50% to-transparent to-100%",
       color: "bg-django",
       imageClassName: "scale-50 md:scale-100 xl:scale-50",
-      yearofexperience: "1 year",
     },
     {
       src: "/about_skill_postgresql.svg",
@@ -412,7 +390,6 @@ export const skills: Skill = {
         "bg-gradient-to-t from-white from-40% via-transparent to-40% to-transparent to-100%",
       color: "bg-postgresql",
       imageClassName: "scale-90 md:scale-100 xl:scale-90",
-      yearofexperience: "6 months",
     },
     {
       src: "/about_skill_figma.svg",
@@ -423,7 +400,6 @@ export const skills: Skill = {
         "bg-gradient-to-t from-figma from-10% via-green-500 via-30% via-yellow-500 via-55% via-red-500 via-80% to-transparent to-80%",
       imageClassName: "scale-50 md:scale-75 xl:scale-50",
       color: "bg-red-400",
-      yearofexperience: "2+ years",
     },
   ],
 };
