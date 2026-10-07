@@ -462,6 +462,10 @@ export const selectedProjects = [
         color: "bg-black",
       },
       {
+        title: "RxJS",
+        color: "bg-black",
+      },
+      {
         title: "MongoDB",
         color: "bg-mongoDB",
       },
@@ -479,6 +483,10 @@ export const selectedProjects = [
       },
       {
         title: "Websocket",
+        color: "bg-webDesign",
+      },
+      {
+        title: "Socket.io",
         color: "bg-webDesign",
       },
       {
@@ -508,6 +516,14 @@ export const selectedProjects = [
         color: "bg-django",
       },
       {
+        title: "Formik",
+        color: "bg-formik",
+      },
+      {
+        title: "Material UI",
+        color: "bg-blue-800",
+      },
+      {
         title: "PostgreSQL",
         color: "bg-postgresql",
       },
@@ -522,6 +538,14 @@ export const selectedProjects = [
       {
         title: "TurfJS",
         color: "bg-green-800",
+      },
+      {
+        title: "GDAL",
+        color: "bg-green-800",
+      },
+      {
+        title: "FPDF",
+        color: "bg-black",
       },
       {
         title: "Jest",
@@ -568,6 +592,26 @@ export const selectedProjects = [
       {
         title: "PlayWright",
         color: "bg-playwright",
+      },
+      {
+        title: "FastAPI",
+        color: "bg-black",
+      },
+      {
+        title: "Material UI",
+        color: "bg-blue-800",
+      },
+      {
+        title: "OpenAI",
+        color: "bg-black",
+      },
+      {
+        title: "LangChain",
+        color: "bg-green-800",
+      },
+      {
+        title: "Tailwind CSS",
+        color: "bg-tailwindcss",
       },
     ],
     url: "/work/vidable-ai",
@@ -1054,9 +1098,21 @@ export const projects: ProjectDetails = {
       "Fastify",
       "PostgreSQL",
       "Prisma",
+      "GitHub Actions",
+      "GCS",
+      "GCP Cloud Run (Service and Job)",
       "WebGL",
+      "Vite",
+      "Vitest",
+      "Playwright",
+      "Supertest",
+      "Secret Manager",
+      "GCP Cloud SQL",
+      "Keycloak",
+      "Redis",
       "Docker",
       "Terraform",
+      "GitHub Workflows",
     ],
     timeline: { from: "2025", to: "", isPresent: true },
     description:
@@ -1101,12 +1157,25 @@ export const projects: ProjectDetails = {
     tools: [
       "Electron",
       "React",
+      "Redux",
+      "Tailwind CSS",
       "FastAPI",
+      "RAG",
+      "Cron",
       "LangGraph",
       "LangChain",
+      "LangSmith",
       "Vertex AI Search",
+      "OpenAI",
+      "Google Gemini",
       "Redis",
       "Docker",
+      "GCP",
+      "Vite",
+      "Vitest",
+      "Firestore",
+      "GitHub Workflows",
+      "GitHub Actions",
     ],
     timeline: { from: "2024", to: "2025", isPresent: false },
     description:
@@ -1155,8 +1224,14 @@ export const projects: ProjectDetails = {
       "FastAPI",
       "LangChain",
       "GCP Workflows",
+      "GCP",
+      "GCS",
+      "Secret Manager",
+      "Supertest",
       "Redis",
       "Docker",
+      "GitHub Actions",
+      "GitHub Workflows",
     ],
     timeline: { from: "2024", to: "2025", isPresent: false },
     description:
@@ -1200,7 +1275,12 @@ export const projects: ProjectDetails = {
       "MongoDB",
       "GCP Workflows",
       "LangChain",
+      "LangSmith",
+      "Google Gemini",
       "Redis",
+      "Cron Jobs",
+      "Docker",
+      "GCP",
     ],
     timeline: { from: "2022", to: "2025", isPresent: false },
     description:
@@ -1241,6 +1321,9 @@ export const projects: ProjectDetails = {
       "Jest",
       "Playwright",
       "AWS Cognito",
+      "Windows Authentication",
+      "Webpack",
+      "GitHub Actions",
     ],
     timeline: { from: "2023", to: "2024", isPresent: false },
     description:
